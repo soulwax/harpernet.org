@@ -1,0 +1,30 @@
+{
+  "name": "mbti-sister-type-strategies",
+  "version": "1.0.0",
+  "description": "Side-by-side comparison of MBTI personality types",
+  "main": "index.html",
+  "scripts": {
+    "serve": "npx serve -s -l 3890",
+    "start": "pm2 start npm --name 'mbti-app' -- run serve",
+    "stop": "pm2 stop mbti-app",
+    "restart": "pm2 restart mbti-app",
+    "delete": "pm2 delete mbti-app",
+    "status": "pm2 status mbti-app",
+    "logs": "pm2 logs mbti-app"
+  },
+  "keywords": [
+    "mbti",
+    "personality",
+    "psychology"
+  ],
+  "author": "soulwax@github",
+  "license": "GPL-3.0",
+  "homepage": "sistertypes.madtec.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soulwax/sister-mbti-solidjs.git"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
