@@ -48,12 +48,12 @@ const BrotherTypes = () => {
         </div>
 
         <div class={styles.controlsContainer}>
-          <button
+          {/* <button
             class={styles.toggleButton}
             onClick={() => setShowDetailed(!showDetailed())}
           >
             {showDetailed() ? "Show Summary View" : "Show Detailed View"}
-          </button>
+          </button> */}
         </div>
       </div>
 
