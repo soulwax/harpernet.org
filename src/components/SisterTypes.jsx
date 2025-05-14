@@ -24,18 +24,15 @@ const SisterTypes = () => {
         <div class={styles.explanationBox}>
           <h3>How Sister Types Work</h3>
           <p>
-            Sister types in MBTI have the same cognitive functions but in a
-            different order. This creates fascinating differences in how these
-            types approach problems and interact with the world, while sharing
-            some core similarities.
+            Sister types in MBTI have Judging and Perceiving swapped. This means
+            that they share the same first three "MBTI letters" (e.g., INTP and
+            INTJ), but differ in the last letter (P vs. J). This results in
+            dramatically different cognitive function stacks, which are the
+            underlying frameworks that shape how each type perceives and
+            interacts with the world and its inner empire.
           </p>
           <p>
-            For example, INTP and INTJ share the same middle letters (NT), but
-            their different preferences for judging vs. perceiving result in
-            entirely different cognitive function stacks.
-          </p>
-          <p>
-            Each comparison below examines sister type pairs across five key
+            Each comparison below demonstrates sister type pairs across five key
             dimensions:
           </p>
           <ol class={styles.criteriaList}>

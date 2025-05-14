@@ -23,16 +23,15 @@ const BrotherTypes = () => {
         <div class={styles.explanationBox}>
           <h3>How Brother Types Work</h3>
           <p>
-            Brother types in MBTI share the same cognitive functions but with
-            opposite orientations (extraverted vs. introverted). This creates
-            fascinating differences in how these types interact with the world
-            while maintaining core similarities in their approach.
-          </p>
-          <p>
-            For example, ENTP and INTP share the same functions (Ne, Ti, Fe,
-            Si), but in different positions and orientations, resulting in
-            similar analytical approaches but different levels of external
-            engagement.
+            Brother types in MBTI share the same cognitive functions since a
+            swap of extraversion and introversion does not change the functions
+            themselves but merely puts the axes upside down. In simplistic MBTI
+            terms, this means they share the last three letters (e.g., INTP and
+            ENTP). Don't be fooled by it though. As we spend 60% of our time in
+            the first cognitive function engagement, even brother types will end
+            up having radically different cognitive function stacks. This is the
+            underlying framework that shapes how each type perceives and
+            interacts with the world and its inner empire.
           </p>
           <p>
             Each comparison below examines brother type pairs across five key
