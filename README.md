@@ -1,4 +1,4 @@
-# MBTI Sister Type Comparison
+# HarperNet.org - MBTI from a different angle
 
 <p align="center">
     <img style="box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); border-radius: 8px" src=".github/resources/infjlolcat.gif" alt="INFJ LOLCAT" width="500px" />
