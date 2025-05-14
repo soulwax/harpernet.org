@@ -1,5 +1,4 @@
 // File: src/components/Header.jsx
-// Fallback version
 
 import { createSignal } from "solid-js";
 import styles from "./Header.module.css";

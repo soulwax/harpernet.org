@@ -1,4 +1,4 @@
-// File: src/index.jsx (Updated)
+// File: src/index.jsx
 
 import { render } from "solid-js/web";
 import Router from "./Router";

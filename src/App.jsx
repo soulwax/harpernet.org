@@ -1,4 +1,4 @@
-// File: src/App.jsx (Updated)
+// File: src/App.jsx
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";

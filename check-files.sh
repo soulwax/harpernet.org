@@ -1,5 +1,5 @@
 #!/bin/bash
-# check-files.sh
+# File: check-files.sh
 
 # List of expected files
 EXPECTED_FILES=(

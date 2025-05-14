@@ -1,4 +1,4 @@
-// File: src/Router.jsx (Further Improved)
+// File: src/Router.jsx
 
 import { createSignal, onCleanup, onMount } from "solid-js";
 import App from "./App";

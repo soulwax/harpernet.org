@@ -1,4 +1,4 @@
-// File: vite.config.js (Improved SPA Config)
+// File: vite.config.js
 
 import { resolve } from "path";
 import { defineConfig } from "vite";

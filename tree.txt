@@ -1,4 +1,4 @@
-sister-mbti-solidjs
+├───.DS_Store
 ├───.env.sample
 ├───.gitignore
 ├───CHANGELOG.md
@@ -11,21 +11,23 @@ sister-mbti-solidjs
 ├───README.md
 ├───tree.txt
 ├───vite.config.js
-├───.github/
-│   └───resources/
+├───.github
+│   ├───.DS_Store
+│   └───resources
 │       └───infjlolcat.gif
-├───public/
+├───public
 │   ├───404.html
 │   └───vite.svg
-└───src/
+└───src
+    ├───.DS_Store
     ├───App.css
     ├───App.jsx
     ├───index.css
     ├───index.jsx
     ├───Router.jsx
-    ├───assets/
+    ├───assets
     │   └───solid.svg
-    ├───components/
+    ├───components
     │   ├───About.jsx
     │   ├───About.module.css
     │   ├───BrotherTypes.jsx
@@ -37,5 +39,5 @@ sister-mbti-solidjs
     │   ├───NavLink.jsx
     │   ├───TypeTable.jsx
     │   └───TypeTable.module.css
-    └───pages/
+    └───pages
         └───BrotherTypesPage.jsx
