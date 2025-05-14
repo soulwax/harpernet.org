@@ -1,0 +1,45 @@
+/* src/components/TypeTable.module.css */
+.typeSection {
+    margin-bottom: 2rem;
+}
+
+.typeTable {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.typeTable thead {
+    background: var(--accent);
+    color: #fff;
+}
+
+.typeTable th,
+.typeTable td {
+    padding: 16px 20px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.typeTable th:first-child,
+.typeTable td:first-child {
+    text-align: center;
+    width: 68px;
+}
+
+.typeTable tbody tr:nth-child(even) {
+    background: var(--even);
+}
+
+.typeTable tbody tr:hover {
+    background: var(--hover);
+}
+
+.symbol {
+    font-size: 22px;
+}
