@@ -10,7 +10,7 @@ const Footer = () => {
     description: "Side-by-side comparison of MBTI personality types",
     author: "soulwax@github",
     license: "GPL-3.0",
-    homepage: "sistertypes.madtec.org",
+    homepage: "harpernet.org",
     repository: {
       type: "git",
       url: "https://github.com/soulwax/sister-mbti-solidjs.git",

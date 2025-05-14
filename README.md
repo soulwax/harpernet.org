@@ -42,7 +42,7 @@ This application provides a comprehensive comparison between MBTI sister types -
 
 ## 🌐 Live Demo
 
-Check out the live demo at [sistertypes.madtec.org](https://sistertypes.madtec.org)
+Check out the live demo at [harpernet.org](https://harpernet.org)
 
 ## ✨ Key Features
 

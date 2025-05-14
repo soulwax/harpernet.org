@@ -13,15 +13,14 @@ const About = () => {
           <p>
             Jungian psychology has long fascinated those interested in the
             discipline of differential psychology within the context of
-            personality and behavior. This project tries to explore the nuanced
-            differences between personality types that share the same cognitive
-            functions but in a different order. It will get expanded to
-            different comparisons and explanations in the near future.
+            personality and behavior. This project tries to explain and explore
+            aspects of the Jungian school of thought that wasn't prior done in this
+            way.
           </p>
           <p>
-            This comparison tool should help you understand the subtle
-            distinctions between personality types that often get confused with
-            one another, providing clarity through side-by-side analysis of
+            This comparison tool should help you understand the
+            distinctions between personality types that often get confused, providing some
+            clarity through side-by-side analysis of
             their approaches, strengths, and characteristic behaviors. As of
             March 14th 2025, the focus lies on sister types, where Judging and
             Perceiving preferences are swapped and directly compared using five
@@ -105,7 +104,7 @@ const About = () => {
           </a>{" "}
           or visit the{" "}
           <a
-            href="https://sistertypes.madtec.org"
+            href="https://harpernet.org"
             target="_blank"
             rel="noopener noreferrer"
           >

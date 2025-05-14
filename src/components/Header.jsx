@@ -15,7 +15,7 @@ const Header = () => {
       <div class={styles.logo}>
         <a href="/" class={styles.logoLink}>
           <span class={styles.logoText}>
-            Soul's Differntial Jungian Psychology Central
+            The school of Carl Gustav Jung - A different view
           </span>
         </a>
       </div>
@@ -29,7 +29,6 @@ const Header = () => {
       </button>
 
       <nav class={`${styles.nav} ${menuOpen() ? styles.navOpen : ""}`}>
-        Sister Types
         <ul class={styles.navList}>
           <li class={styles.navItem}>
             <a href="/" class={styles.navLink} onClick={closeMenu}>
@@ -38,7 +37,7 @@ const Header = () => {
           </li>
           <li class={styles.navItem}>
             <a href="#types" class={styles.navLink} onClick={closeMenu}>
-              Type Comparisons
+              Sister Types
             </a>
           </li>
           <li class={styles.navItem}>
