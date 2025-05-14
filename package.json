@@ -4,7 +4,7 @@
   "description": "Side-by-side comparison of MBTI personality types",
   "type": "commonjs",
   "scripts": {
-    "dev": "vite --port 3890",
+    "dev": "vite --port 3891",
     "build": "vite build",
     "preview": "vite preview --port 3890",
     "serve": "vite preview --port 3890 --host",
