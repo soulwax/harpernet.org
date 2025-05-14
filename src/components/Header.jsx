@@ -2,7 +2,6 @@
 
 import { createSignal } from "solid-js";
 import styles from "./Header.module.css";
-import NavLink from "./NavLink";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = createSignal(false);
@@ -11,46 +10,64 @@ const Header = () => {
     setIsNavOpen(!isNavOpen());
   };
 
+  // Direct navigation function
+  const navigateTo = (path) => {
+    window.location.href = path;
+    setIsNavOpen(false);
+  };
+
+  // Check if current path matches
+  const isActive = (path) => {
+    return window.location.pathname === path;
+  };
+
   return (
     <header class={styles.header}>
       <div class={styles.logo}>
-        <NavLink href="/" class={styles.logoLink}>
+        <a href="/" class={styles.logoLink}>
           <span class={styles.logoText}>MBTI Typology</span>
-        </NavLink>
+        </a>
       </div>
 
-      <button class={styles.menuToggle} onClick={toggleNav}>
+      <button
+        class={styles.menuToggle}
+        onClick={toggleNav}
+        aria-label="Toggle navigation menu"
+      >
         {isNavOpen() ? "✕" : "☰"}
       </button>
 
       <nav class={`${styles.nav} ${isNavOpen() ? styles.navOpen : ""}`}>
         <ul class={styles.navList}>
           <li class={styles.navItem}>
-            <NavLink
-              href="/"
-              class={styles.navLink}
-              activeClass={styles.activeLink}
+            <button
+              onClick={() => navigateTo("/")}
+              class={`${styles.navButton} ${
+                isActive("/") ? styles.activeNav : ""
+              }`}
             >
               Sister Types
-            </NavLink>
+            </button>
           </li>
           <li class={styles.navItem}>
-            <NavLink
-              href="/brother-types"
-              class={styles.navLink}
-              activeClass={styles.activeLink}
+            <button
+              onClick={() => navigateTo("/brother-types")}
+              class={`${styles.navButton} ${
+                isActive("/brother-types") ? styles.activeNav : ""
+              }`}
             >
               Brother Types
-            </NavLink>
+            </button>
           </li>
           <li class={styles.navItem}>
-            <NavLink
-              href="/about"
-              class={styles.navLink}
-              activeClass={styles.activeLink}
+            <button
+              onClick={() => navigateTo("/about")}
+              class={`${styles.navButton} ${
+                isActive("/about") ? styles.activeNav : ""
+              }`}
             >
               About
-            </NavLink>
+            </button>
           </li>
         </ul>
       </nav>

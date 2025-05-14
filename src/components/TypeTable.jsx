@@ -1,6 +1,5 @@
 // File: src/components/TypeTable.jsx
 
-import { createSignal } from "solid-js";
 import styles from "./TypeTable.module.css";
 
 /**
@@ -15,17 +14,21 @@ import styles from "./TypeTable.module.css";
  */
 const TypeTable = (props) => {
   // Default to detailed view if not specified
-  const [showDetailed, setShowDetailed] = createSignal(
-    props.detailed !== undefined ? props.detailed : true
-  );
+  const detailed = props.detailed !== undefined ? props.detailed : true;
 
-  // Toggle detailed/summary view
-  const toggleView = () => {
-    setShowDetailed(!showDetailed());
+  // Function to create a summarized version of the text
+  const summarize = (text) => {
+    // Remove HTML tags
+    const plainText = text.replace(/<[^>]*>/g, "");
+    // Get first sentence or limit to ~80 characters
+    const firstSentence = plainText.split(".")[0] + ".";
+    return firstSentence.length < 80
+      ? firstSentence
+      : firstSentence.substring(0, 77) + "...";
   };
 
   return (
-    <div
+    <section
       class={styles.typeSection}
       id={props.title.toLowerCase().replace(/\s+/g, "-")}
     >
@@ -47,41 +50,18 @@ const TypeTable = (props) => {
         </thead>
         <tbody>
           {props.rows.map((row) => (
-            <tr class={showDetailed() ? styles.detailedRow : styles.summaryRow}>
+            <tr class={detailed ? "" : styles.summaryRow}>
               <td>
                 <span class={styles.symbol}>{row.symbol}</span>
               </td>
-              <td
-                innerHTML={showDetailed() ? row.type1 : summarize(row.type1)}
-              ></td>
-              <td
-                innerHTML={showDetailed() ? row.type2 : summarize(row.type2)}
-              ></td>
+              <td innerHTML={detailed ? row.type1 : summarize(row.type1)}></td>
+              <td innerHTML={detailed ? row.type2 : summarize(row.type2)}></td>
             </tr>
           ))}
         </tbody>
       </table>
-    </div>
+    </section>
   );
 };
-
-/**
- * Creates a summary version of the detailed text
- * Extracts the first sentence or first N characters
- *
- * @param {string} text The detailed text to summarize
- * @returns {string} The summarized text
- */
-function summarize(text) {
-  // Extract the first sentence if possible
-  const firstSentence = text.match(/^.*?([.!?]|<\/strong>)/);
-  if (firstSentence) {
-    return firstSentence[0];
-  }
-
-  // Otherwise just take the first N characters
-  const maxLength = 100;
-  return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
-}
 
 export default TypeTable;

@@ -1,7 +1,6 @@
 // File: src/components/NavLink.jsx
 
-import { createSignal, onMount } from "solid-js";
-import styles from "./Header.module.css";
+import { createEffect, createSignal } from "solid-js";
 
 /**
  * NavLink component for client-side navigation
@@ -13,50 +12,63 @@ import styles from "./Header.module.css";
  * @param {JSX.Element} props.children The content to render inside the link
  */
 const NavLink = (props) => {
+  // Create a signal to track if this link is active
   const [isActive, setIsActive] = createSignal(false);
 
-  // Check if link is active based on current URL path
-  onMount(() => {
+  // Update active state when pathname changes
+  const updateActiveState = () => {
     const currentPath = window.location.pathname;
     setIsActive(currentPath === props.href);
+  };
 
-    // Listen for route changes
-    const handleRouteChange = () => {
-      setIsActive(window.location.pathname === props.href);
-    };
-
-    window.addEventListener("popstate", handleRouteChange);
-    window.addEventListener("navigation", handleRouteChange);
-
-    return () => {
-      window.removeEventListener("popstate", handleRouteChange);
-      window.removeEventListener("navigation", handleRouteChange);
-    };
+  // Initial update
+  createEffect(() => {
+    updateActiveState();
   });
 
-  // Handle client-side navigation
+  // Listen for navigation and popstate events to update active state
+  const handleNavigation = () => {
+    updateActiveState();
+  };
+
+  // Set up event listeners
+  if (typeof window !== "undefined") {
+    window.addEventListener("navigation", handleNavigation);
+    window.addEventListener("popstate", handleNavigation);
+  }
+
+  // Handle click event to navigate without page refresh
   const handleClick = (e) => {
     e.preventDefault();
 
-    // Update browser history
-    history.pushState(null, "", props.href);
+    // Don't navigate if we're already on this page
+    if (window.location.pathname === props.href) {
+      return;
+    }
 
-    // Dispatch custom navigation event for the router
+    // Update the browser history
+    window.history.pushState(null, null, props.href);
+
+    // Scroll to top for new page
+    window.scrollTo(0, 0);
+
+    // Dispatch a custom navigation event for the Router to detect
     window.dispatchEvent(
-      new CustomEvent("navigation", { detail: { path: props.href } })
+      new CustomEvent("navigation", {
+        detail: { path: props.href },
+      })
     );
 
-    // Scroll to top
-    window.scrollTo(0, 0);
+    console.log("NavLink clicked, navigating to:", props.href);
   };
 
   return (
     <a
       href={props.href}
-      onClick={handleClick}
-      class={`${styles.navLink} ${isActive() ? styles.activeLink : ""} ${
-        props.class || ""
+      class={`${props.class} ${
+        isActive() ? props.activeClass || "active" : ""
       }`}
+      onClick={handleClick}
     >
       {props.children}
     </a>
