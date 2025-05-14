@@ -43,16 +43,25 @@
     margin: 0 0.5rem;
 }
 
-.navLink {
+.navButton {
     color: white;
-    text-decoration: none;
+    background: transparent;
+    border: none;
     padding: 0.5rem 0.8rem;
     border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
     transition: background-color 0.3s ease;
 }
 
-.navLink:hover {
+.navButton:hover {
     background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.activeNav {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 500;
 }
 
 .menuToggle {
@@ -101,25 +110,9 @@
         text-align: center;
     }
 
-    .navLink {
+    .navButton {
         display: block;
+        width: 100%;
         padding: 0.8rem;
-    }
-
-    .activeLink {
-        background-color: rgba(255, 255, 255, 0.2);
-        font-weight: 500;
-        position: relative;
-    }
-
-    .activeLink::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60%;
-        height: 2px;
-        background-color: white;
     }
 }

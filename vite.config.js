@@ -1,42 +1,32 @@
 // File: vite.config.js
 
-import { resolve } from "path";
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
 
-export default defineConfig(({ command, mode }) => {
-  const isProduction = mode === "production";
-
-  return {
-    plugins: [solidPlugin()],
-    server: {
-      port: 3890,
-      host: true, // Allow connections from network
-      strictPort: true, // Do not try another port if 3890 is in use
-      // Improved historyApiFallback for development
-      historyApiFallback: true, // This enables SPA routing
-    },
-    build: {
-      target: "esnext",
-      minify: isProduction,
-      sourcemap: !isProduction,
-      rollupOptions: {
-        input: {
-          main: resolve(__dirname, "index.html"),
-        },
-        output: {
-          manualChunks: undefined,
-          inlineDynamicImports: false,
-        },
+export default defineConfig({
+  plugins: [solidPlugin()],
+  server: {
+    port: 3890,
+    host: true,
+    // Simple fallback for SPA routing
+    proxy: {
+      "/brother-types": {
+        target: "http://localhost:3890",
+        rewrite: () => "/index.html",
+      },
+      "/about": {
+        target: "http://localhost:3890",
+        rewrite: () => "/index.html",
       },
     },
-    resolve: {
-      alias: {
-        "@": resolve(__dirname, "src"),
+  },
+  build: {
+    target: "esnext",
+    // Generate server-side redirects for production
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
       },
     },
-
-    // Create specialized base path handling
-    base: "/",
-  };
+  },
 });
