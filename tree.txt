@@ -1,3 +1,4 @@
+├───.DS_Store
 ├───.env.sample
 ├───.gitignore
 ├───ecosystem.config.js
@@ -8,9 +9,14 @@
 ├───README.md
 ├───tree.txt
 ├───vite.config.js
+├───.github
+│   ├───.DS_Store
+│   └───resources
+│       └───infjlolcat.gif
 ├───public
 │   └───vite.svg
 └───src
+    ├───.DS_Store
     ├───App.css
     ├───App.jsx
     ├───index.css

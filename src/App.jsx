@@ -1,8 +1,9 @@
-// File: src/App.jsx
+// File: src/App.jsx (Updated)
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import TypeTable from "./components/TypeTable";
+import About from "./components/About";
 import "./index.css";
 
 const App = () => {
@@ -368,6 +369,9 @@ const App = () => {
             />
           ))}
         </div>
+
+        {/* About section */}
+        <About />
       </main>
       <Footer />
     </div>

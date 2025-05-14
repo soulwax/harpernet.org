@@ -1,4 +1,4 @@
-// File: src/components/Header.jsx
+// File: src/components/Header.jsx (Updated)
 
 import { createSignal } from "solid-js";
 import styles from "./Header.module.css";
@@ -8,6 +8,8 @@ const Header = () => {
 
   const toggleMenu = () => setMenuOpen(!menuOpen());
 
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header class={styles.header}>
       <div class={styles.logo}>
@@ -16,24 +18,28 @@ const Header = () => {
         </a>
       </div>
 
-      <button class={styles.menuToggle} onClick={toggleMenu}>
+      <button
+        class={styles.menuToggle}
+        onClick={toggleMenu}
+        aria-label="Toggle menu"
+      >
         <span class={styles.menuIcon}>☰</span>
       </button>
 
       <nav class={`${styles.nav} ${menuOpen() ? styles.navOpen : ""}`}>
         <ul class={styles.navList}>
           <li class={styles.navItem}>
-            <a href="/" class={styles.navLink}>
+            <a href="/" class={styles.navLink} onClick={closeMenu}>
               Home
             </a>
           </li>
           <li class={styles.navItem}>
-            <a href="#types" class={styles.navLink}>
+            <a href="#types" class={styles.navLink} onClick={closeMenu}>
               Type Comparisons
             </a>
           </li>
           <li class={styles.navItem}>
-            <a href="#about" class={styles.navLink}>
+            <a href="#about" class={styles.navLink} onClick={closeMenu}>
               About
             </a>
           </li>
