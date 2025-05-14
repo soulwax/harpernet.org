@@ -7,7 +7,7 @@ RED='\033[0;31m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-echo -e "${YELLOW}Testing MBTI Typology Site Implementation${NC}"
+echo -e "${YELLOW}Testing HarperNet.org Site Implementation${NC}"
 echo "========================================"
 
 # Check directory structure
@@ -58,7 +58,7 @@ for file in "${files[@]}"; do
     echo -e "${GREEN}✓${NC} $file exists"
   else
     echo -e "${RED}✗${NC} $file is missing!"
-    missing_files=$((missing_files+1))
+    missing_files=$((missing_files + 1))
   fi
 done
 
