@@ -27,6 +27,9 @@ const Router = () => {
 
     // Initial path setting
     setCurrentPath(window.location.pathname);
+
+    // Debug info
+    console.log("Router mounted, path:", window.location.pathname);
   });
 
   onCleanup(() => {
@@ -45,6 +48,7 @@ const Router = () => {
       return <BrotherTypesPage />;
     } else {
       // 404 or redirect to home
+      console.log("Route not found, defaulting to home");
       return <App />;
     }
   };

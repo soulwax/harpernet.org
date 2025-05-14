@@ -45,7 +45,7 @@
     font-size: 22px;
 }
 
-/* New styles for summary view */
+/* Styles for summary view */
 .summaryRow td {
     padding: 12px 16px;
     font-size: 15px;
@@ -53,7 +53,6 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-
     .typeTable th,
     .typeTable td {
         padding: 12px 14px;

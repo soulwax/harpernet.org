@@ -14,13 +14,7 @@ export default defineConfig(({ command, mode }) => {
       host: true, // Allow connections from network
       strictPort: true, // Do not try another port if 3890 is in use
       // Improved historyApiFallback for development
-      historyApiFallback: {
-        disableDotRule: true,
-        rewrites: [
-          { from: /^\/brother-types/, to: "/index.html" },
-          { from: /./, to: "/index.html" },
-        ],
-      },
+      historyApiFallback: true, // This enables SPA routing
     },
     build: {
       target: "esnext",
@@ -44,12 +38,5 @@ export default defineConfig(({ command, mode }) => {
 
     // Create specialized base path handling
     base: "/",
-
-    // Extra build options for the SPA
-    experimental: {
-      renderBuiltUrl(filename, { hostType }) {
-        return filename;
-      },
-    },
   };
 });
