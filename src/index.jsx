@@ -4,5 +4,8 @@ import { render } from "solid-js/web";
 import Router from "./Router";
 import "./index.css";
 
-// Render the router directly (it handles the page layout internally)
+/**
+ * Main entry point for the application
+ * Renders the Router component which handles page routing and layout
+ */
 render(() => <Router />, document.getElementById("root"));
