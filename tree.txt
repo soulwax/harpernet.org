@@ -1,22 +1,23 @@
-sister-mbti-solidjs
 ├───.env.sample
 ├───.gitignore
 ├───ecosystem.config.js
 ├───index.html
+├───LICENSE
 ├───package-lock.json
 ├───package.json
 ├───README.md
+├───tree.txt
 ├───vite.config.js
-├───public/
+├───public
 │   └───vite.svg
-└───src/
+└───src
     ├───App.css
     ├───App.jsx
     ├───index.css
     ├───index.jsx
-    ├───assets/
+    ├───assets
     │   └───solid.svg
-    └───components/
+    └───components
         ├───Footer.jsx
         ├───Footer.module.css
         ├───Header.jsx
