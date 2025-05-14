@@ -1,12 +1,12 @@
 // File: src/pages/SisterTypesPage.jsx
 
-import SisterTypes from "../components/SisterTypes";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import SisterTypes from "../components/SisterTypes";
 
 const SisterTypesPage = () => {
   return (
-    <div class="app">
+    <div class="app" id="sister-types-page">
       <Header />
       <main class="main-content">
         <SisterTypes />

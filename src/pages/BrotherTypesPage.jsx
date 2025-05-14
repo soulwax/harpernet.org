@@ -6,7 +6,7 @@ import Header from "../components/Header";
 
 const BrotherTypesPage = () => {
   return (
-    <div class="app">
+    <div class="app" id="brother-types-page">
       <Header />
       <main class="main-content">
         <BrotherTypes />

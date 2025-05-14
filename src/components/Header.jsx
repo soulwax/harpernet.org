@@ -25,7 +25,7 @@ const Header = () => {
     <header class={styles.header}>
       <div class={styles.logo}>
         <a href="/" class={styles.logoLink}>
-          <span class={styles.logoText}>MBTI Typology</span>
+          <span class={styles.logoText}>HarperNet.org</span>
         </a>
       </div>
 
