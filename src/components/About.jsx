@@ -95,7 +95,7 @@ const About = () => {
         <p>
           Find this project on{" "}
           <a
-            href="https://github.com/soulwax/sister-mbti-solidjs"
+            href="https://github.com/soulwax/harpernet.org.git"
             target="_blank"
             rel="noopener noreferrer"
           >

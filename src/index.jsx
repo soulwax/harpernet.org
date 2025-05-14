@@ -1,6 +1,7 @@
-// File: src/index.jsx
+// File: src/index.jsx (Updated)
 
 import { render } from "solid-js/web";
-import App from "./App";
+import Router from "./Router";
+import "./index.css";
 
-render(() => <App />, document.getElementById("root"));
+render(() => <Router />, document.getElementById("root"));

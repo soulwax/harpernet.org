@@ -1,4 +1,4 @@
-/* File: src/components/TypeTable.module.css */
+/* File: src/components/TypeTable.module.css (Updated) */
 
 .typeSection {
     margin-bottom: 2rem;
@@ -43,4 +43,29 @@
 
 .symbol {
     font-size: 22px;
+}
+
+/* New styles for summary view */
+.summaryRow td {
+    padding: 12px 16px;
+    font-size: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .typeTable th,
+    .typeTable td {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .summaryRow td {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .symbol {
+        font-size: 18px;
+    }
 }

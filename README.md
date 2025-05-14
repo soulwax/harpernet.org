@@ -72,7 +72,7 @@ Check out the live demo at [harpernet.org](https://harpernet.org)
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/soulwax/sister-mbti-solidjs.git
+   git clone https://github.com/soulwax/harpernet.org.git
    cd sister-mbti-solidjs
    ```
 
@@ -247,4 +247,4 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ---
 
-Made with ❤️ by [soulwax](https://github.com/soulwax)
+Made with ❤️ by [soulwax@github](https://github.com/soulwax)
