@@ -1,15 +1,22 @@
-// File: src/Router.jsx (Further Improved)
+// File: src/Router.jsx
 
 import { createSignal, onCleanup, onMount } from "solid-js";
-import App from "./App";
+import AppLayout from "./components/AppLayout";
 import BrotherTypesPage from "./pages/BrotherTypesPage";
+import HomePage from "./pages/HomePage";
 
+/**
+ * Router component that handles client-side routing
+ * Uses window location pathname to determine which page to render
+ * Wraps the rendered page in the AppLayout component
+ */
 const Router = () => {
   const [currentPath, setCurrentPath] = createSignal(window.location.pathname);
 
   // Handler for custom navigation events
   const handleCustomNavigation = (event) => {
     setCurrentPath(event.detail.path);
+    window.scrollTo(0, 0);
   };
 
   // Handler for popstate (browser back/forward)
@@ -34,19 +41,27 @@ const Router = () => {
     window.removeEventListener("popstate", handlePopState);
   });
 
+  // Route mapping
+  const routes = {
+    "/": HomePage,
+    "/index.html": HomePage,
+    "/brother-types": BrotherTypesPage,
+  };
+
   // Simple route rendering based on current path
   const renderRoute = () => {
     const path = currentPath();
     console.log("Router rendering path:", path); // For debugging
 
-    if (path === "/" || path === "/index.html") {
-      return <App />;
-    } else if (path === "/brother-types") {
-      return <BrotherTypesPage />;
-    } else {
-      // 404 or redirect to home
-      return <App />;
-    }
+    // Get the component for the current path or default to HomePage
+    const RouteComponent = routes[path] || HomePage;
+
+    // Wrap the route component in the AppLayout
+    return (
+      <AppLayout>
+        <RouteComponent />
+      </AppLayout>
+    );
   };
 
   return renderRoute();

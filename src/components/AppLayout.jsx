@@ -1,16 +1,17 @@
-// File: src/App.jsx
+// File: src/components/AppLayout.jsx
 
 import { children } from "solid-js";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import "./index.css";
+import Footer from "./Footer";
+import Header from "./Header";
 
 /**
- * App component that serves as the main layout wrapper
+ * AppLayout component that provides a consistent layout structure
+ * for all pages in the application
+ *
  * @param {Object} props Component props
  * @param {JSX.Element} props.children The content to render inside the layout
  */
-const App = (props) => {
+const AppLayout = (props) => {
   const c = children(() => props.children);
 
   return (
@@ -22,4 +23,4 @@ const App = (props) => {
   );
 };
 
-export default App;
+export default AppLayout;

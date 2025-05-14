@@ -1,7 +1,28 @@
-/* File: src/components/TypeTable.module.css (Updated) */
+/* File: src/components/TypeTable.module.css */
 
 .typeSection {
     margin-bottom: 2rem;
+}
+
+.tableControls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.viewToggle {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.viewToggle:hover {
+    background-color: #1a3a44;
 }
 
 .typeTable {
@@ -45,10 +66,16 @@
     font-size: 22px;
 }
 
-/* New styles for summary view */
+/* Styles for the summary view */
 .summaryRow td {
     padding: 12px 16px;
     font-size: 15px;
+}
+
+/* Animation for view transitions */
+.detailedRow td,
+.summaryRow td {
+    transition: all 0.3s ease;
 }
 
 /* Responsive adjustments */
@@ -67,5 +94,14 @@
 
     .symbol {
         font-size: 18px;
+    }
+
+    .tableControls {
+        justify-content: center;
+    }
+
+    .viewToggle {
+        width: 100%;
+        max-width: 200px;
     }
 }

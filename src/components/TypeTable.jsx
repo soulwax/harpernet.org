@@ -1,53 +1,87 @@
-import { For } from "solid-js";
+// File: src/components/TypeTable.jsx
+
+import { createSignal } from "solid-js";
 import styles from "./TypeTable.module.css";
 
+/**
+ * TypeTable component for displaying side-by-side personality type comparisons
+ *
+ * @param {Object} props Component props
+ * @param {string} props.title Table title (e.g., "INTP vs INTJ")
+ * @param {string} props.type1 First personality type (e.g., "INTP")
+ * @param {string} props.type2 Second personality type (e.g., "INTJ")
+ * @param {Array} props.rows Array of row data objects
+ * @param {boolean} props.detailed Whether to show detailed or summary view
+ */
 const TypeTable = (props) => {
-  // Default to showing detailed view if not specified
-  const detailed = props.detailed !== undefined ? props.detailed : true;
+  // Default to detailed view if not specified
+  const [showDetailed, setShowDetailed] = createSignal(
+    props.detailed !== undefined ? props.detailed : true
+  );
+
+  // Toggle detailed/summary view
+  const toggleView = () => {
+    setShowDetailed(!showDetailed());
+  };
 
   return (
-    <div class={styles.typeSection}>
+    <div
+      class={styles.typeSection}
+      id={props.title.toLowerCase().replace(/\s+/g, "-")}
+    >
       <h2>{props.title}</h2>
+
+      <div class={styles.tableControls}>
+        <button class={styles.viewToggle} onClick={toggleView}>
+          {showDetailed() ? "Show Summary" : "Show Details"}
+        </button>
+      </div>
+
       <table class={styles.typeTable}>
         <thead>
           <tr>
-            <th class={styles.symbol}>◎</th>
+            <th></th>
             <th>{props.type1}</th>
             <th>{props.type2}</th>
           </tr>
         </thead>
         <tbody>
-          <For each={props.rows}>
-            {(row) => (
-              <tr class={detailed ? "" : styles.summaryRow}>
-                <td class={styles.symbol}>{row.symbol}</td>
-                <td
-                  innerHTML={detailed ? row.type1 : summarizeText(row.type1)}
-                ></td>
-                <td
-                  innerHTML={detailed ? row.type2 : summarizeText(row.type2)}
-                ></td>
-              </tr>
-            )}
-          </For>
+          {props.rows.map((row) => (
+            <tr class={showDetailed() ? styles.detailedRow : styles.summaryRow}>
+              <td>
+                <span class={styles.symbol}>{row.symbol}</span>
+              </td>
+              <td
+                innerHTML={showDetailed() ? row.type1 : summarize(row.type1)}
+              ></td>
+              <td
+                innerHTML={showDetailed() ? row.type2 : summarize(row.type2)}
+              ></td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
   );
 };
 
-// Helper function to create summary text
-const summarizeText = (text) => {
-  // Extract first sentence or first 100 characters if no clear sentence
-  const firstSentence = text
-    .split(/[.!?]/)
-    .filter((s) => s.trim().length > 0)[0];
+/**
+ * Creates a summary version of the detailed text
+ * Extracts the first sentence or first N characters
+ *
+ * @param {string} text The detailed text to summarize
+ * @returns {string} The summarized text
+ */
+function summarize(text) {
+  // Extract the first sentence if possible
+  const firstSentence = text.match(/^.*?([.!?]|<\/strong>)/);
   if (firstSentence) {
-    return firstSentence + ".";
+    return firstSentence[0];
   }
 
-  // Fallback to first 100 chars if no clear sentence
-  return text.substring(0, 100) + (text.length > 100 ? "..." : "");
-};
+  // Otherwise just take the first N characters
+  const maxLength = 100;
+  return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+}
 
 export default TypeTable;

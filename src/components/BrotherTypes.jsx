@@ -4,7 +4,19 @@ import { createSignal } from "solid-js";
 import styles from "./BrotherTypes.module.css";
 import TypeTable from "./TypeTable";
 
+/**
+ * BrotherTypes component for displaying brother type comparisons
+ * Brother types have extraversion/introversion swapped
+ */
 const BrotherTypes = () => {
+  // Control the view mode for all tables
+  const [showDetailed, setShowDetailed] = createSignal(true);
+
+  // Toggle the view mode for all tables
+  const toggleView = () => {
+    setShowDetailed(!showDetailed());
+  };
+
   // Define the data for each brother type comparison
   const brotherTypeComparisons = [
     {
@@ -345,9 +357,6 @@ const BrotherTypes = () => {
     },
   ];
 
-  // Create a signal to toggle showing all comparisons or just the main categories
-  const [showDetailed, setShowDetailed] = createSignal(true);
-
   return (
     <div class={styles.brotherTypesContainer} id="brother-types">
       <div class={styles.introSection}>
@@ -385,11 +394,10 @@ const BrotherTypes = () => {
         </div>
 
         <div class={styles.controlsContainer}>
-          <button
-            class={styles.toggleButton}
-            onClick={() => setShowDetailed(!showDetailed())}
-          >
-            {showDetailed() ? "Show Summary View" : "Show Detailed View"}
+          <button class={styles.toggleButton} onClick={toggleView}>
+            {showDetailed()
+              ? "Show Summary View (All Tables)"
+              : "Show Detailed View (All Tables)"}
           </button>
         </div>
       </div>
