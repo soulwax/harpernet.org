@@ -14,9 +14,7 @@ const Header = () => {
     <header class={styles.header}>
       <div class={styles.logo}>
         <a href="/" class={styles.logoLink}>
-          <span class={styles.logoText}>
-            The school of Carl Gustav Jung - A different view
-          </span>
+          <span class={styles.logoText}>harpernet.org</span>
         </a>
       </div>
 

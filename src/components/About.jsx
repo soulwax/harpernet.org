@@ -14,19 +14,18 @@ const About = () => {
             Jungian psychology has long fascinated those interested in the
             discipline of differential psychology within the context of
             personality and behavior. This project tries to explain and explore
-            aspects of the Jungian school of thought that wasn't prior done in this
-            way.
+            aspects of the Jungian school of thought that wasn't prior done in
+            this way.
           </p>
           <p>
-            This comparison tool should help you understand the
-            distinctions between personality types that often get confused, providing some
-            clarity through side-by-side analysis of
-            their approaches, strengths, and characteristic behaviors. As of
-            March 14th 2025, the focus lies on sister types, where Judging and
-            Perceiving preferences are swapped and directly compared using five
-            criteria:
+            This comparison tool should help you understand the distinctions
+            between personality types that often get confused, providing some
+            clarity through side-by-side analysis of their approaches,
+            strengths, and characteristic behaviors. As of March 14th 2025, the
+            focus lies on sister types, where Judging and Perceiving preferences
+            are swapped and directly compared using five criteria:
           </p>
-          <ol>
+          <ol className={styles.criteriaList}>
             <li>Main driving force</li>
             <li>Early life strategies</li>
             <li>
