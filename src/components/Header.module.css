@@ -105,4 +105,21 @@
         display: block;
         padding: 0.8rem;
     }
+
+    .activeLink {
+        background-color: rgba(255, 255, 255, 0.2);
+        font-weight: 500;
+        position: relative;
+    }
+
+    .activeLink::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 2px;
+        background-color: white;
+    }
 }

@@ -1,6 +1,8 @@
-├───.DS_Store
+sister-mbti-solidjs
 ├───.env.sample
 ├───.gitignore
+├───CHANGELOG.md
+├───check-files.sh
 ├───ecosystem.config.js
 ├───index.html
 ├───LICENSE
@@ -9,24 +11,31 @@
 ├───README.md
 ├───tree.txt
 ├───vite.config.js
-├───.github
-│   ├───.DS_Store
-│   └───resources
+├───.github/
+│   └───resources/
 │       └───infjlolcat.gif
-├───public
+├───public/
+│   ├───404.html
 │   └───vite.svg
-└───src
-    ├───.DS_Store
+└───src/
     ├───App.css
     ├───App.jsx
     ├───index.css
     ├───index.jsx
-    ├───assets
+    ├───Router.jsx
+    ├───assets/
     │   └───solid.svg
-    └───components
-        ├───Footer.jsx
-        ├───Footer.module.css
-        ├───Header.jsx
-        ├───Header.module.css
-        ├───TypeTable.jsx
-        └───TypeTable.module.css
+    ├───components/
+    │   ├───About.jsx
+    │   ├───About.module.css
+    │   ├───BrotherTypes.jsx
+    │   ├───BrotherTypes.module.css
+    │   ├───Footer.jsx
+    │   ├───Footer.module.css
+    │   ├───Header.jsx
+    │   ├───Header.module.css
+    │   ├───NavLink.jsx
+    │   ├───TypeTable.jsx
+    │   └───TypeTable.module.css
+    └───pages/
+        └───BrotherTypesPage.jsx

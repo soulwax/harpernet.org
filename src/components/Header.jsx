@@ -1,7 +1,9 @@
-// File: src/components/Header.jsx (Fixed)
+// File: src/components/Header.jsx
+// Fallback version
 
 import { createSignal } from "solid-js";
 import styles from "./Header.module.css";
+import NavLink from "./NavLink";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = createSignal(false);
@@ -10,26 +12,46 @@ const Header = () => {
 
   const closeMenu = () => setMenuOpen(false);
 
-  // Custom navigation handler for internal links
-  const navigate = (e, href) => {
+  // Special handler just for brother types
+  const goToBrotherTypes = (e) => {
     e.preventDefault();
-    window.history.pushState({}, "", href);
-
-    // Dispatch a custom event that the Router will listen for
-    window.dispatchEvent(
-      new CustomEvent("navigation", { detail: { path: href } })
-    );
-
     closeMenu();
-    window.scrollTo(0, 0);
+
+    // Try two different approaches:
+
+    // 1. First, try the proper SPA way
+    try {
+      window.history.pushState({}, "", "/brother-types");
+      window.dispatchEvent(
+        new CustomEvent("navigation", {
+          detail: { path: "/brother-types", forceUpdate: true },
+        })
+      );
+      console.log("SPA navigation attempted to /brother-types");
+    } catch (error) {
+      console.error("SPA navigation failed:", error);
+    }
+
+    // 2. Then after a short delay, if the user is still on the same page, do a full page navigation
+    setTimeout(() => {
+      if (
+        window.location.pathname !== "/brother-types" ||
+        !document.querySelector("#brother-types")
+      ) {
+        console.log("Fallback: using direct location change to /brother-types");
+        window.location.href = "/brother-types";
+      }
+    }, 200);
   };
 
   return (
     <header class={styles.header}>
       <div class={styles.logo}>
-        <a href="/" class={styles.logoLink} onClick={(e) => navigate(e, "/")}>
-          <span class={styles.logoText}>Harper Net</span>
-        </a>
+        <NavLink href="/" class={styles.logoLink} onClick={closeMenu}>
+          <span class={styles.logoText}>
+            harpernet.org - Jung from a different perspective
+          </span>
+        </NavLink>
       </div>
 
       <button
@@ -43,58 +65,44 @@ const Header = () => {
       <nav class={`${styles.nav} ${menuOpen() ? styles.navOpen : ""}`}>
         <ul class={styles.navList}>
           <li class={styles.navItem}>
-            <a
+            <NavLink
               href="/"
               class={styles.navLink}
-              onClick={(e) => navigate(e, "/")}
+              activeClass={styles.activeLink}
+              onClick={closeMenu}
             >
               Home
-            </a>
+            </NavLink>
           </li>
           <li class={styles.navItem}>
-            <a
-              href="/#types"
-              class={styles.navLink}
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "/#types";
-                closeMenu();
-              }}
-            >
+            <NavLink href="/#types" class={styles.navLink} onClick={closeMenu}>
               Sister Types
-            </a>
+            </NavLink>
           </li>
           <li class={styles.navItem}>
+            {/* Special handling for Brother Types link */}
             <a
               href="/brother-types"
               class={styles.navLink}
-              onClick={(e) => navigate(e, "/brother-types")}
+              onClick={goToBrotherTypes}
             >
               Brother Types
             </a>
           </li>
           <li class={styles.navItem}>
-            <a
-              href="/#about"
-              class={styles.navLink}
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "/#about";
-                closeMenu();
-              }}
-            >
+            <NavLink href="/#about" class={styles.navLink} onClick={closeMenu}>
               About
-            </a>
+            </NavLink>
           </li>
           <li class={styles.navItem}>
-            <a
+            <NavLink
               href="https://github.com/soulwax/sister-mbti-solidjs"
               target="_blank"
               rel="noopener noreferrer"
               class={styles.navLink}
             >
               GitHub
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

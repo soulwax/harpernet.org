@@ -1,5 +1,6 @@
-// File: vite.config.js (Updated)
+// File: vite.config.js (Improved SPA Config)
 
+import { resolve } from "path";
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
 
@@ -12,17 +13,42 @@ export default defineConfig(({ command, mode }) => {
       port: 3890,
       host: true, // Allow connections from network
       strictPort: true, // Do not try another port if 3890 is in use
-      // Add historyApiFallback for client-side routing
-      historyApiFallback: true,
+      // Improved historyApiFallback for development
+      historyApiFallback: {
+        disableDotRule: true,
+        rewrites: [
+          { from: /^\/brother-types/, to: "/index.html" },
+          { from: /./, to: "/index.html" },
+        ],
+      },
     },
     build: {
       target: "esnext",
       minify: isProduction,
       sourcemap: !isProduction,
+      rollupOptions: {
+        input: {
+          main: resolve(__dirname, "index.html"),
+        },
+        output: {
+          manualChunks: undefined,
+          inlineDynamicImports: false,
+        },
+      },
     },
     resolve: {
       alias: {
-        // TODO: Add any path aliases if needed here
+        "@": resolve(__dirname, "src"),
+      },
+    },
+
+    // Create specialized base path handling
+    base: "/",
+
+    // Extra build options for the SPA
+    experimental: {
+      renderBuiltUrl(filename, { hostType }) {
+        return filename;
       },
     },
   };
