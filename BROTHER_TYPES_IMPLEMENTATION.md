@@ -72,7 +72,7 @@ We've taken a modular approach with these key improvements:
 
 ## Integration Steps
 
-Follow these steps to implement the MBTI typology website:
+Follow these steps to implement the HarperNet.org website:
 
 ### 1. Set Up Project Structure
 

@@ -80,40 +80,6 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <nav class={`${styles.nav} ${isNavOpen() ? styles.navOpen : ""}`}>
-        <ul class={styles.navList}>
-          <li class={styles.navItem}>
-            <button
-              onClick={() => navigateTo("/")}
-              class={`${styles.navButton} ${
-                isActive("/") ? styles.activeNav : ""
-              }`}
-            >
-              Sister Types
-            </button>
-          </li>
-          <li class={styles.navItem}>
-            <button
-              onClick={() => navigateTo("/brother-types")}
-              class={`${styles.navButton} ${
-                isActive("/brother-types") ? styles.activeNav : ""
-              }`}
-            >
-              Brother Types
-            </button>
-          </li>
-          <li class={styles.navItem}>
-            <button
-              onClick={() => navigateTo("/about")}
-              class={`${styles.navButton} ${
-                isActive("/about") ? styles.activeNav : ""
-              }`}
-            >
-              About
-            </button>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 };
