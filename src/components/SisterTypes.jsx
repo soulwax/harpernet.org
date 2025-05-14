@@ -14,12 +14,7 @@ const SisterTypes = () => {
   return (
     <div class={styles.sisterTypesContainer} id="sister-types">
       <div class={styles.introSection}>
-        <h1>Sister Types and their respective strategies</h1>
-        <h2>A sister type has judging and perceiving swapped.</h2>
-        <h2>
-          To clarify: a brother type has extraversion and introversion swapped
-          instead
-        </h2>
+        <h1>Sister Types and their respective strategies and outlooks</h1>
 
         <div class={styles.explanationBox}>
           <h3>How Sister Types Work</h3>
