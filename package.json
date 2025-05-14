@@ -2,29 +2,38 @@
   "name": "mbti-sister-type-strategies",
   "version": "1.0.0",
   "description": "Side-by-side comparison of MBTI personality types",
-  "main": "index.html",
+  "type": "commonjs",
   "scripts": {
-    "serve": "npx serve -s -l 3890",
-    "start": "pm2 start npm --name 'mbti-app' -- run serve",
+    "dev": "vite --port 3890",
+    "build": "vite build",
+    "preview": "vite preview --port 3890",
+    "serve": "vite preview --port 3890 --host",
+    "start": "pm2 start ecosystem.config.js --env production",
     "stop": "pm2 stop mbti-app",
     "restart": "pm2 restart mbti-app",
     "delete": "pm2 delete mbti-app",
     "status": "pm2 status mbti-app",
-    "logs": "pm2 logs mbti-app"
+    "logs": "pm2 logs mbti-app",
+    "watch": "nodemon --watch src --exec \"npm run dev\" --ext js,jsx,css,html",
+    "debug": "vite --port 3890 --debug"
   },
   "keywords": [
     "mbti",
     "personality",
     "psychology"
   ],
+  "dependencies": {
+    "solid-js": "^1.9.5"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5",
+    "vite-plugin-solid": "^2.11.6"
+  },
   "author": "soulwax@github",
   "license": "GPL-3.0",
   "homepage": "sistertypes.madtec.org",
   "repository": {
     "type": "git",
     "url": "https://github.com/soulwax/sister-mbti-solidjs.git"
-  },
-  "devDependencies": {
-    "serve": "^14.2.1"
   }
 }
