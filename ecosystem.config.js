@@ -1,4 +1,5 @@
-// ecosystem.config.js
+// File: ecosystem.config.js
+
 module.exports = {
   apps: [
     {

@@ -1,4 +1,5 @@
-// src/components/TypeTable.jsx
+// File: src/components/TypeTable.jsx
+
 import { For } from "solid-js";
 import styles from "./TypeTable.module.css";
 

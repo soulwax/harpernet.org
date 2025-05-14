@@ -1,4 +1,5 @@
-/* src/components/Header.module.css */
+/* File: src/components/Header.module.css */
+
 .header {
     display: flex;
     justify-content: space-between;
