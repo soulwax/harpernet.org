@@ -15,7 +15,7 @@ const Router = () => {
   // Handler for popstate (browser back/forward)
   const handlePopState = () => {
     setCurrentPath(window.location.pathname);
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   };
 
   onMount(() => {
@@ -43,6 +43,8 @@ const Router = () => {
       return <App />;
     } else if (path === "/brother-types") {
       return <BrotherTypesPage />;
+    } else if (path === "/sister-types") {
+      return <SisterTypesPage />;
     } else {
       // 404 or redirect to home
       return <App />;

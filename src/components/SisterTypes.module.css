@@ -1,0 +1,11 @@
+/* File: src/components/SisterTypes.module.css */
+
+.sisterTypesContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.introSection {
+    margin-bottom: 40px;
+}

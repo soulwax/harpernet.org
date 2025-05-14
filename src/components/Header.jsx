@@ -75,7 +75,12 @@ const Header = () => {
             </NavLink>
           </li>
           <li class={styles.navItem}>
-            <NavLink href="/#types" class={styles.navLink} onClick={closeMenu}>
+            <NavLink
+              href="/sister-types"
+              class={styles.navLink}
+              activeClass={styles.activeLink}
+              onClick={closeMenu}
+            >
               Sister Types
             </NavLink>
           </li>

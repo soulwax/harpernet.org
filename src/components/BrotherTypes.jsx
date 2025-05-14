@@ -5,6 +5,11 @@ import styles from "./BrotherTypes.module.css";
 import TypeTable from "./TypeTable";
 
 const BrotherTypes = () => {
+  // onMount(() => {
+  //   // Small delay to ensure DOM is ready
+  //   setTimeout(() => window.scrollTo(0, 0), 50);
+  // });
+
   // Define the data for each brother type comparison
   const brotherTypeComparisons = [
     {
@@ -361,24 +366,14 @@ const BrotherTypes = () => {
           <h3>How Brother Types Work</h3>
           <p>
             Brother types in MBTI share the same cognitive functions but with
-            opposite orientations (extraverted vs. introverted). This creates
-            fascinating differences in how these types interact with the world
-            while maintaining core similarities in their approach.
-          </p>
-          <p>
-            For example, ENTP and INTP share the same functions (Ne, Ti, Fe,
-            Si), but in different positions and orientations, resulting in
-            similar analytical approaches but different levels of external
-            engagement.
-          </p>
-          <p>
-            Each comparison below examines brother type pairs across five key
-            dimensions:
+            opposite orientations (extraverted vs. introverted).
           </p>
           <ol class={styles.criteriaList}>
             <li>Primary cognitive drivers and their expression</li>
             <li>Characteristic approaches to problem-solving and engagement</li>
-            <li>Information processing and communication styles</li>
+            <li>
+              Information processing and communication styles, esp. emotional
+            </li>
             <li>Energy management and focus patterns</li>
             <li>Distinctive contributions to teams and communities</li>
           </ol>
