@@ -5,31 +5,52 @@ import styles from "./Header.module.css";
 import NavLink from "./NavLink";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = createSignal(false);
+  const [isNavOpen, setIsNavOpen] = createSignal(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen());
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen());
   };
 
   return (
     <header class={styles.header}>
       <div class={styles.logo}>
         <NavLink href="/" class={styles.logoLink}>
-          <span class={styles.logoText}>Harpernet</span>
+          <span class={styles.logoText}>MBTI Typology</span>
         </NavLink>
       </div>
 
-      <button class={styles.menuToggle} onClick={toggleMenu}>
-        {isMenuOpen() ? "✕" : "☰"}
+      <button class={styles.menuToggle} onClick={toggleNav}>
+        {isNavOpen() ? "✕" : "☰"}
       </button>
 
-      <nav class={`${styles.nav} ${isMenuOpen() ? styles.navOpen : ""}`}>
+      <nav class={`${styles.nav} ${isNavOpen() ? styles.navOpen : ""}`}>
         <ul class={styles.navList}>
           <li class={styles.navItem}>
-            <NavLink href="/">Sister Types</NavLink>
+            <NavLink
+              href="/"
+              class={styles.navLink}
+              activeClass={styles.activeLink}
+            >
+              Sister Types
+            </NavLink>
           </li>
           <li class={styles.navItem}>
-            <NavLink href="/brother-types">Brother Types</NavLink>
+            <NavLink
+              href="/brother-types"
+              class={styles.navLink}
+              activeClass={styles.activeLink}
+            >
+              Brother Types
+            </NavLink>
+          </li>
+          <li class={styles.navItem}>
+            <NavLink
+              href="/about"
+              class={styles.navLink}
+              activeClass={styles.activeLink}
+            >
+              About
+            </NavLink>
           </li>
         </ul>
       </nav>

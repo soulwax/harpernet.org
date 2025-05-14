@@ -1,25 +1,18 @@
 // File: src/App.jsx
 
-import { children } from "solid-js";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import "./index.css";
+import { onMount } from "solid-js";
 
 /**
- * App component that serves as the main layout wrapper
- * @param {Object} props Component props
- * @param {JSX.Element} props.children The content to render inside the layout
+ * App component - legacy entry point that redirects to the home page
+ * This is kept for backward compatibility with older code
  */
-const App = (props) => {
-  const c = children(() => props.children);
+const App = () => {
+  onMount(() => {
+    // Redirect to the home page (SisterTypes)
+    window.location.href = "/";
+  });
 
-  return (
-    <div class="app">
-      <Header />
-      <main class="main-content">{c()}</main>
-      <Footer />
-    </div>
-  );
+  return <div>Redirecting to home page...</div>;
 };
 
 export default App;
