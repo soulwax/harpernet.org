@@ -44,13 +44,13 @@ const Header = () => {
             </NavLink>
           </li>
           <li class={styles.navItem}>
-            <a
-              href="#about"
+            <NavLink
+              href="/about"
               class={styles.navLink}
-              onClick={() => setIsNavOpen(false)}
+              activeClass={styles.activeLink}
             >
               About
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

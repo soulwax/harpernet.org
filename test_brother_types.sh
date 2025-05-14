@@ -1,5 +1,5 @@
 #!/bin/bash
-# File: test-brother-types.sh
+# File: test-mbti-site.sh
 
 # Colors for output
 GREEN='\033[0;32m'
@@ -7,7 +7,7 @@ RED='\033[0;31m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-echo -e "${YELLOW}Testing Brother Types Implementation${NC}"
+echo -e "${YELLOW}Testing MBTI Typology Site Implementation${NC}"
 echo "========================================"
 
 # Check directory structure
@@ -32,11 +32,16 @@ done
 # Check required files
 echo -e "\n${YELLOW}Checking Required Files:${NC}"
 files=(
+  "src/data/sisterTypes.json"
   "src/data/brotherTypes.json"
   "src/components/NavLink.jsx"
+  "src/components/SisterTypes.jsx"
+  "src/components/SisterTypes.module.css"
   "src/components/BrotherTypes.jsx"
   "src/components/BrotherTypes.module.css"
+  "src/pages/SisterTypesPage.jsx"
   "src/pages/BrotherTypesPage.jsx"
+  "src/pages/AboutPage.jsx"
   "src/Router.jsx"
   "src/components/TypeTable.jsx"
   "src/components/TypeTable.module.css"
@@ -67,11 +72,23 @@ else
   echo -e "${RED}✗${NC} Router import is missing in index.jsx"
 fi
 
-# Check BrotherTypesPage import in Router.jsx
-if grep -q "import BrotherTypesPage from \"./pages/BrotherTypesPage\"" src/Router.jsx 2>/dev/null; then
+# Check Page imports in Router.jsx
+if grep -q "import SisterTypesPage" src/Router.jsx 2>/dev/null; then
+  echo -e "${GREEN}✓${NC} SisterTypesPage is properly imported in Router.jsx"
+else
+  echo -e "${RED}✗${NC} SisterTypesPage import is missing in Router.jsx"
+fi
+
+if grep -q "import BrotherTypesPage" src/Router.jsx 2>/dev/null; then
   echo -e "${GREEN}✓${NC} BrotherTypesPage is properly imported in Router.jsx"
 else
   echo -e "${RED}✗${NC} BrotherTypesPage import is missing in Router.jsx"
+fi
+
+if grep -q "import AboutPage" src/Router.jsx 2>/dev/null; then
+  echo -e "${GREEN}✓${NC} AboutPage is properly imported in Router.jsx"
+else
+  echo -e "${RED}✗${NC} AboutPage import is missing in Router.jsx"
 fi
 
 # Check NavLink usage in Header.jsx
@@ -81,7 +98,13 @@ else
   echo -e "${RED}✗${NC} NavLink is not used in Header.jsx"
 fi
 
-# Check data import in BrotherTypes.jsx
+# Check data imports in components
+if grep -q "sisterTypes" src/components/SisterTypes.jsx 2>/dev/null; then
+  echo -e "${GREEN}✓${NC} Sister types data is imported in SisterTypes.jsx"
+else
+  echo -e "${RED}✗${NC} Sister types data import is missing in SisterTypes.jsx"
+fi
+
 if grep -q "brotherTypes" src/components/BrotherTypes.jsx 2>/dev/null; then
   echo -e "${GREEN}✓${NC} Brother types data is imported in BrotherTypes.jsx"
 else
@@ -106,6 +129,9 @@ fi
 echo -e "\n${YELLOW}Next Steps:${NC}"
 echo "1. Run 'npm install' to ensure all dependencies are installed"
 echo "2. Run 'npm run dev' to start the development server"
-echo "3. Visit http://localhost:3890/ and test navigation to Brother Types"
+echo "3. Test navigation to each page:"
+echo "   - Sister Types: http://localhost:3890/"
+echo "   - Brother Types: http://localhost:3890/brother-types"
+echo "   - About: http://localhost:3890/about"
 echo "4. If navigation doesn't work, check the troubleshooting section in the implementation guide"
-echo -e "\nFor detailed instructions, refer to BROTHER_TYPES_IMPLEMENTATION.md"
+echo -e "\nFor detailed instructions, refer to MBTI_TYPES_IMPLEMENTATION.md"

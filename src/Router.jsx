@@ -1,8 +1,9 @@
 // File: src/Router.jsx
 
 import { createSignal, onCleanup, onMount } from "solid-js";
-import App from "./App";
+import SisterTypesPage from "./pages/SisterTypesPage";
 import BrotherTypesPage from "./pages/BrotherTypesPage";
+import AboutPage from "./pages/AboutPage";
 
 const Router = () => {
   const [currentPath, setCurrentPath] = createSignal(window.location.pathname);
@@ -27,9 +28,6 @@ const Router = () => {
 
     // Initial path setting
     setCurrentPath(window.location.pathname);
-
-    // Debug info
-    console.log("Router mounted, path:", window.location.pathname);
   });
 
   onCleanup(() => {
@@ -40,16 +38,16 @@ const Router = () => {
   // Simple route rendering based on current path
   const renderRoute = () => {
     const path = currentPath();
-    console.log("Router rendering path:", path); // For debugging
 
     if (path === "/" || path === "/index.html") {
-      return <App />;
+      return <SisterTypesPage />;
     } else if (path === "/brother-types") {
       return <BrotherTypesPage />;
+    } else if (path === "/about") {
+      return <AboutPage />;
     } else {
       // 404 or redirect to home
-      console.log("Route not found, defaulting to home");
-      return <App />;
+      return <SisterTypesPage />;
     }
   };
 
