@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview --port 3890",
     "serve": "vite preview --port 3890 --host",
-    "start": "pm2 start ecosystem.config.js --env production",
+    "start": "npx pm2 start ecosystem.config.js --env production",
     "stop": "pm2 stop mbti-app",
     "restart": "pm2 restart mbti-app",
     "delete": "pm2 delete mbti-app",
@@ -26,10 +26,10 @@
     "solid-js": "^1.9.5"
   },
   "devDependencies": {
+    "pm2": "^6.0.6",
     "vite": "^6.3.5",
     "vite-plugin-solid": "^2.11.6"
   },
-  "description": "Side-by-side comparison of MBTI personality types",
   "author": "soulwax@github",
   "license": "GPL-3.0",
   "homepage": "sistertypes.madtec.org",
