@@ -18,6 +18,10 @@ export default defineConfig({
         target: "http://localhost:3890",
         rewrite: () => "/index.html",
       },
+      "/cognitive-functions": {
+        target: "http://localhost:3890",
+        rewrite: () => "/index.html",
+      },
     },
   },
   build: {

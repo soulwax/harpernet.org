@@ -24,9 +24,7 @@ const BrotherTypes = () => {
             terms, this means they share the last three letters (e.g., INTP and
             ENTP). Don't be fooled by it though. As we spend 60% of our time in
             the first cognitive function engagement, even brother types will end
-            up having radically different cognitive function stacks. This is the
-            underlying framework that shapes how each type perceives and
-            interacts with the world and its inner empire.
+            up having radically different outlooks on life.
           </p>
           <p>
             Each comparison below examines brother type pairs across five key

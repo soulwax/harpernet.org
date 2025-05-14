@@ -3,9 +3,9 @@
 import { createSignal, onCleanup, onMount } from "solid-js";
 import AboutPage from "./pages/AboutPage";
 import BrotherTypesPage from "./pages/BrotherTypesPage";
+import CognitiveFunctionsPage from "./pages/CognitiveFunctionsPage";
 import SisterTypesPage from "./pages/SisterTypesPage";
 import "./Router.css"; // Import router-specific styles
-
 const Router = () => {
   // Get initial path
   const initialPath = window.location.pathname;
@@ -48,6 +48,8 @@ const Router = () => {
       return <BrotherTypesPage key="brother-types" />;
     } else if (path === "/about") {
       return <AboutPage key="about" />;
+    } else if (path === "/cognitive-functions") {
+      return <CognitiveFunctionsPage key="cognitive-functions" />;
     } else {
       // Default to sister types for any other path (/, /index.html, unknown routes)
       return <SisterTypesPage key="sister-types" />;
