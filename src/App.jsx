@@ -353,11 +353,11 @@ const App = () => {
       <main class="main-content">
         <div class="container" id="types">
           <h1>Sister Types and their respective strategies</h1>
-          <h2>A sister type has judging and perceiving swapped.</h2>
-          <h2>
+          <p>A sister type has judging and perceiving swapped.</p>
+          <p>
             To clarify: a brother type has extroversion/introversion swapped
             instead
-          </h2>
+          </p>
 
           {/* Map through each type comparison and render a TypeTable */}
           {typeComparisons.map((comparison) => (

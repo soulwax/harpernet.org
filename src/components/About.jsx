@@ -11,19 +11,32 @@ const About = () => {
         <div className={styles.aboutSection}>
           <h3 className={styles.sectionTitle}>The Project</h3>
           <p>
-            MBTI Sister Types is a passion project designed to explore the
-            nuanced differences between Myers-Briggs personality types that
-            share the same cognitive functions but in a different order. Sister
-            types (those with the same letters except for J/P) offer fascinating
-            insights into how slight changes in cognitive function stacking can
-            create distinctly different personality expressions.
+            Jungian psychology has long fascinated those interested in the
+            discipline of differential psychology within the context of
+            personality and behavior. This project tries to explore the nuanced
+            differences between personality types that share the same cognitive
+            functions but in a different order. It will get expanded to
+            different comparisons and explanations in the near future.
           </p>
           <p>
-            This comparison tool helps enthusiasts understand the subtle
+            This comparison tool should help you understand the subtle
             distinctions between personality types that often get confused with
             one another, providing clarity through side-by-side analysis of
-            their approaches, strengths, and characteristic behaviors.
+            their approaches, strengths, and characteristic behaviors. As of
+            March 14th 2025, the focus lies on sister types, where Judging and
+            Perceiving preferences are swapped and directly compared using five
+            criteria:
           </p>
+          <ol>
+            <li>Main driving force</li>
+            <li>Early life strategies</li>
+            <li>
+              Emotional development and expression as well as subjective inner
+              nuance
+            </li>
+            <li>How the type fits within a structure</li>
+            <li>The gift of the type to the world</li>
+          </ol>
         </div>
 
         <div className={styles.aboutSection}>
@@ -35,15 +48,15 @@ const About = () => {
           </p>
           <p>
             Like the band known for their innovative remixes and genre-blending
-            approach, this project aims to remix our understanding of
-            personality type dynamics by highlighting the unique qualities that
-            emerge from different cognitive function arrangements.
+            approach, this project aims to remix understanding of personality
+            type dynamics as per C.G.Jung's differential psychology methods and
+            analytical psychology.
           </p>
           <p>
-            With a background in software engineering and a fascination with
-            personality psychology, the creator built this resource to make
-            complex psychological concepts more accessible and visually
-            comparable.
+            With a background in neurology and software engineering and a
+            fascination with Jung clinical practices, the creator built this
+            resource to make complex psychological concepts easy to grasp and
+            visually comparable.
           </p>
         </div>
 
@@ -60,6 +73,21 @@ const About = () => {
             contributions are welcome on GitHub. Whether you're interested in
             improving the UI, adding new type comparisons, or enhancing
             accessibility, your pull requests are appreciated.
+          </p>
+        </div>
+        <div className={styles.aboutSection}>
+          <h3 className={styles.sectionTitle}>License</h3>
+          <p>
+            This project is licensed under the{" "}
+            <a
+              href="https://opensource.org/licenses/GPL-3.0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GPL-3.0 License
+            </a>
+            . Feel free to use, modify, and distribute this project as long as
+            you adhere to the same license terms.
           </p>
         </div>
       </div>

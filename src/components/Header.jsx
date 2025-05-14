@@ -14,7 +14,9 @@ const Header = () => {
     <header class={styles.header}>
       <div class={styles.logo}>
         <a href="/" class={styles.logoLink}>
-          <span class={styles.logoText}>MBTI Sister Types</span>
+          <span class={styles.logoText}>
+            Soul's Differntial Jungian Psychology Central
+          </span>
         </a>
       </div>
 
@@ -27,6 +29,7 @@ const Header = () => {
       </button>
 
       <nav class={`${styles.nav} ${menuOpen() ? styles.navOpen : ""}`}>
+        Sister Types
         <ul class={styles.navList}>
           <li class={styles.navItem}>
             <a href="/" class={styles.navLink} onClick={closeMenu}>
