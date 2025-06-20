@@ -1,0 +1,92 @@
+/* File: src/index.css */
+
+:root {
+  --accent: #264653;
+  --even: #f0f4f7;
+  --hover: #e8f0f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  margin-bottom: 12px;
+  font-size: 32px;
+  color: var(--accent);
+}
+
+h2 {
+  margin: 42px 0 14px;
+  font-size: 24px;
+  color: #333;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* For accessibility and keyboard navigation */
+a:focus,
+button:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    margin: 12px 0 5px 5px;
+    font-size: 32px;
+    color: --var(--accent);
+  }
+
+  h2 {
+    margin: 24px 0 5px 5px;
+    /* Note to myself: */
+    /* <-- This controls space around h2 */
+    /* The format is: margin-top margin-right margin-bottom margin-left */
+    /* See also h1, very basics of css */
+    font-size: 24px;
+    color: #333;
+  }
+
+  h1+h2 {
+    margin-top: 10px;
+    /* Smaller margin when h2 follows h1 */
+  }
+}

@@ -1,0 +1,60 @@
+├───.DS_Store
+├───.env.sample
+├───.gitignore
+├───BROTHER_TYPES_IMPLEMENTATION.md
+├───CHANGELOG.md
+├───check-files.sh
+├───ecosystem.config.js
+├───index.html
+├───LICENSE
+├───package-lock.json
+├───package.json
+├───README.md
+├───test_brother_types.sh
+├───tree.txt
+├───vercel.json
+├───vite.config.js
+├───.github
+│   ├───.DS_Store
+│   └───resources
+│       └───infjlolcat.gif
+├───public
+│   ├───.htaccess
+│   ├───404.html
+│   ├───_redirects
+│   └───vite.svg
+└───src
+    ├───.DS_Store
+    ├───App.css
+    ├───App.jsx
+    ├───index.css
+    ├───index.jsx
+    ├───Router.css
+    ├───Router.jsx
+    ├───assets
+    │   └───solid.svg
+    ├───components
+    │   ├───About.jsx
+    │   ├───About.module.css
+    │   ├───BrotherTypes.jsx
+    │   ├───BrotherTypes.module.css
+    │   ├───CognitiveFunctions.jsx
+    │   ├───CognitiveFunctions.module.css
+    │   ├───Footer.jsx
+    │   ├───Footer.module.css
+    │   ├───Header.jsx
+    │   ├───Header.module.css
+    │   ├───NavLink.jsx
+    │   ├───SisterTypes.jsx
+    │   ├───SisterTypes.module.css
+    │   ├───TypeTable.jsx
+    │   └───TypeTable.module.css
+    ├───data
+    │   ├───brotherTypes.json
+    │   ├───cognitiveFunctions.json
+    │   └───sisterTypes.json
+    └───pages
+        ├───AboutPage.jsx
+        ├───BrotherTypesPage.jsx
+        ├───CognitiveFunctionsPage.jsx
+        └───SisterTypesPage.jsx
