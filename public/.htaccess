@@ -1,3 +1,5 @@
+# File: public/.htaccess
+
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
