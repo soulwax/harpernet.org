@@ -1,7 +1,5 @@
 #!/bin/bash
 # File: check-files.sh
-
-# List of expected files
 EXPECTED_FILES=(
     "src/components/BrotherTypes.jsx"
     "src/components/BrotherTypes.module.css"

@@ -78,6 +78,29 @@ const Header = () => {
               About
             </button>
           </li>
+
+          <li class={styles.navItem}>
+            <button
+              onClick={() => navigateTo("/cognitive-functions")}
+              class={`${styles.navButton} ${
+                isActive("/cognitive-functions") ? styles.activeNav : ""
+              }`}
+            >
+              Cognitive Functions
+            </button>
+          </li>
+          <li class={styles.navItem}>
+            <button
+              onClick={() => navigateTo("/cognitive-functions-detailed")}
+              class={`${styles.navButton} ${
+                isActive("/cognitive-functions-detailed")
+                  ? styles.activeNav
+                  : ""
+              }`}
+            >
+              Functions In-Depth
+            </button>
+          </li>
         </ul>
       </nav>
     </header>

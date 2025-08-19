@@ -14,6 +14,7 @@ export default defineConfig({
     port: 3890,
     host: true,
     // Simple fallback for SPA routing
+
     proxy: {
       "/brother-types": {
         target: "http://localhost:3890",
@@ -24,6 +25,10 @@ export default defineConfig({
         rewrite: () => "/index.html",
       },
       "/cognitive-functions": {
+        target: "http://localhost:3890",
+        rewrite: () => "/index.html",
+      },
+      "/cognitive-functions-detailed": {
         target: "http://localhost:3890",
         rewrite: () => "/index.html",
       },

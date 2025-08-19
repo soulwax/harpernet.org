@@ -1,5 +1,4 @@
 harpernet.org
-├───.DS_Store
 ├───.env.sample
 ├───.gitignore
 ├───BROTHER_TYPES_IMPLEMENTATION.md
@@ -24,7 +23,6 @@ harpernet.org
 │   ├───_redirects
 │   └───vite.svg
 └───src/
-    ├───.DS_Store
     ├───App.css
     ├───App.jsx
     ├───index.css
