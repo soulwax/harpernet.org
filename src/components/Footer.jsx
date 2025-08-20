@@ -15,7 +15,7 @@ const Footer = () => {
     technologyHomepage: "https://solidjs.com",
     repository: {
       type: "git",
-      url: "https://github.com/soulwax/sister-mbti-solidjs.git",
+      url: "https://github.com/soulwax/harpernet.org.git",
     },
   };
 
@@ -71,7 +71,7 @@ const Footer = () => {
         <p class={styles.copyright}>
           © {currentYear} {
             <a
-              href="https://github.com/harpernet.org"
+              href={packageInfo.repository.url.replace(".git", "")}
               target="_blank"
               rel="noopener noreferrer"
               class={styles.footerLink}
