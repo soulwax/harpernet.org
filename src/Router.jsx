@@ -5,7 +5,9 @@ import BrotherTypesPage from "./pages/BrotherTypesPage";
 import CognitiveFunctionsPage from "./pages/CognitiveFunctionsPage";
 import CognitiveFunctionsDetailedPage from "./pages/CognitiveFunctionsDetailedPage";
 import SisterTypesPage from "./pages/SisterTypesPage";
+import { createSignal, onCleanup, onMount } from "solid-js";
 import "./Router.css";
+
 const Router = () => {
   // Get initial path
   const initialPath = window.location.pathname;
