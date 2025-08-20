@@ -8,6 +8,7 @@
     background-color: var(--accent);
     color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
 }
 
 .logo {
@@ -26,6 +27,45 @@
     font-size: 1.4rem;
     font-weight: bold;
     margin-left: 0.5rem;
+}
+
+/* Solid.js logo section - positioned 20% from left edge */
+.solidjsLink {
+    position: absolute;
+    left: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.solidLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.solidLink:hover {
+    opacity: 1;
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.solidLogo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    filter: brightness(0) invert(1);
+    /* Makes the logo white */
+}
+
+.solidText {
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
 .nav {
@@ -75,9 +115,58 @@
 }
 
 /* Mobile responsive styles */
+@media (max-width: 1200px) {
+    .solidjsLink {
+        left: 18%;
+        /* Slightly closer on medium screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .solidjsLink {
+        left: 16%;
+        /* Even closer on tablets */
+    }
+
+    .solidText {
+        font-size: 0.8rem;
+        /* Smaller text on tablets */
+    }
+}
+
+@media (max-width: 900px) {
+    .solidjsLink {
+        left: 15%;
+        /* Adjust for smaller screens */
+    }
+
+    .solidText {
+        display: none;
+        /* Hide text, show only logo */
+    }
+
+    .solidLogo {
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .solidjsLink {
+        position: static;
+        order: 2;
+        /* Place between logo and menu toggle */
+        margin-left: 1rem;
+        margin-right: auto;
+    }
+
     .menuToggle {
         display: block;
+        order: 3;
     }
 
     .nav {
@@ -93,6 +182,7 @@
         transform: translateY(-150%);
         transition: transform 0.3s ease;
         z-index: 1000;
+        order: 4;
     }
 
     .navOpen {
@@ -114,5 +204,15 @@
         display: block;
         width: 100%;
         padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoText {
+        font-size: 1.2rem;
+    }
+
+    .solidjsLink {
+        margin-left: 0.5rem;
     }
 }
