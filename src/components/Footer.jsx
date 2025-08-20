@@ -5,9 +5,9 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   // Package information - hard-coded from package.json to avoid file imports
   const packageInfo = {
-    name: "mbti-sister-type-strategies",
-    version: "1.0.0",
-    description: "Side-by-side comparison of MBTI personality types",
+    name: "Jungian Differential Psychology - aka 'MBTI'",
+    version: "1.2.1",
+    description: "This page is intended to give you insights into Jungian psychology and the MBTI framework. Maybe something you haven't yet considered.",
     author: "soulwax@github",
     license: "GPL-3.0",
     homepage: "harpernet.org",
@@ -67,11 +67,20 @@ const Footer = () => {
 
       <div class={styles.footerBottom}>
         <p class={styles.copyright}>
-          © {currentYear} {packageInfo.author.split("@")[0]} | Licensed under{" "}
+          © {currentYear} {
+            <a
+              href="https://github.com/harpernet.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              class={styles.footerLink}
+            >
+              {packageInfo.author}
+            </a>
+          } | Licensed under{" "}
           {packageInfo.license}
         </p>
-      </div>
-    </footer>
+      </div >
+    </footer >
   );
 };
 

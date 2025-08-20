@@ -1,7 +1,7 @@
 {
-  "name": "mbti-sister-type-strategies",
-  "version": "1.0.0",
-  "description": "Side-by-side comparison of MBTI personality types",
+  "name": "harpernet.org",
+  "version": "1.2.1",
+  "description": "This page is intended to give you insights into Jungian psychology and the MBTI framework. Maybe something you haven't yet considered.",
   "type": "commonjs",
   "scripts": {
     "dev": "vite --port 3890",
@@ -23,11 +23,11 @@
     "psychology"
   ],
   "dependencies": {
-    "solid-js": "^1.9.5"
+    "solid-js": "^1.9.9"
   },
   "devDependencies": {
     "vite": "^6.3.5",
-    "vite-plugin-solid": "^2.11.6"
+    "vite-plugin-solid": "^2.11.8"
   },
   "author": "soulwax@github",
   "license": "GPL-3.0",
