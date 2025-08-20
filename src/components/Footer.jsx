@@ -11,6 +11,8 @@ const Footer = () => {
     author: "soulwax@github",
     license: "GPL-3.0",
     homepage: "harpernet.org",
+    technology: "Solid.JS",
+    technologyHomepage: "https://solidjs.com",
     repository: {
       type: "git",
       url: "https://github.com/soulwax/sister-mbti-solidjs.git",

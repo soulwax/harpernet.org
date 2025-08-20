@@ -21,6 +21,7 @@ harpernet.org
 │   ├───.htaccess
 │   ├───404.html
 │   ├───_redirects
+│   ├───solidjslogo.svg
 │   └───vite.svg
 └───src/
     ├───App.css
@@ -39,6 +40,7 @@ harpernet.org
     │   ├───CognitiveFunctions.jsx
     │   ├───CognitiveFunctions.module.css
     │   ├───DetailedCognitiveFunctions.jsx
+    │   ├───DetailedCognitiveFunctions.module.css
     │   ├───Footer.jsx
     │   ├───Footer.module.css
     │   ├───Header.jsx
