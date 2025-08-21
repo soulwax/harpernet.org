@@ -5,6 +5,21 @@ import solidLogo from "../assets/solid.svg";
 import styles from "./Header.module.css";
 
 const Header = () => {
+  const headerInfo = {
+    websiteName: "HarperNet.org",
+    solidJSHomepage: "https://solidjs.com",
+    githubRepository: "https://github.com/soulwax/harpernet.org",
+    solidJSTitle: "Built with Solid.JS for the giggles",
+    solidJSLogoAlt: "Solid.JS Logo",
+    technology: "Solid.JS",
+    sisterTypesUri: "/sister-types",
+    brotherTypesUri: "/brother-types",
+    cognitiveFunctionsUri: "/cognitive-functions",
+    cognitiveFunctionsDetailedUri: "/cognitive-functions-detailed",
+    aboutUri: "/about",
+    menuToggleAriaLabel: "Toggle navigation menu"
+  };
+
   const [isNavOpen, setIsNavOpen] = createSignal(false);
 
   const toggleNav = () => {
@@ -26,31 +41,31 @@ const Header = () => {
     <header class={styles.header}>
       <div class={styles.logo}>
         <a href="/" class={styles.logoLink}>
-          <span class={styles.logoText}>HarperNet.org</span>
+          <span class={styles.logoText}>{headerInfo.websiteName}</span>
         </a>
       </div>
 
       <div class={styles.solidjsLink}>
         <a
-          href="https://solidjs.com"
+          href={headerInfo.solidJSHomepage}
           target="_blank"
           rel="noopener noreferrer"
           class={styles.solidLink}
-          title="Built with Solid.JS for the giggles"
+          title={headerInfo.solidJSTitle}
         >
           <img
             src={solidLogo}
-            alt="Solid.js"
-            class={styles.solidLogo}
+            alt={headerInfo.solidJSLogoAlt}
+            class={styles.solidLogo_interactive}
           />
-          <span class={styles.solidText}>Built with Solid.JS for the giggles</span>
+          <span class={styles.solidText}>{headerInfo.solidJSTitle}</span>
         </a>
       </div>
 
       <button
         class={styles.menuToggle}
         onClick={toggleNav}
-        aria-label="Toggle navigation menu"
+        aria-label={headerInfo.menuToggleAriaLabel}
       >
         {isNavOpen() ? "✕" : "☰"}
       </button>
@@ -59,46 +74,39 @@ const Header = () => {
           <li class={styles.navItem}>
             <button
               onClick={() => navigateTo("/")}
-              class={`${styles.navButton} ${isActive("/") ? styles.activeNav : ""
-                }`}
+              class={`${styles.navButton} ${isActive("/") ? styles.activeNav : ""}`}
             >
               Sister Types
             </button>
           </li>
           <li class={styles.navItem}>
             <button
-              onClick={() => navigateTo("/brother-types")}
-              class={`${styles.navButton} ${isActive("/brother-types") ? styles.activeNav : ""
-                }`}
+              onClick={() => navigateTo(headerInfo.brotherTypesUri)}
+              class={`${styles.navButton} ${isActive(headerInfo.brotherTypesUri) ? styles.activeNav : ""}`}
             >
               Brother Types
             </button>
           </li>
           <li class={styles.navItem}>
             <button
-              onClick={() => navigateTo("/cognitive-functions")}
-              class={`${styles.navButton} ${isActive("/cognitive-functions") ? styles.activeNav : ""
-                }`}
+              onClick={() => navigateTo(headerInfo.cognitiveFunctionsUri)}
+              class={`${styles.navButton} ${isActive(headerInfo.cognitiveFunctionsUri) ? styles.activeNav : ""}`}
             >
               Cognitive Functions
             </button>
           </li>
           <li class={styles.navItem}>
             <button
-              onClick={() => navigateTo("/cognitive-functions-detailed")}
-              class={`${styles.navButton} ${isActive("/cognitive-functions-detailed")
-                  ? styles.activeNav
-                  : ""
-                }`}
+              onClick={() => navigateTo(headerInfo.cognitiveFunctionsDetailedUri)}
+              class={`${styles.navButton} ${isActive(headerInfo.cognitiveFunctionsDetailedUri) ? styles.activeNav : ""}`}
             >
               Functions In-Depth
             </button>
           </li>
           <li class={styles.navItem}>
             <button
-              onClick={() => navigateTo("/about")}
-              class={`${styles.navButton} ${isActive("/about") ? styles.activeNav : ""
-                }`}
+              onClick={() => navigateTo(headerInfo.aboutUri)}
+              class={`${styles.navButton} ${isActive(headerInfo.aboutUri) ? styles.activeNav : ""}`}
             >
               About
             </button>
