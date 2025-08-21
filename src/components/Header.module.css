@@ -65,7 +65,7 @@
 /* Solid.js logo section */
 .solidjsLink {
     position: absolute;
-    left: 19.5%;
+    left: 16%;
     display: flex;
     align-items: center;
 }
@@ -123,6 +123,8 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    position: relative;
+    z-index: 10;
 }
 
 /* Enhanced navigation */
@@ -220,7 +222,7 @@
     }
 
     .solidjsLink {
-        left: 18%;
+        left: 14%;
     }
 
     .logoText {
@@ -230,7 +232,7 @@
 
 @media (max-width: 1024px) {
     .solidjsLink {
-        left: 16%;
+        left: 12%;
     }
 
     .solidText {
@@ -249,7 +251,7 @@
 
 @media (max-width: 900px) {
     .solidjsLink {
-        left: 15%;
+        left: 10%;
     }
 
     .solidText {
