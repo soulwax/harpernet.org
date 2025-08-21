@@ -170,6 +170,95 @@ const About = () => {
             rather than feature creep.
           </p>
         </div>
+
+        <div className={styles.aboutSection}>
+          <h3 className={styles.sectionTitle}>Contact</h3>
+          <p>
+            Questions, feedback, or want to discuss cognitive function theory?
+            Multiple ways to reach me depending on your preferred level of privacy:
+          </p>
+          <div className={styles.contactMethods}>
+            <div className={styles.contactCategory}>
+              <h4>Standard Contact</h4>
+              <ul className={styles.contactList}>
+                <li>
+                  <strong>Email:</strong>{" "}
+                  <a
+                    href="mailto:me@halflight.eu"
+                    rel="noopener noreferrer"
+                    aria-label="Send email to me@halflight.eu"
+                  >
+                    me@halflight.eu
+                  </a>
+                </li>
+                <li>
+                  <strong>Alternative Email:</strong>{" "}
+                  <a
+                    href="mailto:soulwax@cock.li"
+                    rel="noopener noreferrer"
+                    aria-label="Send email to soulwax@cock.li"
+                  >
+                    soulwax@cock.li
+                  </a>
+                </li>
+                <li>
+                  <strong>Discord:</strong>{" "}
+                  <code className={styles.contactHandle}>soul.wax</code>
+                  <span className={styles.contactNote}> (send friend request)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className={styles.contactCategory}>
+              <h4>Privacy-Focused</h4>
+              <ul className={styles.contactList}>
+                <li>
+                  <strong>Matrix:</strong>{" "}
+                  <a
+                    href="https://matrix.to/#/@soul.wax:matrix.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Contact soul.wax on Matrix"
+                  >
+                    @soul.wax:matrix.org
+                  </a>
+                </li>
+                <li>
+                  <strong>Session:</strong>{" "}
+                  <code className={styles.contactHandle}>Leave your Session ID in any other contact method</code>
+                </li>
+                <li>
+                  <strong>Signal:</strong>{" "}
+                  <span className={styles.contactNote}>Number available on request via other channels</span>
+                </li>
+                <li>
+                  <strong>Briar:</strong>{" "}
+                  <span className={styles.contactNote}>Mesh networking contact - ID available on request</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className={styles.contactCategory}>
+              <h4>Maximum Anonymity</h4>
+              <ul className={styles.contactList}>
+                <li>
+                  <strong>Tor Contact:</strong>{" "}
+                  <span className={styles.contactNote}>ProtonMail via Tor Browser for truly anonymous communication</span>
+                </li>
+                <li>
+                  <strong>Disposable Methods:</strong>{" "}
+                  <span className={styles.contactNote}>Suggest a throwaway communication method via any above channel</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p className={styles.contactFooter}>
+            <strong>Response Time:</strong> Usually within 24-48 hours. Longer response times
+            typically mean I'm either deep in a coding project or questioning the entire
+            foundation of personality psychology again.
+          </p>
+        </div>
       </div>
     </div>
   );
