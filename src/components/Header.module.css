@@ -221,7 +221,7 @@
     flex-shrink: 0;
 }
 
-/* Enhanced mobile responsive styles - FIXED ORDER */
+/* Enhanced mobile responsive styles - MUCH EARLIER BREAKPOINTS */
 @media (max-width: 1400px) {
     .header {
         padding: 1.25rem 1.5rem;
@@ -298,24 +298,24 @@
     }
 }
 
-@media (max-width: 768px) {
+/* HAMBURGER MENU ACTIVATION - MUCH EARLIER AT 900px */
+@media (max-width: 900px) {
     .header {
         flex-wrap: wrap;
         padding: 1rem;
         background: var(--header-bg);
+        position: relative;
     }
 
-    .solidjsLink {
-        position: static;
-        order: 2;
-        margin-left: 1rem;
-        margin-right: auto;
-        display: flex;
+    .logo {
+        flex: 1;
     }
 
     .headerControls {
         order: 3;
         gap: 0.5rem;
+        margin-left: auto;
+        margin-right: 0;
     }
 
     .menuToggle {
@@ -324,7 +324,7 @@
 
     .nav {
         position: absolute;
-        top: 80px;
+        top: 100%;
         left: 1rem;
         right: 1rem;
         background: var(--bg-secondary);
@@ -341,6 +341,7 @@
         order: 4;
         border: 1px solid var(--border-primary);
         border-radius: 16px;
+        margin-top: 1rem;
     }
 
     .navOpen {
@@ -383,6 +384,18 @@
     }
 }
 
+/* Tablet adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding: 0.875rem;
+    }
+
+    .logoText {
+        font-size: 1.4rem;
+    }
+}
+
+/* Small mobile */
 @media (max-width: 480px) {
     .header {
         padding: 0.75rem;
@@ -392,17 +405,19 @@
         font-size: 1.3rem;
     }
 
-    .solidjsLink {
-        margin-left: 0.5rem;
-    }
-
-    .solidLogo_interactive {
-        width: 24px;
-        height: 24px;
-    }
-
     .headerControls {
         gap: 0.25rem;
+    }
+
+    .nav {
+        left: 0.5rem;
+        right: 0.5rem;
+        padding: 1rem;
+    }
+
+    .navButton {
+        padding: 0.875rem;
+        font-size: 0.95rem;
     }
 }
 
