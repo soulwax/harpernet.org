@@ -11,24 +11,25 @@
 }
 
 .explanationBox {
-    background-color: white;
+    background-color: var(--bg-secondary);
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--shadow-medium);
+    border: 1px solid var(--border-primary);
     margin: 30px 0;
 }
 
 .explanationBox h3 {
     color: var(--accent);
     margin-bottom: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--border-secondary);
     padding-bottom: 10px;
 }
 
 .explanationBox p {
     margin-bottom: 15px;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .functionGroup {
@@ -60,16 +61,17 @@
 }
 
 .functionCard {
-    background-color: white;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--shadow-medium);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .functionCard:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--shadow-heavy);
 }
 
 .functionHeader {
@@ -91,14 +93,15 @@
 
 .functionContent {
     padding: 20px;
+    background-color: var(--bg-secondary);
 }
 
 .functionDescription {
     margin-bottom: 20px;
     font-style: italic;
     line-height: 1.6;
-    color: #444;
-    border-left: 3px solid #ddd;
+    color: var(--text-secondary);
+    border-left: 3px solid var(--border-primary);
     padding-left: 15px;
 }
 
@@ -117,6 +120,7 @@
 .characteristicsList li {
     margin-bottom: 5px;
     line-height: 1.5;
+    color: var(--text-primary);
 }
 
 .positionsGrid {
@@ -128,11 +132,11 @@
 .positionSection h5 {
     font-weight: 600;
     margin-bottom: 5px;
-    color: #444;
+    color: var(--text-secondary);
 }
 
 .positionSection p {
-    color: #555;
+    color: var(--text-tertiary);
     font-size: 15px;
 }
 

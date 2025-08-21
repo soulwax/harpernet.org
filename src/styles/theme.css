@@ -4,20 +4,20 @@
 :root,
 [data-theme="light"] {
     /* Primary colors */
-    --accent: #264653;
+    --accent: var(--accent);
     --accent-light: #2a9d8f;
     --accent-dark: #1a3a44;
 
     /* Background colors */
-    --bg-primary: #fafafa;
-    --bg-secondary: #ffffff;
+    --bg-primary: var(--bg-primary);
+    --bg-secondary: var(--bg-secondary);
     --bg-tertiary: #f8f9fa;
     --bg-even: #f0f4f7;
     --bg-hover: #e8f0f5;
 
     /* Text colors */
-    --text-primary: #222222;
-    --text-secondary: #333333;
+    --text-primary: var(--text-primary)222;
+    --text-secondary: var(--text-secondary)333;
     --text-tertiary: #555555;
     --text-muted: #666666;
     --text-light: #888888;
@@ -29,7 +29,7 @@
 
     /* Shadow colors */
     --shadow-light: rgba(0, 0, 0, 0.08);
-    --shadow-medium: rgba(0, 0, 0, 0.12);
+    --shadow-medium: var(--shadow-medium);
     --shadow-heavy: rgba(0, 0, 0, 0.16);
 
     /* Interactive colors */
@@ -44,7 +44,7 @@
 
     /* Header specific */
     --header-bg: linear-gradient(135deg, var(--accent) 0%, #1e4a5a 100%);
-    --header-text: #ffffff;
+    --header-text: var(--bg-secondary);
     --header-border: rgba(255, 255, 255, 0.1);
 
     /* Card colors */
@@ -65,10 +65,10 @@
     --bg-secondary: #1e1e1e;
     --bg-tertiary: #2d2d2d;
     --bg-even: #252525;
-    --bg-hover: #333333;
+    --bg-hover: var(--text-secondary)333;
 
     /* Text colors */
-    --text-primary: #ffffff;
+    --text-primary: var(--bg-secondary);
     --text-secondary: #e0e0e0;
     --text-tertiary: #b3b3b3;
     --text-muted: #9e9e9e;
@@ -96,7 +96,7 @@
 
     /* Header specific */
     --header-bg: linear-gradient(135deg, #1a3a47 0%, #0f2027 100%);
-    --header-text: #ffffff;
+    --header-text: var(--bg-secondary);
     --header-border: rgba(255, 255, 255, 0.1);
 
     /* Card colors */

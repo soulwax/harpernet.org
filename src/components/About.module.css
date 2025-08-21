@@ -33,29 +33,30 @@
 }
 
 .aboutSection {
-  background-color: white;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-medium);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .aboutSection:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-heavy);
 }
 
 .sectionTitle {
   color: var(--accent);
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--border-secondary);
 }
 
 .aboutSection p {
   margin-bottom: 1rem;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .aboutSection p:last-child {
@@ -63,28 +64,30 @@
 }
 
 .contactSection {
-  background-color: white;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-medium);
   text-align: center;
 }
 
 .contactSection a {
-  color: var(--accent);
+  color: var(--link-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .contactSection a:hover {
+  color: var(--link-hover);
   text-decoration: underline;
 }
 
 .criteriaList {
   margin: 1rem 0 1.5rem 1.5rem;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .criteriaList li {
