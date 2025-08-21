@@ -19,6 +19,7 @@ const Header = () => {
     cognitiveFunctionsUri: "/cognitive-functions",
     cognitiveFunctionsDetailedUri: "/cognitive-functions-detailed",
     relationshipsUri: "/relationships",
+    metabolicPrinciplesUri: "/metabolic-principles",
     aboutUri: "/about",
     menuToggleAriaLabel: "Toggle navigation menu"
   };
@@ -122,6 +123,14 @@ const Header = () => {
               class={`${styles.navButton} ${isActive(headerInfo.relationshipsUri) ? styles.activeNav : ""}`}
             >
               Relationships
+            </button>
+          </li>
+          <li class={styles.navItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.metabolicPrinciplesUri)}
+              class={`${styles.navButton} ${isActive(headerInfo.metabolicPrinciplesUri) ? styles.activeNav : ""}`}
+            >
+              Metabolic Principles
             </button>
           </li>
           <li class={styles.navItem}>

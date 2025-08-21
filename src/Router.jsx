@@ -8,6 +8,8 @@ import CognitiveFunctionsDetailedPage from "./pages/CognitiveFunctionsDetailedPa
 import CognitiveFunctionsPage from "./pages/CognitiveFunctionsPage";
 import RelationshipsPage from "./pages/RelationshipsPage";
 import SisterTypesPage from "./pages/SisterTypesPage";
+import MetabolicPrinciples from "./components/MetabolicPrinciples";
+import MetabolicPrinciplesPage from "./pages/MetabolicPrinciplesPage";
 import "./Router.css";
 
 const Router = () => {
@@ -60,6 +62,8 @@ const Router = () => {
       );
     } else if (path === "/relationships") {
       return <RelationshipsPage key="relationships" />;
+    } else if (path === "/metabolic-principles") {
+      return <MetabolicPrinciplesPage key="metabolic-principles" />;
     } else {
       // Default to sister types for any other path (/, /index.html, unknown routes)
       return <SisterTypesPage key="sister-types" />;
