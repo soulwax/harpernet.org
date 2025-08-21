@@ -1,16 +1,17 @@
 // File: src/components/Header.jsx
 
 import { createSignal } from "solid-js";
+import harperLogo from "../assets/harperalpha.svg";
 import solidLogo from "../assets/solid.svg";
 import styles from "./Header.module.css";
 
 const Header = () => {
   const headerInfo = {
-    websiteName: "HarperNet.org",
     solidJSHomepage: "https://solidjs.com",
     githubRepository: "https://github.com/soulwax/harpernet.org",
     solidJSTitle: "Built with Solid.JS for the giggles",
     solidJSLogoAlt: "Solid.JS Logo",
+    harperLogoAlt: "HarperNet.org Logo",
     technology: "Solid.JS",
     sisterTypesUri: "/sister-types",
     brotherTypesUri: "/brother-types",
@@ -41,7 +42,12 @@ const Header = () => {
     <header class={styles.header}>
       <div class={styles.logo}>
         <a href="/" class={styles.logoLink}>
-          <span class={styles.logoText}>{headerInfo.websiteName}</span>
+          <img
+            src={harperLogo}
+            alt={headerInfo.harperLogoAlt}
+            class={styles.harperLogo_simple}
+          />
+          <span class={styles.logoText}>HarperNet.org</span>
         </a>
       </div>
 
