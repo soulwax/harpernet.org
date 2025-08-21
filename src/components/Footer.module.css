@@ -1,8 +1,8 @@
 /* File: src/components/Footer.module.css */
 
 .footer {
-    background-color: var(--accent);
-    color: white !important;
+    background-color: var(--footer-bg);
+    color: var(--footer-text) !important;
     padding: 2rem 0 1rem;
     margin-top: 3rem;
 }
@@ -26,22 +26,22 @@
 .footerTitle {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid var(--footer-border);
     padding-bottom: 0.5rem;
-    color: white !important;
+    color: var(--footer-text) !important;
 }
 
 .footerDescription {
     font-size: 0.95rem;
     margin-bottom: 0.5rem;
     opacity: 0.9;
-    color: white !important;
+    color: var(--footer-text) !important;
 }
 
 .footerVersion {
     font-size: 0.85rem;
     opacity: 0.7;
-    color: white !important;
+    color: var(--footer-text) !important;
 }
 
 .footerLinks {
@@ -55,7 +55,7 @@
 }
 
 .footerLink {
-    color: white !important;
+    color: var(--footer-link) !important;
     text-decoration: none;
     opacity: 0.9;
     transition: opacity 0.2s ease;
@@ -64,21 +64,21 @@
 .footerLink:hover {
     opacity: 1;
     text-decoration: underline;
-    color: white !important;
+    color: var(--footer-link-hover) !important;
 }
 
 .footerBottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--footer-border);
     padding-top: 1rem;
     text-align: center;
     font-size: 0.85rem;
     opacity: 0.7;
-    color: white !important;
+    color: var(--footer-text) !important;
 }
 
 .copyright {
     margin: 0;
-    color: white !important;
+    color: var(--footer-text) !important;
 }
 
 /* Mobile responsive styles */

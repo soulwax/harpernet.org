@@ -47,6 +47,13 @@
     --header-text: #ffffff;
     --header-border: rgba(255, 255, 255, 0.1);
 
+    /* Footer specific */
+    --footer-bg: var(--accent);
+    --footer-text: #ffffff;
+    --footer-link: #ffffff;
+    --footer-link-hover: #e8f4f8;
+    --footer-border: rgba(255, 255, 255, 0.2);
+
     /* Card colors */
     --card-bg: var(--bg-secondary);
     --card-border: var(--border-primary);
@@ -98,6 +105,13 @@
     --header-bg: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
     --header-text: #ffffff;
     --header-border: rgba(255, 255, 255, 0.1);
+
+    /* Footer specific - better contrast for dark theme */
+    --footer-bg: #1a1a1a;
+    --footer-text: #ffffff;
+    --footer-link: var(--accent);
+    --footer-link-hover: var(--accent-light);
+    --footer-border: rgba(255, 255, 255, 0.15);
 
     /* Card colors */
     --card-bg: var(--bg-secondary);
