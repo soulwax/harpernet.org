@@ -7,24 +7,27 @@
 .typeTable {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--card-shadow);
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 30px;
+    background-color: var(--card-bg);
 }
 
 .typeTable thead {
     background: var(--accent);
-    color: #fff;
+    color: white;
 }
 
 .typeTable th,
 .typeTable td {
     padding: 16px 20px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border-primary);
     vertical-align: top;
     font-size: 16px;
     line-height: 1.55;
+    color: var(--text-primary);
+    background-color: var(--card-bg);
 }
 
 .typeTable th:first-child,
@@ -34,11 +37,19 @@
 }
 
 .typeTable tbody tr:nth-child(even) {
-    background: var(--even);
+    background: var(--bg-even);
+}
+
+.typeTable tbody tr:nth-child(even) td {
+    background: var(--bg-even);
 }
 
 .typeTable tbody tr:hover {
-    background: var(--hover);
+    background: var(--bg-hover);
+}
+
+.typeTable tbody tr:hover td {
+    background: var(--bg-hover);
 }
 
 .symbol {
@@ -53,6 +64,7 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
     .typeTable th,
     .typeTable td {
         padding: 12px 14px;
@@ -66,5 +78,219 @@
 
     .symbol {
         font-size: 18px;
+    }
+}
+
+/* Dark theme specific adjustments */
+[data-theme="dark"] .typeTable thead {
+    background: var(--accent);
+}
+
+[data-theme="dark"] .typeTable th {
+    color: white;
+}
+
+/* File: src/components/About.module.css - Updated with theme variables */
+
+.aboutContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.aboutTitle {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.aboutTitle:after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background-color: var(--accent);
+    transform: translateX(-50%);
+}
+
+.aboutContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.aboutSection {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--card-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutSection:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.sectionTitle {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-secondary);
+}
+
+.aboutSection p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+.aboutSection p:last-child {
+    margin-bottom: 0;
+}
+
+.contactSection {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--card-border);
+    text-align: center;
+}
+
+.contactSection a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.contactSection a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+.criteriaList {
+    margin: 1rem 0 1.5rem 1.5rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+.criteriaList li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.criteriaList li:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .aboutContainer {
+        padding: 1.5rem 1rem;
+    }
+
+    .aboutTitle {
+        font-size: 1.75rem;
+    }
+
+    .aboutContent {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* File: src/components/Footer.module.css - Updated with theme variables */
+
+.footer {
+    background-color: var(--accent);
+    color: white;
+    padding: 2rem 0 1rem;
+    margin-top: 3rem;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footerSection {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.footerTitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.footerDescription {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.footerVersion {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.footerLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerLinks li {
+    margin-bottom: 0.5rem;
+}
+
+.footerLink {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.footerLink:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footerBottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.copyright {
+    margin: 0;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .footerContent {
+        flex-direction: column;
+    }
+
+    .footerSection {
+        margin-bottom: 1.5rem;
     }
 }

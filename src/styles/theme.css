@@ -1,0 +1,152 @@
+/* File: src/styles/theme.css */
+
+/* Light theme (default) */
+:root,
+[data-theme="light"] {
+    /* Primary colors */
+    --accent: #264653;
+    --accent-light: #2a9d8f;
+    --accent-dark: #1a3a44;
+
+    /* Background colors */
+    --bg-primary: #fafafa;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f8f9fa;
+    --bg-even: #f0f4f7;
+    --bg-hover: #e8f0f5;
+
+    /* Text colors */
+    --text-primary: #222222;
+    --text-secondary: #333333;
+    --text-tertiary: #555555;
+    --text-muted: #666666;
+    --text-light: #888888;
+
+    /* Border colors */
+    --border-primary: #e0e0e0;
+    --border-secondary: rgba(0, 0, 0, 0.1);
+    --border-light: rgba(0, 0, 0, 0.05);
+
+    /* Shadow colors */
+    --shadow-light: rgba(0, 0, 0, 0.08);
+    --shadow-medium: rgba(0, 0, 0, 0.12);
+    --shadow-heavy: rgba(0, 0, 0, 0.16);
+
+    /* Interactive colors */
+    --link-color: var(--accent);
+    --link-hover: var(--accent-dark);
+
+    /* Status colors */
+    --success: #28a745;
+    --warning: #ffc107;
+    --error: #dc3545;
+    --info: #17a2b8;
+
+    /* Header specific */
+    --header-bg: linear-gradient(135deg, var(--accent) 0%, #1e4a5a 100%);
+    --header-text: #ffffff;
+    --header-border: rgba(255, 255, 255, 0.1);
+
+    /* Card colors */
+    --card-bg: var(--bg-secondary);
+    --card-border: var(--border-primary);
+    --card-shadow: var(--shadow-medium);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    /* Primary colors - adjusted for dark mode */
+    --accent: #4fc3f7;
+    --accent-light: #81d4fa;
+    --accent-dark: #29b6f6;
+
+    /* Background colors */
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-tertiary: #2d2d2d;
+    --bg-even: #252525;
+    --bg-hover: #333333;
+
+    /* Text colors */
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --text-tertiary: #b3b3b3;
+    --text-muted: #9e9e9e;
+    --text-light: #757575;
+
+    /* Border colors */
+    --border-primary: #404040;
+    --border-secondary: rgba(255, 255, 255, 0.1);
+    --border-light: rgba(255, 255, 255, 0.05);
+
+    /* Shadow colors */
+    --shadow-light: rgba(0, 0, 0, 0.3);
+    --shadow-medium: rgba(0, 0, 0, 0.4);
+    --shadow-heavy: rgba(0, 0, 0, 0.5);
+
+    /* Interactive colors */
+    --link-color: var(--accent);
+    --link-hover: var(--accent-light);
+
+    /* Status colors - adjusted for dark mode */
+    --success: #4caf50;
+    --warning: #ff9800;
+    --error: #f44336;
+    --info: #2196f3;
+
+    /* Header specific */
+    --header-bg: linear-gradient(135deg, #1a3a47 0%, #0f2027 100%);
+    --header-text: #ffffff;
+    --header-border: rgba(255, 255, 255, 0.1);
+
+    /* Card colors */
+    --card-bg: var(--bg-secondary);
+    --card-border: var(--border-primary);
+    --card-shadow: var(--shadow-medium);
+}
+
+/* Transition for smooth theme switching */
+*,
+*::before,
+*::after {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Disable transitions for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}
+
+/* Base body styling with theme variables */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Scrollbar theming */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-tertiary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}

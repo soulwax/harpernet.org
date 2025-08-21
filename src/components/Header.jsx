@@ -4,6 +4,7 @@ import { createSignal } from "solid-js";
 import harperLogo from "../assets/harperalpha.svg";
 import solidLogo from "../assets/solid.svg";
 import styles from "./Header.module.css";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const headerInfo = {
@@ -68,13 +69,18 @@ const Header = () => {
         </a>
       </div>
 
-      <button
-        class={styles.menuToggle}
-        onClick={toggleNav}
-        aria-label={headerInfo.menuToggleAriaLabel}
-      >
-        {isNavOpen() ? "✕" : "☰"}
-      </button>
+      <div class={styles.headerControls}>
+        <ThemeToggle />
+
+        <button
+          class={styles.menuToggle}
+          onClick={toggleNav}
+          aria-label={headerInfo.menuToggleAriaLabel}
+        >
+          {isNavOpen() ? "✕" : "☰"}
+        </button>
+      </div>
+
       <nav class={`${styles.nav} ${isNavOpen() ? styles.navOpen : ""}`}>
         <ul class={styles.navList}>
           <li class={styles.navItem}>

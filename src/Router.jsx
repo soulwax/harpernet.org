@@ -1,11 +1,12 @@
 // File: src/Router.jsx
 
+import { createSignal, onCleanup, onMount } from "solid-js";
+import { ThemeProvider } from "./contexts/ThemeContext";
 import AboutPage from "./pages/AboutPage";
 import BrotherTypesPage from "./pages/BrotherTypesPage";
-import CognitiveFunctionsPage from "./pages/CognitiveFunctionsPage";
 import CognitiveFunctionsDetailedPage from "./pages/CognitiveFunctionsDetailedPage";
+import CognitiveFunctionsPage from "./pages/CognitiveFunctionsPage";
 import SisterTypesPage from "./pages/SisterTypesPage";
-import { createSignal, onCleanup, onMount } from "solid-js";
 import "./Router.css";
 
 const Router = () => {
@@ -62,7 +63,11 @@ const Router = () => {
     }
   };
 
-  return <div className="router-container">{renderRoute()}</div>;
+  return (
+    <ThemeProvider>
+      <div className="router-container">{renderRoute()}</div>
+    </ThemeProvider>
+  );
 };
 
 export default Router;
