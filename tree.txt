@@ -21,7 +21,6 @@ harpernet.org
 │   ├───.htaccess
 │   ├───404.html
 │   ├───_redirects
-│   ├───solidjslogo.svg
 │   └───vite.svg
 └───src/
     ├───App.css
@@ -31,6 +30,7 @@ harpernet.org
     ├───Router.css
     ├───Router.jsx
     ├───assets/
+    │   ├───harperalpha.svg
     │   └───solid.svg
     ├───components/
     │   ├───About.jsx
@@ -48,8 +48,12 @@ harpernet.org
     │   ├───NavLink.jsx
     │   ├───SisterTypes.jsx
     │   ├───SisterTypes.module.css
+    │   ├───ThemeToggle.jsx
+    │   ├───ThemeToggle.module.css
     │   ├───TypeTable.jsx
     │   └───TypeTable.module.css
+    ├───contexts/
+    │   └───ThemeContext.jsx
     ├───data/
     │   ├───brotherTypes.json
     │   ├───cognitiveFunctions.json
@@ -57,9 +61,11 @@ harpernet.org
     │   ├───jungianFramework.json
     │   ├───relationships.json
     │   └───sisterTypes.json
-    └───pages/
-        ├───AboutPage.jsx
-        ├───BrotherTypesPage.jsx
-        ├───CognitiveFunctionsDetailedPage.jsx
-        ├───CognitiveFunctionsPage.jsx
-        └───SisterTypesPage.jsx
+    ├───pages/
+    │   ├───AboutPage.jsx
+    │   ├───BrotherTypesPage.jsx
+    │   ├───CognitiveFunctionsDetailedPage.jsx
+    │   ├───CognitiveFunctionsPage.jsx
+    │   └───SisterTypesPage.jsx
+    └───styles/
+        └───theme.css
