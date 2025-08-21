@@ -215,6 +215,12 @@
     color: var(--header-text) !important;
 }
 
+.headerControls {
+    margin-left: 20%;
+    margin-right: auto;
+    flex-shrink: 0;
+}
+
 /* Enhanced mobile responsive styles - FIXED ORDER */
 @media (max-width: 1400px) {
     .header {
