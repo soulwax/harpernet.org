@@ -222,7 +222,7 @@
 }
 
 /* Enhanced mobile responsive styles - MUCH EARLIER BREAKPOINTS */
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
     .header {
         padding: 1.25rem 1.5rem;
     }
@@ -236,53 +236,14 @@
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
     .solidjsLink {
         left: 11%;
     }
 }
 
-@media (max-width: 1200px) {
-    .solidjsLink {
-        left: 9%;
-    }
-
-    .solidText {
-        font-size: 0.85rem;
-    }
-
-    .nav {
-        padding: 0.25rem;
-    }
-
-    .navButton {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 1000px) {
-    .solidjsLink {
-        left: 5%;
-    }
-
-    .solidText {
-        display: none;
-    }
-
-    .solidLogo_interactive {
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .solidLink {
-        padding: 0.5rem;
-        min-width: auto;
-    }
-}
-
-/* HAMBURGER MENU ACTIVATION - VERY EARLY AT 1100px */
-@media (max-width: 1100px) {
+/* HAMBURGER MENU ACTIVATION - VERY EARLY AT 1440px */
+@media (max-width: 1440px) {
     .header {
         flex-wrap: wrap;
         padding: 1rem;
