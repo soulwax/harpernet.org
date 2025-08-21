@@ -807,7 +807,7 @@
       "functions": ["Ni", "Se", "Ti", "Fe"]
     },
     "Gamma": {
-      "types": ["INTJ", , "ENTJ", "ISFP", "ESFP"],
+      "types": ["INTJ", "ENTJ", "ISFP", "ESFP"],
       "values": ["Success", "Independence", "Authenticity", "Results"],
       "communication": "Direct, evaluative, individualistic",
       "functions": ["Ni", "Se", "Te", "Fi"]
