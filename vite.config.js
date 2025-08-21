@@ -32,6 +32,10 @@ export default defineConfig({
         target: "http://localhost:3890",
         rewrite: () => "/index.html",
       },
+      "/relationships": {
+        target: "http://localhost:3890",
+        rewrite: () => "/index.html",
+      },
     },
   },
   build: {

@@ -215,14 +215,14 @@
     color: var(--header-text) !important;
 }
 
-/* Enhanced mobile responsive styles */
-@media (max-width: 1200px) {
+/* Enhanced mobile responsive styles - FIXED ORDER */
+@media (max-width: 1400px) {
     .header {
         padding: 1.25rem 1.5rem;
     }
 
     .solidjsLink {
-        left: 14%;
+        left: 13%;
     }
 
     .logoText {
@@ -230,9 +230,15 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
     .solidjsLink {
-        left: 12%;
+        left: 11%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .solidjsLink {
+        left: 9%;
     }
 
     .solidText {
@@ -249,9 +255,20 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .solidjsLink {
-        left: 10%;
+        left: 7%;
+    }
+
+    .navButton {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .solidjsLink {
+        left: 5%;
     }
 
     .solidText {
@@ -269,6 +286,12 @@
     }
 }
 
+@media (max-width: 950px) {
+    .solidjsLink {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .header {
         flex-wrap: wrap;
@@ -281,6 +304,7 @@
         order: 2;
         margin-left: 1rem;
         margin-right: auto;
+        display: flex;
     }
 
     .headerControls {

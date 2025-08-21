@@ -14,10 +14,11 @@ const Header = () => {
     solidJSLogoAlt: "Solid.JS Logo",
     harperLogoAlt: "HarperNet.org Logo",
     technology: "Solid.JS",
-    sisterTypesUri: "/sister-types",
+    sisterTypesUri: "/",
     brotherTypesUri: "/brother-types",
     cognitiveFunctionsUri: "/cognitive-functions",
     cognitiveFunctionsDetailedUri: "/cognitive-functions-detailed",
+    relationshipsUri: "/relationships",
     aboutUri: "/about",
     menuToggleAriaLabel: "Toggle navigation menu"
   };
@@ -113,6 +114,14 @@ const Header = () => {
               class={`${styles.navButton} ${isActive(headerInfo.cognitiveFunctionsDetailedUri) ? styles.activeNav : ""}`}
             >
               Functions In-Depth
+            </button>
+          </li>
+          <li class={styles.navItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.relationshipsUri)}
+              class={`${styles.navButton} ${isActive(headerInfo.relationshipsUri) ? styles.activeNav : ""}`}
+            >
+              Relationships
             </button>
           </li>
           <li class={styles.navItem}>

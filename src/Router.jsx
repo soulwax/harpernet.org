@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import BrotherTypesPage from "./pages/BrotherTypesPage";
 import CognitiveFunctionsDetailedPage from "./pages/CognitiveFunctionsDetailedPage";
 import CognitiveFunctionsPage from "./pages/CognitiveFunctionsPage";
+import RelationshipsPage from "./pages/RelationshipsPage";
 import SisterTypesPage from "./pages/SisterTypesPage";
 import "./Router.css";
 
@@ -57,6 +58,8 @@ const Router = () => {
       return (
         <CognitiveFunctionsDetailedPage key="cognitive-functions-detailed" />
       );
+    } else if (path === "/relationships") {
+      return <RelationshipsPage key="relationships" />;
     } else {
       // Default to sister types for any other path (/, /index.html, unknown routes)
       return <SisterTypesPage key="sister-types" />;
