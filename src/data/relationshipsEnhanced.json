@@ -140,6 +140,25 @@
     "duality": {
       "name": "Duality",
       "description": "Perfect psychological complement - each fills the other's blind spots and weaknesses",
+      "compatibility": "ideal",
+      "pairs": [
+        ["INTJ", "ESFP"],
+        ["INTP", "ESFJ"],
+        ["ENTJ", "ISFP"],
+        ["ENTP", "ISFJ"],
+        ["INFJ", "ESTP"],
+        ["INFP", "ESTJ"],
+        ["ENFJ", "ISTP"],
+        ["ENFP", "ISTJ"],
+        ["ISTJ", "ENFP"],
+        ["ISFJ", "ENTP"],
+        ["ESTJ", "INFP"],
+        ["ESFJ", "INTP"],
+        ["ISTP", "ENFJ"],
+        ["ISFP", "ENTJ"],
+        ["ESTP", "INFJ"],
+        ["ESFP", "INTJ"]
+      ],
       "dynamics": {
         "strengths": [
           "Natural psychological completion",
@@ -161,6 +180,25 @@
     "identity": {
       "name": "Identity",
       "description": "Same type - perfect understanding but potential for stagnation",
+      "compatibility": "good",
+      "pairs": [
+        ["INTJ", "INTJ"],
+        ["INTP", "INTP"],
+        ["ENTJ", "ENTJ"],
+        ["ENTP", "ENTP"],
+        ["INFJ", "INFJ"],
+        ["INFP", "INFP"],
+        ["ENFJ", "ENFJ"],
+        ["ENFP", "ENFP"],
+        ["ISTJ", "ISTJ"],
+        ["ISFJ", "ISFJ"],
+        ["ESTJ", "ESTJ"],
+        ["ESFJ", "ESFJ"],
+        ["ISTP", "ISTP"],
+        ["ISFP", "ISFP"],
+        ["ESTP", "ESTP"],
+        ["ESFP", "ESFP"]
+      ],
       "dynamics": {
         "strengths": [
           "Immediate mutual understanding",
@@ -182,6 +220,25 @@
     "activity": {
       "name": "Activity",
       "description": "Energizing partnership for shared activities but can be exhausting long-term",
+      "compatibility": "excellent",
+      "pairs": [
+        ["INTJ", "ISFJ"],
+        ["INTP", "ISTP"],
+        ["ENTJ", "ESTP"],
+        ["ENTP", "ESTJ"],
+        ["INFJ", "INFP"],
+        ["INFP", "INFJ"],
+        ["ENFJ", "ENFP"],
+        ["ENFP", "ENFJ"],
+        ["ISTJ", "INTJ"],
+        ["ISFJ", "INTJ"],
+        ["ESTJ", "ENTP"],
+        ["ESFJ", "ENFP"],
+        ["ISTP", "INTP"],
+        ["ISFP", "INFP"],
+        ["ESTP", "ENTJ"],
+        ["ESFP", "ENFP"]
+      ],
       "dynamics": {
         "strengths": [
           "High energy when working together",
@@ -203,6 +260,25 @@
     "mirror": {
       "name": "Mirror",
       "description": "Similar worldview with different methods - mutual fascination and respect",
+      "compatibility": "excellent",
+      "pairs": [
+        ["INTJ", "INFJ"],
+        ["INTP", "INFP"],
+        ["ENTJ", "ENFJ"],
+        ["ENTP", "ENFP"],
+        ["INFJ", "INTJ"],
+        ["INFP", "INTP"],
+        ["ENFJ", "ENTJ"],
+        ["ENFP", "ENTP"],
+        ["ISTJ", "ISFJ"],
+        ["ISFJ", "ISTJ"],
+        ["ESTJ", "ESFJ"],
+        ["ESFJ", "ESTJ"],
+        ["ISTP", "ISFP"],
+        ["ISFP", "ISTP"],
+        ["ESTP", "ESFP"],
+        ["ESFP", "ESTP"]
+      ],
       "dynamics": {
         "strengths": [
           "Mutual respect and admiration",
@@ -224,6 +300,25 @@
     "kindred": {
       "name": "Kindred",
       "description": "Brother/Sister types - similar interests and energy but different cognitive focus",
+      "compatibility": "good",
+      "pairs": [
+        ["INTJ", "ENTJ"],
+        ["INTP", "ENTP"],
+        ["ENTJ", "INTJ"],
+        ["ENTP", "INTP"],
+        ["INFJ", "ENFJ"],
+        ["INFP", "ENFP"],
+        ["ENFJ", "INFJ"],
+        ["ENFP", "INFP"],
+        ["ISTJ", "ESTJ"],
+        ["ISFJ", "ESFJ"],
+        ["ESTJ", "ISTJ"],
+        ["ESFJ", "ISFJ"],
+        ["ISTP", "ESTP"],
+        ["ISFP", "ESFP"],
+        ["ESTP", "ISTP"],
+        ["ESFP", "ISFP"]
+      ],
       "dynamics": {
         "strengths": [
           "Similar energy and enthusiasm",
@@ -245,6 +340,25 @@
     "semi_dual": {
       "name": "Semi-Duality",
       "description": "Partial complement - helpful but with some tension points",
+      "compatibility": "good",
+      "pairs": [
+        ["INTJ", "ESFJ"],
+        ["INTP", "ESFP"],
+        ["ENTJ", "ISFJ"],
+        ["ENTP", "ISFP"],
+        ["INFJ", "ESTJ"],
+        ["INFP", "ESTP"],
+        ["ENFJ", "ISTJ"],
+        ["ENFP", "ISTP"],
+        ["ISTJ", "ENFJ"],
+        ["ISFJ", "ENTJ"],
+        ["ESTJ", "INFJ"],
+        ["ESFJ", "INTJ"],
+        ["ISTP", "ENFP"],
+        ["ISFP", "ENTP"],
+        ["ESTP", "INFP"],
+        ["ESFP", "INTP"]
+      ],
       "dynamics": {
         "strengths": [
           "Some complementary functions",
@@ -266,6 +380,25 @@
     "business": {
       "name": "Business",
       "description": "Pragmatic cooperation - excellent for professional collaboration",
+      "compatibility": "good",
+      "pairs": [
+        ["INTJ", "INTP"],
+        ["INTP", "INTJ"],
+        ["ENTJ", "ENTP"],
+        ["ENTP", "ENTJ"],
+        ["INFJ", "INFP"],
+        ["INFP", "INFJ"],
+        ["ENFJ", "ENFP"],
+        ["ENFP", "ENFJ"],
+        ["ISTJ", "ISTP"],
+        ["ISFJ", "ISFP"],
+        ["ESTJ", "ESTP"],
+        ["ESFJ", "ESFP"],
+        ["ISTP", "ISTJ"],
+        ["ISFP", "ISFJ"],
+        ["ESTP", "ESTJ"],
+        ["ESFP", "ESFJ"]
+      ],
       "dynamics": {
         "strengths": [
           "Effective task-focused cooperation",
@@ -287,6 +420,25 @@
     "lookalike": {
       "name": "Look-alike",
       "description": "Appear similar externally but are fundamentally different internally",
+      "compatibility": "neutral",
+      "pairs": [
+        ["INTJ", "ISTJ"],
+        ["INTP", "ISFP"],
+        ["ENTJ", "ESTJ"],
+        ["ENTP", "ESFP"],
+        ["INFJ", "ISFJ"],
+        ["INFP", "ISTP"],
+        ["ENFJ", "ESFJ"],
+        ["ENFP", "ESTP"],
+        ["ISTJ", "INTJ"],
+        ["ISFJ", "INFJ"],
+        ["ESTJ", "ENTJ"],
+        ["ESFJ", "ENFJ"],
+        ["ISTP", "INFP"],
+        ["ISFP", "INTP"],
+        ["ESTP", "ENFP"],
+        ["ESFP", "ENTP"]
+      ],
       "dynamics": {
         "strengths": [
           "Easy initial connection",
@@ -308,6 +460,25 @@
     "benefactor": {
       "name": "Benefactor",
       "description": "Asymmetric relationship where one naturally helps/guides the other",
+      "compatibility": "neutral",
+      "pairs": [
+        ["INTJ", "ISFP"],
+        ["INTP", "INFJ"],
+        ["ENTJ", "ESFJ"],
+        ["ENTP", "ESTP"],
+        ["INFJ", "ISFJ"],
+        ["INFP", "ISTP"],
+        ["ENFJ", "ESFP"],
+        ["ENFP", "ESTJ"],
+        ["ISTJ", "INTJ"],
+        ["ISFJ", "INTP"],
+        ["ESTJ", "ENTJ"],
+        ["ESFJ", "ENTP"],
+        ["ISTP", "INFJ"],
+        ["ISFP", "INFP"],
+        ["ESTP", "ENFJ"],
+        ["ESFP", "ENFP"]
+      ],
       "dynamics": {
         "strengths": [
           "Natural teaching/learning dynamic",
@@ -329,6 +500,25 @@
     "beneficiary": {
       "name": "Beneficiary",
       "description": "Reverse of benefactor - receives natural guidance and support",
+      "compatibility": "neutral",
+      "pairs": [
+        ["ISFP", "INTJ"],
+        ["INFJ", "INTP"],
+        ["ESFJ", "ENTJ"],
+        ["ESTP", "ENTP"],
+        ["ISFJ", "INFJ"],
+        ["ISTP", "INFP"],
+        ["ESFP", "ENFJ"],
+        ["ESTJ", "ENFP"],
+        ["INTJ", "ISTJ"],
+        ["INTP", "ISFJ"],
+        ["ENTJ", "ESTJ"],
+        ["ENTP", "ESFJ"],
+        ["INFJ", "ISTP"],
+        ["INFP", "ISFP"],
+        ["ENFJ", "ESTP"],
+        ["ENFP", "ESFP"]
+      ],
       "dynamics": {
         "strengths": [
           "Receives helpful guidance",
@@ -350,6 +540,25 @@
     "supervisor": {
       "name": "Supervisor",
       "description": "Asymmetric relationship with natural psychological pressure",
+      "compatibility": "challenging",
+      "pairs": [
+        ["INTJ", "ENTP"],
+        ["INTP", "ENTJ"],
+        ["ENTJ", "ENFP"],
+        ["ENTP", "ENFJ"],
+        ["INFJ", "ISFP"],
+        ["INFP", "ISFJ"],
+        ["ENFJ", "ESFP"],
+        ["ENFP", "ESFJ"],
+        ["ISTJ", "ISTP"],
+        ["ISFJ", "ISFP"],
+        ["ESTJ", "ESTP"],
+        ["ESFJ", "ESFP"],
+        ["ISTP", "ISTJ"],
+        ["ISFP", "INFJ"],
+        ["ESTP", "ESTJ"],
+        ["ESFP", "ENFJ"]
+      ],
       "dynamics": {
         "strengths": [
           "Supervisor can guide effectively",
@@ -371,6 +580,25 @@
     "supervisee": {
       "name": "Supervisee",
       "description": "Under natural psychological pressure from supervisor",
+      "compatibility": "challenging",
+      "pairs": [
+        ["ENTP", "INTJ"],
+        ["ENTJ", "INTP"],
+        ["ENFP", "ENTJ"],
+        ["ENFJ", "ENTP"],
+        ["ISFP", "INFJ"],
+        ["ISFJ", "INFP"],
+        ["ESFP", "ENFJ"],
+        ["ESFJ", "ENFP"],
+        ["ISTP", "ISTJ"],
+        ["ISFP", "ISFJ"],
+        ["ESTP", "ESTJ"],
+        ["ESFP", "ESFJ"],
+        ["ISTJ", "ISTP"],
+        ["INFJ", "ISFP"],
+        ["ESTJ", "ESTP"],
+        ["ENFJ", "ESFP"]
+      ],
       "dynamics": {
         "strengths": [
           "Can learn from supervisor",
@@ -392,6 +620,25 @@
     "quasi_identity": {
       "name": "Quasi-Identity",
       "description": "Similar but with subtle important differences causing friction",
+      "compatibility": "challenging",
+      "pairs": [
+        ["INTJ", "ISFJ"],
+        ["INTP", "ISTJ"],
+        ["ENTJ", "ESFJ"],
+        ["ENTP", "ESTJ"],
+        ["INFJ", "ISFP"],
+        ["INFP", "ISTP"],
+        ["ENFJ", "ESFP"],
+        ["ENFP", "ESTP"],
+        ["ISTJ", "INTP"],
+        ["ISFJ", "INTJ"],
+        ["ESTJ", "ENTP"],
+        ["ESFJ", "ENTJ"],
+        ["ISTP", "INFP"],
+        ["ISFP", "INFJ"],
+        ["ESTP", "ENFP"],
+        ["ESFP", "ENFJ"]
+      ],
       "dynamics": {
         "strengths": [
           "Initial sense of similarity",
@@ -413,6 +660,25 @@
     "super_ego": {
       "name": "Super-Ego",
       "description": "Mutual respect from distance but stress up close",
+      "compatibility": "difficult",
+      "pairs": [
+        ["INTJ", "ISTP"],
+        ["INTP", "ISTJ"],
+        ["ENTJ", "ESFP"],
+        ["ENTP", "ESFJ"],
+        ["INFJ", "ISFP"],
+        ["INFP", "ISFJ"],
+        ["ENFJ", "ESTP"],
+        ["ENFP", "ESTJ"],
+        ["ISTJ", "INTP"],
+        ["ISFJ", "INFP"],
+        ["ESTJ", "ENFP"],
+        ["ESFJ", "ENTP"],
+        ["ISTP", "INTJ"],
+        ["ISFP", "INFJ"],
+        ["ESTP", "ENFJ"],
+        ["ESFP", "ENTJ"]
+      ],
       "dynamics": {
         "strengths": [
           "Mutual respect and admiration",
@@ -434,6 +700,25 @@
     "conflict": {
       "name": "Conflict",
       "description": "Opposite approaches leading to natural friction and misunderstanding",
+      "compatibility": "difficult",
+      "pairs": [
+        ["INTJ", "ESTJ"],
+        ["INTP", "ESFP"],
+        ["ENTJ", "ESTP"],
+        ["ENTP", "ESFJ"],
+        ["INFJ", "ISTJ"],
+        ["INFP", "ISTP"],
+        ["ENFJ", "ISFJ"],
+        ["ENFP", "ISFP"],
+        ["ISTJ", "INFJ"],
+        ["ISFJ", "ENFJ"],
+        ["ESTJ", "INTJ"],
+        ["ESFJ", "ENTP"],
+        ["ISTP", "INFP"],
+        ["ISFP", "ENFP"],
+        ["ESTP", "ENTJ"],
+        ["ESFP", "INTP"]
+      ],
       "dynamics": {
         "strengths": [
           "Can learn from opposite perspective",
@@ -455,6 +740,25 @@
     "mirage": {
       "name": "Mirage",
       "description": "Attractive from afar but ultimately disappointing up close",
+      "compatibility": "difficult",
+      "pairs": [
+        ["INTJ", "INFP"],
+        ["INTP", "INTJ"],
+        ["ENTJ", "ENFJ"],
+        ["ENTP", "ENTJ"],
+        ["INFJ", "INFP"],
+        ["INFP", "INFJ"],
+        ["ENFJ", "ENFP"],
+        ["ENFP", "ENFJ"],
+        ["ISTJ", "ISFP"],
+        ["ISFJ", "ISTJ"],
+        ["ESTJ", "ESFJ"],
+        ["ESFJ", "ESTJ"],
+        ["ISTP", "ISFP"],
+        ["ISFP", "ISTP"],
+        ["ESTP", "ESFP"],
+        ["ESFP", "ESTP"]
+      ],
       "dynamics": {
         "strengths": [
           "Initial attraction and interest",
@@ -503,7 +807,7 @@
       "functions": ["Ni", "Se", "Ti", "Fe"]
     },
     "Gamma": {
-      "types": ["INTJ", "ENTJ", "ISFP", "ESFP"],
+      "types": ["INTJ", , "ENTJ", "ISFP", "ESFP"],
       "values": ["Success", "Independence", "Authenticity", "Results"],
       "communication": "Direct, evaluative, individualistic",
       "functions": ["Ni", "Se", "Te", "Fi"]
