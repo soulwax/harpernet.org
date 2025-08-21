@@ -46,6 +46,8 @@ harpernet.org
     │   ├───Header.jsx
     │   ├───Header.module.css
     │   ├───NavLink.jsx
+    │   ├───Relationships.jsx
+    │   ├───Relationships.module.css
     │   ├───SisterTypes.jsx
     │   ├───SisterTypes.module.css
     │   ├───ThemeToggle.jsx
@@ -60,12 +62,14 @@ harpernet.org
     │   ├───cognitiveFunctionsDetailed.json
     │   ├───jungianFramework.json
     │   ├───relationships.json
+    │   ├───relationshipsEnhanced.json
     │   └───sisterTypes.json
     ├───pages/
     │   ├───AboutPage.jsx
     │   ├───BrotherTypesPage.jsx
     │   ├───CognitiveFunctionsDetailedPage.jsx
     │   ├───CognitiveFunctionsPage.jsx
+    │   ├───RelationshipsPage.jsx
     │   └───SisterTypesPage.jsx
     └───styles/
         └───theme.css
