@@ -242,10 +242,6 @@ const About = () => {
               <h4>Maximum Anonymity</h4>
               <ul className={styles.contactList}>
                 <li>
-                  <strong>Tor Contact:</strong>{" "}
-                  <span className={styles.contactNote}>ProtonMail via Tor Browser for truly anonymous communication</span>
-                </li>
-                <li>
                   <strong>Disposable Methods:</strong>{" "}
                   <span className={styles.contactNote}>Suggest a throwaway communication method via any above channel</span>
                 </li>
