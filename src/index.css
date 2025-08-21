@@ -1,5 +1,6 @@
 /* File: src/index.css */
 
+/* Import theme variables FIRST */
 @import url('./styles/theme.css');
 
 * {
@@ -8,50 +9,83 @@
   padding: 0;
 }
 
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
+html {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Ensure app container uses theme */
+#root {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
 }
 
 .app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 .main-content {
   flex: 1;
+  background-color: var(--bg-primary);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
+  background-color: var(--bg-primary);
 }
 
+/* Typography with forced theme colors */
 h1 {
   margin-bottom: 12px;
   font-size: 32px;
-  color: var(--accent);
+  color: var(--accent) !important;
 }
 
 h2 {
   margin: 42px 0 14px;
   font-size: 24px;
-  color: var(--text-secondary);
+  color: var(--text-secondary) !important;
 }
 
+h3 {
+  color: var(--text-primary) !important;
+}
+
+h4,
+h5,
+h6 {
+  color: var(--text-primary) !important;
+}
+
+p {
+  color: var(--text-primary) !important;
+}
+
+/* Links with theme colors */
 a {
-  color: var(--link-color);
+  color: var(--link-color) !important;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: var(--link-hover);
+  color: var(--link-hover) !important;
   text-decoration: underline;
 }
 
@@ -73,44 +107,26 @@ button:focus {
   color: white;
 }
 
-/* Mobile responsive styles */
-@media (max-width: 768px) {
-  .container {
-    padding: 20px 15px;
-  }
-
-  h1 {
-    margin: 12px 0 5px 5px;
-    font-size: 32px;
-    color: var(--accent);
-  }
-
-  h2 {
-    margin: 24px 0 5px 5px;
-    font-size: 24px;
-    color: var(--text-secondary);
-  }
-
-  h1+h2 {
-    margin-top: 10px;
-  }
+/* Lists */
+ul,
+ol,
+li {
+  color: var(--text-primary) !important;
 }
 
-/* Dark mode specific adjustments */
-[data-theme="dark"] {
-  color-scheme: dark;
+/* Tables */
+table,
+td,
+th {
+  color: var(--text-primary) !important;
 }
 
-[data-theme="light"] {
-  color-scheme: light;
-}
-
-/* Improved form elements for theme compatibility */
+/* Form elements with proper theming */
 input,
 textarea,
 select {
-  background-color: var(--bg-secondary);
-  color: var(--text-primary);
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
   border: 1px solid var(--border-primary);
   border-radius: 4px;
   padding: 0.5rem;
@@ -122,13 +138,13 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(var(--accent), 0.2);
+  box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.2);
 }
 
-/* Button theming */
+/* Buttons with theme support */
 button {
   background-color: var(--accent);
-  color: white;
+  color: white !important;
   border: none;
   border-radius: 4px;
   padding: 0.5rem 1rem;
@@ -147,12 +163,13 @@ button:active {
 
 /* Card styling */
 .card {
-  background-color: var(--card-bg);
+  background-color: var(--card-bg) !important;
   border: 1px solid var(--card-border);
   border-radius: 8px;
   box-shadow: var(--card-shadow);
   padding: 1.5rem;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: var(--text-primary) !important;
 }
 
 .card:hover {
@@ -162,16 +179,16 @@ button:active {
 
 /* Code blocks */
 code {
-  background-color: var(--bg-tertiary);
-  color: var(--text-primary);
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
   font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 }
 
 pre {
-  background-color: var(--bg-tertiary);
-  color: var(--text-primary);
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
   padding: 1rem;
   border-radius: 6px;
   overflow-x: auto;
@@ -183,6 +200,60 @@ pre {
   opacity: 0.6;
   pointer-events: none;
   transition: opacity 0.3s ease;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    margin: 12px 0 5px 5px;
+    font-size: 28px;
+  }
+
+  h2 {
+    margin: 24px 0 5px 5px;
+    font-size: 22px;
+  }
+
+  h1+h2 {
+    margin-top: 10px;
+  }
+}
+
+/* Dark mode specific body styling */
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+[data-theme="dark"] body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] #root {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .app {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .main-content {
+  background-color: var(--bg-primary) !important;
+}
+
+[data-theme="dark"] .container {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Light mode */
+[data-theme="light"] {
+  color-scheme: light;
 }
 
 /* Accessibility improvements */
@@ -204,14 +275,26 @@ pre {
   [data-theme="light"] {
     --accent: #000000;
     --text-primary: #000000;
-    --bg-primary: var(--bg-secondary);
+    --bg-primary: #ffffff;
     --border-primary: #000000;
   }
 
   [data-theme="dark"] {
-    --accent: var(--bg-secondary);
-    --text-primary: var(--bg-secondary);
+    --accent: #ffffff;
+    --text-primary: #ffffff;
     --bg-primary: #000000;
-    --border-primary: var(--bg-secondary);
+    --border-primary: #ffffff;
   }
+}
+
+/* Ensure strong elements inherit theme colors */
+strong,
+b {
+  color: inherit !important;
+}
+
+/* Ensure em elements inherit theme colors */
+em,
+i {
+  color: inherit !important;
 }

@@ -2,7 +2,7 @@
 
 .footer {
     background-color: var(--accent);
-    color: white;
+    color: white !important;
     padding: 2rem 0 1rem;
     margin-top: 3rem;
 }
@@ -28,17 +28,20 @@
     margin-bottom: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 0.5rem;
+    color: white !important;
 }
 
 .footerDescription {
     font-size: 0.95rem;
     margin-bottom: 0.5rem;
     opacity: 0.9;
+    color: white !important;
 }
 
 .footerVersion {
     font-size: 0.85rem;
     opacity: 0.7;
+    color: white !important;
 }
 
 .footerLinks {
@@ -52,7 +55,7 @@
 }
 
 .footerLink {
-    color: white;
+    color: white !important;
     text-decoration: none;
     opacity: 0.9;
     transition: opacity 0.2s ease;
@@ -61,6 +64,7 @@
 .footerLink:hover {
     opacity: 1;
     text-decoration: underline;
+    color: white !important;
 }
 
 .footerBottom {
@@ -69,10 +73,12 @@
     text-align: center;
     font-size: 0.85rem;
     opacity: 0.7;
+    color: white !important;
 }
 
 .copyright {
     margin: 0;
+    color: white !important;
 }
 
 /* Mobile responsive styles */
