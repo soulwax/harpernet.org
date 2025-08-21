@@ -1,390 +1,508 @@
 {
-  "metabolicPrinciples": {
-    "title": "Cognitive Type Metabolism Framework",
-    "description": "A comprehensive framework for understanding how cognitive functions process information through metabolic pathways, derived from Jung's energic conception of the libido and Kępiński's information metabolism theory",
-    "source": "Jung, C.G. 'On Psychic Energy' in Structure and Dynamics of the Psyche (CW 8); Kępiński, Antoni 'Melancholia' (1974)",
-    "coreAxioms": {
-      "contentlessPrinciple": {
-        "title": "Contentless Principle", 
-        "description": "Metabolism focuses on 'how' information is processed, not 'what' information is processed. Metabolism is void of specific contents, behaviors or beliefs but is the framework that generates all contents in a person. No specific belief or behavior belongs exclusively to any type or function.",
-        "source": "Jung: 'The superior function is always the expression of the conscious personality, its aim, its will, and its achievement, whilst the inferior functions belong to the things that simply 'happen' to one' (CW 6, ¶513)"
-      },
-      "cognitiveHolismPrinciple": {
-        "title": "Cognitive Holism Principle",
-        "description": "All beliefs, opinions and behaviors are available to all types, but are accessed via different metabolic pathways. Via the combined processing of each type's metabolic functions, every person has direct or indirect access to each kind of psychic experience.",
-        "source": "Jung: 'Though all the functions exist in every psyche, one function is invariably more consciously developed than the others' (Psychological Types, CW 6)"
-      },
-      "distinctOntologyPrinciple": {
-        "title": "Distinct Ontology Principle", 
-        "description": "While any belief or behavior is accessible to every person, each type carries a distinct phenomenology, born from a different registration of the ontology of objects. This leads to implicit ontological biases forming around the nature of reality. These implicit biases are present even when explicit opinions appear to run contrary to them on the surface.",
-        "source": "Jung: 'Two people see the same object, but they never see it in such a way that the images they receive are identical... there often exists a radical difference, both in kind and in degree, in the psychic assimilation of the perceptual image' (CW 6, ¶374)"
-      }
-    }
-  },
-
-  "fundamentalProcesses": {
-    "judgment": {
-      "name": "Judgment",
-      "description": "A process of differentiation, whether it be true from false, right from wrong, good from bad, effective from ineffective, or any other dichotomy. The Judgment functions (Ti, Fi, Te, Fe) operate on the principle of reason, to make rational distinctions between objects or actions. Judgment splits up reality, labeling elements into these ideal categories by their properties, according to a personal criteria of judgment.",
-      "functions": ["Ti", "Fi", "Te", "Fe"],
-      "principle": "Reason and differentiation",
-      "source": "Jung: 'Thinking enables us to recognize its meaning... feeling tells us its value' (CW 6, ¶958)"
-    },
-    "perception": {
-      "name": "Perception",
-      "description": "A spatiotemporal process which gathers and archives graphical (non-semantic) information by the manner in which the information streams into the mind and is naturally associated. Perception does not differentiate between datasets according to any rational frameworks, but instead sees the organic starts and ends of datasets based on their volumetric limits.",
-      "functions": ["Se", "Si", "Ne", "Ni"],
-      "principle": "Spatiotemporal information gathering", 
-      "source": "Jung: 'Sensation establishes what is actually present... intuition points to possibilities as to whence it came and whither it is going in a given situation' (CW 6, ¶958)"
-    }
-  },
-
-  "orientations": {
-    "introversion": {
-      "name": "Introversion",
-      "symbol": "i", 
-      "description": "A cognitive process that restricts the intake or creation of new mental or physical objects. It represents a pause in all data intake, diverting the mind's focus solely towards more closely processing pre-existing contents, to either clarify their properties (Ji) or to contextualize them against already existing information (Pi). Existing data gets refined and condensed during this intermission.",
-      "mechanism": "Restriction and refinement",
-      "effect": "Condensation of existing data",
-      "source": "Jung: 'Introversion means an inward-turning of libido... Interest does not move toward the object but withdraws from it into the subject' (CW 6, ¶452)"
-    },
-    "extroversion": {
-      "name": "Extroversion",
-      "symbol": "e",
-      "description": "A cognitive process that seeks out or creates new mental or physical objects. It represents a proactive intake of data, engaging the mind in a dynamic dance with the environment. It shifts the mind's focus towards the influx of new information (Pe) or to its causal dynamics (Je). The amount of existing data gets expanded and broadened during this process.",
-      "mechanism": "Expansion and creation", 
-      "effect": "Broadening of data intake",
-      "source": "Jung: 'Extraversion is an outward-turning of libido... a positive movement of subjective interest towards the object' (CW 6, ¶427)"
-    }
-  },
-
-  "attitudeProcesses": {
-    "jiEssentialism": {
-      "name": "Ji Essentialism",
-      "functions": ["Ti", "Fi"],
-      "description": "Ji (introverted judgment) is a function that defines an object by its inner essence, and seeks to understand the innate qualities within a single object. Rather than comparing things to other things in a causal fashion (Je), Ji evaluates how a thing compares to itself in its static properties; judging whether it is self-aligned.",
-      "expressions": ["identification of self-contradictions", "impurities of character", "hypocrisy", "asymmetry"],
-      "referenceFrame": "Internal self-alignment",
-      "source": "Jung on Ti: 'seeks to understand the innate qualities within a single object... evaluates how a thing compares to itself in its static properties' (Psychological Types)"
-    },
-    "jePragmatism": {
-      "name": "Je Pragmatism",
-      "functions": ["Te", "Fe"],
-      "description": "Je (extroverted judgment) is a function that defines an object by its interactions with other objects, seeking to understand and characterize objects by their causal dynamics. As objects can be mental or physical, these causal dynamics can also be modeled mentally or physically.",
-      "mechanism": "Input-output processes",
-      "examples": ["economics theories", "physics theories", "social dynamic theories", "politics", "business", "logistics", "engineering"],
-      "source": "Jung: 'The extravert's decisions and actions are determined not by subjective views but by objective conditions' (CW 6, ¶333)"
-    },
-    "piTime": {
-      "name": "Pi Time", 
-      "functions": ["Si", "Ni"],
-      "description": "Pi (introverted perception) is a function that understands an object by its temporal wholeness, spanning far into the past and future. Perceived objects trigger a recollection and are associated to all prior instances of that object, anchoring them to their broader spatial and temporal context.",
-      "perspective": "Temporal wholeness and historical context",
-      "examples": ["understanding of history", "sociology and anthropology", "anticipations and predictions", "philosophy and religion"],
-      "source": "Jung: 'The introverted attitude is normally oriented by the psychic structure, which is in principle hereditary and is inborn in the subject' (CW 6, ¶376)"
-    },
-    "peRealtime": {
-      "name": "Pe Realtime",
-      "functions": ["Se", "Ne"], 
-      "description": "Pe (extroverted perception) is a function that understands an object by its temporal immediacy, approaching it in a direct and experiential manner for what it is. Unlike other functions which approach objects through an interpretive framework or schema, Pe registers the immediate truth of an object's existence continuously.",
-      "approach": "Direct and experiential without preconceptions",
-      "examples": ["music composition", "performance arts", "creative arts", "improv comedy", "contemporary social commentary"],
-      "source": "Jung: 'The extravert's interest and attention are directed to objective happenings, particularly those in his immediate environment' (CW 6, ¶334)"
-    }
-  },
-
-  "ontologicalRegistrations": {
-    "tInanimate": {
-      "name": "T: Inanimate",
-      "functions": ["Ti", "Te"],
-      "description": "T is a cognitive process which registers objects in an inanimate fashion. The T process assigns an ontological property to an object, which causes it to be experienced impersonally, regardless of whether the object is technically a person or living being.",
-      "evaluation": "Mechanistic (Te) or Platonic (Ti)",
-      "characteristic": "Distance from animate concerns", 
-      "source": "Jung: 'Thinking involves intellect, it tells you what a thing is' (CW 6)"
-    },
-    "fAnimate": {
-      "name": "F: Animate",
-      "functions": ["Fi", "Fe"], 
-      "description": "F is a cognitive process which registers objects in an animate fashion. The F process assigns an ontological property to an object, which causes it to be experienced personally, regardless of whether the object is technically a living being or non-living.",
-      "evaluation": "Teleological (Fe) or Animistic (Fi)",
-      "characteristic": "Intimacy and connection to animate concerns",
-      "source": "Jung: 'Feeling is values-based, it tells what a thing is worth to you' (CW 6)"
-    },
-    "sLiteral": {
-      "name": "S: Literal",
-      "functions": ["Se", "Si"],
-      "description": "S is a cognitive process which registers objects in a literal fashion. The S process assigns an ontological property to an object, which causes it to be experienced discretely. Objects, whether they be mental or physical, are evaluated in an actual (Se) and local (Si) manner, with exact and specific properties.",
-      "characteristic": "Precise, factual details with discrete boundaries",
-      "source": "Jung: 'Sensation establishes what is actually present' (CW 6, ¶958)"
-    },
-    "nAssociative": {
-      "name": "N: Associative",
-      "functions": ["Ne", "Ni"],
-      "description": "N is a cognitive process which registers objects in an associative fashion. The N process assigns an ontological property to an object, which causes it to be experienced continuously across a conceptual range, rather than discretely bound to specific properties.",
-      "perspective": "Spectrums of potentiality (Ne) or translocal associative webs (Ni)", 
-      "characteristic": "Continuous rather than discrete",
-      "source": "Jung: 'I regard intuition as a basic psychological function... It is the function that mediates perceptions in an unconscious way' (CW 6)"
-    }
-  },
-
-  "specificFunctions": {
-    "Fi": {
-      "name": "Fi: Animism",
-      "description": "Fi defines an object by its essential nature (Ji), while experiencing the object as having an animate (F) character. Objects are registered as having a living property, thus triggering a personal relationship to that object's character, whether it's one of personal resonance or dissonance.",
-      "mechanism": "Essential nature + Animate character",
-      "effect": "Personal relationship even with inorganic objects",
-      "source": "Jung: 'Her feelings are intensive rather than extensive... an intensive sympathy... gains a passionate depth that embraces the misery of a world' (CW 6, Introverted Feeling Type)"
-    },
-    "Fe": {
-      "name": "Fe: Teleology",
-      "description": "Fe defines objects by their interactions with other objects (Je), while experiencing them as having an animate (F) character and agency. Causal dynamics are thus registered as agent-dynamics; as interactions between different wills with intentions and aims.",
-      "mechanism": "Causal dynamics + Animate agency",
-      "effect": "Mutual transformation of personalities and characters", 
-      "source": "Jung: 'Her feelings correspond with objective situations and general values... the personality appears to be adjusted in relation to objective conditions' (CW 6, Extraverted Feeling Type)"
-    },
-    "Ti": {
-      "name": "Ti: Platonism", 
-      "description": "Ti defines an object by its essential nature (Ji), while experiencing the object as having an inanimate (T) character. Objects are registered platonically, thus triggering an impersonal relationship to that object's character.",
-      "mechanism": "Essential nature + Inanimate character",
-      "effect": "Universal, general and removed understanding",
-      "source": "Jung: 'In thinking out his problems to the utmost of his ability, he also complicates them, and constantly becomes entangled in every possible scruple' (CW 6, Introverted Thinking Type)"
-    },
-    "Te": {
-      "name": "Te: Mechanics",
-      "description": "Te defines objects by their interactions with other objects (Je), while experiencing them as having an inanimate (T) character. Causal dynamics are thus registered mechanistically; as impersonal clockwork operations that follow cleanly from their premises.",
-      "mechanism": "Causal dynamics + Inanimate character", 
-      "effect": "Clinical examination of complex systems",
-      "source": "Jung: 'This type of man gives the deciding voice... either to the actual objective reality or to its objectively orientated, intellectual formula' (CW 6, Extraverted Thinking Type)"
-    },
-    "Ni": {
-      "name": "Ni: Translocality",
-      "description": "Ni expands its registration of an object to include its temporal totality (Pi), then associates this episode to all historical instances of episodes which are isomorphic to it (N), transforming the definition of the object into a thematic story that is disconnected from any particular place or time.",
-      "mechanism": "Temporal totality + Thematic association", 
-      "effect": "Translocal understanding transcending present",
-      "source": "Jung: 'The intuitive is never to be found among the generally recognized reality values, but he has a keen nose for anything new and in the making' (CW 6, Introverted Intuition Type)"
-    },
-    "Ne": {
-      "name": "Ne: Potentiality",
-      "description": "Ne absorbs objects in realtime (Pe), then extrapolates (N) new objects from their indiscriminate recombinations. A possibility-space opens up around the objects Ne registers, seeking out unconventional ideas for what the objects can transform or recombine into.",
-      "mechanism": "Realtime absorption + Extrapolation",
-      "effect": "Diverging possibility chains ad infinitum",
-      "source": "Jung: 'The intuition is applied to the outer world, creating outer possibilities. Largely excited by scenting new possibilities' (CW 6, Extraverted Intuition Type)"
-    },
-    "Si": {
-      "name": "Si: Locality",
-      "description": "Si expands its registration of an object to include its temporal totality (Pi), then localizes (S) an event within its specific historical context, retaining its chronological fidelity and preserving its unique details.",
-      "mechanism": "Temporal totality + Localization",
-      "effect": "Discrete and time-bound preservation",
-      "source": "Jung: 'The subjective sensation-type... is guided by the intensity of the subjective sensation excited by the objective stimulus' (CW 6, Introverted Sensation Type)"
-    },
-    "Se": {
-      "name": "Se: Actuality",
-      "description": "Se absorbs objects in realtime (Pe), immersing itself into the subtleties of those objects (S). With each processing loop, Se's hyperfocus on objects heightens their intensity and vividity.",
-      "mechanism": "Realtime absorption + Immersion", 
-      "effect": "Amplified intensity and richness of detail",
-      "source": "Jung: 'His whole objective is concrete enjoyment... he seeks the object that excites the strongest sensation' (CW 6, Extraverted Sensation Type)"
-    }
-  },
-
-  "energeticDynamics": {
-    "libidalFlow": {
-      "definition": "The direction and intensity of psychic energy that determines cognitive function operation",
-      "source": "Jung: 'By libido I mean psychic energy. Psychic energy is the intensity of a psychic process, its psychological value' (CW 8, Structure and Dynamics of the Psyche)",
-      "principles": {
-        "conservation": "Psychic energy follows principles analogous to physical energy conservation",
-        "transformation": "Energy can be transformed from one form to another but not destroyed",
-        "compensation": "The unconscious compensates for one-sided conscious attitudes",
-        "opposites": "All psychic life consists of pairs of opposites that create energic tension"
-      }
-    },
-    "metabolicProcessing": {
-      "definition": "The systematic transformation of information through cognitive function pathways, based on Kępiński's information metabolism theory",
-      "source": "Kępiński, Antoni 'Information Metabolism' concept from 'Melancholia' (1974); Augustinavičiūtė's application to Jung's functions",
-      "phases": {
-        "intake": "Reception of information from environment or unconscious",
-        "processing": "Transformation according to function-specific metabolic patterns", 
-        "integration": "Incorporation into existing cognitive structures",
-        "output": "Expression through behavior, decisions, or creative products"
-      }
-    }
-  },
-
-  "interFunctionDynamics": {
-    "definition": "Operations that transpire between two or more energetic functions. The operations of single functions comprise only a small percent of the effects we see manifested in individuals, while the majority of complex tasks require the use of more than one function at the same time.",
-    "source": "Jung: 'The more [a man] identifies with one function, the more he invests it with libido, and the more he withdraws libido from the other functions' (CW 6, ¶502)",
-    
-    "dynamics": {
-      "revision": {
-        "name": "Revision (Ji+Pe)",
-        "functions": ["Ji", "Pe"], 
-        "description": "A cycle between essence-delineation (Ji) and continual re-exploration (Pe). While Ji aims to provide conclusiveness about the essential nature of things, Pe provides an ongoing feed of alternative information, which compels Ji to recalibrate its conclusions.",
-        "example": "Writing the perfect (Ji) essay, but continually finding different ways (Pe) to phrase a sentence",
-        "outcomes": {
-          "positive": "Refinement",
-          "negative": "Indecisiveness" 
+    "metabolicPrinciples": {
+        "title": "Cognitive Type Metabolism Framework",
+        "description": "A comprehensive framework for understanding how cognitive functions process information through metabolic pathways, derived from Jung's energic conception of the libido and Kępiński's information metabolism theory",
+        "source": "Jung, C.G. 'On Psychic Energy' in Structure and Dynamics of the Psyche (CW 8); Kępiński, Antoni 'Melancholia' (1974)",
+        "coreAxioms": {
+            "contentlessPrinciple": {
+                "title": "Contentless Principle",
+                "description": "Metabolism focuses on 'how' information is processed, not 'what' information is processed. Metabolism is void of specific contents, behaviors or beliefs but is the framework that generates all contents in a person. No specific belief or behavior belongs exclusively to any type or function.",
+                "source": "Jung: 'The superior function is always the expression of the conscious personality, its aim, its will, and its achievement, whilst the inferior functions belong to the things that simply 'happen' to one' (CW 6, ¶513)"
+            },
+            "cognitiveHolismPrinciple": {
+                "title": "Cognitive Holism Principle",
+                "description": "All beliefs, opinions and behaviors are available to all types, but are accessed via different metabolic pathways. Via the combined processing of each type's metabolic functions, every person has direct or indirect access to each kind of psychic experience.",
+                "source": "Jung: 'Though all the functions exist in every psyche, one function is invariably more consciously developed than the others' (Psychological Types, CW 6)"
+            },
+            "distinctOntologyPrinciple": {
+                "title": "Distinct Ontology Principle",
+                "description": "While any belief or behavior is accessible to every person, each type carries a distinct phenomenology, born from a different registration of the ontology of objects. This leads to implicit ontological biases forming around the nature of reality. These implicit biases are present even when explicit opinions appear to run contrary to them on the surface.",
+                "source": "Jung: 'Two people see the same object, but they never see it in such a way that the images they receive are identical... there often exists a radical difference, both in kind and in degree, in the psychic assimilation of the perceptual image' (CW 6, ¶374)"
+            }
         }
-      },
-      "conducting": {
-        "name": "Conducting (Je+Pi)",
-        "functions": ["Je", "Pi"],
-        "description": "A cycle between causal dynamics (Je) and territory-mapping (Pi). As Pi builds and archives a map of the environment, this map enables Je to have uninterrupted movement forward, avoiding obstacles.", 
-        "example": "Running for office (Je) from a holistic platform (Pi) that is dependable and unwavering",
-        "outcomes": {
-          "positive": "Effective implementation",
-          "negative": "Narrow-mindedness if the map is wrong"
+    },
+    "fundamentalProcesses": {
+        "judgment": {
+            "name": "Judgment",
+            "description": "A process of differentiation, whether it be true from false, right from wrong, good from bad, effective from ineffective, or any other dichotomy. The Judgment functions (Ti, Fi, Te, Fe) operate on the principle of reason, to make rational distinctions between objects or actions. Judgment splits up reality, labeling elements into these ideal categories by their properties, according to a personal criteria of judgment.",
+            "functions": [
+                "Ti",
+                "Fi",
+                "Te",
+                "Fe"
+            ],
+            "principle": "Reason and differentiation",
+            "source": "Jung: 'Thinking enables us to recognize its meaning... feeling tells us its value' (CW 6, ¶958)"
+        },
+        "perception": {
+            "name": "Perception",
+            "description": "A spatiotemporal process which gathers and archives graphical (non-semantic) information by the manner in which the information streams into the mind and is naturally associated. Perception does not differentiate between datasets according to any rational frameworks, but instead sees the organic starts and ends of datasets based on their volumetric limits.",
+            "functions": [
+                "Se",
+                "Si",
+                "Ne",
+                "Ni"
+            ],
+            "principle": "Spatiotemporal information gathering",
+            "source": "Jung: 'Sensation establishes what is actually present... intuition points to possibilities as to whence it came and whither it is going in a given situation' (CW 6, ¶958)"
         }
-      },
-      "density": {
-        "name": "Density (Ji+Pi)",
-        "functions": ["Ji", "Pi"],
-        "description": "A cycle between essence-delineation (Ji) and territory-mapping (Pi), both of which further concentrate existing contents without branching outward. Information gets more internally nuanced and specific with each cycle.",
-        "example": "Biblical scholarship uncovering more information from the same scriptures through comparative analysis",
-        "outcomes": {
-          "positive": "Increased information quality and depth", 
-          "negative": "Cryptic obfuscation"
+    },
+    "orientations": {
+        "introversion": {
+            "name": "Introversion",
+            "symbol": "i",
+            "description": "A cognitive process that restricts the intake or creation of new mental or physical objects. It represents a pause in all data intake, diverting the mind's focus solely towards more closely processing pre-existing contents, to either clarify their properties (Ji) or to contextualize them against already existing information (Pi). Existing data gets refined and condensed during this intermission.",
+            "mechanism": "Restriction and refinement",
+            "effect": "Condensation of existing data",
+            "source": "Jung: 'Introversion means an inward-turning of libido... Interest does not move toward the object but withdraws from it into the subject' (CW 6, ¶452)"
+        },
+        "extroversion": {
+            "name": "Extroversion",
+            "symbol": "e",
+            "description": "A cognitive process that seeks out or creates new mental or physical objects. It represents a proactive intake of data, engaging the mind in a dynamic dance with the environment. It shifts the mind's focus towards the influx of new information (Pe) or to its causal dynamics (Je). The amount of existing data gets expanded and broadened during this process.",
+            "mechanism": "Expansion and creation",
+            "effect": "Broadening of data intake",
+            "source": "Jung: 'Extraversion is an outward-turning of libido... a positive movement of subjective interest towards the object' (CW 6, ¶427)"
         }
-      },
-      "expansion": {
-        "name": "Expansion (Pe+Je)",
-        "functions": ["Pe", "Je"],
-        "description": "A cycle between gathering information (Pe) and immediately executing on that data (Je), without pausing to condense the data. Information comes in and actions come right out without inhibition.",
-        "mechanism": "Bypassing mental blocks for high-speed output",
-        "outcomes": {
-          "positive": "High-speed content creation",
-          "negative": "Low quality and unpolished information"
+    },
+    "attitudeProcesses": {
+        "jiEssentialism": {
+            "name": "Ji Essentialism",
+            "functions": [
+                "Ti",
+                "Fi"
+            ],
+            "description": "Ji (introverted judgment) is a function that defines an object by its inner essence, and seeks to understand the innate qualities within a single object. Rather than comparing things to other things in a causal fashion (Je), Ji evaluates how a thing compares to itself in its static properties; judging whether it is self-aligned.",
+            "expressions": [
+                "identification of self-contradictions",
+                "impurities of character",
+                "hypocrisy",
+                "asymmetry"
+            ],
+            "referenceFrame": "Internal self-alignment",
+            "source": "Jung on Ti: 'seeks to understand the innate qualities within a single object... evaluates how a thing compares to itself in its static properties' (Psychological Types)"
+        },
+        "jePragmatism": {
+            "name": "Je Pragmatism",
+            "functions": [
+                "Te",
+                "Fe"
+            ],
+            "description": "Je (extroverted judgment) is a function that defines an object by its interactions with other objects, seeking to understand and characterize objects by their causal dynamics. As objects can be mental or physical, these causal dynamics can also be modeled mentally or physically.",
+            "mechanism": "Input-output processes",
+            "examples": [
+                "economics theories",
+                "physics theories",
+                "social dynamic theories",
+                "politics",
+                "business",
+                "logistics",
+                "engineering"
+            ],
+            "source": "Jung: 'The extravert's decisions and actions are determined not by subjective views but by objective conditions' (CW 6, ¶333)"
+        },
+        "piTime": {
+            "name": "Pi Time",
+            "functions": [
+                "Si",
+                "Ni"
+            ],
+            "description": "Pi (introverted perception) is a function that understands an object by its temporal wholeness, spanning far into the past and future. Perceived objects trigger a recollection and are associated to all prior instances of that object, anchoring them to their broader spatial and temporal context.",
+            "perspective": "Temporal wholeness and historical context",
+            "examples": [
+                "understanding of history",
+                "sociology and anthropology",
+                "anticipations and predictions",
+                "philosophy and religion"
+            ],
+            "source": "Jung: 'The introverted attitude is normally oriented by the psychic structure, which is in principle hereditary and is inborn in the subject' (CW 6, ¶376)"
+        },
+        "peRealtime": {
+            "name": "Pe Realtime",
+            "functions": [
+                "Se",
+                "Ne"
+            ],
+            "description": "Pe (extroverted perception) is a function that understands an object by its temporal immediacy, approaching it in a direct and experiential manner for what it is. Unlike other functions which approach objects through an interpretive framework or schema, Pe registers the immediate truth of an object's existence continuously.",
+            "approach": "Direct and experiential without preconceptions",
+            "examples": [
+                "music composition",
+                "performance arts",
+                "creative arts",
+                "improv comedy",
+                "contemporary social commentary"
+            ],
+            "source": "Jung: 'The extravert's interest and attention are directed to objective happenings, particularly those in his immediate environment' (CW 6, ¶334)"
         }
-      },
-      "formulation": {
-        "name": "Formulation (Ji+Je)",
-        "functions": ["Ji", "Je"],
-        "description": "Creates an internally-coherent system, where Ji sets the axioms through which Je's operational rules can function. Je is constrained to Ji's self-contained framework of ideal forms, creating a closed, ideal system.",
-        "result": "A 'formula' for practical living and understanding life overall",
-        "outcomes": {
-          "positive": "Powerful paradigm constructions", 
-          "negative": "Insular reasoning"
+    },
+    "ontologicalRegistrations": {
+        "tInanimate": {
+            "name": "T: Inanimate",
+            "functions": [
+                "Ti",
+                "Te"
+            ],
+            "description": "T is a cognitive process which registers objects in an inanimate fashion. The T process assigns an ontological property to an object, which causes it to be experienced impersonally, regardless of whether the object is technically a person or living being.",
+            "evaluation": "Mechanistic (Te) or Platonic (Ti)",
+            "characteristic": "Distance from animate concerns",
+            "source": "Jung: 'Thinking involves intellect, it tells you what a thing is' (CW 6)"
+        },
+        "fAnimate": {
+            "name": "F: Animate",
+            "functions": [
+                "Fi",
+                "Fe"
+            ],
+            "description": "F is a cognitive process which registers objects in an animate fashion. The F process assigns an ontological property to an object, which causes it to be experienced personally, regardless of whether the object is technically a living being or non-living.",
+            "evaluation": "Teleological (Fe) or Animistic (Fi)",
+            "characteristic": "Intimacy and connection to animate concerns",
+            "source": "Jung: 'Feeling is values-based, it tells what a thing is worth to you' (CW 6)"
+        },
+        "sLiteral": {
+            "name": "S: Literal",
+            "functions": [
+                "Se",
+                "Si"
+            ],
+            "description": "S is a cognitive process which registers objects in a literal fashion. The S process assigns an ontological property to an object, which causes it to be experienced discretely. Objects, whether they be mental or physical, are evaluated in an actual (Se) and local (Si) manner, with exact and specific properties.",
+            "characteristic": "Precise, factual details with discrete boundaries",
+            "source": "Jung: 'Sensation establishes what is actually present' (CW 6, ¶958)"
+        },
+        "nAssociative": {
+            "name": "N: Associative",
+            "functions": [
+                "Ne",
+                "Ni"
+            ],
+            "description": "N is a cognitive process which registers objects in an associative fashion. The N process assigns an ontological property to an object, which causes it to be experienced continuously across a conceptual range, rather than discretely bound to specific properties.",
+            "perspective": "Spectrums of potentiality (Ne) or translocal associative webs (Ni)",
+            "characteristic": "Continuous rather than discrete",
+            "source": "Jung: 'I regard intuition as a basic psychological function... It is the function that mediates perceptions in an unconscious way' (CW 6)"
         }
-      },
-      "synthesis": {
-        "name": "Synthesis (Pe+Pi)",
-        "functions": ["Pe", "Pi"],
-        "description": "Seamlessly flows from information intake (Pe) to information recall (Pi) and back. The individual navigates the present and the past harmoniously without friction between new and old information.",
-        "example": "Film score composer weaving musical landscapes (Pi) to fit specific moments in a film (Pe)",
-        "outcomes": {
-          "positive": "Creative genius",
-          "negative": "Loss of life structure due to excessive fluidity" 
+    },
+    "specificFunctions": {
+        "Fi": {
+            "name": "Fi: Animism",
+            "description": "Fi defines an object by its essential nature (Ji), while experiencing the object as having an animate (F) character. Objects are registered as having a living property, thus triggering a personal relationship to that object's character, whether it's one of personal resonance or dissonance.",
+            "mechanism": "Essential nature + Animate character",
+            "effect": "Personal relationship even with inorganic objects",
+            "source": "Jung: 'Her feelings are intensive rather than extensive... an intensive sympathy... gains a passionate depth that embraces the misery of a world' (CW 6, Introverted Feeling Type)"
+        },
+        "Fe": {
+            "name": "Fe: Teleology",
+            "description": "Fe defines objects by their interactions with other objects (Je), while experiencing them as having an animate (F) character and agency. Causal dynamics are thus registered as agent-dynamics; as interactions between different wills with intentions and aims.",
+            "mechanism": "Causal dynamics + Animate agency",
+            "effect": "Mutual transformation of personalities and characters",
+            "source": "Jung: 'Her feelings correspond with objective situations and general values... the personality appears to be adjusted in relation to objective conditions' (CW 6, Extraverted Feeling Type)"
+        },
+        "Ti": {
+            "name": "Ti: Platonism",
+            "description": "Ti defines an object by its essential nature (Ji), while experiencing the object as having an inanimate (T) character. Objects are registered platonically, thus triggering an impersonal relationship to that object's character.",
+            "mechanism": "Essential nature + Inanimate character",
+            "effect": "Universal, general and removed understanding",
+            "source": "Jung: 'In thinking out his problems to the utmost of his ability, he also complicates them, and constantly becomes entangled in every possible scruple' (CW 6, Introverted Thinking Type)"
+        },
+        "Te": {
+            "name": "Te: Mechanics",
+            "description": "Te defines objects by their interactions with other objects (Je), while experiencing them as having an inanimate (T) character. Causal dynamics are thus registered mechanistically; as impersonal clockwork operations that follow cleanly from their premises.",
+            "mechanism": "Causal dynamics + Inanimate character",
+            "effect": "Clinical examination of complex systems",
+            "source": "Jung: 'This type of man gives the deciding voice... either to the actual objective reality or to its objectively orientated, intellectual formula' (CW 6, Extraverted Thinking Type)"
+        },
+        "Ni": {
+            "name": "Ni: Translocality",
+            "description": "Ni expands its registration of an object to include its temporal totality (Pi), then associates this episode to all historical instances of episodes which are isomorphic to it (N), transforming the definition of the object into a thematic story that is disconnected from any particular place or time.",
+            "mechanism": "Temporal totality + Thematic association",
+            "effect": "Translocal understanding transcending present",
+            "source": "Jung: 'The intuitive is never to be found among the generally recognized reality values, but he has a keen nose for anything new and in the making' (CW 6, Introverted Intuition Type)"
+        },
+        "Ne": {
+            "name": "Ne: Potentiality",
+            "description": "Ne absorbs objects in realtime (Pe), then extrapolates (N) new objects from their indiscriminate recombinations. A possibility-space opens up around the objects Ne registers, seeking out unconventional ideas for what the objects can transform or recombine into.",
+            "mechanism": "Realtime absorption + Extrapolation",
+            "effect": "Diverging possibility chains ad infinitum",
+            "source": "Jung: 'The intuition is applied to the outer world, creating outer possibilities. Largely excited by scenting new possibilities' (CW 6, Extraverted Intuition Type)"
+        },
+        "Si": {
+            "name": "Si: Locality",
+            "description": "Si expands its registration of an object to include its temporal totality (Pi), then localizes (S) an event within its specific historical context, retaining its chronological fidelity and preserving its unique details.",
+            "mechanism": "Temporal totality + Localization",
+            "effect": "Discrete and time-bound preservation",
+            "source": "Jung: 'The subjective sensation-type... is guided by the intensity of the subjective sensation excited by the objective stimulus' (CW 6, Introverted Sensation Type)"
+        },
+        "Se": {
+            "name": "Se: Actuality",
+            "description": "Se absorbs objects in realtime (Pe), immersing itself into the subtleties of those objects (S). With each processing loop, Se's hyperfocus on objects heightens their intensity and vividity.",
+            "mechanism": "Realtime absorption + Immersion",
+            "effect": "Amplified intensity and richness of detail",
+            "source": "Jung: 'His whole objective is concrete enjoyment... he seeks the object that excites the strongest sensation' (CW 6, Extraverted Sensation Type)"
         }
-      }
+    },
+    "energeticDynamics": {
+        "libidalFlow": {
+            "definition": "The direction and intensity of psychic energy that determines cognitive function operation",
+            "source": "Jung: 'By libido I mean psychic energy. Psychic energy is the intensity of a psychic process, its psychological value' (CW 8, Structure and Dynamics of the Psyche)",
+            "principles": {
+                "conservation": "Psychic energy follows principles analogous to physical energy conservation",
+                "transformation": "Energy can be transformed from one form to another but not destroyed",
+                "compensation": "The unconscious compensates for one-sided conscious attitudes",
+                "opposites": "All psychic life consists of pairs of opposites that create energic tension"
+            }
+        },
+        "metabolicProcessing": {
+            "definition": "The systematic transformation of information through cognitive function pathways, based on Kępiński's information metabolism theory",
+            "source": "Kępiński, Antoni 'Information Metabolism' concept from 'Melancholia' (1974); Augustinavičiūtė's application to Jung's functions",
+            "phases": {
+                "intake": "Reception of information from environment or unconscious",
+                "processing": "Transformation according to function-specific metabolic patterns",
+                "integration": "Incorporation into existing cognitive structures",
+                "output": "Expression through behavior, decisions, or creative products"
+            }
+        }
+    },
+    "interFunctionDynamics": {
+        "definition": "Operations that transpire between two or more energetic functions. The operations of single functions comprise only a small percent of the effects we see manifested in individuals, while the majority of complex tasks require the use of more than one function at the same time.",
+        "source": "Jung: 'The more [a man] identifies with one function, the more he invests it with libido, and the more he withdraws libido from the other functions' (CW 6, ¶502)",
+        "dynamics": {
+            "revision": {
+                "name": "Revision (Ji+Pe)",
+                "functions": [
+                    "Ji",
+                    "Pe"
+                ],
+                "description": "A cycle between essence-delineation (Ji) and continual re-exploration (Pe). While Ji aims to provide conclusiveness about the essential nature of things, Pe provides an ongoing feed of alternative information, which compels Ji to recalibrate its conclusions.",
+                "example": "Writing the perfect (Ji) essay, but continually finding different ways (Pe) to phrase a sentence",
+                "outcomes": {
+                    "positive": "Refinement",
+                    "negative": "Indecisiveness"
+                }
+            },
+            "conducting": {
+                "name": "Conducting (Je+Pi)",
+                "functions": [
+                    "Je",
+                    "Pi"
+                ],
+                "description": "A cycle between causal dynamics (Je) and territory-mapping (Pi). As Pi builds and archives a map of the environment, this map enables Je to have uninterrupted movement forward, avoiding obstacles.",
+                "example": "Running for office (Je) from a holistic platform (Pi) that is dependable and unwavering",
+                "outcomes": {
+                    "positive": "Effective implementation",
+                    "negative": "Narrow-mindedness if the map is wrong"
+                }
+            },
+            "density": {
+                "name": "Density (Ji+Pi)",
+                "functions": [
+                    "Ji",
+                    "Pi"
+                ],
+                "description": "A cycle between essence-delineation (Ji) and territory-mapping (Pi), both of which further concentrate existing contents without branching outward. Information gets more internally nuanced and specific with each cycle.",
+                "example": "Biblical scholarship uncovering more information from the same scriptures through comparative analysis",
+                "outcomes": {
+                    "positive": "Increased information quality and depth",
+                    "negative": "Cryptic obfuscation"
+                }
+            },
+            "expansion": {
+                "name": "Expansion (Pe+Je)",
+                "functions": [
+                    "Pe",
+                    "Je"
+                ],
+                "description": "A cycle between gathering information (Pe) and immediately executing on that data (Je), without pausing to condense the data. Information comes in and actions come right out without inhibition.",
+                "mechanism": "Bypassing mental blocks for high-speed output",
+                "outcomes": {
+                    "positive": "High-speed content creation",
+                    "negative": "Low quality and unpolished information"
+                }
+            },
+            "formulation": {
+                "name": "Formulation (Ji+Je)",
+                "functions": [
+                    "Ji",
+                    "Je"
+                ],
+                "description": "Creates an internally-coherent system, where Ji sets the axioms through which Je's operational rules can function. Je is constrained to Ji's self-contained framework of ideal forms, creating a closed, ideal system.",
+                "result": "A 'formula' for practical living and understanding life overall",
+                "outcomes": {
+                    "positive": "Powerful paradigm constructions",
+                    "negative": "Insular reasoning"
+                }
+            },
+            "synthesis": {
+                "name": "Synthesis (Pe+Pi)",
+                "functions": [
+                    "Pe",
+                    "Pi"
+                ],
+                "description": "Seamlessly flows from information intake (Pe) to information recall (Pi) and back. The individual navigates the present and the past harmoniously without friction between new and old information.",
+                "example": "Film score composer weaving musical landscapes (Pi) to fit specific moments in a film (Pe)",
+                "outcomes": {
+                    "positive": "Creative genius",
+                    "negative": "Loss of life structure due to excessive fluidity"
+                }
+            }
+        }
+    },
+    "quadras": {
+        "Alpha": {
+            "name": "Alpha: Diplomatic-Ephemeralists",
+            "axes": [
+                "Ti/Fe",
+                "Ne/Si"
+            ],
+            "types": [
+                "TiNe",
+                "NeTi",
+                "FeSi",
+                "SiFe"
+            ],
+            "dynamics": {
+                "primary": {
+                    "diplomatic": "Fe+Si",
+                    "ephemeral": "Ti+Ne"
+                },
+                "secondary": {
+                    "scholastic": "Ti+Si",
+                    "inspirer": "Fe+Ne"
+                },
+                "compound": [
+                    "IF",
+                    "IN",
+                    "ES",
+                    "ET"
+                ]
+            },
+            "description": "Every Alpha type will access all these dynamics to some degree, regardless of their development.",
+            "source": "Augustinavičiūtė's quadra theory based on Jung's function-attitude combinations"
+        },
+        "Beta": {
+            "name": "Beta: Sectarian-Sensationalists",
+            "axes": [
+                "Ti/Fe",
+                "Se/Ni"
+            ],
+            "types": [
+                "TiSe",
+                "SeTi",
+                "FeNi",
+                "NiFe"
+            ],
+            "dynamics": {
+                "primary": {
+                    "sectarian": "Fe+Ni",
+                    "sensationalist": "Ti+Se"
+                },
+                "secondary": {
+                    "cabbalist": "Ti+Ni",
+                    "persuader": "Fe+Se"
+                },
+                "compound": [
+                    "IF",
+                    "IS",
+                    "EN",
+                    "ET"
+                ]
+            },
+            "description": "Every Beta type will access all these dynamics to some degree, regardless of their development.",
+            "source": "Augustinavičiūtė's quadra theory based on Jung's function-attitude combinations"
+        },
+        "Gamma": {
+            "name": "Gamma: Meritocratic-Sensualists",
+            "axes": [
+                "Fi/Te",
+                "Se/Ni"
+            ],
+            "types": [
+                "FiSe",
+                "SeFi",
+                "TeNi",
+                "NiTe"
+            ],
+            "dynamics": {
+                "primary": {
+                    "meritocratic": "Te+Ni",
+                    "sensualist": "Fi+Se"
+                },
+                "secondary": {
+                    "occultist": "Fi+Ni",
+                    "realizer": "Te+Se"
+                },
+                "compound": [
+                    "IT",
+                    "IS",
+                    "EN",
+                    "EF"
+                ]
+            },
+            "description": "Every Gamma type will access all these dynamics to some degree, regardless of their development.",
+            "source": "Augustinavičiūtė's quadra theory based on Jung's function-attitude combinations"
+        },
+        "Delta": {
+            "name": "Delta: Bureaucratic-Etherealists",
+            "axes": [
+                "Fi/Te",
+                "Ne/Si"
+            ],
+            "types": [
+                "FiNe",
+                "NeFi",
+                "TeSi",
+                "SiTe"
+            ],
+            "dynamics": {
+                "primary": {
+                    "bureaucratic": "Te+Si",
+                    "etherealist": "Fi+Ne"
+                },
+                "secondary": {
+                    "druidist": "Fi+Si",
+                    "inventor": "Te+Ne"
+                },
+                "compound": [
+                    "IT",
+                    "IN",
+                    "ES",
+                    "EF"
+                ]
+            },
+            "description": "Every Delta type will access all these dynamics to some degree, regardless of their development.",
+            "source": "Augustinavičiūtė's quadra theory based on Jung's function-attitude combinations"
+        }
+    },
+    "theoreticalFoundations": {
+        "jungianBasis": {
+            "title": "Jung's Psychological Types as Foundation",
+            "description": "The metabolic framework builds directly upon Jung's original conception of psychological functions as manifestations of libidinal energy",
+            "keyPrinciples": [
+                "Functions as energic manifestations of libido",
+                "Attitude types as directions of libidinal flow",
+                "Compensation principle maintaining psychic equilibrium",
+                "Differentiation as conscious development of functions"
+            ],
+            "source": "Jung, C.G. Psychological Types (CW 6, 1921); On Psychic Energy (CW 8)"
+        },
+        "kepińskiIntegration": {
+            "title": "Kępiński's Information Metabolism Theory",
+            "description": "Antoni Kępiński's biological model of information metabolism provides the metabolic framework for understanding cognitive function operation",
+            "keyPrinciples": [
+                "Information exchange as fundamental life process",
+                "Two-phase cycle: orientation and action",
+                "Feedback loops maintaining system integrity",
+                "Biological grounding of psychological processes"
+            ],
+            "source": "Kępiński, Antoni. 'Melancholia' (1974); Information Metabolism concept"
+        },
+        "augustinavičiūtėSynthesis": {
+            "title": "Augustinavičiūtė's Socionics Integration",
+            "description": "Aušra Augustinavičiūtė's synthesis of Jung's psychological types with Kępiński's information metabolism creates the foundation for understanding cognitive type metabolism",
+            "keyPrinciples": [
+                "Eight information metabolism elements (IMEs)",
+                "Model A as metabolic processing structure",
+                "Intertype relations as metabolic compatibility",
+                "Quadra values as shared metabolic orientations"
+            ],
+            "source": "Augustinavičiūtė, Aušra. 'On the Dual Nature of Humanity' and other foundational socionics works"
+        }
     }
-  },
-
-  "quadras": {
-    "Alpha": {
-      "name": "Alpha: Diplomatic-Ephemeralists", 
-      "axes": ["Ti/Fe", "Ne/Si"],
-      "types": ["TiNe", "NeTi", "FeSi", "SiFe"],
-      "dynamics": {
-        "primary": {
-          "diplomatic": "Fe+Si",
-          "ephemeral": "Ti+Ne"
-        },
-        "secondary": {
-          "scholastic": "Ti+Si",
-          "inspirer": "Fe+Ne" 
-        },
-        "compound": ["IF", "IN", "ES", "ET"]
-      },
-      "description": "Every Alpha type will access all these dynamics to some degree, regardless of their development.",
-      "source": "Augustinavičiūtė's quadra theory based on Jung's function-attitude combinations"
-    },
-    "Beta": {
-      "name": "Beta: Sectarian-Sensationalists",
-      "axes": ["Ti/Fe", "Se/Ni"],
-      "types": ["TiSe", "SeTi", "FeNi", "NiFe"],
-      "dynamics": {
-        "primary": {
-          "sectarian": "Fe+Ni", 
-          "sensationalist": "Ti+Se"
-        },
-        "secondary": {
-          "cabbalist": "Ti+Ni",
-          "persuader": "Fe+Se"
-        },
-        "compound": ["IF", "IS", "EN", "ET"]
-      },
-      "description": "Every Beta type will access all these dynamics to some degree, regardless of their development.",
-      "source": "Augustinavičiūtė's quadra theory based on Jung's function-attitude combinations"
-    },
-    "Gamma": {
-      "name": "Gamma: Meritocratic-Sensualists",
-      "axes": ["Fi/Te", "Se/Ni"],
-      "types": ["FiSe", "SeFi", "TeNi", "NiTe"],
-      "dynamics": {
-        "primary": {
-          "meritocratic": "Te+Ni",
-          "sensualist": "Fi+Se"
-        },
-        "secondary": {
-          "occultist": "Fi+Ni", 
-          "realizer": "Te+Se"
-        },
-        "compound": ["IT", "IS", "EN", "EF"]
-      },
-      "description": "Every Gamma type will access all these dynamics to some degree, regardless of their development.",
-      "source": "Augustinavičiūtė's quadra theory based on Jung's function-attitude combinations"
-    },
-    "Delta": {
-      "name": "Delta: Bureaucratic-Etherealists",
-      "axes": ["Fi/Te", "Ne/Si"],
-      "types": ["FiNe", "NeFi", "TeSi", "SiTe"],
-      "dynamics": {
-        "primary": {
-          "bureaucratic": "Te+Si",
-          "etherealist": "Fi+Ne"
-        },
-        "secondary": {
-          "druidist": "Fi+Si",
-          "inventor": "Te+Ne"
-        },
-        "compound": ["IT", "IN", "ES", "EF"]
-      },
-      "description": "Every Delta type will access all these dynamics to some degree, regardless of their development.",
-      "source": "Augustinavičiūtė's quadra theory based on Jung's function-attitude combinations"
-    }
-  },
-
-  "theoreticalFoundations": {
-    "jungianBasis": {
-      "title": "Jung's Psychological Types as Foundation",
-      "description": "The metabolic framework builds directly upon Jung's original conception of psychological functions as manifestations of libidinal energy",
-      "keyPrinciples": [
-        "Functions as energic manifestations of libido",
-        "Attitude types as directions of libidinal flow", 
-        "Compensation principle maintaining psychic equilibrium",
-        "Differentiation as conscious development of functions"
-      ],
-      "source": "Jung, C.G. Psychological Types (CW 6, 1921); On Psychic Energy (CW 8)"
-    },
-    "kepińskiIntegration": {
-      "title": "Kępiński's Information Metabolism Theory",
-      "description": "Antoni Kępiński's biological model of information metabolism provides the metabolic framework for understanding cognitive function operation",
-      "keyPrinciples": [
-        "Information exchange as fundamental life process",
-        "Two-phase cycle: orientation and action",
-        "Feedback loops maintaining system integrity", 
-        "Biological grounding of psychological processes"
-      ],
-      "source": "Kępiński, Antoni. 'Melancholia' (1974); Information Metabolism concept"
-    },
-    "augustinavičiūtėSynthesis": {
-      "title": "Augustinavičiūtė's Socionics Integration", 
-      "description": "Aušra Augustinavičiūtė's synthesis of Jung's psychological types with Kępiński's information metabolism creates the foundation for understanding cognitive type metabolism",
-      "keyPrinciples": [
-        "Eight information metabolism elements (IMEs)",
-        "Model A as metabolic processing structure",
-        "Intertype relations as metabolic compatibility",
-        "Quadra values as shared metabolic orientations"
-      ],
-      "source": "Augustinavičiūtė, Aušra. 'On the Dual Nature of Humanity' and other foundational socionics works"
-    }
-  }
 }

@@ -32,6 +32,33 @@ const MetabolicPrinciples = () => {
         Se: "#F39C12"
     };
 
+    // Safe data access with error handling
+    const safeMetabolicData = createMemo(() => {
+        if (!metabolicData || typeof metabolicData !== 'object') {
+            console.warn('Metabolic data is missing or invalid');
+            return {
+                metabolicPrinciples: { coreAxioms: {} },
+                fundamentalProcesses: {},
+                orientations: {},
+                attitudeProcesses: {},
+                ontologicalRegistrations: {},
+                specificFunctions: {},
+                interFunctionDynamics: { definition: '', dynamics: {} },
+                quadras: {}
+            };
+        }
+        return metabolicData;
+    });
+
+    // Function color helper with fallback
+    const getFunctionColor = (func) => {
+        if (functionColors[func]) return functionColors[func];
+        // Handle compound functions like "Ji", "Pe"
+        if (func.includes('i')) return '#6c757d';
+        if (func.includes('e')) return '#9c9c9c';
+        return '#6c757d'; // Default fallback
+    };
+
     const resetSelections = () => {
         setSelectedFunction(null);
         setSelectedDynamic(null);
@@ -41,6 +68,13 @@ const MetabolicPrinciples = () => {
     const handleSectionChange = (section) => {
         setSelectedSection(section);
         resetSelections();
+    };
+
+    const handleKeyNavigation = (event, section) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            handleSectionChange(section);
+        }
     };
 
     return (
@@ -53,14 +87,19 @@ const MetabolicPrinciples = () => {
                 </p>
             </div>
 
-            <div class={styles.navigation}>
+            <div class={styles.navigation} role="tablist" aria-label="Metabolic framework sections">
                 {sections.map((section) => (
                     <button
-                        class={`${styles.navButton} ${selectedSection() === section.key ? styles.activeNav : ""
-                            }`}
+                        key={section.key}
+                        class={`${styles.navButton} ${selectedSection() === section.key ? styles.activeNav : ""}`}
                         onClick={() => handleSectionChange(section.key)}
+                        onKeyDown={(e) => handleKeyNavigation(e, section.key)}
+                        aria-pressed={selectedSection() === section.key}
+                        aria-controls={`section-${section.key}`}
+                        role="tab"
+                        tabIndex={selectedSection() === section.key ? 0 : -1}
                     >
-                        <span class={styles.navIcon}>{section.icon}</span>
+                        <span class={styles.navIcon} aria-hidden="true">{section.icon}</span>
                         {section.label}
                     </button>
                 ))}
@@ -69,13 +108,18 @@ const MetabolicPrinciples = () => {
             <div class={styles.content}>
                 {/* Core Principles */}
                 {selectedSection() === "principles" && (
-                    <div class={styles.section}>
+                    <div class={styles.section} id="section-principles" role="tabpanel">
                         <h2 class={styles.sectionTitle}>🧠 Core Metabolic Principles</h2>
                         <div class={styles.principlesGrid}>
-                            {Object.entries(metabolicData.metabolicPrinciples.coreAxioms).map(([key, principle]) => (
-                                <div class={styles.principleCard}>
-                                    <h3 class={styles.principleTitle}>{principle.title}</h3>
-                                    <p class={styles.principleDescription}>{principle.description}</p>
+                            {Object.entries(safeMetabolicData().metabolicPrinciples?.coreAxioms || {}).map(([key, principle]) => (
+                                <div key={key} class={styles.principleCard}>
+                                    <h3 class={styles.principleTitle}>{principle?.title || 'Untitled Principle'}</h3>
+                                    <p class={styles.principleDescription}>{principle?.description || 'No description available'}</p>
+                                    {principle?.source && (
+                                        <div class={styles.source}>
+                                            <strong>Source:</strong> {principle.source}
+                                        </div>
+                                    )}
                                 </div>
                             ))}
                         </div>
@@ -84,20 +128,29 @@ const MetabolicPrinciples = () => {
 
                 {/* Fundamental Processes */}
                 {selectedSection() === "processes" && (
-                    <div class={styles.section}>
+                    <div class={styles.section} id="section-processes" role="tabpanel">
                         <h2 class={styles.sectionTitle}>⚙️ Fundamental Processes</h2>
                         <div class={styles.processesGrid}>
-                            {Object.entries(metabolicData.fundamentalProcesses).map(([key, process]) => (
-                                <div class={styles.processCard}>
-                                    <h3 class={styles.processTitle}>{process.name}</h3>
-                                    <p class={styles.processDescription}>{process.description}</p>
+                            {Object.entries(safeMetabolicData().fundamentalProcesses || {}).map(([key, process]) => (
+                                <div key={key} class={styles.processCard}>
+                                    <h3 class={styles.processTitle}>{process?.name || 'Unnamed Process'}</h3>
+                                    <p class={styles.processDescription}>{process?.description || 'No description available'}</p>
                                     <div class={styles.processMeta}>
-                                        <div class={styles.functions}>
-                                            <strong>Functions:</strong> {process.functions.join(", ")}
-                                        </div>
-                                        <div class={styles.principle}>
-                                            <strong>Principle:</strong> {process.principle}
-                                        </div>
+                                        {process?.functions && (
+                                            <div class={styles.functions}>
+                                                <strong>Functions:</strong> {process.functions.join(", ")}
+                                            </div>
+                                        )}
+                                        {process?.principle && (
+                                            <div class={styles.principle}>
+                                                <strong>Principle:</strong> {process.principle}
+                                            </div>
+                                        )}
+                                        {process?.source && (
+                                            <div class={styles.source}>
+                                                <strong>Source:</strong> {process.source}
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             ))}
@@ -107,18 +160,24 @@ const MetabolicPrinciples = () => {
 
                 {/* Orientations */}
                 {selectedSection() === "orientations" && (
-                    <div class={styles.section}>
+                    <div class={styles.section} id="section-orientations" role="tabpanel">
                         <h2 class={styles.sectionTitle}>🔄 Cognitive Orientations</h2>
                         <div class={styles.orientationsGrid}>
-                            {Object.entries(metabolicData.orientations).map(([key, orientation]) => (
-                                <div class={styles.orientationCard}>
+                            {Object.entries(safeMetabolicData().orientations || {}).map(([key, orientation]) => (
+                                <div key={key} class={styles.orientationCard}>
                                     <h3 class={styles.orientationTitle}>
-                                        {orientation.name} <span class={styles.symbol}>({orientation.symbol})</span>
+                                        {orientation?.name || 'Unnamed Orientation'}
+                                        {orientation?.symbol && <span class={styles.symbol}>({orientation.symbol})</span>}
                                     </h3>
-                                    <p class={styles.orientationDescription}>{orientation.description}</p>
+                                    <p class={styles.orientationDescription}>{orientation?.description || 'No description available'}</p>
                                     <div class={styles.orientationMeta}>
-                                        <div><strong>Mechanism:</strong> {orientation.mechanism}</div>
-                                        <div><strong>Effect:</strong> {orientation.effect}</div>
+                                        {orientation?.mechanism && <div><strong>Mechanism:</strong> {orientation.mechanism}</div>}
+                                        {orientation?.effect && <div><strong>Effect:</strong> {orientation.effect}</div>}
+                                        {orientation?.source && (
+                                            <div class={styles.source}>
+                                                <strong>Source:</strong> {orientation.source}
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             ))}
@@ -128,26 +187,34 @@ const MetabolicPrinciples = () => {
 
                 {/* Attitude Processes */}
                 {selectedSection() === "attitudes" && (
-                    <div class={styles.section}>
+                    <div class={styles.section} id="section-attitudes" role="tabpanel">
                         <h2 class={styles.sectionTitle}>🎯 Attitude Processes</h2>
                         <div class={styles.attitudesGrid}>
-                            {Object.entries(metabolicData.attitudeProcesses).map(([key, attitude]) => (
-                                <div class={styles.attitudeCard}>
-                                    <h3 class={styles.attitudeTitle}>{attitude.name}</h3>
-                                    <div class={styles.attitudeFunctions}>
-                                        {attitude.functions.map(func => (
-                                            <span
-                                                class={styles.functionBadge}
-                                                style={{ "background-color": functionColors[func] }}
-                                            >
-                                                {func}
-                                            </span>
-                                        ))}
-                                    </div>
-                                    <p class={styles.attitudeDescription}>{attitude.description}</p>
-                                    {attitude.examples && (
+                            {Object.entries(safeMetabolicData().attitudeProcesses || {}).map(([key, attitude]) => (
+                                <div key={key} class={styles.attitudeCard}>
+                                    <h3 class={styles.attitudeTitle}>{attitude?.name || 'Unnamed Attitude'}</h3>
+                                    {attitude?.functions && (
+                                        <div class={styles.attitudeFunctions}>
+                                            {attitude.functions.map(func => (
+                                                <span
+                                                    key={func}
+                                                    class={styles.functionBadge}
+                                                    style={{ "background-color": getFunctionColor(func) }}
+                                                >
+                                                    {func}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    )}
+                                    <p class={styles.attitudeDescription}>{attitude?.description || 'No description available'}</p>
+                                    {attitude?.examples && (
                                         <div class={styles.examples}>
                                             <strong>Examples:</strong> {attitude.examples.join(", ")}
+                                        </div>
+                                    )}
+                                    {attitude?.source && (
+                                        <div class={styles.source}>
+                                            <strong>Source:</strong> {attitude.source}
                                         </div>
                                     )}
                                 </div>
@@ -158,28 +225,38 @@ const MetabolicPrinciples = () => {
 
                 {/* Ontological Registrations */}
                 {selectedSection() === "ontology" && (
-                    <div class={styles.section}>
+                    <div class={styles.section} id="section-ontology" role="tabpanel">
                         <h2 class={styles.sectionTitle}>🌐 Ontological Registrations</h2>
                         <div class={styles.ontologyGrid}>
-                            {Object.entries(metabolicData.ontologicalRegistrations).map(([key, registration]) => (
-                                <div class={styles.ontologyCard}>
-                                    <h3 class={styles.ontologyTitle}>{registration.name}</h3>
-                                    <div class={styles.ontologyFunctions}>
-                                        {registration.functions.map(func => (
-                                            <span
-                                                class={styles.functionBadge}
-                                                style={{ "background-color": functionColors[func] }}
-                                            >
-                                                {func}
-                                            </span>
-                                        ))}
-                                    </div>
-                                    <p class={styles.ontologyDescription}>{registration.description}</p>
+                            {Object.entries(safeMetabolicData().ontologicalRegistrations || {}).map(([key, registration]) => (
+                                <div key={key} class={styles.ontologyCard}>
+                                    <h3 class={styles.ontologyTitle}>{registration?.name || 'Unnamed Registration'}</h3>
+                                    {registration?.functions && (
+                                        <div class={styles.ontologyFunctions}>
+                                            {registration.functions.map(func => (
+                                                <span
+                                                    key={func}
+                                                    class={styles.functionBadge}
+                                                    style={{ "background-color": getFunctionColor(func) }}
+                                                >
+                                                    {func}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    )}
+                                    <p class={styles.ontologyDescription}>{registration?.description || 'No description available'}</p>
                                     <div class={styles.ontologyMeta}>
-                                        {registration.evaluation && (
+                                        {registration?.evaluation && (
                                             <div><strong>Evaluation:</strong> {registration.evaluation}</div>
                                         )}
-                                        <div><strong>Characteristic:</strong> {registration.characteristic}</div>
+                                        {registration?.characteristic && (
+                                            <div><strong>Characteristic:</strong> {registration.characteristic}</div>
+                                        )}
+                                        {registration?.source && (
+                                            <div class={styles.source}>
+                                                <strong>Source:</strong> {registration.source}
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             ))}
@@ -189,25 +266,39 @@ const MetabolicPrinciples = () => {
 
                 {/* Specific Functions */}
                 {selectedSection() === "functions" && (
-                    <div class={styles.section}>
+                    <div class={styles.section} id="section-functions" role="tabpanel">
                         <h2 class={styles.sectionTitle}>🔧 Specific Functions</h2>
                         <div class={styles.functionsGrid}>
-                            {Object.entries(metabolicData.specificFunctions).map(([funcKey, func]) => (
+                            {Object.entries(safeMetabolicData().specificFunctions || {}).map(([funcKey, func]) => (
                                 <div
-                                    class={`${styles.functionCard} ${selectedFunction() === funcKey ? styles.selectedFunction : ""
-                                        }`}
+                                    key={funcKey}
+                                    class={`${styles.functionCard} ${selectedFunction() === funcKey ? styles.selectedFunction : ""}`}
                                     onClick={() => setSelectedFunction(selectedFunction() === funcKey ? null : funcKey)}
+                                    role="button"
+                                    tabIndex="0"
+                                    onKeyDown={(e) => {
+                                        if (e.key === 'Enter' || e.key === ' ') {
+                                            e.preventDefault();
+                                            setSelectedFunction(selectedFunction() === funcKey ? null : funcKey);
+                                        }
+                                    }}
+                                    aria-expanded={selectedFunction() === funcKey}
                                 >
                                     <h3
                                         class={styles.functionTitle}
-                                        style={{ color: functionColors[funcKey] }}
+                                        style={{ color: getFunctionColor(funcKey) }}
                                     >
-                                        {func.name}
+                                        {func?.name || `Function ${funcKey}`}
                                     </h3>
-                                    <p class={styles.functionDescription}>{func.description}</p>
+                                    <p class={styles.functionDescription}>{func?.description || 'No description available'}</p>
                                     <div class={styles.functionMeta}>
-                                        <div><strong>Mechanism:</strong> {func.mechanism}</div>
-                                        <div><strong>Effect:</strong> {func.effect}</div>
+                                        {func?.mechanism && <div><strong>Mechanism:</strong> {func.mechanism}</div>}
+                                        {func?.effect && <div><strong>Effect:</strong> {func.effect}</div>}
+                                        {func?.source && (
+                                            <div class={styles.source}>
+                                                <strong>Source:</strong> {func.source}
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             ))}
@@ -217,41 +308,66 @@ const MetabolicPrinciples = () => {
 
                 {/* Inter-Function Dynamics */}
                 {selectedSection() === "dynamics" && (
-                    <div class={styles.section}>
+                    <div class={styles.section} id="section-dynamics" role="tabpanel">
                         <h2 class={styles.sectionTitle}>⚡ Inter-Function Dynamics</h2>
-                        <p class={styles.dynamicsIntro}>{metabolicData.interFunctionDynamics.definition}</p>
+                        <p class={styles.dynamicsIntro}>
+                            {safeMetabolicData().interFunctionDynamics?.definition || 'Dynamics information not available'}
+                        </p>
                         <div class={styles.dynamicsGrid}>
-                            {Object.entries(metabolicData.interFunctionDynamics.dynamics).map(([key, dynamic]) => (
+                            {Object.entries(safeMetabolicData().interFunctionDynamics?.dynamics || {}).map(([key, dynamic]) => (
                                 <div
-                                    class={`${styles.dynamicCard} ${selectedDynamic() === key ? styles.selectedDynamic : ""
-                                        }`}
+                                    key={key}
+                                    class={`${styles.dynamicCard} ${selectedDynamic() === key ? styles.selectedDynamic : ""}`}
                                     onClick={() => setSelectedDynamic(selectedDynamic() === key ? null : key)}
+                                    role="button"
+                                    tabIndex="0"
+                                    onKeyDown={(e) => {
+                                        if (e.key === 'Enter' || e.key === ' ') {
+                                            e.preventDefault();
+                                            setSelectedDynamic(selectedDynamic() === key ? null : key);
+                                        }
+                                    }}
+                                    aria-expanded={selectedDynamic() === key}
                                 >
-                                    <h3 class={styles.dynamicTitle}>{dynamic.name}</h3>
-                                    <div class={styles.dynamicFunctions}>
-                                        {dynamic.functions.map(func => (
-                                            <span
-                                                class={styles.functionBadge}
-                                                style={{ "background-color": functionColors[func] }}
-                                            >
-                                                {func}
-                                            </span>
-                                        ))}
-                                    </div>
-                                    <p class={styles.dynamicDescription}>{dynamic.description}</p>
-                                    {dynamic.example && (
+                                    <h3 class={styles.dynamicTitle}>{dynamic?.name || 'Unnamed Dynamic'}</h3>
+                                    {dynamic?.functions && (
+                                        <div class={styles.dynamicFunctions}>
+                                            {dynamic.functions.map(func => (
+                                                <span
+                                                    key={func}
+                                                    class={styles.functionBadge}
+                                                    style={{ "background-color": getFunctionColor(func) }}
+                                                >
+                                                    {func}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    )}
+                                    <p class={styles.dynamicDescription}>{dynamic?.description || 'No description available'}</p>
+                                    {dynamic?.example && (
                                         <div class={styles.dynamicExample}>
                                             <strong>Example:</strong> {dynamic.example}
                                         </div>
                                     )}
-                                    <div class={styles.outcomes}>
-                                        <div class={styles.positiveOutcome}>
-                                            <strong>✓ Positive:</strong> {dynamic.outcomes.positive}
+                                    {dynamic?.outcomes && (
+                                        <div class={styles.outcomes}>
+                                            {dynamic.outcomes.positive && (
+                                                <div class={styles.positiveOutcome}>
+                                                    <strong>✓ Positive:</strong> {dynamic.outcomes.positive}
+                                                </div>
+                                            )}
+                                            {dynamic.outcomes.negative && (
+                                                <div class={styles.negativeOutcome}>
+                                                    <strong>✗ Negative:</strong> {dynamic.outcomes.negative}
+                                                </div>
+                                            )}
                                         </div>
-                                        <div class={styles.negativeOutcome}>
-                                            <strong>✗ Negative:</strong> {dynamic.outcomes.negative}
+                                    )}
+                                    {dynamic?.source && (
+                                        <div class={styles.source}>
+                                            <strong>Source:</strong> {dynamic.source}
                                         </div>
-                                    </div>
+                                    )}
                                 </div>
                             ))}
                         </div>
@@ -260,49 +376,75 @@ const MetabolicPrinciples = () => {
 
                 {/* Quadras */}
                 {selectedSection() === "quadras" && (
-                    <div class={styles.section}>
+                    <div class={styles.section} id="section-quadras" role="tabpanel">
                         <h2 class={styles.sectionTitle}>🎭 Quadras</h2>
                         <div class={styles.quadrasGrid}>
-                            {Object.entries(metabolicData.quadras).map(([key, quadra]) => (
+                            {Object.entries(safeMetabolicData().quadras || {}).map(([key, quadra]) => (
                                 <div
-                                    class={`${styles.quadraCard} ${selectedQuadra() === key ? styles.selectedQuadra : ""
-                                        }`}
+                                    key={key}
+                                    class={`${styles.quadraCard} ${selectedQuadra() === key ? styles.selectedQuadra : ""}`}
                                     onClick={() => setSelectedQuadra(selectedQuadra() === key ? null : key)}
+                                    role="button"
+                                    tabIndex="0"
+                                    onKeyDown={(e) => {
+                                        if (e.key === 'Enter' || e.key === ' ') {
+                                            e.preventDefault();
+                                            setSelectedQuadra(selectedQuadra() === key ? null : key);
+                                        }
+                                    }}
+                                    aria-expanded={selectedQuadra() === key}
                                 >
-                                    <h3 class={styles.quadraTitle}>{quadra.name}</h3>
-                                    <div class={styles.quadraAxes}>
-                                        <strong>Axes:</strong> {quadra.axes.join(" × ")}
-                                    </div>
-                                    <div class={styles.quadraTypes}>
-                                        <strong>Types:</strong> {quadra.types.join(", ")}
-                                    </div>
-                                    <div class={styles.quadraDynamics}>
-                                        <div class={styles.primaryDynamics}>
-                                            <h4>Primary Dynamics</h4>
-                                            {Object.entries(quadra.dynamics.primary).map(([name, funcs]) => (
-                                                <div class={styles.dynamicItem}>
-                                                    <strong>{name}:</strong> {funcs}
+                                    <h3 class={styles.quadraTitle}>{quadra?.name || 'Unnamed Quadra'}</h3>
+                                    {quadra?.axes && (
+                                        <div class={styles.quadraAxes}>
+                                            <strong>Axes:</strong> {quadra.axes.join(" × ")}
+                                        </div>
+                                    )}
+                                    {quadra?.types && (
+                                        <div class={styles.quadraTypes}>
+                                            <strong>Types:</strong> {quadra.types.join(", ")}
+                                        </div>
+                                    )}
+                                    {quadra?.dynamics && (
+                                        <div class={styles.quadraDynamics}>
+                                            {quadra.dynamics.primary && (
+                                                <div class={styles.primaryDynamics}>
+                                                    <h4>Primary Dynamics</h4>
+                                                    {Object.entries(quadra.dynamics.primary).map(([name, funcs]) => (
+                                                        <div key={name} class={styles.dynamicItem}>
+                                                            <strong>{name}:</strong> {funcs}
+                                                        </div>
+                                                    ))}
                                                 </div>
-                                            ))}
-                                        </div>
-                                        <div class={styles.secondaryDynamics}>
-                                            <h4>Secondary Dynamics</h4>
-                                            {Object.entries(quadra.dynamics.secondary).map(([name, funcs]) => (
-                                                <div class={styles.dynamicItem}>
-                                                    <strong>{name}:</strong> {funcs}
+                                            )}
+                                            {quadra.dynamics.secondary && (
+                                                <div class={styles.secondaryDynamics}>
+                                                    <h4>Secondary Dynamics</h4>
+                                                    {Object.entries(quadra.dynamics.secondary).map(([name, funcs]) => (
+                                                        <div key={name} class={styles.dynamicItem}>
+                                                            <strong>{name}:</strong> {funcs}
+                                                        </div>
+                                                    ))}
                                                 </div>
-                                            ))}
+                                            )}
+                                            {quadra.dynamics.compound && (
+                                                <div class={styles.compoundEffects}>
+                                                    <h4>Compound Effects</h4>
+                                                    <div class={styles.compounds}>
+                                                        {quadra.dynamics.compound.map(compound => (
+                                                            <span key={compound} class={styles.compoundBadge}>{compound}</span>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
                                         </div>
-                                        <div class={styles.compoundEffects}>
-                                            <h4>Compound Effects</h4>
-                                            <div class={styles.compounds}>
-                                                {quadra.dynamics.compound.map(compound => (
-                                                    <span class={styles.compoundBadge}>{compound}</span>
-                                                ))}
-                                            </div>
+                                    )}
+                                    <p class={styles.quadraDescription}>{quadra?.description || 'No description available'}</p>
+                                    {quadra?.source && (
+                                        <div class={styles.source}>
+                                            <strong>Source:</strong> {quadra.source}
                                         </div>
-                                    </div>
-                                    <p class={styles.quadraDescription}>{quadra.description}</p>
+                                    )}
                                 </div>
                             ))}
                         </div>
