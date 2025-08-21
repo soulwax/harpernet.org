@@ -15,7 +15,7 @@
     "status": "pm2 status mbti-app",
     "logs": "pm2 logs mbti-app",
     "watch": "nodemon --watch src --exec \"npm run dev\" --ext js,jsx,css,html",
-    "debug": "vite --port 3890 --debug",
+    "debug": "vite --port 3890 --debug --host",
     "bump": "npm version patch"
   },
   "keywords": [
