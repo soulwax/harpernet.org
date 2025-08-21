@@ -182,16 +182,6 @@ const About = () => {
               <h4>Standard Contact</h4>
               <ul className={styles.contactList}>
                 <li>
-                  <strong>Email:</strong>{" "}
-                  <a
-                    href="mailto:me@halflight.eu"
-                    rel="noopener noreferrer"
-                    aria-label="Send email to me@halflight.eu"
-                  >
-                    me@halflight.eu
-                  </a>
-                </li>
-                <li>
                   <strong>Alternative Email:</strong>{" "}
                   <a
                     href="mailto:soulwax@cock.li"
