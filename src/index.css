@@ -1,6 +1,6 @@
 /* File: src/index.css */
-
 /* Import theme variables FIRST */
+
 @import url('./styles/theme.css');
 
 * {
