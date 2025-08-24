@@ -41,6 +41,46 @@
       ]
     },
     {
+      "axis": "Ni-Se Axis",
+      "title": "Introverted Intuition & Extraverted Sensing",
+      "functions": [
+        {
+          "name": "Introverted Intuition",
+          "shorthand": "Ni",
+          "symbol": "🔮",
+          "color": "#3F51B5",
+          "oppositeFunction": "Se",
+          "essay": {
+            "introduction": "Introverted Intuition (Ni) synthesizes the unconscious toward singular vision. Jung described it as perception turned inward, a function that distills the chaos of possibilities into crystalline insight. Where Ne diverges into many paths, Ni converges toward one: the essential, the inevitable, the underlying pattern. Ni operates like a telescope pointed at the future, gathering disparate threads of information and weaving them into prophetic understanding. Its experience is often one of sudden knowing—insights that arrive whole, without visible steps, as if downloaded from some deeper source.",
+            "dominantExpression": "As dominant (INTJ, INFJ), Ni creates visionaries and architects of the future. The INTJ sees systems, strategies, and long-term implications with startling clarity, building plans that unfold over years or decades. The INFJ perceives the deeper currents of human nature and social change, often knowing how situations will develop before others see the signs. Both live primarily in tomorrow, seeing present moments as stepping stones toward larger patterns. Their weakness lies in groundedness: immediate details may be overlooked, present relationships neglected in favor of future visions. Their auxiliary functions (Te for INTJ, Fe for INFJ) serve as their reality-testing and implementation tools, translating Ni insights into actionable plans or interpersonal understanding.",
+            "auxiliaryExpression": "As auxiliary (ENTJ, ENFJ), Ni provides strategic depth to natural leaders. The ENTJ uses Ni to see several moves ahead in complex situations, anticipating consequences and positioning for long-term advantage. The ENFJ employs Ni to understand people's deeper motivations and developmental potential, guiding them toward growth. Here Ni is less mystical than practical—flashes of strategic insight that inform immediate decisions.",
+            "tertiaryExpression": "As tertiary (ISTP, ISFP), Ni emerges later in life as growing interest in meaning and direction. The ISTP may develop philosophical interests or long-term planning abilities. The ISFP might discover a clearer sense of personal destiny or artistic vision. Tertiary Ni often manifests as periodic insights about life direction, though these may feel surprising or disconnected from their usual focus on immediate experience.",
+            "inferiorExpression": "As inferior (ESTP, ESFP), Ni is weak and often feared. These present-focused types may distrust abstract planning or long-term implications. Under stress, inferior Ni erupts as paranoid thinking, obsessive worry about negative futures, or rigid adherence to pessimistic predictions. Integration involves learning to appreciate pattern recognition without losing their gift for immediate responsiveness.",
+            "shadowAspects": "Shadow Ni manifests as paranoid conspiracy thinking, grandiose delusions of special insight, or obsessive focus on negative patterns. It becomes not visionary but apocalyptic, seeing doom and manipulation everywhere while claiming exclusive understanding of 'what's really happening.'",
+            "axisRelationship": "Ni and Se form a tension between depth and surface, future and present, pattern and sensation. Ni seeks the underlying truth beneath appearances; Se attends to immediate reality in all its richness. Too much Ni without Se becomes ungrounded speculation; too much Se without Ni becomes shallow reactivity. The mature personality learns to ground vision in present awareness while using immediate experience to inform long-term understanding.",
+            "developmentalJourney": "Ni development begins in childhood as vivid imagination and prophetic play—children who seem to know things they shouldn't, who see patterns others miss. In adolescence, it may manifest as either withdrawal into fantasy or anxiety about an uncertain future. With maturity, Ni becomes practical wisdom: the ability to see where things are heading and to prepare accordingly. The mature Ni user becomes a guide to the future, helping others understand not just what is happening but what it means and where it leads."
+          }
+        },
+        {
+          "name": "Extraverted Sensing",
+          "shorthand": "Se",
+          "symbol": "👁️",
+          "color": "#FF9800",
+          "oppositeFunction": "Ni",
+          "essay": {
+            "introduction": "Extraverted Sensing (Se) perceives the immediate environment with vivid intensity. Jung described it as objective perception, a function that meets reality on its own terms without filtering through concepts or memories. Se is pure presentness: it sees, hears, touches, and responds with athletic grace. Where other functions interpret or remember, Se simply receives—and acts. Its gift is immediacy, adaptability, and an almost electrical connection to the sensory world. To live with Se is to inhabit a world of color, texture, movement, and opportunity.",
+            "dominantExpression": "As dominant (ESTP, ESFP), Se creates performers, athletes, and tacticians of the immediate. The ESTP reads situations with tactical brilliance, adapting moment by moment to maximize advantage or opportunity. The ESFP brings artistry and presence to every interaction, creating experiences that are vivid, warm, and memorable. Both possess exceptional situational awareness and the ability to make others feel fully alive in the moment. Their weakness lies in follow-through: long-term planning may feel constraining, abstract concepts boring or irrelevant. Their auxiliary functions (Ti for ESTP, Fi for ESFP) provide internal frameworks for processing their rich sensory intake.",
+            "auxiliaryExpression": "As auxiliary (ISTP, ISFP), Se serves as a reality-testing function for their inner worlds. The ISTP uses Se to gather data that feeds their Ti analysis, becoming skilled craftspeople and troubleshooters. The ISFP employs Se to align their Fi values with aesthetic expression, often excelling in arts, fashion, or other forms of sensory beauty. Here Se is more selective than in dominants, but still provides crucial grounding in immediate reality.",
+            "tertiaryExpression": "As tertiary (ENTJ, ENFJ), Se often develops midlife as appreciation for aesthetic pleasure and present-moment awareness. The ENTJ might discover interests in fine dining, travel, or physical fitness. The ENFJ may develop artistic hobbies or become more attuned to environmental beauty. Tertiary Se provides a counterbalance to their future-oriented nature, helping them enjoy the journey as well as the destination.",
+            "inferiorExpression": "As inferior (INTJ, INFJ), Se is the most undeveloped function. These future-focused types often struggle with immediate physical needs, aesthetic awareness, or spontaneous action. Under stress, inferior Se erupts as impulsive behavior, overindulgence in sensory pleasures, or scattered attention to immediate stimuli. Integration involves learning to inhabit their bodies and appreciate present-moment beauty without being overwhelmed by sensory input.",
+            "shadowAspects": "Shadow Se appears as destructive hedonism, reckless impulsivity, or aggressive dominance. It becomes not present-moment awareness but compulsive sensation-seeking, addictive behavior, or the use of physical presence to intimidate or overwhelm others.",
+            "axisRelationship": "Se and Ni form a fundamental polarity between immediate presence and transcendent pattern, between what is and what could be. Se without Ni risks becoming shallow or reactive; Ni without Se becomes ungrounded or impractical. Their integration allows for visionary action: the ability to see deeply while remaining fully present, to plan strategically while adapting tactically.",
+            "developmentalJourney": "Se development begins in childhood as natural physicality and environmental awareness—children who excel at sports, dance, or hands-on activities. In adolescence, it often manifests as thrill-seeking or aesthetic experimentation. With maturity, Se becomes refined presence: the ability to bring full awareness to immediate experience while using that awareness skillfully. The mature Se user becomes a master of timing and atmosphere, creating experiences that are both memorable and meaningful."
+          }
+        }
+      ]
+    },
+    {
       "axis": "Te-Fi Axis",
       "title": "Extraverted Thinking & Introverted Feeling",
       "functions": [

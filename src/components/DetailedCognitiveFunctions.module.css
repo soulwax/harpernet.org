@@ -37,6 +37,9 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
+    /* Ensure content doesn't get clipped */
+    overflow: visible;
+    min-height: fit-content;
 }
 
 /* Axis Selector Styles */
@@ -46,6 +49,9 @@
     padding: 24px;
     border-radius: 10px;
     box-shadow: var(--shadow-medium);
+    /* Prevent content clipping */
+    overflow: visible;
+    min-height: fit-content;
 }
 
 .axisSelector h2 {
@@ -56,8 +62,13 @@
 
 .axisGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Use auto-fill instead of auto-fit to ensure all items show */
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 16px;
+    /* Ensure minimum height to prevent content clipping */
+    min-height: fit-content;
+    /* Prevent overflow issues */
+    overflow: visible;
 }
 
 .axisCard {
@@ -66,6 +77,12 @@
     padding: 18px;
     background-color: var(--bg-tertiary);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Ensure visibility */
+    display: block !important;
+    visibility: visible !important;
+    position: relative;
+    min-height: 120px;
+    overflow: visible;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -339,5 +356,40 @@
         margin-right: 0;
         margin-bottom: 6px;
         font-size: 24px;
+    }
+}
+
+/* Specific media query for 150% scaling scenarios */
+@media screen and (min-width: 720px) and (max-width: 1440px) {
+    .axisGrid {
+        /* Force a specific layout for this problematic range */
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 14px;
+    }
+}
+
+/* High DPI scaling fix */
+@media screen and (min-resolution: 144dpi) and (max-width: 1200px) {
+    .axisGrid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 12px;
+    }
+
+    .axisCard {
+        min-height: 140px;
+    }
+}
+
+/* Fallback for Windows 150% scaling specifically */
+@media screen and (min-width: 1080px) and (max-width: 1080px) and (-webkit-min-device-pixel-ratio: 1.25) {
+    .axisGrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .axisCard {
+        flex: 0 0 calc(33.333% - 16px);
+        min-width: 220px;
     }
 }
