@@ -2,7 +2,6 @@
 
 import { createSignal } from "solid-js";
 import harperLogo from "../assets/harperalpha.svg";
-import solidLogo from "../assets/solid.svg";
 import styles from "./Header.module.css";
 import ThemeToggle from "./ThemeToggle";
 
@@ -54,7 +53,7 @@ const Header = () => {
         </a>
       </div>
 
-      <div class={styles.solidjsLink}>
+      {/* <div class={styles.solidjsLink}>
         <a
           href={headerInfo.solidJSHomepage}
           target="_blank"
@@ -69,7 +68,7 @@ const Header = () => {
           />
           <span class={styles.solidText}>{headerInfo.solidJSTitle}</span>
         </a>
-      </div>
+      </div> */}
 
       <div class={styles.headerControls}>
         <ThemeToggle />
