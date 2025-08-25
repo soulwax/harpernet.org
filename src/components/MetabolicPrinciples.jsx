@@ -1,25 +1,15 @@
 // File: src/components/MetabolicPrinciples.jsx
 
-import { createSignal, onMount } from "solid-js";
+import { createSignal } from "solid-js";
 import styles from "./MetabolicPrinciples.module.css";
+import metabolicPrinciplesData from "../data/metabolicPrinciples.json";
 
 const MetabolicPrinciples = () => {
-    const [metabolicData, setMetabolicData] = createSignal(null);
     const [activeSection, setActiveSection] = createSignal("overview");
     const [activeSubsection, setActiveSubsection] = createSignal(null);
-    const [loading, setLoading] = createSignal(true);
 
-    onMount(async () => {
-        try {
-            const response = await fetch("/src/data/metabolicPrinciples.json");
-            const data = await response.json();
-            setMetabolicData(data);
-            setLoading(false);
-        } catch (error) {
-            console.error("Error loading metabolic principles data:", error);
-            setLoading(false);
-        }
-    });
+    // Use the imported data directly
+    const metabolicData = () => metabolicPrinciplesData;
 
     const renderSection = () => {
         const data = metabolicData();
@@ -542,58 +532,54 @@ const MetabolicPrinciples = () => {
                     onClick={() => setActiveSection("overview")}
                     class={`${styles.navButton} ${activeSection() === "overview" ? styles.activeNav : ""}`}
                 >
-                    Overview
+                    🔍 Overview
                 </button>
                 <button
                     onClick={() => setActiveSection("functions")}
                     class={`${styles.navButton} ${activeSection() === "functions" ? styles.activeNav : ""}`}
                 >
-                    Functions
+                    ⚙️ Functions
                 </button>
                 <button
                     onClick={() => setActiveSection("dynamics")}
                     class={`${styles.navButton} ${activeSection() === "dynamics" ? styles.activeNav : ""}`}
                 >
-                    Dynamics
+                    🔄 Dynamics
                 </button>
                 <button
                     onClick={() => setActiveSection("quadras")}
                     class={`${styles.navButton} ${activeSection() === "quadras" ? styles.activeNav : ""}`}
                 >
-                    Quadras
+                    🎯 Quadras
                 </button>
                 <button
                     onClick={() => setActiveSection("development")}
                     class={`${styles.navButton} ${activeSection() === "development" ? styles.activeNav : ""}`}
                 >
-                    Development
+                    📈 Development
                 </button>
                 <button
                     onClick={() => setActiveSection("applications")}
                     class={`${styles.navButton} ${activeSection() === "applications" ? styles.activeNav : ""}`}
                 >
-                    Applications
+                    🛠️ Applications
                 </button>
                 <button
                     onClick={() => setActiveSection("research")}
                     class={`${styles.navButton} ${activeSection() === "research" ? styles.activeNav : ""}`}
                 >
-                    Research
+                    🔬 Research
                 </button>
                 <button
                     onClick={() => setActiveSection("foundations")}
                     class={`${styles.navButton} ${activeSection() === "foundations" ? styles.activeNav : ""}`}
                 >
-                    Foundations
+                    🏛️ Foundations
                 </button>
             </nav>
 
             <div class={styles.content}>
-                {loading() ? (
-                    <div class={styles.loading}>Loading metabolic principles...</div>
-                ) : (
-                    renderSection()
-                )}
+                {renderSection()}
             </div>
         </div>
     );
