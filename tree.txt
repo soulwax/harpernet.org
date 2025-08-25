@@ -45,6 +45,8 @@ harpernet.org
     │   ├───Footer.module.css
     │   ├───Header.jsx
     │   ├───Header.module.css
+    │   ├───MetabolicPrinciples.jsx
+    │   ├───MetabolicPrinciples.module.css
     │   ├───NavLink.jsx
     │   ├───Relationships.jsx
     │   ├───Relationships.module.css
@@ -61,6 +63,7 @@ harpernet.org
     │   ├───cognitiveFunctions.json
     │   ├───cognitiveFunctionsDetailed.json
     │   ├───jungianFramework.json
+    │   ├───metabolicPrinciples.json
     │   ├───relationships.json
     │   ├───relationshipsEnhanced.json
     │   └───sisterTypes.json
@@ -69,6 +72,7 @@ harpernet.org
     │   ├───BrotherTypesPage.jsx
     │   ├───CognitiveFunctionsDetailedPage.jsx
     │   ├───CognitiveFunctionsPage.jsx
+    │   ├───MetabolicPrinciplesPage.jsx
     │   ├───RelationshipsPage.jsx
     │   └───SisterTypesPage.jsx
     └───styles/

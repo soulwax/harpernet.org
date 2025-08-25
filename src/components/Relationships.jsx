@@ -1,4 +1,5 @@
 // File: src/components/Relationships.jsx
+
 import { createSignal, createMemo, For, Show } from "solid-js";
 import styles from "./Relationships.module.css";
 import relationshipsData from "../data/relationshipsEnhanced.json";

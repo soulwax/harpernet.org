@@ -1,4 +1,5 @@
 // File: src/components/DetailedCognitiveFunctions.jsx
+
 import { createMemo, createSignal, onMount } from "solid-js";
 import { For, Show } from "solid-js/web";
 import styles from "./DetailedCognitiveFunctions.module.css";
