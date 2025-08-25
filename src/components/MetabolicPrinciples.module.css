@@ -1,26 +1,27 @@
 /* File: src/components/MetabolicPrinciples.module.css */
 
-.container {
+.metabolicContainer {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem;
-    background: var(--bg-primary);
-    color: var(--text-primary);
+    padding: 40px 20px;
     min-height: 100vh;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 3rem;
-    padding: 2rem 0;
-    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    border-radius: 16px;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid var(--border-primary);
 }
 
-.title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.header h1 {
+    color: var(--accent);
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--accent), #667eea);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -34,554 +35,400 @@
     line-height: 1.6;
 }
 
-.navigation {
+.sectionNav {
     display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 3rem;
     justify-content: center;
-    padding: 1rem;
-    background: var(--bg-secondary);
-    border-radius: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-light);
+    border: 1px solid var(--border-light);
 }
 
 .navButton {
+    padding: 14px 24px;
+    border: 2px solid var(--border-primary);
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    background: transparent;
-    color: var(--text-secondary);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 500;
+    gap: 8px;
     white-space: nowrap;
 }
 
 .navButton:hover {
-    background: var(--bg-hover);
-    color: var(--text-primary);
+    background-color: var(--bg-hover);
     transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
 }
 
 .activeNav {
-    background: var(--accent-color) !important;
+    background-color: var(--accent) !important;
     color: white !important;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-}
-
-.navIcon {
-    font-size: 1.2rem;
+    border-color: var(--accent) !important;
+    box-shadow: var(--shadow-heavy) !important;
 }
 
 .content {
-    animation: fadeIn 0.5s ease-in-out;
+    background-color: var(--bg-secondary);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid var(--border-primary);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.section {
-    margin-bottom: 2rem;
-}
-
-.sectionTitle {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
+.sectionContent h2 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 24px;
     text-align: center;
-    color: var(--text-primary);
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--border-secondary);
 }
 
-/* Principles Section */
-.principlesGrid {
+.sectionDescription {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    background-color: var(--bg-tertiary);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+}
+
+.introText {
+    background-color: var(--bg-tertiary);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px solid var(--border-light);
+}
+
+.introText p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin: 0;
+    text-align: center;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    padding: 60px;
+    background-color: var(--bg-tertiary);
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+}
+
+/* Overview Section */
+.principleGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
 }
 
 .principleCard {
-    background: var(--bg-secondary);
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid var(--accent-color);
-    transition: transform 0.3s ease;
+    background-color: var(--bg-tertiary);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
 .principleCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-heavy);
+    border-color: var(--accent);
 }
 
-.principleTitle {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--accent-color);
-}
-
-.principleDescription {
-    line-height: 1.6;
-    color: var(--text-secondary);
-}
-
-/* Processes Section */
-.processesGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 2rem;
-}
-
-.processCard {
-    background: var(--bg-secondary);
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.processCard:hover {
-    transform: translateY(-5px);
-}
-
-.processTitle {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-}
-
-.processDescription {
-    line-height: 1.6;
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-}
-
-.processMeta {
+.principleCard h3 {
+    color: var(--accent);
+    font-size: 1.3rem;
+    margin-bottom: 16px;
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
-.functions,
-.principle {
-    color: var(--text-secondary);
+.principleCard p {
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin: 0;
 }
 
-/* Orientations Section */
-.orientationsGrid {
+/* Applications Section */
+.applicationSection {
+    margin-bottom: 50px;
+    background-color: var(--bg-tertiary);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+}
+
+.applicationSection h3 {
+    color: var(--accent);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 2px solid var(--border-secondary);
+    padding-bottom: 10px;
+}
+
+.applicationContent h4 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin: 24px 0 12px;
+    font-weight: 600;
+}
+
+.applicationContent p {
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.strategiesList,
+.benefitsList,
+.approachesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.strategyItem,
+.benefitItem,
+.approachItem {
+    background-color: var(--bg-secondary);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    color: var(--text-primary);
+    line-height: 1.5;
+    position: relative;
+    padding-left: 24px;
+}
+
+.strategyItem:before,
+.benefitItem:before,
+.approachItem:before {
+    content: "→";
+    position: absolute;
+    left: 8px;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.researchNote {
+    background-color: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+    margin-top: 20px;
+    color: var(--text-primary);
+    font-style: italic;
+}
+
+/* Development Section */
+.stagesContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 2rem;
+    gap: 30px;
+    margin-top: 40px;
 }
 
-.orientationCard {
-    background: var(--bg-secondary);
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.orientationCard:hover {
-    transform: translateY(-5px);
-}
-
-.orientationTitle {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-}
-
-.symbol {
-    color: var(--accent-color);
-    font-family: monospace;
-}
-
-.orientationDescription {
-    line-height: 1.6;
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-}
-
-.orientationMeta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-
-/* Attitudes Section */
-.attitudesGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-}
-
-.attitudeCard {
-    background: var(--bg-secondary);
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.attitudeCard:hover {
-    transform: translateY(-5px);
-}
-
-.attitudeTitle {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-}
-
-.attitudeFunctions {
-    display: flex;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.functionBadge {
-    padding: 0.3rem 0.8rem;
-    border-radius: 1rem;
-    color: white;
-    font-weight: 600;
-    font-size: 0.8rem;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.attitudeDescription {
-    line-height: 1.6;
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-}
-
-.examples {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-
-/* Ontology Section */
-.ontologyGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-}
-
-.ontologyCard {
-    background: var(--bg-secondary);
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.ontologyCard:hover {
-    transform: translateY(-5px);
-}
-
-.ontologyTitle {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-}
-
-.ontologyFunctions {
-    display: flex;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.ontologyDescription {
-    line-height: 1.6;
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-}
-
-.ontologyMeta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-
-/* Functions Section */
-.functionsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.functionCard {
-    background: var(--bg-secondary);
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.stageCard {
+    background-color: var(--bg-tertiary);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
     transition: all 0.3s ease;
-    cursor: pointer;
-    border: 2px solid transparent;
 }
 
-.functionCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+.stageCard:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--accent);
 }
 
-.selectedFunction {
-    border-color: var(--accent-color);
-    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);
-}
-
-.functionTitle {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.functionDescription {
-    line-height: 1.6;
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-}
-
-.functionMeta {
+.stageCard h3 {
+    color: var(--accent);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
+    align-items: center;
+    gap: 8px;
 }
 
-/* Dynamics Section */
-.dynamicsIntro {
-    text-align: center;
+.stageCard h4 {
+    color: var(--text-primary);
+    margin: 20px 0 12px;
     font-size: 1.1rem;
-    color: var(--text-secondary);
-    margin-bottom: 3rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
-}
-
-.dynamicsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-}
-
-.dynamicCard {
-    background: var(--bg-secondary);
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: 2px solid transparent;
-}
-
-.dynamicCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-}
-
-.selectedDynamic {
-    border-color: var(--accent-color);
-    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);
-}
-
-.dynamicTitle {
-    font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+}
+
+.stageCard p {
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.challengesBox {
+    background-color: var(--bg-secondary);
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid #e74c3c;
+    margin-top: 20px;
     color: var(--text-primary);
 }
 
-.dynamicFunctions {
+/* Research Section */
+.researchSection {
+    margin-bottom: 50px;
+    background-color: var(--bg-tertiary);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+}
+
+.researchSection h3 {
+    color: var(--accent);
+    font-size: 1.6rem;
+    margin-bottom: 24px;
     display: flex;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 2px solid var(--border-secondary);
+    padding-bottom: 10px;
 }
 
-.dynamicDescription {
-    line-height: 1.6;
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
+.studyCategory {
+    margin-bottom: 30px;
 }
 
-.dynamicExample {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    font-style: italic;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: var(--bg-tertiary);
-    border-radius: 0.5rem;
+.studyCategory h4 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    font-weight: 600;
 }
 
-.outcomes {
+.studyList,
+.findingsList,
+.clinicalList {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 12px;
 }
 
-.positiveOutcome {
-    color: #27ae60;
-    font-size: 0.9rem;
-}
-
-.negativeOutcome {
-    color: #e74c3c;
-    font-size: 0.9rem;
-}
-
-/* Quadras Section */
-.quadrasGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 2rem;
-}
-
-.quadraCard {
-    background: var(--bg-secondary);
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: 2px solid transparent;
-}
-
-.quadraCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-}
-
-.selectedQuadra {
-    border-color: var(--accent-color);
-    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);
-}
-
-.quadraTitle {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+.studyItem,
+.findingItem,
+.clinicalItem {
+    background-color: var(--bg-secondary);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
     color: var(--text-primary);
+    line-height: 1.5;
+    position: relative;
+    padding-left: 24px;
 }
 
-.quadraAxes,
-.quadraTypes {
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
+.studyItem:before,
+.findingItem:before,
+.clinicalItem:before {
+    content: "🔹";
+    position: absolute;
+    left: 8px;
+    color: var(--accent);
 }
 
-.quadraDynamics {
-    margin-bottom: 1.5rem;
-}
-
-.primaryDynamics,
-.secondaryDynamics {
-    margin-bottom: 1rem;
-}
-
-.primaryDynamics h4,
-.secondaryDynamics h4,
-.compoundEffects h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--accent-color);
-}
-
-.dynamicItem {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.3rem;
-}
-
-.compounds {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.compoundBadge {
-    padding: 0.3rem 0.8rem;
-    background: var(--accent-color);
-    color: white;
-    border-radius: 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-}
-
-.quadraDescription {
+.implicationBox {
+    background-color: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+    margin-top: 20px;
+    color: var(--text-primary);
+    font-style: italic;
     line-height: 1.6;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        padding: 1rem;
+    .metabolicContainer {
+        padding: 20px 10px;
     }
 
-    .title {
+    .header {
+        padding: 30px 15px;
+    }
+
+    .header h1 {
         font-size: 2rem;
     }
 
-    .navigation {
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .sectionNav {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
 
     .navButton {
+        width: 100%;
+        max-width: 250px;
         justify-content: center;
     }
 
-    .principlesGrid,
-    .processesGrid,
-    .orientationsGrid,
-    .attitudesGrid,
-    .ontologyGrid,
-    .functionsGrid,
-    .dynamicsGrid,
-    .quadrasGrid {
+    .content {
+        padding: 20px;
+    }
+
+    .principleGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .stagesContainer {
         grid-template-columns: 1fr;
     }
 }
 
-/* Dark mode adjustments */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-primary: #1a1a1a;
-        --bg-secondary: #2d2d2d;
-        --bg-tertiary: #3a3a3a;
-        --bg-hover: #404040;
-        --text-primary: #ffffff;
-        --text-secondary: #b0b0b0;
-        --border-color: #404040;
-        --accent-color: #667eea;
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .sectionContent h2 {
+        font-size: 1.5rem;
+    }
+
+    .applicationSection,
+    .researchSection {
+        padding: 20px;
+    }
+
+    .stageCard {
+        padding: 20px;
     }
 }
