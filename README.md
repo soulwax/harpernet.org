@@ -216,4 +216,4 @@ GPL-3.0 - See [LICENSE](LICENSE) for details.
 
 ---
 
-_C.G. _
+_Jung did not walk away unchanged. No one ever does._
