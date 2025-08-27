@@ -1,22 +1,22 @@
 // File: src/components/Footer.jsx
 
 import styles from "./Footer.module.css";
-
+import packageJson from "../../package.json";
 const Footer = () => {
+
+
+
   // Package information - hard-coded from package.json to avoid file imports
   const packageInfo = {
-    name: "Jungian Differential Psychology - aka 'MBTI'",
-    version: "1.2.1",
-    description: "This page is intended to give you insights into Jungian psychology and the MBTI framework. Maybe something you haven't yet considered.",
-    author: "soulwax@github",
-    license: "GPL-3.0",
-    homepage: "harpernet.org",
-    technology: "Solid.JS",
-    technologyHomepage: "https://solidjs.com",
-    repository: {
-      type: "git",
-      url: "https://github.com/soulwax/harpernet.org.git",
-    },
+    name: packageJson.name,
+    version: packageJson.version,
+    description: packageJson.description,
+    author: packageJson.author,
+    license: packageJson.license,
+    homepage: packageJson.homepage,
+    technology: packageJson.technology,
+    technologyHomepage: packageJson.technologyHomepage,
+    repository: packageJson.repository
   };
 
   const currentYear = new Date().getFullYear();
