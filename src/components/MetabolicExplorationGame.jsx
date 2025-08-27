@@ -12,10 +12,10 @@ const MetabolicExplorationGame = () => {
     const [hoveredChoice, setHoveredChoice] = createSignal(null);
     const [selectedQuestions, setSelectedQuestions] = createSignal([]);
 
-    // Randomly select 12 questions from the pool on component mount
+    // Randomise all questions
     const initializeQuestions = () => {
         const shuffled = [...gameData.questions].sort(() => Math.random() - 0.5);
-        setSelectedQuestions(shuffled.slice(0, 12));
+        setSelectedQuestions(shuffled.slice(0, shuffled.length)); // Use all questions (slice is exclusive toward the end parameter)
     };
 
     if (selectedQuestions().length === 0) {
