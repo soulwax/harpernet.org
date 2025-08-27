@@ -43,7 +43,8 @@ exec >>"$GIT_LOGS" 2>&1
 # Source your .zshrc to load your environment, including PATH.
 # The 'zsh' command from your original script was removed as it would
 # start a new interactive shell and cause the script to hang.
-# This script should be run with zsh directly (hence the #!/bin/zsh shebang).
+# This script should be run with `zsh` as per my own needs directly 
+# (hence the `#!/bin/zsh shebang`).
 source /home/soulwax/.zshrc
 
 # --- Logic ---
