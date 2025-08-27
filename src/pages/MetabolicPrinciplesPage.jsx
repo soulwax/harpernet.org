@@ -1,14 +1,14 @@
 // File: src/pages/MetabolicPrinciplesPage.jsx
 
-import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 import MetabolicPrinciples from "../components/MetabolicPrinciples";
 
 const MetabolicPrinciplesPage = () => {
     return (
-        <div>
+        <div class="app" id="metabolic-principles-page">
             <Header />
-            <main>
+            <main class="main-content">
                 <MetabolicPrinciples />
             </main>
             <Footer />

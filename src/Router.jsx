@@ -8,7 +8,6 @@ import CognitiveFunctionsDetailedPage from "./pages/CognitiveFunctionsDetailedPa
 import CognitiveFunctionsPage from "./pages/CognitiveFunctionsPage";
 import RelationshipsPage from "./pages/RelationshipsPage";
 import SisterTypesPage from "./pages/SisterTypesPage";
-import MetabolicPrinciples from "./components/MetabolicPrinciples";
 import MetabolicPrinciplesPage from "./pages/MetabolicPrinciplesPage";
 import "./Router.css";
 
