@@ -76,16 +76,7 @@ const MetabolicExplorationGame = () => {
     const primaryDynamic = sortedDynamics[0];
 
     // Generate interpretation
-    const functionDescriptions = {
-      Ti: 'logical precision and systematic understanding',
-      Te: 'efficient execution and objective results',
-      Fi: 'authentic values and inner harmony',
-      Fe: 'collective harmony and emotional connection',
-      Ni: 'symbolic vision and pattern recognition',
-      Ne: 'innovative connections and possibilities',
-      Si: 'embodied memory and sensory detail',
-      Se: 'immediate engagement and sensory impact',
-    };
+    const functionDescriptions = gameData.functionDescriptions
 
     const dynamicDescriptions = gameData.dynamicDescriptions;
 

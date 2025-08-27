@@ -1,6 +1,7 @@
 harpernet.org
 ├───.env.sample
 ├───.gitignore
+├───.prettierrc
 ├───BROTHER_TYPES_IMPLEMENTATION.md
 ├───CHANGELOG.md
 ├───check-files.sh
@@ -17,63 +18,93 @@ harpernet.org
 ├───.github/
 │   └───resources/
 │       └───infjlolcat.gif
+├───.husky/
+│   └───_/
+│       ├───.gitignore
+│       ├───applypatch-msg
+│       ├───commit-msg
+│       ├───h
+│       ├───husky.sh
+│       ├───post-applypatch
+│       ├───post-checkout
+│       ├───post-commit
+│       ├───post-merge
+│       ├───post-rewrite
+│       ├───pre-applypatch
+│       ├───pre-auto-gc
+│       ├───pre-commit
+│       ├───pre-merge-commit
+│       ├───pre-push
+│       ├───pre-rebase
+│       └───prepare-commit-msg
+├───logs/
+│   ├───error-1.log
+│   └───out-1.log
 ├───public/
 │   ├───.htaccess
 │   ├───404.html
 │   ├───_redirects
+│   ├───harp.svg
+│   ├───harperhue.png
 │   └───vite.svg
-└───src/
-    ├───App.css
-    ├───App.jsx
-    ├───index.css
-    ├───index.jsx
-    ├───Router.css
-    ├───Router.jsx
-    ├───assets/
-    │   ├───harperalpha.svg
-    │   └───solid.svg
-    ├───components/
-    │   ├───About.jsx
-    │   ├───About.module.css
-    │   ├───BrotherTypes.jsx
-    │   ├───BrotherTypes.module.css
-    │   ├───CognitiveFunctions.jsx
-    │   ├───CognitiveFunctions.module.css
-    │   ├───DetailedCognitiveFunctions.jsx
-    │   ├───DetailedCognitiveFunctions.module.css
-    │   ├───Footer.jsx
-    │   ├───Footer.module.css
-    │   ├───Header.jsx
-    │   ├───Header.module.css
-    │   ├───MetabolicPrinciples.jsx
-    │   ├───MetabolicPrinciples.module.css
-    │   ├───NavLink.jsx
-    │   ├───Relationships.jsx
-    │   ├───Relationships.module.css
-    │   ├───SisterTypes.jsx
-    │   ├───SisterTypes.module.css
-    │   ├───ThemeToggle.jsx
-    │   ├───ThemeToggle.module.css
-    │   ├───TypeTable.jsx
-    │   └───TypeTable.module.css
-    ├───contexts/
-    │   └───ThemeContext.jsx
-    ├───data/
-    │   ├───brotherTypes.json
-    │   ├───cognitiveFunctions.json
-    │   ├───cognitiveFunctionsDetailed.json
-    │   ├───jungianFramework.json
-    │   ├───metabolicPrinciples.json
-    │   ├───relationships.json
-    │   ├───relationshipsEnhanced.json
-    │   └───sisterTypes.json
-    ├───pages/
-    │   ├───AboutPage.jsx
-    │   ├───BrotherTypesPage.jsx
-    │   ├───CognitiveFunctionsDetailedPage.jsx
-    │   ├───CognitiveFunctionsPage.jsx
-    │   ├───MetabolicPrinciplesPage.jsx
-    │   ├───RelationshipsPage.jsx
-    │   └───SisterTypesPage.jsx
-    └───styles/
-        └───theme.css
+├───src/
+│   ├───App.css
+│   ├───App.jsx
+│   ├───index.css
+│   ├───index.jsx
+│   ├───Router.css
+│   ├───Router.jsx
+│   ├───assets/
+│   │   ├───harp.svg
+│   │   └───solid.svg
+│   ├───components/
+│   │   ├───About.jsx
+│   │   ├───About.module.css
+│   │   ├───BrotherTypes.jsx
+│   │   ├───BrotherTypes.module.css
+│   │   ├───CognitiveFunctions.jsx
+│   │   ├───CognitiveFunctions.module.css
+│   │   ├───DetailedCognitiveFunctions.jsx
+│   │   ├───DetailedCognitiveFunctions.module.css
+│   │   ├───Footer.jsx
+│   │   ├───Footer.module.css
+│   │   ├───Header.jsx
+│   │   ├───Header.module.css
+│   │   ├───MetabolicExplorationGame.jsx
+│   │   ├───MetabolicExplorationGame.module.css
+│   │   ├───MetabolicPrinciples.jsx
+│   │   ├───MetabolicPrinciples.module.css
+│   │   ├───NavLink.jsx
+│   │   ├───Relationships.jsx
+│   │   ├───Relationships.module.css
+│   │   ├───SisterTypes.jsx
+│   │   ├───SisterTypes.module.css
+│   │   ├───ThemeToggle.jsx
+│   │   ├───ThemeToggle.module.css
+│   │   ├───TypeTable.jsx
+│   │   └───TypeTable.module.css
+│   ├───contexts/
+│   │   └───ThemeContext.jsx
+│   ├───data/
+│   │   ├───brotherTypes.json
+│   │   ├───cognitiveFunctions.json
+│   │   ├───cognitiveFunctionsDetailed.json
+│   │   ├───jungianFramework.json
+│   │   ├───metabolicGameData.json
+│   │   ├───metabolicPrinciples.json
+│   │   ├───relationships.json
+│   │   ├───relationshipsEnhanced.json
+│   │   └───sisterTypes.json
+│   ├───pages/
+│   │   ├───AboutPage.jsx
+│   │   ├───BrotherTypesPage.jsx
+│   │   ├───CognitiveFunctionsDetailedPage.jsx
+│   │   ├───CognitiveFunctionsPage.jsx
+│   │   ├───MetabolicGamePage.jsx
+│   │   ├───MetabolicPrinciplesPage.jsx
+│   │   ├───RelationshipsPage.jsx
+│   │   └───SisterTypesPage.jsx
+│   └───styles/
+│       └───theme.css
+└───tools/
+    └───make-og.cjs
