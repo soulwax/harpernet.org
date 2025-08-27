@@ -56,6 +56,708 @@
       ]
     },
     {
+      "id": "weaver-of-textures",
+      "scenario": "A weaver works only with textures that cannot be seen, only felt. Their loom vibrates with the memory of every hand that has ever touched fabric.",
+      "prompt": "Which invisible thread do you ask them to weave?",
+      "choices": [
+        {
+          "text": "The thread that carries the exact sensation of your first comfort",
+          "weights": {
+            "Fi": 3,
+            "Si": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The thread that pulses with the heartbeat of everyone in the room",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The thread that feels different each time you question its nature",
+          "weights": {
+            "Se": 2,
+            "Ti": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The thread that will someday become the foundation of something greater",
+          "weights": {
+            "Ni": 3,
+            "Te": 1,
+            "density": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sculptor-of-pressure",
+      "scenario": "In a workshop where pressure itself is the medium, a sculptor shapes the weight that rests on souls. Each piece changes the gravity of the space around it.",
+      "prompt": "What pressure do you commission?",
+      "choices": [
+        {
+          "text": "The pressure that makes everyone breathe in perfect synchrony",
+          "weights": {
+            "Fe": 3,
+            "Se": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The pressure that forces you to reconsider what you think you know",
+          "weights": {
+            "Ti": 2,
+            "Ni": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The pressure that feels like coming home after being lost",
+          "weights": {
+            "Fi": 3,
+            "Si": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The pressure that builds until action becomes inevitable",
+          "weights": {
+            "Se": 3,
+            "Te": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "keeper-of-temperatures",
+      "scenario": "A keeper maintains a library of temperatures, each one holding the emotional climate of a moment that shaped someone's soul.",
+      "prompt": "Which temperature do you experience?",
+      "choices": [
+        {
+          "text": "The exact warmth of being truly understood for the first time",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The cold that sharpens your awareness to diamond clarity",
+          "weights": {
+            "Se": 3,
+            "Ti": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The temperature that changes as you examine your own reactions to it",
+          "weights": {
+            "Fi": 2,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The heat that will forge all future encounters",
+          "weights": {
+            "Ni": 3,
+            "Se": 2,
+            "conducting": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "mason-of-heartbeats",
+      "scenario": "A mason builds with living heartbeats, each rhythm carrying the story of its owner. The structures pulse with collective life.",
+      "prompt": "Which foundation do you lay?",
+      "choices": [
+        {
+          "text": "A foundation of heartbeats that have never lied to themselves",
+          "weights": {
+            "Fi": 3,
+            "Ni": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "A foundation where every beat echoes and harmonizes with the others",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "A foundation that questions its own rhythm with every pulse",
+          "weights": {
+            "Ti": 2,
+            "Fi": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "A foundation built from the single heartbeat that will outlast all others",
+          "weights": {
+            "Ni": 3,
+            "Si": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "tender-of-wounds",
+      "scenario": "In a place where wounds are cultivated like gardens, a tender shows you injuries that bloom into wisdom rather than scars.",
+      "prompt": "Which wound do you choose to tend?",
+      "choices": [
+        {
+          "text": "The wound that never stops questioning why it happened",
+          "weights": {
+            "Ti": 2,
+            "Fi": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The wound that transforms into a doorway others can walk through",
+          "weights": {
+            "Fe": 3,
+            "Ni": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The wound that demands to be felt completely before it teaches anything",
+          "weights": {
+            "Se": 3,
+            "Fi": 2,
+            "density": 2
+          }
+        },
+        {
+          "text": "The wound that will become the source of your deepest knowing",
+          "weights": {
+            "Ni": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "curator-of-friction",
+      "scenario": "A curator maintains a collection of frictions - the resistance between surfaces that creates heat, spark, or smooth passage.",
+      "prompt": "Which friction do you study most closely?",
+      "choices": [
+        {
+          "text": "The friction between who you are and who you're becoming",
+          "weights": {
+            "Fi": 3,
+            "Ni": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The friction that generates just enough heat to warm everyone near it",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The friction that sparks into immediate, transformative action",
+          "weights": {
+            "Se": 3,
+            "Te": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The friction that polishes understanding to perfect clarity",
+          "weights": {
+            "Ti": 2,
+            "Si": 2,
+            "density": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "guardian-of-thresholds",
+      "scenario": "Every doorway, every transition, every moment of crossing over is watched by a guardian who asks one question before passage.",
+      "prompt": "What question do you answer to cross?",
+      "choices": [
+        {
+          "text": "'What authentic truth are you carrying across this threshold?'",
+          "weights": {
+            "Fi": 3,
+            "Ni": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "'How will your crossing serve those who follow?'",
+          "weights": {
+            "Fe": 3,
+            "Te": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "'Are you willing to let this crossing change your very questions?'",
+          "weights": {
+            "Ne": 2,
+            "Ti": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "'Do you feel the ground shift beneath your feet as you step?'",
+          "weights": {
+            "Se": 3,
+            "Ni": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "cultivator-of-impact",
+      "scenario": "In a greenhouse where impacts grow like seeds, a cultivator tends to the moments when one thing truly affects another.",
+      "prompt": "Which impact do you nurture?",
+      "choices": [
+        {
+          "text": "The impact that ripples through a community, changing how people see each other",
+          "weights": {
+            "Fe": 3,
+            "Ne": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The impact that shatters illusions and reveals bedrock truth",
+          "weights": {
+            "Se": 3,
+            "Ti": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The impact that keeps circling back, deepening each time it returns",
+          "weights": {
+            "Si": 2,
+            "Fi": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The impact that will define the trajectory of everything that follows",
+          "weights": {
+            "Ni": 3,
+            "Te": 1,
+            "conducting": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "interpreter-of-gestures",
+      "scenario": "An interpreter reads not words, but the grammar of hands, shoulders, and the spaces between people's bodies.",
+      "prompt": "Which gesture do you ask them to translate?",
+      "choices": [
+        {
+          "text": "The gesture that everyone makes but no one has ever named",
+          "weights": {
+            "Fe": 2,
+            "Se": 2,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The gesture that reveals what the person is afraid to admit to themselves",
+          "weights": {
+            "Fi": 3,
+            "Ni": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The gesture that questions its own meaning even as it's being made",
+          "weights": {
+            "Ne": 2,
+            "Ti": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The gesture that must be felt in your own body to be understood",
+          "weights": {
+            "Se": 3,
+            "Si": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "archivist-of-presence",
+      "scenario": "An archivist collects not objects, but qualities of presence - the way people inhabit their own existence in any given moment.",
+      "prompt": "Which presence do you contribute to the collection?",
+      "choices": [
+        {
+          "text": "The presence that makes everyone else feel more real",
+          "weights": {
+            "Fe": 3,
+            "Se": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The presence that occupies space with complete authenticity",
+          "weights": {
+            "Fi": 3,
+            "Se": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The presence that constantly questions its own reality",
+          "weights": {
+            "Ti": 2,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The presence that sees beyond the surface of every moment",
+          "weights": {
+            "Ni": 3,
+            "Fi": 1,
+            "density": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "smith-of-recognition",
+      "scenario": "A smith forges moments of recognition - when one soul sees another clearly for the first time. Each piece rings with the clarity of true seeing.",
+      "prompt": "What recognition do you forge?",
+      "choices": [
+        {
+          "text": "The recognition that harmonizes two people into a single understanding",
+          "weights": {
+            "Fe": 3,
+            "Ni": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The recognition of your own face in a stranger's authentic moment",
+          "weights": {
+            "Fi": 3,
+            "Se": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The recognition that questions everything you thought you knew about knowing",
+          "weights": {
+            "Ti": 2,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The recognition that strikes like lightning and changes the landscape forever",
+          "weights": {
+            "Ni": 3,
+            "Se": 2,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "keeper-of-hungers",
+      "scenario": "Different from the painter who uses hunger as pigment, this keeper preserves the actual sensation of wanting, catalogued by intensity and direction.",
+      "prompt": "Which hunger do you examine?",
+      "choices": [
+        {
+          "text": "The hunger that everyone shares but no one discusses",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The hunger that intensifies the more deeply you feel into it",
+          "weights": {
+            "Se": 3,
+            "Fi": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The hunger that changes its object every time you think you understand it",
+          "weights": {
+            "Ne": 2,
+            "Ti": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The hunger that will someday transform into its own fulfillment",
+          "weights": {
+            "Ni": 3,
+            "Fi": 1,
+            "conducting": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "translator-of-atmosphere",
+      "scenario": "A translator works with the unspoken atmosphere of rooms, translating the emotional climate into forms that can be shared and understood.",
+      "prompt": "Which atmosphere do you ask them to translate?",
+      "choices": [
+        {
+          "text": "The atmosphere where everyone belongs exactly as they are",
+          "weights": {
+            "Fe": 3,
+            "Si": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The atmosphere that challenges every assumption simply by existing",
+          "weights": {
+            "Se": 2,
+            "Ti": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The atmosphere that holds space for the deepest authenticity",
+          "weights": {
+            "Fi": 3,
+            "Ni": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The atmosphere pregnant with transformative potential",
+          "weights": {
+            "Ni": 3,
+            "Ne": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "choreographer-of-stillness",
+      "scenario": "In a world obsessed with motion, a choreographer creates elaborate compositions using only stillness, pause, and the spaces between breaths.",
+      "prompt": "Which stillness do you perform?",
+      "choices": [
+        {
+          "text": "The stillness that allows others to hear their own hearts beating",
+          "weights": {
+            "Fe": 2,
+            "Si": 2,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The stillness so complete it becomes a form of intense action",
+          "weights": {
+            "Se": 3,
+            "Ni": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The stillness that questions whether motion was ever necessary",
+          "weights": {
+            "Ti": 2,
+            "Fi": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The stillness from which all future movement will emerge",
+          "weights": {
+            "Ni": 3,
+            "Te": 1,
+            "conducting": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "merchant-of-resonance",
+      "scenario": "A merchant trades in resonance - the quality that makes one thing vibrate in harmony with another. Each transaction changes how things connect across space.",
+      "prompt": "What resonance do you purchase?",
+      "choices": [
+        {
+          "text": "The resonance between your deepest truth and your lived expression",
+          "weights": {
+            "Fi": 3,
+            "Se": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The resonance that creates harmony even between opposing forces",
+          "weights": {
+            "Fe": 3,
+            "Ti": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The resonance that questions its own frequency with every vibration",
+          "weights": {
+            "Ne": 2,
+            "Ti": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The resonance that will attune everything it touches to a higher pitch",
+          "weights": {
+            "Ni": 3,
+            "Fe": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "forger-of-moments",
+      "scenario": "A forger works not with metal, but with the raw substance of moments themselves - bending, shaping, and tempering the very experience of time passing.",
+      "prompt": "What moment do you ask them to forge for you?",
+      "choices": [
+        {
+          "text": "A moment so perfectly authentic it becomes a touchstone for all future choices",
+          "weights": {
+            "Fi": 3,
+            "Si": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "A moment that crystallizes the collective breath of everyone in the room",
+          "weights": {
+            "Fe": 3,
+            "Se": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "A moment that questions its own existence even as you live it",
+          "weights": {
+            "Ti": 2,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "A moment that contains the seed of every transformation to come",
+          "weights": {
+            "Ni": 3,
+            "Te": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "keeper-of-gravity",
+      "scenario": "In a place where emotional gravity can be adjusted, a keeper maintains different zones of weight and lightness. Some thoughts fall like stones, others float like feathers.",
+      "prompt": "Which gravitational field do you enter?",
+      "choices": [
+        {
+          "text": "The field where every sensation has the weight of absolute presence",
+          "weights": {
+            "Se": 3,
+            "Fi": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The field where thoughts spiral and return, each revolution deepening their meaning",
+          "weights": {
+            "Si": 2,
+            "Ni": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The field where everyone's emotions pull toward a shared center",
+          "weights": {
+            "Fe": 3,
+            "Ni": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The field where ideas float until they condense into actionable form",
+          "weights": {
+            "Ne": 2,
+            "Te": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "tender-of-intersections",
+      "scenario": "At every crossroads where paths meet, a tender watches over the exact point of intersection, ensuring that meetings happen with the right quality of attention.",
+      "prompt": "Which intersection do you ask them to tend most carefully?",
+      "choices": [
+        {
+          "text": "The intersection where your deepest truth meets the world's immediate need",
+          "weights": {
+            "Fi": 3,
+            "Se": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The intersection where individual understanding crystallizes into collective wisdom",
+          "weights": {
+            "Fe": 3,
+            "Ti": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The intersection that keeps questioning whether it should exist at all",
+          "weights": {
+            "Ti": 2,
+            "Pe": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The intersection where all possible futures converge into a single inevitable moment",
+          "weights": {
+            "Ni": 3,
+            "Se": 2,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
       "id": "library-of-sand",
       "scenario": "A library built from sand where books write themselves based on the reader's shadow. The librarian offers you a choice of reading rooms.",
       "prompt": "Where will your shadow write its truth?",
