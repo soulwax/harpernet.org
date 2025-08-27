@@ -5,7 +5,7 @@
 
 # Exit immediately if a command exits with a non-zero status
 set -e
-
+source /home/soulwax/.zshrc
 # --- Configuration ---
 REPO_DIR="/home/soulwax/workspace/websites/harpernet.org"
 GIT_LOGS="/home/soulwax/workspace/websites/harpernet.org/logs/git.log"
