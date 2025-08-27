@@ -7,7 +7,10 @@
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![SolidJS](https://img.shields.io/badge/SolidJS-1.9.5-blue)](https://www.solidjs.com/)
 [![Vite](https://img.shields.io/badge/Vite-6.3.5-purple)](https://vitejs.dev/)
+[![PM2](https://img.shields.io/badge/PM2-5.3.0-green)](https://pm2.keymetrics.io/)
+[![Made by soulwax](https://img.shields.io/badge/Made%20by-soulwax-orange)](https://github.com/soulwax)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![AI](https://img.shields.io/badge/0%25-AI-lightgrey.svg)](https://noaimovement.com/)
 
 It combines rigorous academic research with practical applications and insights offering detailed cognitive function analysis, type relationships, and a unique metabolic framework rooted in Jungian psychology and modern neuroscience.
 You should try the game too.
