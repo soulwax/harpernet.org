@@ -1,11 +1,11 @@
 // File: src/components/BrotherTypes.jsx
 
-import { createSignal } from "solid-js";
-import styles from "./BrotherTypes.module.css";
-import TypeTable from "./TypeTable";
+import { createSignal } from 'solid-js';
+import styles from './BrotherTypes.module.css';
+import TypeTable from './TypeTable';
 
 // Import the data directly - in a real app this would be a dynamic import
-import brotherTypesData from "../data/brotherTypes.json";
+import brotherTypesData from '../data/brotherTypes.json';
 
 const BrotherTypes = () => {
   // Create a signal to toggle showing all comparisons or just the main categories
@@ -18,18 +18,14 @@ const BrotherTypes = () => {
         <div class={styles.explanationBox}>
           <h3>How Brother Types Work</h3>
           <p>
-            Brother types in MBTI share the same cognitive functions since a
-            swap of extraversion and introversion does not change the functions
-            themselves but merely puts the axes upside down. In simplistic MBTI
-            terms, this means they share the last three letters (e.g., INTP and
-            ENTP). Don't be fooled by it though. As we spend 60% of our time in
-            the first cognitive function engagement, even brother types will end
-            up having radically different outlooks on life.
+            Brother types in MBTI share the same cognitive functions since a swap of extraversion
+            and introversion does not change the functions themselves but merely puts the axes
+            upside down. In simplistic MBTI terms, this means they share the last three letters
+            (e.g., INTP and ENTP). Don't be fooled by it though. As we spend 60% of our time in the
+            first cognitive function engagement, even brother types will end up having radically
+            different outlooks on life.
           </p>
-          <p>
-            Each comparison below examines brother type pairs across five key
-            dimensions:
-          </p>
+          <p>Each comparison below examines brother type pairs across five key dimensions:</p>
           <ol class={styles.criteriaList}>
             <li>Primary cognitive drivers and their expression</li>
             <li>Characteristic approaches to problem-solving and engagement</li>

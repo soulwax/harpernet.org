@@ -1,15 +1,14 @@
 // File: src/components/Relationships.jsx
 
-import { createSignal, createMemo, For, Show } from "solid-js";
-import styles from "./Relationships.module.css";
-import relationshipsData from "../data/relationshipsEnhanced.json";
+import { createSignal, createMemo, For, Show } from 'solid-js';
+import styles from './Relationships.module.css';
+import relationshipsData from '../data/relationshipsEnhanced.json';
 
 const Relationships = () => {
-  const [selectedType1, setSelectedType1] = createSignal("");
-  const [selectedType2, setSelectedType2] = createSignal("");
-  const [selectedRelationshipType, setSelectedRelationshipType] =
-    createSignal("");
-  const [viewMode, setViewMode] = createSignal("analyzer"); // analyzer, browser, matrix, quadras
+  const [selectedType1, setSelectedType1] = createSignal('');
+  const [selectedType2, setSelectedType2] = createSignal('');
+  const [selectedRelationshipType, setSelectedRelationshipType] = createSignal('');
+  const [viewMode, setViewMode] = createSignal('analyzer'); // analyzer, browser, matrix, quadras
 
   // Get all types sorted alphabetically
   const allTypes = Object.keys(relationshipsData.types).sort();
@@ -22,13 +21,10 @@ const Relationships = () => {
     const type2 = selectedType2();
 
     // Check each relationship type for the pair
-    for (const [relType, relData] of Object.entries(
-      relationshipsData.relationship_types
-    )) {
+    for (const [relType, relData] of Object.entries(relationshipsData.relationship_types)) {
       const found = relData.pairs.find(
         (pair) =>
-          (pair[0] === type1 && pair[1] === type2) ||
-          (pair[1] === type1 && pair[0] === type2)
+          (pair[0] === type1 && pair[1] === type2) || (pair[1] === type1 && pair[0] === type2),
       );
 
       if (found) {
@@ -48,26 +44,22 @@ const Relationships = () => {
   // Get compatibility color
   const getCompatibilityColor = (level) => {
     const colors = {
-      ideal: "#4CAF50",
-      excellent: "#8BC34A",
-      good: "#CDDC39",
-      neutral: "#FFC107",
-      challenging: "#FF9800",
-      difficult: "#F44336",
+      ideal: '#4CAF50',
+      excellent: '#8BC34A',
+      good: '#CDDC39',
+      neutral: '#FFC107',
+      challenging: '#FF9800',
+      difficult: '#F44336',
     };
-    return colors[level] || "#9E9E9E";
+    return colors[level] || '#9E9E9E';
   };
 
   // Get all relationships for a specific type
   const getTypeRelationships = (type) => {
     const relationships = {};
 
-    for (const [relType, relData] of Object.entries(
-      relationshipsData.relationship_types
-    )) {
-      const partner = relData.pairs.find(
-        (pair) => pair[0] === type || pair[1] === type
-      );
+    for (const [relType, relData] of Object.entries(relationshipsData.relationship_types)) {
+      const partner = relData.pairs.find((pair) => pair[0] === type || pair[1] === type);
 
       if (partner) {
         const otherType = partner[0] === type ? partner[1] : partner[0];
@@ -90,13 +82,10 @@ const Relationships = () => {
       matrix[type1] = {};
       for (const type2 of allTypes) {
         // Find relationship type
-        for (const [relType, relData] of Object.entries(
-          relationshipsData.relationship_types
-        )) {
+        for (const [relType, relData] of Object.entries(relationshipsData.relationship_types)) {
           const found = relData.pairs.find(
             (pair) =>
-              (pair[0] === type1 && pair[1] === type2) ||
-              (pair[1] === type1 && pair[0] === type2)
+              (pair[0] === type1 && pair[1] === type2) || (pair[1] === type1 && pair[0] === type2),
           );
 
           if (found) {
@@ -123,15 +112,13 @@ const Relationships = () => {
         <div class={styles.explanationBox}>
           <h3>Understanding Intertype Relations</h3>
           <p>
-            Based on Socionics theory, intertype relations describe the
-            psychological dynamics between different personality types. Each
-            relationship has unique characteristics affecting communication,
-            compatibility, and mutual growth potential.
+            Based on Socionics theory, intertype relations describe the psychological dynamics
+            between different personality types. Each relationship has unique characteristics
+            affecting communication, compatibility, and mutual growth potential.
           </p>
           <p>
-            Explore relationships through multiple lenses: analyze specific
-            pairs, browse by relationship type, view the complete compatibility
-            matrix, or examine quadra dynamics.
+            Explore relationships through multiple lenses: analyze specific pairs, browse by
+            relationship type, view the complete compatibility matrix, or examine quadra dynamics.
           </p>
         </div>
       </div>
@@ -139,41 +126,33 @@ const Relationships = () => {
       {/* View Mode Selector */}
       <div class={styles.viewSelector}>
         <button
-          class={`${styles.viewButton} ${
-            viewMode() === "analyzer" ? styles.activeView : ""
-          }`}
-          onClick={() => setViewMode("analyzer")}
+          class={`${styles.viewButton} ${viewMode() === 'analyzer' ? styles.activeView : ''}`}
+          onClick={() => setViewMode('analyzer')}
         >
           🔍 Relationship Analyzer
         </button>
         <button
-          class={`${styles.viewButton} ${
-            viewMode() === "browser" ? styles.activeView : ""
-          }`}
-          onClick={() => setViewMode("browser")}
+          class={`${styles.viewButton} ${viewMode() === 'browser' ? styles.activeView : ''}`}
+          onClick={() => setViewMode('browser')}
         >
           📚 Browse Types
         </button>
         <button
-          class={`${styles.viewButton} ${
-            viewMode() === "matrix" ? styles.activeView : ""
-          }`}
-          onClick={() => setViewMode("matrix")}
+          class={`${styles.viewButton} ${viewMode() === 'matrix' ? styles.activeView : ''}`}
+          onClick={() => setViewMode('matrix')}
         >
           📊 Compatibility Matrix
         </button>
         <button
-          class={`${styles.viewButton} ${
-            viewMode() === "quadras" ? styles.activeView : ""
-          }`}
-          onClick={() => setViewMode("quadras")}
+          class={`${styles.viewButton} ${viewMode() === 'quadras' ? styles.activeView : ''}`}
+          onClick={() => setViewMode('quadras')}
         >
           🏛️ Quadra Analysis
         </button>
       </div>
 
       {/* Relationship Analyzer View */}
-      <Show when={viewMode() === "analyzer"}>
+      <Show when={viewMode() === 'analyzer'}>
         <div class={styles.analyzerView}>
           <h2>Relationship Analyzer</h2>
 
@@ -186,9 +165,7 @@ const Relationships = () => {
                 class={styles.typeSelect}
               >
                 <option value="">Select Type</option>
-                <For each={allTypes}>
-                  {(type) => <option value={type}>{type}</option>}
-                </For>
+                <For each={allTypes}>{(type) => <option value={type}>{type}</option>}</For>
               </select>
               <Show when={selectedType1()}>
                 <div class={styles.typeInfo}>
@@ -215,9 +192,7 @@ const Relationships = () => {
                 class={styles.typeSelect}
               >
                 <option value="">Select Type</option>
-                <For each={allTypes}>
-                  {(type) => <option value={type}>{type}</option>}
-                </For>
+                <For each={allTypes}>{(type) => <option value={type}>{type}</option>}</For>
               </select>
               <Show when={selectedType2()}>
                 <div class={styles.typeInfo}>
@@ -246,18 +221,14 @@ const Relationships = () => {
                 <div
                   class={styles.compatibilityBadge}
                   style={{
-                    "background-color": getCompatibilityColor(
-                      getRelationship().compatibility
-                    ),
+                    'background-color': getCompatibilityColor(getRelationship().compatibility),
                   }}
                 >
                   {getRelationship().name}
                 </div>
               </div>
 
-              <p class={styles.relationshipDescription}>
-                {getRelationship().description}
-              </p>
+              <p class={styles.relationshipDescription}>{getRelationship().description}</p>
 
               <Show when={getRelationship().dynamics}>
                 <div class={styles.dynamicsGrid}>
@@ -299,17 +270,11 @@ const Relationships = () => {
               <div class={styles.functionComparison}>
                 <div class={styles.functionStack}>
                   <h4>{selectedType1()} Functions</h4>
-                  <For
-                    each={relationshipsData.types[selectedType1()].functions}
-                  >
+                  <For each={relationshipsData.types[selectedType1()].functions}>
                     {(func, index) => (
                       <div class={styles.functionItem}>
                         <span class={styles.functionPosition}>
-                          {
-                            relationshipsData.function_positions[
-                              (index() + 1).toString()
-                            ]
-                          }
+                          {relationshipsData.function_positions[(index() + 1).toString()]}
                         </span>
                         <span class={styles.functionName}>
                           {func} - {relationshipsData.cognitive_functions[func]}
@@ -320,17 +285,11 @@ const Relationships = () => {
                 </div>
                 <div class={styles.functionStack}>
                   <h4>{selectedType2()} Functions</h4>
-                  <For
-                    each={relationshipsData.types[selectedType2()].functions}
-                  >
+                  <For each={relationshipsData.types[selectedType2()].functions}>
                     {(func, index) => (
                       <div class={styles.functionItem}>
                         <span class={styles.functionPosition}>
-                          {
-                            relationshipsData.function_positions[
-                              (index() + 1).toString()
-                            ]
-                          }
+                          {relationshipsData.function_positions[(index() + 1).toString()]}
                         </span>
                         <span class={styles.functionName}>
                           {func} - {relationshipsData.cognitive_functions[func]}
@@ -346,7 +305,7 @@ const Relationships = () => {
       </Show>
 
       {/* Browse Types View */}
-      <Show when={viewMode() === "browser"}>
+      <Show when={viewMode() === 'browser'}>
         <div class={styles.browserView}>
           <h2>Browse Relationship Types</h2>
 
@@ -356,9 +315,7 @@ const Relationships = () => {
                 <div
                   class={styles.relationshipTypeCard}
                   style={{
-                    "border-left": `4px solid ${getCompatibilityColor(
-                      relData.compatibility
-                    )}`,
+                    'border-left': `4px solid ${getCompatibilityColor(relData.compatibility)}`,
                   }}
                 >
                   <h3>{relData.name}</h3>
@@ -381,16 +338,13 @@ const Relationships = () => {
                       <summary>View Dynamics</summary>
                       <div class={styles.dynamicsContent}>
                         <p>
-                          <strong>Communication:</strong>{" "}
-                          {relData.dynamics.communication_style}
+                          <strong>Communication:</strong> {relData.dynamics.communication_style}
                         </p>
                         <p>
-                          <strong>Conflict:</strong>{" "}
-                          {relData.dynamics.conflict_resolution}
+                          <strong>Conflict:</strong> {relData.dynamics.conflict_resolution}
                         </p>
                         <p>
-                          <strong>Growth:</strong>{" "}
-                          {relData.dynamics.growth_potential}
+                          <strong>Growth:</strong> {relData.dynamics.growth_potential}
                         </p>
                       </div>
                     </details>
@@ -406,7 +360,7 @@ const Relationships = () => {
                             onClick={() => {
                               setSelectedType1(pair[0]);
                               setSelectedType2(pair[1]);
-                              setViewMode("analyzer");
+                              setViewMode('analyzer');
                             }}
                           >
                             {pair[0]} ↔ {pair[1]}
@@ -423,12 +377,11 @@ const Relationships = () => {
       </Show>
 
       {/* Compatibility Matrix View */}
-      <Show when={viewMode() === "matrix"}>
+      <Show when={viewMode() === 'matrix'}>
         <div class={styles.matrixView}>
           <h2>Compatibility Matrix</h2>
           <p class={styles.matrixDescription}>
-            Hover over cells to see relationship type. Click to analyze the
-            pair.
+            Hover over cells to see relationship type. Click to analyze the pair.
           </p>
 
           <div class={styles.matrixContainer}>
@@ -436,9 +389,7 @@ const Relationships = () => {
               <thead>
                 <tr>
                   <th></th>
-                  <For each={allTypes}>
-                    {(type) => <th class={styles.matrixHeader}>{type}</th>}
-                  </For>
+                  <For each={allTypes}>{(type) => <th class={styles.matrixHeader}>{type}</th>}</For>
                 </tr>
               </thead>
               <tbody>
@@ -451,9 +402,8 @@ const Relationships = () => {
                           <td
                             class={styles.matrixCell}
                             style={{
-                              "background-color": getCompatibilityColor(
-                                relationshipMatrix()[type1][type2]
-                                  ?.compatibility
+                              'background-color': getCompatibilityColor(
+                                relationshipMatrix()[type1][type2]?.compatibility,
                               ),
                               opacity: 0.7,
                             }}
@@ -461,7 +411,7 @@ const Relationships = () => {
                             onClick={() => {
                               setSelectedType1(type1);
                               setSelectedType2(type2);
-                              setViewMode("analyzer");
+                              setViewMode('analyzer');
                             }}
                           ></td>
                         )}
@@ -476,22 +426,16 @@ const Relationships = () => {
           <div class={styles.matrixLegend}>
             <h4>Compatibility Legend:</h4>
             <div class={styles.legendItems}>
-              <For
-                each={Object.entries(
-                  relationshipsData.relationship_compatibility
-                )}
-              >
+              <For each={Object.entries(relationshipsData.relationship_compatibility)}>
                 {([level, types]) => (
                   <div class={styles.legendItem}>
                     <div
                       class={styles.legendColor}
                       style={{
-                        "background-color": getCompatibilityColor(level),
+                        'background-color': getCompatibilityColor(level),
                       }}
                     />
-                    <span>
-                      {level.charAt(0).toUpperCase() + level.slice(1)}
-                    </span>
+                    <span>{level.charAt(0).toUpperCase() + level.slice(1)}</span>
                   </div>
                 )}
               </For>
@@ -501,7 +445,7 @@ const Relationships = () => {
       </Show>
 
       {/* Quadra Analysis View */}
-      <Show when={viewMode() === "quadras"}>
+      <Show when={viewMode() === 'quadras'}>
         <div class={styles.quadrasView}>
           <h2>Quadra Analysis</h2>
 
@@ -517,11 +461,7 @@ const Relationships = () => {
                         <div class={styles.quadraType}>
                           <strong>{type}</strong>
                           <span class={styles.typeDesc}>
-                            {
-                              relationshipsData.types[type].description.split(
-                                " - "
-                              )[0]
-                            }
+                            {relationshipsData.types[type].description.split(' - ')[0]}
                           </span>
                         </div>
                       )}
@@ -534,8 +474,7 @@ const Relationships = () => {
                       <For each={quadraData.functions}>
                         {(func) => (
                           <span class={styles.functionBadge}>
-                            {func} -{" "}
-                            {relationshipsData.cognitive_functions[func]}
+                            {func} - {relationshipsData.cognitive_functions[func]}
                           </span>
                         )}
                       </For>
@@ -543,15 +482,11 @@ const Relationships = () => {
 
                     <h4>Core Values:</h4>
                     <ul class={styles.valuesList}>
-                      <For each={quadraData.values}>
-                        {(value) => <li>{value}</li>}
-                      </For>
+                      <For each={quadraData.values}>{(value) => <li>{value}</li>}</For>
                     </ul>
 
                     <h4>Communication Style:</h4>
-                    <p class={styles.quadraCommunication}>
-                      {quadraData.communication}
-                    </p>
+                    <p class={styles.quadraCommunication}>{quadraData.communication}</p>
                   </div>
                 </div>
               )}
@@ -565,9 +500,7 @@ const Relationships = () => {
                 {([styleName, styleData]) => (
                   <div class={styles.styleCard}>
                     <h4>{styleName}</h4>
-                    <p class={styles.styleDescription}>
-                      {styleData.description}
-                    </p>
+                    <p class={styles.styleDescription}>{styleData.description}</p>
                     <div class={styles.styleTypes}>
                       <For each={styleData.types}>
                         {(type) => <span class={styles.typeBadge}>{type}</span>}

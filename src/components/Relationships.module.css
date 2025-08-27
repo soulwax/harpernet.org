@@ -1,847 +1,845 @@
 /* File: src/components/Relationships.module.css */
 
 .relationshipsContainer {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 40px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .introSection {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .explanationBox {
-    background-color: var(--bg-secondary);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: var(--shadow-medium);
-    border: 1px solid var(--border-primary);
-    margin: 30px 0;
+  background-color: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--border-primary);
+  margin: 30px 0;
 }
 
 .explanationBox h3 {
-    color: var(--accent);
-    margin-bottom: 15px;
-    border-bottom: 2px solid var(--border-secondary);
-    padding-bottom: 10px;
-    font-size: 1.4rem;
+  color: var(--accent);
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--border-secondary);
+  padding-bottom: 10px;
+  font-size: 1.4rem;
 }
 
 .explanationBox p {
-    margin-bottom: 15px;
-    line-height: 1.7;
-    color: var(--text-primary);
-    font-size: 1.05rem;
+  margin-bottom: 15px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  font-size: 1.05rem;
 }
 
 /* View Mode Selector */
 .viewSelector {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: var(--bg-secondary);
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: var(--shadow-light);
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--bg-secondary);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-light);
 }
 
 .viewButton {
-    padding: 12px 24px;
-    border: 2px solid var(--border-primary);
-    background-color: var(--bg-tertiary);
-    color: var(--text-primary);
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  padding: 12px 24px;
+  border: 2px solid var(--border-primary);
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .viewButton:hover {
-    background-color: var(--bg-hover);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-medium);
+  background-color: var(--bg-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
 }
 
 .activeView {
-    background-color: var(--accent) !important;
-    color: white !important;
-    border-color: var(--accent) !important;
+  background-color: var(--accent) !important;
+  color: white !important;
+  border-color: var(--accent) !important;
 }
 
 /* Analyzer View */
 .analyzerView {
-    background-color: var(--bg-secondary);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: var(--shadow-medium);
+  background-color: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-medium);
 }
 
 .analyzerView h2 {
-    color: var(--accent);
-    margin-bottom: 25px;
-    text-align: center;
-    font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 .typeSelectors {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .selectorGroup {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .selectorGroup label {
-    font-weight: 600;
-    color: var(--text-secondary);
-    font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
 }
 
 .typeSelect {
-    padding: 14px 18px;
-    border: 2px solid var(--border-primary);
-    border-radius: 8px;
-    background-color: var(--bg-tertiary);
-    color: var(--text-primary);
-    font-size: 1.05rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  padding: 14px 18px;
+  border: 2px solid var(--border-primary);
+  border-radius: 8px;
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .typeSelect:focus {
-    outline: none;
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(79, 195, 247, 0.2);
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(79, 195, 247, 0.2);
 }
 
 .typeInfo {
-    background-color: var(--bg-tertiary);
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 4px solid var(--accent);
+  background-color: var(--bg-tertiary);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
 }
 
 .typeDescription {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    margin-bottom: 10px;
-    line-height: 1.5;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 .typeMeta {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .badge {
-    display: inline-block;
-    padding: 4px 10px;
-    background-color: var(--accent);
-    color: white;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    font-weight: 500;
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: var(--accent);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 /* Relationship Result */
 .relationshipResult {
-    background-color: var(--bg-tertiary);
-    border: 2px solid var(--border-primary);
-    border-radius: 12px;
-    padding: 30px;
-    margin-top: 30px;
+  background-color: var(--bg-tertiary);
+  border: 2px solid var(--border-primary);
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 30px;
 }
 
 .resultHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .resultHeader h3 {
-    color: var(--text-primary);
-    font-size: 1.6rem;
-    margin: 0;
+  color: var(--text-primary);
+  font-size: 1.6rem;
+  margin: 0;
 }
 
 .compatibilityBadge {
-    padding: 10px 20px;
-    color: white;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    box-shadow: var(--shadow-light);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-light);
 }
 
 .relationshipDescription {
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    padding: 15px;
-    background-color: var(--bg-secondary);
-    border-radius: 8px;
-    border-left: 4px solid var(--accent);
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
 }
 
 /* Dynamics Grid */
 .dynamicsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 25px;
 }
 
 .dynamicSection {
-    background-color: var(--bg-secondary);
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid var(--border-light);
+  background-color: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
 }
 
 .dynamicSection h4 {
-    color: var(--accent);
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  color: var(--accent);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .dynamicSection ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .dynamicSection li {
-    padding: 8px 0;
-    padding-left: 20px;
-    position: relative;
-    color: var(--text-primary);
-    line-height: 1.5;
+  padding: 8px 0;
+  padding-left: 20px;
+  position: relative;
+  color: var(--text-primary);
+  line-height: 1.5;
 }
 
 .dynamicSection li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-weight: bold;
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
 }
 
 /* Additional Info */
 .additionalInfo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
 }
 
 .infoItem {
-    background-color: var(--bg-secondary);
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid var(--border-light);
+  background-color: var(--bg-secondary);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
 }
 
 .infoItem strong {
-    color: var(--accent);
-    display: block;
-    margin-bottom: 8px;
-    font-size: 1rem;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
 }
 
 .infoItem p {
-    color: var(--text-secondary);
-    line-height: 1.5;
-    margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* Function Comparison */
 .functionComparison {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
 
 .functionStack {
-    background-color: var(--bg-secondary);
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid var(--border-primary);
+  background-color: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-primary);
 }
 
 .functionStack h4 {
-    color: var(--accent);
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .functionItem {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 8px;
-    background-color: var(--bg-tertiary);
-    border-radius: 6px;
-    border: 1px solid var(--border-light);
-    transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: var(--bg-tertiary);
+  border-radius: 6px;
+  border: 1px solid var(--border-light);
+  transition: all 0.2s ease;
 }
 
 .functionItem:hover {
-    background-color: var(--bg-hover);
-    transform: translateX(5px);
+  background-color: var(--bg-hover);
+  transform: translateX(5px);
 }
 
 .functionPosition {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    margin-right: 12px;
-    min-width: 120px;
-    font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-right: 12px;
+  min-width: 120px;
+  font-weight: 500;
 }
 
 .functionName {
-    color: var(--text-primary);
-    font-weight: 500;
+  color: var(--text-primary);
+  font-weight: 500;
 }
 
 /* Browser View */
 .browserView {
-    background-color: var(--bg-secondary);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: var(--shadow-medium);
+  background-color: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-medium);
 }
 
 .browserView h2 {
-    color: var(--accent);
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 .relationshipTypeGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 25px;
 }
 
 .relationshipTypeCard {
-    background-color: var(--bg-tertiary);
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: var(--shadow-light);
-    transition: all 0.3s ease;
+  background-color: var(--bg-tertiary);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-light);
+  transition: all 0.3s ease;
 }
 
 .relationshipTypeCard:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-heavy);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-heavy);
 }
 
 .relationshipTypeCard h3 {
-    color: var(--text-primary);
-    margin-bottom: 15px;
-    font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  font-size: 1.4rem;
 }
 
 .compatibilityIndicator {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 15px 0;
-    padding: 10px;
-    background-color: var(--bg-secondary);
-    border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: var(--bg-secondary);
+  border-radius: 6px;
 }
 
 .compatibilityLevel {
-    font-weight: 600;
-    font-size: 0.95rem;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .dynamicsDetails {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .dynamicsDetails summary {
-    cursor: pointer;
-    padding: 10px;
-    background-color: var(--bg-secondary);
-    border-radius: 6px;
-    font-weight: 500;
-    color: var(--text-secondary);
-    transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 10px;
+  background-color: var(--bg-secondary);
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
 }
 
 .dynamicsDetails summary:hover {
-    background-color: var(--bg-hover);
-    color: var(--text-primary);
+  background-color: var(--bg-hover);
+  color: var(--text-primary);
 }
 
 .dynamicsContent {
-    padding: 15px;
-    margin-top: 10px;
-    background-color: var(--bg-secondary);
-    border-radius: 6px;
-    border-left: 3px solid var(--accent);
+  padding: 15px;
+  margin-top: 10px;
+  background-color: var(--bg-secondary);
+  border-radius: 6px;
+  border-left: 3px solid var(--accent);
 }
 
 .dynamicsContent p {
-    margin-bottom: 10px;
-    color: var(--text-secondary);
-    line-height: 1.5;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
 .dynamicsContent strong {
-    color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 .pairsList {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .pairsList h4 {
-    color: var(--text-secondary);
-    margin-bottom: 10px;
-    font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  font-size: 0.95rem;
 }
 
 .pairsGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
 }
 
 .pairButton {
-    padding: 8px 12px;
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--border-primary);
-    border-radius: 6px;
-    color: var(--text-primary);
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
+  padding: 8px 12px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 6px;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
 }
 
 .pairButton:hover {
-    background-color: var(--accent);
-    color: white;
-    transform: translateY(-2px);
+  background-color: var(--accent);
+  color: white;
+  transform: translateY(-2px);
 }
 
 /* Matrix View */
 .matrixView {
-    background-color: var(--bg-secondary);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: var(--shadow-medium);
+  background-color: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-medium);
 }
 
 .matrixView h2 {
-    color: var(--accent);
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 .matrixDescription {
-    text-align: center;
-    color: var(--text-secondary);
-    margin-bottom: 25px;
-    font-size: 1.05rem;
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+  font-size: 1.05rem;
 }
 
 .matrixContainer {
-    overflow-x: auto;
-    margin-bottom: 30px;
-    border: 1px solid var(--border-primary);
-    border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 30px;
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
 }
 
 .matrix {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: var(--bg-tertiary);
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-tertiary);
 }
 
 .matrix th {
-    background-color: var(--accent);
-    color: white;
-    padding: 10px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  background-color: var(--accent);
+  color: white;
+  padding: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .matrixHeader {
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    height: 60px;
-    min-width: 30px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  height: 60px;
+  min-width: 30px;
 }
 
 .matrixRowHeader {
-    background-color: var(--accent);
-    color: white;
-    position: sticky;
-    left: 0;
-    z-index: 5;
-    min-width: 50px;
+  background-color: var(--accent);
+  color: white;
+  position: sticky;
+  left: 0;
+  z-index: 5;
+  min-width: 50px;
 }
 
 .matrixCell {
-    width: 30px;
-    height: 30px;
-    border: 1px solid var(--border-light);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border-light);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 .matrixCell:hover {
-    transform: scale(1.2);
-    z-index: 20;
-    border: 2px solid var(--accent);
-    box-shadow: var(--shadow-heavy);
+  transform: scale(1.2);
+  z-index: 20;
+  border: 2px solid var(--accent);
+  box-shadow: var(--shadow-heavy);
 }
 
 .matrixCell:hover::after {
-    content: attr(title);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    padding: 5px 10px;
-    border-radius: 4px;
-    white-space: nowrap;
-    font-size: 0.85rem;
-    box-shadow: var(--shadow-medium);
-    z-index: 30;
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  box-shadow: var(--shadow-medium);
+  z-index: 30;
 }
 
 /* Matrix Legend */
 .matrixLegend {
-    background-color: var(--bg-tertiary);
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid var(--border-primary);
+  background-color: var(--bg-tertiary);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-primary);
 }
 
 .matrixLegend h4 {
-    color: var(--accent);
-    margin-bottom: 15px;
+  color: var(--accent);
+  margin-bottom: 15px;
 }
 
 .legendItems {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .legendItem {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .legendColor {
-    width: 24px;
-    height: 24px;
-    border-radius: 4px;
-    border: 1px solid var(--border-primary);
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--border-primary);
 }
 
 /* Quadras View */
 .quadrasView {
-    background-color: var(--bg-secondary);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: var(--shadow-medium);
+  background-color: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-medium);
 }
 
 .quadrasView h2 {
-    color: var(--accent);
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 .quadraGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 25px;
-    margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
 }
 
 .quadraCard {
-    background-color: var(--bg-tertiary);
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: var(--shadow-light);
-    border-left: 5px solid var(--accent);
+  background-color: var(--bg-tertiary);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-light);
+  border-left: 5px solid var(--accent);
 }
 
 .quadraTitle {
-    color: var(--accent);
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-    text-align: center;
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .quadraTypes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
 .quadraType {
-    background-color: var(--bg-secondary);
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid var(--border-light);
-    text-align: center;
+  background-color: var(--bg-secondary);
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-light);
+  text-align: center;
 }
 
 .quadraType strong {
-    display: block;
-    color: var(--text-primary);
-    margin-bottom: 4px;
-    font-size: 1.1rem;
+  display: block;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  font-size: 1.1rem;
 }
 
 .typeDesc {
-    color: var(--text-muted);
-    font-size: 0.85rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }
 
 .quadraInfo h4 {
-    color: var(--text-secondary);
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 .functionsList {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
 }
 
 .functionBadge {
-    padding: 4px 10px;
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--border-primary);
-    border-radius: 12px;
-    font-size: 0.85rem;
-    color: var(--text-primary);
+  padding: 4px 10px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
 }
 
 .valuesList {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 15px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .valuesList li {
-    padding: 5px 0;
-    padding-left: 20px;
-    position: relative;
-    color: var(--text-secondary);
+  padding: 5px 0;
+  padding-left: 20px;
+  position: relative;
+  color: var(--text-secondary);
 }
 
 .valuesList li:before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: var(--accent);
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
 }
 
 .quadraCommunication {
-    color: var(--text-secondary);
-    line-height: 1.5;
-    font-style: italic;
-    padding: 10px;
-    background-color: var(--bg-secondary);
-    border-radius: 6px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-style: italic;
+  padding: 10px;
+  background-color: var(--bg-secondary);
+  border-radius: 6px;
 }
 
 /* Interaction Styles */
 .interactionStyles {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .interactionStyles h3 {
-    color: var(--accent);
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 1.4rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 .stylesGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .styleCard {
-    background-color: var(--bg-tertiary);
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid var(--border-primary);
+  background-color: var(--bg-tertiary);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-primary);
 }
 
 .styleCard h4 {
-    color: var(--text-primary);
-    margin-bottom: 10px;
+  color: var(--text-primary);
+  margin-bottom: 10px;
 }
 
 .styleDescription {
-    color: var(--text-secondary);
-    margin-bottom: 15px;
-    line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+  line-height: 1.5;
 }
 
 .styleTypes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .typeBadge {
-    padding: 4px 8px;
-    background-color: var(--accent);
-    color: white;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 500;
+  padding: 4px 8px;
+  background-color: var(--accent);
+  color: white;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
-[data-theme="light"] .navButton,
-[data-theme="light"] .viewButton {
-    color: var(--text-primary) !important;
+[data-theme='light'] .navButton,
+[data-theme='light'] .viewButton {
+  color: var(--text-primary) !important;
 }
 
-[data-theme="light"] .navButton:hover,
-[data-theme="light"] .viewButton:hover {
-    color: var(--text-primary) !important;
+[data-theme='light'] .navButton:hover,
+[data-theme='light'] .viewButton:hover {
+  color: var(--text-primary) !important;
 }
 
-[data-theme="light"] .activeView {
-    color: var(--text-lighter) !important;
+[data-theme='light'] .activeView {
+  color: var(--text-lighter) !important;
 }
 
-[data-theme="light"] .activeView:hover {
-    color: var(--text-lighter) !important;
+[data-theme='light'] .activeView:hover {
+  color: var(--text-lighter) !important;
 }
-
-
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-    .relationshipsContainer {
-        max-width: 100%;
-        padding: 30px 15px;
-    }
+  .relationshipsContainer {
+    max-width: 100%;
+    padding: 30px 15px;
+  }
 
-    .matrixContainer {
-        overflow-x: scroll;
-    }
+  .matrixContainer {
+    overflow-x: scroll;
+  }
 }
 
 @media (max-width: 768px) {
-    .viewSelector {
-        flex-direction: column;
-    }
+  .viewSelector {
+    flex-direction: column;
+  }
 
-    .viewButton {
-        width: 100%;
-        justify-content: center;
-    }
+  .viewButton {
+    width: 100%;
+    justify-content: center;
+  }
 
-    .typeSelectors {
-        grid-template-columns: 1fr;
-    }
+  .typeSelectors {
+    grid-template-columns: 1fr;
+  }
 
-    .dynamicsGrid {
-        grid-template-columns: 1fr;
-    }
+  .dynamicsGrid {
+    grid-template-columns: 1fr;
+  }
 
-    .functionComparison {
-        grid-template-columns: 1fr;
-    }
+  .functionComparison {
+    grid-template-columns: 1fr;
+  }
 
-    .relationshipTypeGrid {
-        grid-template-columns: 1fr;
-    }
+  .relationshipTypeGrid {
+    grid-template-columns: 1fr;
+  }
 
-    .quadraGrid {
-        grid-template-columns: 1fr;
-    }
+  .quadraGrid {
+    grid-template-columns: 1fr;
+  }
 
-    .quadraTypes {
-        grid-template-columns: 1fr;
-    }
+  .quadraTypes {
+    grid-template-columns: 1fr;
+  }
 
-    .matrix {
-        font-size: 0.7rem;
-    }
+  .matrix {
+    font-size: 0.7rem;
+  }
 
-    .matrixCell {
-        width: 20px;
-        height: 20px;
-    }
+  .matrixCell {
+    width: 20px;
+    height: 20px;
+  }
 
-    .resultHeader {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .resultHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 480px) {
-    .explanationBox {
-        padding: 20px;
-    }
+  .explanationBox {
+    padding: 20px;
+  }
 
-    .analyzerView,
-    .browserView,
-    .matrixView,
-    .quadrasView {
-        padding: 20px;
-    }
+  .analyzerView,
+  .browserView,
+  .matrixView,
+  .quadrasView {
+    padding: 20px;
+  }
 
-    .pairsGrid {
-        grid-template-columns: 1fr;
-    }
+  .pairsGrid {
+    grid-template-columns: 1fr;
+  }
 
-    .additionalInfo {
-        grid-template-columns: 1fr;
-    }
+  .additionalInfo {
+    grid-template-columns: 1fr;
+  }
 
-    .stylesGrid {
-        grid-template-columns: 1fr;
-    }
+  .stylesGrid {
+    grid-template-columns: 1fr;
+  }
 }

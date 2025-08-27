@@ -1,11 +1,8 @@
 // File: src/components/Footer.jsx
 
-import styles from "./Footer.module.css";
-import packageJson from "../../package.json";
+import styles from './Footer.module.css';
+import packageJson from '../../package.json';
 const Footer = () => {
-
-
-
   // Package information - hard-coded from package.json to avoid file imports
   const packageInfo = {
     name: packageJson.name,
@@ -16,7 +13,7 @@ const Footer = () => {
     homepage: packageJson.homepage,
     technology: packageJson.technology,
     technologyHomepage: packageJson.technologyHomepage,
-    repository: packageJson.repository
+    repository: packageJson.repository,
   };
 
   const currentYear = new Date().getFullYear();
@@ -35,7 +32,7 @@ const Footer = () => {
           <ul class={styles.footerLinks}>
             <li>
               <a
-                href={packageInfo.repository.url.replace(".git", "")}
+                href={packageInfo.repository.url.replace('.git', '')}
                 target="_blank"
                 rel="noopener noreferrer"
                 class={styles.footerLink}
@@ -69,20 +66,21 @@ const Footer = () => {
 
       <div class={styles.footerBottom}>
         <p class={styles.copyright}>
-          © {currentYear} {
+          © {currentYear}{' '}
+          {
             <a
-              href={packageInfo.repository.url.replace(".git", "")}
+              href={packageInfo.repository.url.replace('.git', '')}
               target="_blank"
               rel="noopener noreferrer"
               class={styles.footerLink}
             >
               {packageInfo.author}
             </a>
-          } | Licensed under{" "}
-          {packageInfo.license}
+          }{' '}
+          | Licensed under {packageInfo.license}
         </p>
-      </div >
-    </footer >
+      </div>
+    </footer>
   );
 };
 

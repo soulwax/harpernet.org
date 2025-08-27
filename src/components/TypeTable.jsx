@@ -1,6 +1,6 @@
 // File: src/components/TypeTable.jsx
 
-import styles from "./TypeTable.module.css";
+import styles from './TypeTable.module.css';
 
 const TypeTable = (props) => {
   // Default to detailed view if not specified
@@ -9,19 +9,14 @@ const TypeTable = (props) => {
   // Function to create a summarized version of the text
   const summarize = (text) => {
     // Remove HTML tags
-    const plainText = text.replace(/<[^>]*>/g, "");
+    const plainText = text.replace(/<[^>]*>/g, '');
     // Get first sentence or limit to ~80 characters
-    const firstSentence = plainText.split(".")[0] + ".";
-    return firstSentence.length < 80
-      ? firstSentence
-      : firstSentence.substring(0, 77) + "...";
+    const firstSentence = plainText.split('.')[0] + '.';
+    return firstSentence.length < 80 ? firstSentence : firstSentence.substring(0, 77) + '...';
   };
 
   return (
-    <section
-      class={styles.typeSection}
-      id={props.title.toLowerCase().replace(/\s+/g, "-")}
-    >
+    <section class={styles.typeSection} id={props.title.toLowerCase().replace(/\s+/g, '-')}>
       <h2>{props.title}</h2>
       <table class={styles.typeTable}>
         <thead>
@@ -33,7 +28,7 @@ const TypeTable = (props) => {
         </thead>
         <tbody>
           {props.rows.map((row) => (
-            <tr class={detailed ? "" : styles.summaryRow}>
+            <tr class={detailed ? '' : styles.summaryRow}>
               <td>
                 <span class={styles.symbol}>{row.symbol}</span>
               </td>

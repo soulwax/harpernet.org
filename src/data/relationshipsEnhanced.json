@@ -791,12 +791,7 @@
   "quadras": {
     "Alpha": {
       "types": ["INTP", "ENTP", "ISFJ", "ESFJ"],
-      "values": [
-        "Comfort",
-        "Innovation",
-        "Harmony",
-        "Theoretical understanding"
-      ],
+      "values": ["Comfort", "Innovation", "Harmony", "Theoretical understanding"],
       "communication": "Light-hearted, inclusive, exploratory",
       "functions": ["Ne", "Si", "Ti", "Fe"]
     },

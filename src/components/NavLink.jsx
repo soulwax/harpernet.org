@@ -1,6 +1,6 @@
 // File: src/components/NavLink.jsx
 
-import { createSignal, createEffect } from "solid-js";
+import { createSignal, createEffect } from 'solid-js';
 
 const NavLink = (props) => {
   // Create a signal to track if this link is active
@@ -23,9 +23,9 @@ const NavLink = (props) => {
   };
 
   // Set up event listeners
-  if (typeof window !== "undefined") {
-    window.addEventListener("navigation", handleNavigation);
-    window.addEventListener("popstate", handleNavigation);
+  if (typeof window !== 'undefined') {
+    window.addEventListener('navigation', handleNavigation);
+    window.addEventListener('popstate', handleNavigation);
   }
 
   // Handle click event to navigate without page refresh
@@ -45,20 +45,18 @@ const NavLink = (props) => {
 
     // Dispatch a custom navigation event for the Router to detect
     window.dispatchEvent(
-      new CustomEvent("navigation", {
+      new CustomEvent('navigation', {
         detail: { path: props.href },
-      })
+      }),
     );
 
-    console.log("NavLink clicked, navigating to:", props.href);
+    console.log('NavLink clicked, navigating to:', props.href);
   };
 
   return (
     <a
       href={props.href}
-      class={`${props.class} ${
-        isActive() ? props.activeClass || "active" : ""
-      }`}
+      class={`${props.class} ${isActive() ? props.activeClass || 'active' : ''}`}
       onClick={handleClick}
     >
       {props.children}

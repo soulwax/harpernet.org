@@ -1,10 +1,10 @@
 // File: src/components/CognitiveFunctions.jsx
 
-import { createSignal } from "solid-js";
-import styles from "./CognitiveFunctions.module.css";
+import { createSignal } from 'solid-js';
+import styles from './CognitiveFunctions.module.css';
 
 // Import the data directly
-import cogFunctionsData from "../data/cognitiveFunctions.json";
+import cogFunctionsData from '../data/cognitiveFunctions.json';
 
 const CognitiveFunctions = () => {
   // Create a signal to toggle showing all details or a summary
@@ -18,17 +18,16 @@ const CognitiveFunctions = () => {
         <div class={styles.explanationBox}>
           <h3>Understanding the Cognitive Functions</h3>
           <p>
-            Cognitive functions are the building blocks of personality type in
-            Jungian psychology and the MBTI system. Each personality type has a
-            specific "stack" of these functions which determines how they
-            perceive information and make decisions. There are eight cognitive
-            functions in total – four functions (Sensing, Intuition, Thinking,
-            and Feeling), each with two attitudes (Extraverted and Introverted).
+            Cognitive functions are the building blocks of personality type in Jungian psychology
+            and the MBTI system. Each personality type has a specific "stack" of these functions
+            which determines how they perceive information and make decisions. There are eight
+            cognitive functions in total – four functions (Sensing, Intuition, Thinking, and
+            Feeling), each with two attitudes (Extraverted and Introverted).
           </p>
           <p>
-            This guide breaks down each cognitive function in detail, explaining
-            its core characteristics, typical behaviors, and which personality
-            types use it in different positions in their function stack.
+            This guide breaks down each cognitive function in detail, explaining its core
+            characteristics, typical behaviors, and which personality types use it in different
+            positions in their function stack.
           </p>
         </div>
 
@@ -39,10 +38,7 @@ const CognitiveFunctions = () => {
             <div class={styles.functionsContainer}>
               {funcGroup.functions.map((func) => (
                 <div class={styles.functionCard}>
-                  <div
-                    class={styles.functionHeader}
-                    style={{ "background-color": func.color }}
-                  >
+                  <div class={styles.functionHeader} style={{ 'background-color': func.color }}>
                     <h3 class={styles.functionTitle}>
                       <span class={styles.functionSymbol}>{func.symbol}</span>
                       {func.name} ({func.shorthand})
@@ -62,19 +58,19 @@ const CognitiveFunctions = () => {
                     <div class={styles.positionsGrid}>
                       <div class={styles.positionSection}>
                         <h5>Dominant in:</h5>
-                        <p>{func.dominant.join(", ")}</p>
+                        <p>{func.dominant.join(', ')}</p>
                       </div>
                       <div class={styles.positionSection}>
                         <h5>Auxiliary in:</h5>
-                        <p>{func.auxiliary.join(", ")}</p>
+                        <p>{func.auxiliary.join(', ')}</p>
                       </div>
                       <div class={styles.positionSection}>
                         <h5>Tertiary in:</h5>
-                        <p>{func.tertiary.join(", ")}</p>
+                        <p>{func.tertiary.join(', ')}</p>
                       </div>
                       <div class={styles.positionSection}>
                         <h5>Inferior in:</h5>
-                        <p>{func.inferior.join(", ")}</p>
+                        <p>{func.inferior.join(', ')}</p>
                       </div>
                     </div>
                   </div>

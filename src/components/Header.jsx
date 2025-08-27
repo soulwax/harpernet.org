@@ -1,27 +1,27 @@
 // File: src/components/Header.jsx
 
-import { createSignal } from "solid-js";
-import harperLogo from "../assets/harperalpha.svg";
-import styles from "./Header.module.css";
-import ThemeToggle from "./ThemeToggle";
+import { createSignal } from 'solid-js';
+import harperLogo from '../assets/harp.svg';
+import styles from './Header.module.css';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const headerInfo = {
-    solidJSHomepage: "https://solidjs.com",
-    githubRepository: "https://github.com/soulwax/harpernet.org",
-    solidJSTitle: "Built with Solid.JS for the giggles",
-    solidJSLogoAlt: "Solid.JS Logo",
-    harperLogoAlt: "HarperNet.org Logo",
-    technology: "Solid.JS",
-    sisterTypesUri: "/",
-    brotherTypesUri: "/brother-types",
-    cognitiveFunctionsUri: "/cognitive-functions",
-    cognitiveFunctionsDetailedUri: "/cognitive-functions-detailed",
-    relationshipsUri: "/relationships",
-    metabolicPrinciplesUri: "/metabolic-principles",
-    aboutUri: "/about",
-    menuToggleAriaLabel: "Toggle navigation menu",
-    metabolicGameUri: "/metabolic-game"
+    solidJSHomepage: 'https://solidjs.com',
+    githubRepository: 'https://github.com/soulwax/harpernet.org',
+    solidJSTitle: 'Built with Solid.JS for the giggles',
+    solidJSLogoAlt: 'Solid.JS Logo',
+    harperLogoAlt: 'HarperNet.org Logo',
+    technology: 'Solid.JS',
+    sisterTypesUri: '/',
+    brotherTypesUri: '/brother-types',
+    cognitiveFunctionsUri: '/cognitive-functions',
+    cognitiveFunctionsDetailedUri: '/cognitive-functions-detailed',
+    relationshipsUri: '/relationships',
+    metabolicPrinciplesUri: '/metabolic-principles',
+    aboutUri: '/about',
+    menuToggleAriaLabel: 'Toggle navigation menu',
+    metabolicGameUri: '/metabolic-game',
   };
 
   const [isNavOpen, setIsNavOpen] = createSignal(false);
@@ -45,11 +45,7 @@ const Header = () => {
     <header class={styles.header}>
       <div class={styles.logo}>
         <a href="/" class={styles.logoLink}>
-          <img
-            src={harperLogo}
-            alt={headerInfo.harperLogoAlt}
-            class={styles.harperLogo_simple}
-          />
+          <img src={harperLogo} alt={headerInfo.harperLogoAlt} class={styles.harperLogo_simple} />
           <span class={styles.logoText}>HarperNet.org</span>
         </a>
       </div>
@@ -79,16 +75,16 @@ const Header = () => {
           onClick={toggleNav}
           aria-label={headerInfo.menuToggleAriaLabel}
         >
-          {isNavOpen() ? "✕" : "☰"}
+          {isNavOpen() ? '✕' : '☰'}
         </button>
       </div>
 
-      <nav class={`${styles.nav} ${isNavOpen() ? styles.navOpen : ""}`}>
+      <nav class={`${styles.nav} ${isNavOpen() ? styles.navOpen : ''}`}>
         <ul class={styles.navList}>
           <li class={styles.navItem}>
             <button
-              onClick={() => navigateTo("/")}
-              class={`${styles.navButton} ${isActive("/") ? styles.activeNav : ""}`}
+              onClick={() => navigateTo('/')}
+              class={`${styles.navButton} ${isActive('/') ? styles.activeNav : ''}`}
             >
               Sister Types
             </button>
@@ -96,7 +92,7 @@ const Header = () => {
           <li class={styles.navItem}>
             <button
               onClick={() => navigateTo(headerInfo.brotherTypesUri)}
-              class={`${styles.navButton} ${isActive(headerInfo.brotherTypesUri) ? styles.activeNav : ""}`}
+              class={`${styles.navButton} ${isActive(headerInfo.brotherTypesUri) ? styles.activeNav : ''}`}
             >
               Brother Types
             </button>
@@ -104,7 +100,7 @@ const Header = () => {
           <li class={styles.navItem}>
             <button
               onClick={() => navigateTo(headerInfo.cognitiveFunctionsUri)}
-              class={`${styles.navButton} ${isActive(headerInfo.cognitiveFunctionsUri) ? styles.activeNav : ""}`}
+              class={`${styles.navButton} ${isActive(headerInfo.cognitiveFunctionsUri) ? styles.activeNav : ''}`}
             >
               Cognitive Functions
             </button>
@@ -112,7 +108,7 @@ const Header = () => {
           <li class={styles.navItem}>
             <button
               onClick={() => navigateTo(headerInfo.cognitiveFunctionsDetailedUri)}
-              class={`${styles.navButton} ${isActive(headerInfo.cognitiveFunctionsDetailedUri) ? styles.activeNav : ""}`}
+              class={`${styles.navButton} ${isActive(headerInfo.cognitiveFunctionsDetailedUri) ? styles.activeNav : ''}`}
             >
               Functions In-Depth
             </button>
@@ -120,7 +116,7 @@ const Header = () => {
           <li class={styles.navItem}>
             <button
               onClick={() => navigateTo(headerInfo.relationshipsUri)}
-              class={`${styles.navButton} ${isActive(headerInfo.relationshipsUri) ? styles.activeNav : ""}`}
+              class={`${styles.navButton} ${isActive(headerInfo.relationshipsUri) ? styles.activeNav : ''}`}
             >
               Relationships
             </button>
@@ -128,15 +124,15 @@ const Header = () => {
           <li class={styles.navItem}>
             <button
               onClick={() => navigateTo(headerInfo.metabolicPrinciplesUri)}
-              class={`${styles.navButton} ${isActive(headerInfo.metabolicPrinciplesUri) ? styles.activeNav : ""}`}
+              class={`${styles.navButton} ${isActive(headerInfo.metabolicPrinciplesUri) ? styles.activeNav : ''}`}
             >
               Metabolic Principles
             </button>
           </li>
           <li class={styles.navItem}>
             <button
-              onClick={() => navigateTo("/metabolic-game")}
-              class={`${styles.navButton} ${isActive("/metabolic-game") ? styles.activeNav : ""}`}
+              onClick={() => navigateTo('/metabolic-game')}
+              class={`${styles.navButton} ${isActive('/metabolic-game') ? styles.activeNav : ''}`}
             >
               Explore Metabolism through Game
             </button>
@@ -144,7 +140,7 @@ const Header = () => {
           <li class={styles.navItem}>
             <button
               onClick={() => navigateTo(headerInfo.aboutUri)}
-              class={`${styles.navButton} ${isActive(headerInfo.aboutUri) ? styles.activeNav : ""}`}
+              class={`${styles.navButton} ${isActive(headerInfo.aboutUri) ? styles.activeNav : ''}`}
             >
               About
             </button>

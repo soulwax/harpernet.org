@@ -1,8 +1,8 @@
 // File: src/pages/SisterTypesPage.jsx
 
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import SisterTypes from "../components/SisterTypes";
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import SisterTypes from '../components/SisterTypes';
 
 const SisterTypesPage = () => {
   return (

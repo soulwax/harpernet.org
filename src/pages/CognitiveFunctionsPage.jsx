@@ -1,8 +1,8 @@
 // File: src/pages/CognitiveFunctionsPage.jsx
 
-import CognitiveFunctions from "../components/CognitiveFunctions";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import CognitiveFunctions from '../components/CognitiveFunctions';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 const CognitiveFunctionsPage = () => {
   return (

@@ -2,158 +2,159 @@
 /* Light theme (default) */
 
 :root,
-[data-theme="light"] {
-    /* Primary colors */
-    --accent: #264653;
-    --accent-light: #2a9d8f;
-    --accent-dark: #1a3a44;
+[data-theme='light'] {
+  /* Primary colors */
+  --accent: #264653;
+  --accent-light: #2a9d8f;
+  --accent-dark: #1a3a44;
 
-    /* Background colors */
-    --bg-primary: #fafafa;
-    --bg-secondary: #ffffff;
-    --bg-tertiary: #f8f9fa;
-    --bg-opposite: #0a0a0a;
-    --bg-even: #f0f4f7;
-    --bg-hover: #e8f0f5;
+  /* Background colors */
+  --bg-primary: #fafafa;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f8f9fa;
+  --bg-opposite: #0a0a0a;
+  --bg-even: #f0f4f7;
+  --bg-hover: #e8f0f5;
 
-    /* Text colors */
-    --text-primary: #222222;
-    --text-secondary: #333333;
-    --text-tertiary: #555555;
-    --text-muted: #666666;
-    --text-light: #888888;
-    --text-lighter: #FAFAFA;
+  /* Text colors */
+  --text-primary: #222222;
+  --text-secondary: #333333;
+  --text-tertiary: #555555;
+  --text-muted: #666666;
+  --text-light: #888888;
+  --text-lighter: #fafafa;
 
-    /* Border colors */
-    --border-primary: #e0e0e0;
-    --border-secondary: rgba(0, 0, 0, 0.1);
-    --border-light: rgba(0, 0, 0, 0.05);
+  /* Border colors */
+  --border-primary: #e0e0e0;
+  --border-secondary: rgba(0, 0, 0, 0.1);
+  --border-light: rgba(0, 0, 0, 0.05);
 
-    /* Shadow colors */
-    --shadow-light: rgba(0, 0, 0, 0.08);
-    --shadow-medium: rgba(0, 0, 0, 0.12);
-    --shadow-heavy: rgba(0, 0, 0, 0.16);
+  /* Shadow colors */
+  --shadow-light: rgba(0, 0, 0, 0.08);
+  --shadow-medium: rgba(0, 0, 0, 0.12);
+  --shadow-heavy: rgba(0, 0, 0, 0.16);
 
-    /* Interactive colors */
-    --link-color: var(--accent);
-    --link-hover: var(--accent-dark);
+  /* Interactive colors */
+  --link-color: var(--accent);
+  --link-hover: var(--accent-dark);
 
-    /* Status colors */
-    --success: #28a745;
-    --warning: #ffc107;
-    --error: #dc3545;
-    --info: #17a2b8;
+  /* Status colors */
+  --success: #28a745;
+  --warning: #ffc107;
+  --error: #dc3545;
+  --info: #17a2b8;
 
-    /* Header specific */
-    --header-bg: linear-gradient(135deg, var(--accent) 0%, #1e4a5a 100%);
-    --header-text: #ffffff;
-    --header-border: rgba(255, 255, 255, 0.1);
+  /* Header specific */
+  --header-bg: linear-gradient(135deg, var(--accent) 0%, #1e4a5a 100%);
+  --header-text: #ffffff;
+  --header-border: rgba(255, 255, 255, 0.1);
 
-    /* Footer specific */
-    --footer-bg: var(--accent);
-    --footer-text: #ffffff;
-    --footer-link: #ffffff;
-    --footer-link-hover: #e8f4f8;
-    --footer-border: rgba(255, 255, 255, 0.2);
+  /* Footer specific */
+  --footer-bg: var(--accent);
+  --footer-text: #ffffff;
+  --footer-link: #ffffff;
+  --footer-link-hover: #e8f4f8;
+  --footer-border: rgba(255, 255, 255, 0.2);
 
-    /* Card colors */
-    --card-bg: var(--bg-secondary);
-    --card-border: var(--border-primary);
-    --card-shadow: var(--shadow-medium);
+  /* Card colors */
+  --card-bg: var(--bg-secondary);
+  --card-border: var(--border-primary);
+  --card-shadow: var(--shadow-medium);
 }
 
 /* Dark theme */
-[data-theme="dark"] {
-    /* Primary colors - brighter for better visibility */
-    --accent: #4fc3f7;
-    --accent-light: #81d4fa;
-    --accent-dark: #29b6f6;
+[data-theme='dark'] {
+  /* Primary colors - brighter for better visibility */
+  --accent: #4fc3f7;
+  --accent-light: #81d4fa;
+  --accent-dark: #29b6f6;
 
-    /* Background colors - true dark theme */
-    --bg-primary: #0a0a0a;
-    --bg-secondary: #1a1a1a;
-    --bg-tertiary: #2a2a2a;
-    --bg-opposite: #FDFDFD;
-    --bg-even: #1f1f1f;
-    --bg-hover: #2f2f2f;
+  /* Background colors - true dark theme */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #2a2a2a;
+  --bg-opposite: #fdfdfd;
+  --bg-even: #1f1f1f;
+  --bg-hover: #2f2f2f;
 
-    /* Text colors - high contrast for readability */
-    --text-primary: #ffffff;
-    --text-secondary: #e0e0e0;
-    --text-tertiary: #c0c0c0;
-    --text-muted: #a0a0a0;
-    --text-light: #808080;
+  /* Text colors - high contrast for readability */
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --text-tertiary: #c0c0c0;
+  --text-muted: #a0a0a0;
+  --text-light: #808080;
 
-    /* Border colors - visible but subtle */
-    --border-primary: #404040;
-    --border-secondary: rgba(255, 255, 255, 0.15);
-    --border-light: rgba(255, 255, 255, 0.08);
+  /* Border colors - visible but subtle */
+  --border-primary: #404040;
+  --border-secondary: rgba(255, 255, 255, 0.15);
+  --border-light: rgba(255, 255, 255, 0.08);
 
-    /* Shadow colors - deeper for dark theme */
-    --shadow-light: rgba(0, 0, 0, 0.4);
-    --shadow-medium: rgba(0, 0, 0, 0.6);
-    --shadow-heavy: rgba(0, 0, 0, 0.8);
+  /* Shadow colors - deeper for dark theme */
+  --shadow-light: rgba(0, 0, 0, 0.4);
+  --shadow-medium: rgba(0, 0, 0, 0.6);
+  --shadow-heavy: rgba(0, 0, 0, 0.8);
 
-    /* Interactive colors */
-    --link-color: var(--accent);
-    --link-hover: var(--accent-light);
+  /* Interactive colors */
+  --link-color: var(--accent);
+  --link-hover: var(--accent-light);
 
-    /* Status colors - adjusted for dark mode visibility */
-    --success: #4caf50;
-    --warning: #ff9800;
-    --error: #f44336;
-    --info: #2196f3;
+  /* Status colors - adjusted for dark mode visibility */
+  --success: #4caf50;
+  --warning: #ff9800;
+  --error: #f44336;
+  --info: #2196f3;
 
-    /* Header specific - darker gradient */
-    --header-bg: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
-    --header-text: #ffffff;
-    --header-border: rgba(255, 255, 255, 0.1);
+  /* Header specific - darker gradient */
+  --header-bg: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+  --header-text: #ffffff;
+  --header-border: rgba(255, 255, 255, 0.1);
 
-    /* Footer specific - better contrast for dark theme */
-    --footer-bg: #1a1a1a;
-    --footer-text: #ffffff;
-    --footer-link: var(--accent);
-    --footer-link-hover: var(--accent-light);
-    --footer-border: rgba(255, 255, 255, 0.15);
+  /* Footer specific - better contrast for dark theme */
+  --footer-bg: #1a1a1a;
+  --footer-text: #ffffff;
+  --footer-link: var(--accent);
+  --footer-link-hover: var(--accent-light);
+  --footer-border: rgba(255, 255, 255, 0.15);
 
-    /* Card colors */
-    --card-bg: var(--bg-secondary);
-    --card-border: var(--border-primary);
-    --card-shadow: var(--shadow-medium);
+  /* Card colors */
+  --card-bg: var(--bg-secondary);
+  --card-border: var(--border-primary);
+  --card-shadow: var(--shadow-medium);
 }
 
 /* Ensure root element gets theme */
 html {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 /* Transition for smooth theme switching */
 *,
 *::before,
 *::after {
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Disable transitions for reduced motion */
 @media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        transition: none !important;
-    }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
 }
 
 /* Base body styling with theme variables */
 body {
-    background-color: var(--bg-primary) !important;
-    color: var(--text-primary) !important;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* Ensure all text inherits theme colors */
@@ -169,69 +170,69 @@ div,
 li,
 td,
 th {
-    color: inherit;
+  color: inherit;
 }
 
 /* Force theme colors on headings */
 h1 {
-    color: var(--accent) !important;
+  color: var(--accent) !important;
 }
 
 h2 {
-    color: var(--text-secondary) !important;
+  color: var(--text-secondary) !important;
 }
 
 h3,
 h4,
 h5,
 h6 {
-    color: var(--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Scrollbar theming */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--bg-tertiary);
+  background: var(--bg-tertiary);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--border-primary);
-    border-radius: 4px;
+  background: var(--border-primary);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--text-muted);
+  background: var(--text-muted);
 }
 
 /* Dark theme specific overrides */
-[data-theme="dark"] body {
-    background-color: var(--bg-primary) !important;
-    color: var(--text-primary) !important;
+[data-theme='dark'] body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
 }
 
-[data-theme="dark"] h1 {
-    color: var(--accent) !important;
+[data-theme='dark'] h1 {
+  color: var(--accent) !important;
 }
 
-[data-theme="dark"] h2 {
-    color: var(--text-secondary) !important;
+[data-theme='dark'] h2 {
+  color: var(--text-secondary) !important;
 }
 
-[data-theme="dark"] h3,
-[data-theme="dark"] h4,
-[data-theme="dark"] h5,
-[data-theme="dark"] h6 {
-    color: var(--text-primary) !important;
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6 {
+  color: var(--text-primary) !important;
 }
 
 /* Ensure links are visible */
 a {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
 a:hover {
-    color: var(--link-hover) !important;
+  color: var(--link-hover) !important;
 }

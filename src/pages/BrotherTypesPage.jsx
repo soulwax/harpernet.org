@@ -1,8 +1,8 @@
 // File: src/pages/BrotherTypesPage.jsx
 
-import BrotherTypes from "../components/BrotherTypes";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import BrotherTypes from '../components/BrotherTypes';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 const BrotherTypesPage = () => {
   return (

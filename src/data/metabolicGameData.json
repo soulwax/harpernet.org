@@ -1,1174 +1,1180 @@
 {
-    "questions": [
+  "dynamicDescriptions": {
+    "revision": "constantly refining and reconsidering, cycling between essence and exploration",
+    "conducting": "orchestrating steady progress through careful mapping and execution",
+    "density": "deepening understanding through concentrated focus and layered meaning",
+    "expansion": "rapidly generating and implementing new possibilities without hesitation"
+  },
+  "questions": [
+    {
+      "id": "breath-of-stones",
+      "scenario": "You discover stones that breathe in unison, their rhythm older than memory itself. Each exhale releases a different color into the void.",
+      "prompt": "Which breath do you synchronize with?",
+      "choices": [
         {
-            "id": "breath-of-stones",
-            "scenario": "You discover stones that breathe in unison, their rhythm older than memory itself. Each exhale releases a different color into the void.",
-            "prompt": "Which breath do you synchronize with?",
-            "choices": [
-                {
-                    "text": "The violet breath that remembers what never was but should have been",
-                    "weights": {
-                        "Ni": 3,
-                        "Fi": 1,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The amber breath that calcifies possibilities into inevitable architectures",
-                    "weights": {
-                        "Te": 3,
-                        "Si": 1,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "The prismatic breath that shatters into ten thousand maybes",
-                    "weights": {
-                        "Ne": 3,
-                        "Ti": 1,
-                        "expansion": 2
-                    }
-                },
-                {
-                    "text": "The silver breath that harmonizes all others into a singular chorus",
-                    "weights": {
-                        "Fe": 3,
-                        "Se": 1,
-                        "revision": 2
-                    }
-                }
-            ]
+          "text": "The violet breath that remembers what never was but should have been",
+          "weights": {
+            "Ni": 3,
+            "Fi": 1,
+            "density": 3
+          }
         },
         {
-            "id": "library-of-sand",
-            "scenario": "A library built from sand where books write themselves based on the reader's shadow. The librarian offers you a choice of reading rooms.",
-            "prompt": "Where will your shadow write its truth?",
-            "choices": [
-                {
-                    "text": "The room where shadows compress into diamonds of absolute meaning",
-                    "weights": {
-                        "Ti": 3,
-                        "Ni": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The hall where shadows dance and multiply, creating infinite variations",
-                    "weights": {
-                        "Ne": 3,
-                        "Fe": 1,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The vault where shadows are catalogued by their weight and purpose",
-                    "weights": {
-                        "Te": 2,
-                        "Si": 2,
-                        "conducting": 2
-                    }
-                },
-                {
-                    "text": "The garden where shadows bloom into emotional constellations",
-                    "weights": {
-                        "Fi": 3,
-                        "Ne": 1,
-                        "revision": 3
-                    }
-                }
-            ]
+          "text": "The amber breath that calcifies possibilities into inevitable architectures",
+          "weights": {
+            "Te": 3,
+            "Si": 1,
+            "conducting": 3
+          }
         },
         {
-            "id": "merchant-of-doors",
-            "scenario": "A merchant sells doors that open only once. Each door leads to a different kind of nowhere.",
-            "prompt": "Which nowhere calls to your essence?",
-            "choices": [
-                {
-                    "text": "The nowhere that exists between heartbeats, heavy with unspoken names",
-                    "weights": {
-                        "Fi": 3,
-                        "Ni": 2,
-                        "density": 2
-                    }
-                },
-                {
-                    "text": "The nowhere that branches endlessly, each path birthing ten more",
-                    "weights": {
-                        "Ne": 3,
-                        "Pe": 2,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The nowhere that moves with clockwork precision toward its own completion",
-                    "weights": {
-                        "Te": 3,
-                        "Je": 2,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "The nowhere that remembers every footstep that never touched its ground",
-                    "weights": {
-                        "Si": 3,
-                        "Ti": 1,
-                        "density": 3
-                    }
-                }
-            ]
+          "text": "The prismatic breath that shatters into ten thousand maybes",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 2
+          }
         },
         {
-            "id": "ocean-of-glass",
-            "scenario": "An ocean of liquid glass reflects not images but intentions. Waves freeze mid-crash, holding moments of pure will.",
-            "prompt": "What formation do you sculpt from the frozen waves?",
-            "choices": [
-                {
-                    "text": "A spiral that tightens inward, each coil more precise than the last",
-                    "weights": {
-                        "Ti": 2,
-                        "Pi": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "A cascade that propels itself forward, shattering and reforming",
-                    "weights": {
-                        "Se": 2,
-                        "Te": 2,
-                        "expansion": 2
-                    }
-                },
-                {
-                    "text": "A lattice that channels every drop toward a singular purpose",
-                    "weights": {
-                        "Je": 3,
-                        "Ni": 1,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "A mist that questions its own existence with each particle",
-                    "weights": {
-                        "Ne": 2,
-                        "Ti": 2,
-                        "revision": 3
-                    }
-                }
-            ]
-        },
-        {
-            "id": "symphony-of-decay",
-            "scenario": "In a concert hall where music causes physical objects to age and renew cyclically, you must conduct the final movement.",
-            "prompt": "How do you orchestrate entropy itself?",
-            "choices": [
-                {
-                    "text": "Accelerate everything toward heat death, then reverse at the last moment",
-                    "weights": {
-                        "Ne": 2,
-                        "Se": 2,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "Layer decay patterns until they form an eternal recursive loop",
-                    "weights": {
-                        "Ti": 2,
-                        "Si": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "Direct each instrument toward its perfect dissolution",
-                    "weights": {
-                        "Te": 3,
-                        "Pi": 1,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "Let each note find its own death and rebirth rhythm",
-                    "weights": {
-                        "Fi": 2,
-                        "Pe": 2,
-                        "revision": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "painter-of-hunger",
-            "scenario": "You meet a painter who uses hunger as pigment and satiation as canvas. They offer you their brush.",
-            "prompt": "What appetite do you render visible?",
-            "choices": [
-                {
-                    "text": "The hunger for patterns that explain themselves",
-                    "weights": {
-                        "Ti": 3,
-                        "Ni": 1,
-                        "density": 2
-                    }
-                },
-                {
-                    "text": "The hunger for connections that spawn new hungers",
-                    "weights": {
-                        "Ne": 3,
-                        "Fe": 1,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The hunger for completion that consumes obstacles",
-                    "weights": {
-                        "Te": 3,
-                        "Se": 1,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "The hunger for authenticity that refuses substitutes",
-                    "weights": {
-                        "Fi": 3,
-                        "Si": 1,
-                        "revision": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "weaver-of-silence",
-            "scenario": "Silence here has texture, weight, and color. A weaver offers you threads of different quiets to craft your own hush.",
-            "prompt": "What silence do you weave?",
-            "choices": [
-                {
-                    "text": "The dense silence that exists before the first word was thought",
-                    "weights": {
-                        "Ni": 3,
-                        "Ji": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The explosive silence between lightning and thunder",
-                    "weights": {
-                        "Se": 3,
-                        "Je": 1,
-                        "expansion": 2
-                    }
-                },
-                {
-                    "text": "The methodical silence of spaces between clock ticks",
-                    "weights": {
-                        "Si": 2,
-                        "Te": 2,
-                        "conducting": 2
-                    }
-                },
-                {
-                    "text": "The pregnant silence full of unborn possibilities",
-                    "weights": {
-                        "Ne": 3,
-                        "Fi": 1,
-                        "revision": 3
-                    }
-                }
-            ]
-        },
-        {
-            "id": "architect-of-falling",
-            "scenario": "In a place where falling upward is possible, an architect designs buildings based on gravity's mood.",
-            "prompt": "What structure do you commission?",
-            "choices": [
-                {
-                    "text": "A tower that falls in all directions simultaneously, never landing",
-                    "weights": {
-                        "Ne": 3,
-                        "Pe": 2,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "A foundation that remembers every impact and grows stronger",
-                    "weights": {
-                        "Si": 3,
-                        "Ji": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "A bridge that calculates the optimal angle of descent",
-                    "weights": {
-                        "Te": 3,
-                        "Ti": 1,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "A shelter that falls gently with those who need comfort",
-                    "weights": {
-                        "Fe": 3,
-                        "Fi": 1,
-                        "revision": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "keeper-of-edges",
-            "scenario": "You find yourself at the museum of edges, where the spaces between things are preserved and catalogued.",
-            "prompt": "Which edge do you claim as yours?",
-            "choices": [
-                {
-                    "text": "The edge where thought becomes action without crossing",
-                    "weights": {
-                        "Ti": 2,
-                        "Te": 2,
-                        "revision": 2
-                    }
-                },
-                {
-                    "text": "The edge that multiplies into fractal boundaries",
-                    "weights": {
-                        "Ne": 3,
-                        "Ni": 1,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The edge worn smooth by repetition and remembrance",
-                    "weights": {
-                        "Si": 3,
-                        "Fi": 1,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The edge that cuts decisively between was and will be",
-                    "weights": {
-                        "Te": 3,
-                        "Se": 1,
-                        "conducting": 3
-                    }
-                }
-            ]
-        },
-        {
-            "id": "merchant-of-weight",
-            "scenario": "A merchant trades in the weight of things - not physical weight, but the weight they carry in existence.",
-            "prompt": "What weight do you purchase?",
-            "choices": [
-                {
-                    "text": "The weight of words unspoken but understood completely",
-                    "weights": {
-                        "Fi": 2,
-                        "Ni": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The weight of momentum gathering toward action",
-                    "weights": {
-                        "Te": 2,
-                        "Se": 2,
-                        "conducting": 2
-                    }
-                },
-                {
-                    "text": "The weight of possibilities before they collapse into choice",
-                    "weights": {
-                        "Ne": 3,
-                        "Ti": 1,
-                        "revision": 3
-                    }
-                },
-                {
-                    "text": "The weight of rituals performed by forgotten ancestors",
-                    "weights": {
-                        "Si": 3,
-                        "Fe": 1,
-                        "density": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "gardener-of-echoes",
-            "scenario": "In a garden where echoes take root and grow into new sounds, you must tend to the acoustic ecosystem.",
-            "prompt": "Which echo do you cultivate?",
-            "choices": [
-                {
-                    "text": "The echo that questions its own source recursively",
-                    "weights": {
-                        "Ti": 3,
-                        "Ne": 1,
-                        "revision": 3
-                    }
-                },
-                {
-                    "text": "The echo that amplifies itself into a symphony of action",
-                    "weights": {
-                        "Te": 2,
-                        "Fe": 2,
-                        "expansion": 2
-                    }
-                },
-                {
-                    "text": "The echo that preserves the original perfectly across time",
-                    "weights": {
-                        "Si": 3,
-                        "Pi": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The echo that transforms into what the listener needs to hear",
-                    "weights": {
-                        "Fe": 3,
-                        "Ne": 1,
-                        "conducting": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "sculptor-of-void",
-            "scenario": "A sculptor works exclusively with absence, carving voids that define space by what isn't there.",
-            "prompt": "What absence do you commission?",
-            "choices": [
-                {
-                    "text": "The absence that implies everything by containing nothing",
-                    "weights": {
-                        "Ni": 3,
-                        "Ti": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The absence that creates urgency for filling",
-                    "weights": {
-                        "Te": 3,
-                        "Se": 1,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "The absence that generates infinite interpretations",
-                    "weights": {
-                        "Ne": 3,
-                        "Fi": 1,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The absence that holds space for collective memory",
-                    "weights": {
-                        "Fe": 2,
-                        "Si": 2,
-                        "revision": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "cartographer-of-blur",
-            "scenario": "Maps here chart not locations but the spaces between certainties. A cartographer offers you a map of ambiguity.",
-            "prompt": "Which uncertainty do you navigate?",
-            "choices": [
-                {
-                    "text": "The blur between intention and accident, thick with meaning",
-                    "weights": {
-                        "Ni": 2,
-                        "Fi": 2,
-                        "revision": 2
-                    }
-                },
-                {
-                    "text": "The blur that sharpens into perfect clarity at the moment of action",
-                    "weights": {
-                        "Te": 3,
-                        "Se": 2,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "The blur that branches into parallel possibilities",
-                    "weights": {
-                        "Ne": 3,
-                        "Pe": 2,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The blur worn smooth by generations of passage",
-                    "weights": {
-                        "Si": 3,
-                        "Ji": 1,
-                        "density": 3
-                    }
-                }
-            ]
-        },
-        {
-            "id": "alchemist-of-distance",
-            "scenario": "An alchemist transmutes distances - not physical space, but the distance between understanding and mystery.",
-            "prompt": "Which distance do you dissolve?",
-            "choices": [
-                {
-                    "text": "The distance between question and question about the question",
-                    "weights": {
-                        "Ti": 3,
-                        "Ne": 2,
-                        "revision": 3
-                    }
-                },
-                {
-                    "text": "The distance between decision and execution",
-                    "weights": {
-                        "Te": 3,
-                        "Je": 2,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "The distance between self and the memory of self",
-                    "weights": {
-                        "Si": 2,
-                        "Fi": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The distance between individual drops and ocean",
-                    "weights": {
-                        "Fe": 3,
-                        "Ne": 1,
-                        "expansion": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "keeper-of-seams",
-            "scenario": "Where realities stitch together, someone must tend the seams. The keeper shows you threads of different compositions.",
-            "prompt": "Which thread do you pull?",
-            "choices": [
-                {
-                    "text": "The thread that unravels to reveal the pattern beneath patterns",
-                    "weights": {
-                        "Ti": 2,
-                        "Ni": 3,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The thread that pulls everything tighter together",
-                    "weights": {
-                        "Fe": 2,
-                        "Si": 2,
-                        "conducting": 2
-                    }
-                },
-                {
-                    "text": "The thread that splits into countless fibers of possibility",
-                    "weights": {
-                        "Ne": 3,
-                        "Se": 1,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The thread that knows exactly where it leads",
-                    "weights": {
-                        "Te": 3,
-                        "Pi": 1,
-                        "conducting": 3
-                    }
-                }
-            ]
-        },
-        {
-            "id": "breaker-of-circles",
-            "scenario": "In a realm of eternal loops, a breaker offers to shatter one cycle of your choosing.",
-            "prompt": "Which circle do you break?",
-            "choices": [
-                {
-                    "text": "The circle that questions its own circumference endlessly",
-                    "weights": {
-                        "Ti": 2,
-                        "Pe": 2,
-                        "revision": 3
-                    }
-                },
-                {
-                    "text": "The circle that generates momentum with each revolution",
-                    "weights": {
-                        "Te": 2,
-                        "Se": 2,
-                        "expansion": 2
-                    }
-                },
-                {
-                    "text": "The circle that remembers every passage around itself",
-                    "weights": {
-                        "Si": 3,
-                        "Pi": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The circle that harmonizes all other circles",
-                    "weights": {
-                        "Fe": 3,
-                        "Ni": 1,
-                        "conducting": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "collector-of-almost",
-            "scenario": "A collector specializes in things that almost happened. Each almost carries the weight of what could have been.",
-            "prompt": "Which almost do you preserve?",
-            "choices": [
-                {
-                    "text": "The almost that would have revealed everything",
-                    "weights": {
-                        "Ni": 3,
-                        "Ti": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The almost that would have changed the course of action",
-                    "weights": {
-                        "Te": 3,
-                        "Ne": 1,
-                        "conducting": 2
-                    }
-                },
-                {
-                    "text": "The almost that multiplied into infinite variations",
-                    "weights": {
-                        "Ne": 3,
-                        "Pe": 2,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The almost that everyone felt but no one spoke",
-                    "weights": {
-                        "Fe": 3,
-                        "Fi": 1,
-                        "revision": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "turner-of-tides",
-            "scenario": "Where thoughts pool and flow like tides, you're offered control of the gravitational force that moves them.",
-            "prompt": "How do you pull the cognitive waters?",
-            "choices": [
-                {
-                    "text": "Create whirlpools that spiral inward to singular points of clarity",
-                    "weights": {
-                        "Ti": 2,
-                        "Ni": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "Generate waves that crash and scatter into foam of possibilities",
-                    "weights": {
-                        "Ne": 3,
-                        "Se": 1,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "Channel currents into rivers that carve deep, purposeful paths",
-                    "weights": {
-                        "Te": 3,
-                        "Pi": 1,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "Maintain the rhythm that all life has learned to depend upon",
-                    "weights": {
-                        "Si": 2,
-                        "Fe": 2,
-                        "revision": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "mender-of-tears",
-            "scenario": "Not tears of crying, but tears in the fabric of experience. A mender offers you tools to repair or widen them.",
-            "prompt": "How do you treat the tear before you?",
-            "choices": [
-                {
-                    "text": "Widen it to see what lies beneath all surfaces",
-                    "weights": {
-                        "Ni": 3,
-                        "Ti": 1,
-                        "expansion": 2
-                    }
-                },
-                {
-                    "text": "Stitch it with precise, purposeful movements",
-                    "weights": {
-                        "Te": 2,
-                        "Si": 2,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "Let it fray into beautiful, chaotic patterns",
-                    "weights": {
-                        "Ne": 3,
-                        "Fe": 1,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "Patch it with layers of accumulated meaning",
-                    "weights": {
-                        "Si": 2,
-                        "Fi": 2,
-                        "density": 3
-                    }
-                }
-            ]
-        },
-        {
-            "id": "dancer-of-shadows",
-            "scenario": "Your shadow has learned to dance independently. It offers to teach you its perspective on movement.",
-            "prompt": "What dance do you learn from your darkness?",
-            "choices": [
-                {
-                    "text": "The dance that moves before thought, pure and precise",
-                    "weights": {
-                        "Se": 3,
-                        "Ti": 1,
-                        "expansion": 2
-                    }
-                },
-                {
-                    "text": "The dance that tells stories only shadows know",
-                    "weights": {
-                        "Ni": 2,
-                        "Fi": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The dance that coordinates all other dancers",
-                    "weights": {
-                        "Fe": 2,
-                        "Te": 2,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "The dance that invents new movements with each beat",
-                    "weights": {
-                        "Ne": 3,
-                        "Fi": 1,
-                        "revision": 3
-                    }
-                }
-            ]
-        },
-        {
-            "id": "chronosmith-of-moments",
-            "scenario": "You meet a smith who forges not metal, but time itself. They can temper, fold, or shatter moments. They offer to craft you a temporal artifact.",
-            "prompt": "What piece of time do you request?",
-            "choices": [
-                {
-                    "text": "A shard of the future, so dense with destiny it pulls the present toward it",
-                    "weights": {
-                        "Ni": 3,
-                        "Te": 1,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "A Mobius strip of a perfect memory, looping forever without degradation",
-                    "weights": {
-                        "Si": 3,
-                        "Fi": 1,
-                        "density": 2
-                    }
-                },
-                {
-                    "text": "A cloud of fractured seconds, each containing a different alternate reality",
-                    "weights": {
-                        "Ne": 3,
-                        "Pe": 2,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "A lens that focuses the will of a group into one actionable moment",
-                    "weights": {
-                        "Fe": 3,
-                        "Se": 1,
-                        "conducting": 3
-                    }
-                }
-            ]
-        },
-        {
-            "id": "sommelier-of-storms",
-            "scenario": "In a cellar, a sommelier serves not wine, but bottled storms. Each contains a different atmospheric and emotional tempest.",
-            "prompt": "Which storm do you uncork?",
-            "choices": [
-                {
-                    "text": "The quiet electrical storm that reveals the hidden architecture of the sky",
-                    "weights": {
-                        "Ti": 3,
-                        "Ni": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The supercell that spawns a dozen smaller, unpredictable whirlwinds",
-                    "weights": {
-                        "Ne": 3,
-                        "Se": 1,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The steady trade wind that has guided fleets to their destinations for centuries",
-                    "weights": {
-                        "Te": 3,
-                        "Si": 1,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "The gentle rain that makes the entire forest smell of life and shared renewal",
-                    "weights": {
-                        "Fe": 3,
-                        "Fi": 1,
-                        "revision": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "cartographer-of-scars",
-            "scenario": "An old cartographer maps not lands, but the scars on souls. Each line tells a story of impact and healing.",
-            "prompt": "Which map do you choose to study?",
-            "choices": [
-                {
-                    "text": "The map showing how all individual scars connect into a single, universal wound",
-                    "weights": {
-                        "Ni": 3,
-                        "Fe": 1,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The map of a scar that healed into a perfect, impenetrable callus",
-                    "weights": {
-                        "Si": 3,
-                        "Te": 1,
-                        "conducting": 2
-                    }
-                },
-                {
-                    "text": "The map where each scar, when traced, tells a thousand different potential stories",
-                    "weights": {
-                        "Ne": 3,
-                        "Fi": 1,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The map that is a perfect anatomical blueprint of the injury, clinically precise",
-                    "weights": {
-                        "Ti": 3,
-                        "Se": 1,
-                        "revision": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "locksmith-of-paradoxes",
-            "scenario": "A locksmith creates keys that do not open doors, but instead unlock paradoxes, allowing one to inhabit them for a time.",
-            "prompt": "Which paradox do you unlock?",
-            "choices": [
-                {
-                    "text": "The paradox of motion, where moving everywhere is the same as standing still",
-                    "weights": {
-                        "Ne": 2,
-                        "Se": 2,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The paradox of identity, proving that a ship is the same after all its parts are replaced",
-                    "weights": {
-                        "Si": 3,
-                        "Ti": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The paradox of consensus, where everyone's agreement can make a truth feel hollow",
-                    "weights": {
-                        "Fe": 2,
-                        "Ti": 2,
-                        "revision": 3
-                    }
-                },
-                {
-                    "text": "The paradox of the arrow, which must reach its target by defining the target's fate",
-                    "weights": {
-                        "Te": 3,
-                        "Ni": 1,
-                        "conducting": 3
-                    }
-                }
-            ]
-        },
-        {
-            "id": "zookeeper-of-concepts",
-            "scenario": "A zookeeper tends to enclosures containing not animals, but living, breathing concepts.",
-            "prompt": "Which concept do you spend the day observing?",
-            "choices": [
-                {
-                    "text": "Justice, which endlessly paces, measuring the angles of its cage",
-                    "weights": {
-                        "Ti": 3,
-                        "Je": 2,
-                        "conducting": 2
-                    }
-                },
-                {
-                    "text": "Possibility, which constantly changes its form, color, and texture",
-                    "weights": {
-                        "Ne": 3,
-                        "Pe": 2,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "Legacy, which sleeps soundly, dreaming of its own past",
-                    "weights": {
-                        "Si": 3,
-                        "Fi": 1,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "Empathy, which mirrors the emotions of every creature that looks upon it",
-                    "weights": {
-                        "Fe": 3,
-                        "Ni": 1,
-                        "revision": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "glassblower-of-regrets",
-            "scenario": "A craftsman blows glass sculptures from the sighs of regret. Each is fragile and holds a crystallized 'what if'.",
-            "prompt": "Which sculpture do you take home?",
-            "choices": [
-                {
-                    "text": "A web showing how one missed chance connects to all others",
-                    "weights": {
-                        "Ni": 3,
-                        "Fe": 1,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "A perfectly clear lens that shows exactly how a mistake was made, free of emotion",
-                    "weights": {
-                        "Ti": 3,
-                        "Si": 1,
-                        "revision": 2
-                    }
-                },
-                {
-                    "text": "A seed that, when planted, grows into a garden of alternate outcomes",
-                    "weights": {
-                        "Ne": 3,
-                        "Pe": 2,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "A shield, hardened and tempered, to prevent such a mistake from ever happening again",
-                    "weights": {
-                        "Te": 3,
-                        "Se": 1,
-                        "conducting": 3
-                    }
-                }
-            ]
-        },
-        {
-            "id": "linguist-of-footprints",
-            "scenario": "A linguist studies not words, but the grammar of footprints left in the dust of forgotten places.",
-            "prompt": "Which phrase do you learn to read?",
-            "choices": [
-                {
-                    "text": "The sentence formed by a thousand footprints walking the same path until it became a road",
-                    "weights": {
-                        "Si": 2,
-                        "Te": 2,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "The question mark left by a single footprint that abruptly stops in the middle of nowhere",
-                    "weights": {
-                        "Ni": 3,
-                        "Ti": 1,
-                        "revision": 3
-                    }
-                },
-                {
-                    "text": "The scattered poetry of footprints from a chaotic, joyful dance",
-                    "weights": {
-                        "Ne": 2,
-                        "Fi": 2,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The silent, deep impression of someone who stood watch for a very long time",
-                    "weights": {
-                        "Fi": 3,
-                        "Si": 1,
-                        "density": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "oracle-of-rust",
-            "scenario": "An oracle reads the future not in stars, but in the patterns of rust forming on old machines.",
-            "prompt": "What prophecy of decay do you heed?",
-            "choices": [
-                {
-                    "text": "'The most complex machine will be the first to forget its purpose.'",
-                    "weights": {
-                        "Ti": 3,
-                        "Ni": 2,
-                        "revision": 3
-                    }
-                },
-                {
-                    "text": "'Every structure will inevitably stabilize into dust, its final, most honest form.'",
-                    "weights": {
-                        "Si": 2,
-                        "Te": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "'From the rust of one machine, a thousand new organisms shall spring.'",
-                    "weights": {
-                        "Ne": 3,
-                        "Se": 1,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "'The machine that served the most will be the most lovingly remembered as it falls apart.'",
-                    "weights": {
-                        "Fe": 3,
-                        "Fi": 1,
-                        "conducting": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "distiller-of-light",
-            "scenario": "An alchemist distills light into potent elixirs, each with a different effect on perception.",
-            "prompt": "Which elixir do you drink?",
-            "choices": [
-                {
-                    "text": "The Elixir of the First Ray, letting you see the singular origin point of all things",
-                    "weights": {
-                        "Ni": 3,
-                        "Ji": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "The Elixir of Prismatic Spray, letting you see every potential path an object could take",
-                    "weights": {
-                        "Ne": 3,
-                        "Se": 1,
-                        "expansion": 3
-                    }
-                },
-                {
-                    "text": "The Elixir of the Focused Beam, letting you see only what is useful for your current goal",
-                    "weights": {
-                        "Te": 3,
-                        "Je": 2,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "The Elixir of the Diffused Glow, letting you feel the ambient mood of a room as a color",
-                    "weights": {
-                        "Fe": 3,
-                        "Si": 1,
-                        "revision": 2
-                    }
-                }
-            ]
-        },
-        {
-            "id": "taxonomist-of-memories",
-            "scenario": "A taxonomist doesn't classify species, but memories. They are sorted in a vast, silent archive.",
-            "prompt": "Which classification system do you study?",
-            "choices": [
-                {
-                    "text": "Classification by emotional resonance and authenticity",
-                    "weights": {
-                        "Fi": 3,
-                        "Pi": 2,
-                        "density": 3
-                    }
-                },
-                {
-                    "text": "Classification by causal chain and consequence",
-                    "weights": {
-                        "Te": 3,
-                        "Ni": 1,
-                        "conducting": 3
-                    }
-                },
-                {
-                    "text": "Classification by sensory detail and lived experience",
-                    "weights": {
-                        "Si": 3,
-                        "Se": 1,
-                        "density": 2
-                    }
-                },
-                {
-                    "text": "Classification by the new ideas and connections they generate",
-                    "weights": {
-                        "Ne": 3,
-                        "Ti": 1,
-                        "expansion": 3
-                    }
-                }
-            ]
+          "text": "The silver breath that harmonizes all others into a singular chorus",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "revision": 2
+          }
         }
-    ]
+      ]
+    },
+    {
+      "id": "library-of-sand",
+      "scenario": "A library built from sand where books write themselves based on the reader's shadow. The librarian offers you a choice of reading rooms.",
+      "prompt": "Where will your shadow write its truth?",
+      "choices": [
+        {
+          "text": "The room where shadows compress into diamonds of absolute meaning",
+          "weights": {
+            "Ti": 3,
+            "Ni": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The hall where shadows dance and multiply, creating infinite variations",
+          "weights": {
+            "Ne": 3,
+            "Fe": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The vault where shadows are catalogued by their weight and purpose",
+          "weights": {
+            "Te": 2,
+            "Si": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The garden where shadows bloom into emotional constellations",
+          "weights": {
+            "Fi": 3,
+            "Ne": 1,
+            "revision": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "merchant-of-doors",
+      "scenario": "A merchant sells doors that open only once. Each door leads to a different kind of nowhere.",
+      "prompt": "Which nowhere calls to your essence?",
+      "choices": [
+        {
+          "text": "The nowhere that exists between heartbeats, heavy with unspoken names",
+          "weights": {
+            "Fi": 3,
+            "Ni": 2,
+            "density": 2
+          }
+        },
+        {
+          "text": "The nowhere that branches endlessly, each path birthing ten more",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The nowhere that moves with clockwork precision toward its own completion",
+          "weights": {
+            "Te": 3,
+            "Je": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The nowhere that remembers every footstep that never touched its ground",
+          "weights": {
+            "Si": 3,
+            "Ti": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "ocean-of-glass",
+      "scenario": "An ocean of liquid glass reflects not images but intentions. Waves freeze mid-crash, holding moments of pure will.",
+      "prompt": "What formation do you sculpt from the frozen waves?",
+      "choices": [
+        {
+          "text": "A spiral that tightens inward, each coil more precise than the last",
+          "weights": {
+            "Ti": 2,
+            "Pi": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "A cascade that propels itself forward, shattering and reforming",
+          "weights": {
+            "Se": 2,
+            "Te": 2,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "A lattice that channels every drop toward a singular purpose",
+          "weights": {
+            "Je": 3,
+            "Ni": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "A mist that questions its own existence with each particle",
+          "weights": {
+            "Ne": 2,
+            "Ti": 2,
+            "revision": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "symphony-of-decay",
+      "scenario": "In a concert hall where music causes physical objects to age and renew cyclically, you must conduct the final movement.",
+      "prompt": "How do you orchestrate entropy itself?",
+      "choices": [
+        {
+          "text": "Accelerate everything toward heat death, then reverse at the last moment",
+          "weights": {
+            "Ne": 2,
+            "Se": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "Layer decay patterns until they form an eternal recursive loop",
+          "weights": {
+            "Ti": 2,
+            "Si": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "Direct each instrument toward its perfect dissolution",
+          "weights": {
+            "Te": 3,
+            "Pi": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "Let each note find its own death and rebirth rhythm",
+          "weights": {
+            "Fi": 2,
+            "Pe": 2,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "painter-of-hunger",
+      "scenario": "You meet a painter who uses hunger as pigment and satiation as canvas. They offer you their brush.",
+      "prompt": "What appetite do you render visible?",
+      "choices": [
+        {
+          "text": "The hunger for patterns that explain themselves",
+          "weights": {
+            "Ti": 3,
+            "Ni": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The hunger for connections that spawn new hungers",
+          "weights": {
+            "Ne": 3,
+            "Fe": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The hunger for completion that consumes obstacles",
+          "weights": {
+            "Te": 3,
+            "Se": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The hunger for authenticity that refuses substitutes",
+          "weights": {
+            "Fi": 3,
+            "Si": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "weaver-of-silence",
+      "scenario": "Silence here has texture, weight, and color. A weaver offers you threads of different quiets to craft your own hush.",
+      "prompt": "What silence do you weave?",
+      "choices": [
+        {
+          "text": "The dense silence that exists before the first word was thought",
+          "weights": {
+            "Ni": 3,
+            "Ji": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The explosive silence between lightning and thunder",
+          "weights": {
+            "Se": 3,
+            "Je": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The methodical silence of spaces between clock ticks",
+          "weights": {
+            "Si": 2,
+            "Te": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The pregnant silence full of unborn possibilities",
+          "weights": {
+            "Ne": 3,
+            "Fi": 1,
+            "revision": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "architect-of-falling",
+      "scenario": "In a place where falling upward is possible, an architect designs buildings based on gravity's mood.",
+      "prompt": "What structure do you commission?",
+      "choices": [
+        {
+          "text": "A tower that falls in all directions simultaneously, never landing",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "A foundation that remembers every impact and grows stronger",
+          "weights": {
+            "Si": 3,
+            "Ji": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "A bridge that calculates the optimal angle of descent",
+          "weights": {
+            "Te": 3,
+            "Ti": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "A shelter that falls gently with those who need comfort",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "keeper-of-edges",
+      "scenario": "You find yourself at the museum of edges, where the spaces between things are preserved and catalogued.",
+      "prompt": "Which edge do you claim as yours?",
+      "choices": [
+        {
+          "text": "The edge where thought becomes action without crossing",
+          "weights": {
+            "Ti": 2,
+            "Te": 2,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The edge that multiplies into fractal boundaries",
+          "weights": {
+            "Ne": 3,
+            "Ni": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The edge worn smooth by repetition and remembrance",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The edge that cuts decisively between was and will be",
+          "weights": {
+            "Te": 3,
+            "Se": 1,
+            "conducting": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "merchant-of-weight",
+      "scenario": "A merchant trades in the weight of things - not physical weight, but the weight they carry in existence.",
+      "prompt": "What weight do you purchase?",
+      "choices": [
+        {
+          "text": "The weight of words unspoken but understood completely",
+          "weights": {
+            "Fi": 2,
+            "Ni": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The weight of momentum gathering toward action",
+          "weights": {
+            "Te": 2,
+            "Se": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The weight of possibilities before they collapse into choice",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The weight of rituals performed by forgotten ancestors",
+          "weights": {
+            "Si": 3,
+            "Fe": 1,
+            "density": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "gardener-of-echoes",
+      "scenario": "In a garden where echoes take root and grow into new sounds, you must tend to the acoustic ecosystem.",
+      "prompt": "Which echo do you cultivate?",
+      "choices": [
+        {
+          "text": "The echo that questions its own source recursively",
+          "weights": {
+            "Ti": 3,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The echo that amplifies itself into a symphony of action",
+          "weights": {
+            "Te": 2,
+            "Fe": 2,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The echo that preserves the original perfectly across time",
+          "weights": {
+            "Si": 3,
+            "Pi": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The echo that transforms into what the listener needs to hear",
+          "weights": {
+            "Fe": 3,
+            "Ne": 1,
+            "conducting": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "sculptor-of-void",
+      "scenario": "A sculptor works exclusively with absence, carving voids that define space by what isn't there.",
+      "prompt": "What absence do you commission?",
+      "choices": [
+        {
+          "text": "The absence that implies everything by containing nothing",
+          "weights": {
+            "Ni": 3,
+            "Ti": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The absence that creates urgency for filling",
+          "weights": {
+            "Te": 3,
+            "Se": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The absence that generates infinite interpretations",
+          "weights": {
+            "Ne": 3,
+            "Fi": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The absence that holds space for collective memory",
+          "weights": {
+            "Fe": 2,
+            "Si": 2,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "cartographer-of-blur",
+      "scenario": "Maps here chart not locations but the spaces between certainties. A cartographer offers you a map of ambiguity.",
+      "prompt": "Which uncertainty do you navigate?",
+      "choices": [
+        {
+          "text": "The blur between intention and accident, thick with meaning",
+          "weights": {
+            "Ni": 2,
+            "Fi": 2,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The blur that sharpens into perfect clarity at the moment of action",
+          "weights": {
+            "Te": 3,
+            "Se": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The blur that branches into parallel possibilities",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The blur worn smooth by generations of passage",
+          "weights": {
+            "Si": 3,
+            "Ji": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "alchemist-of-distance",
+      "scenario": "An alchemist transmutes distances - not physical space, but the distance between understanding and mystery.",
+      "prompt": "Which distance do you dissolve?",
+      "choices": [
+        {
+          "text": "The distance between question and question about the question",
+          "weights": {
+            "Ti": 3,
+            "Ne": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The distance between decision and execution",
+          "weights": {
+            "Te": 3,
+            "Je": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The distance between self and the memory of self",
+          "weights": {
+            "Si": 2,
+            "Fi": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The distance between individual drops and ocean",
+          "weights": {
+            "Fe": 3,
+            "Ne": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "keeper-of-seams",
+      "scenario": "Where realities stitch together, someone must tend the seams. The keeper shows you threads of different compositions.",
+      "prompt": "Which thread do you pull?",
+      "choices": [
+        {
+          "text": "The thread that unravels to reveal the pattern beneath patterns",
+          "weights": {
+            "Ti": 2,
+            "Ni": 3,
+            "density": 3
+          }
+        },
+        {
+          "text": "The thread that pulls everything tighter together",
+          "weights": {
+            "Fe": 2,
+            "Si": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The thread that splits into countless fibers of possibility",
+          "weights": {
+            "Ne": 3,
+            "Se": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The thread that knows exactly where it leads",
+          "weights": {
+            "Te": 3,
+            "Pi": 1,
+            "conducting": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "breaker-of-circles",
+      "scenario": "In a realm of eternal loops, a breaker offers to shatter one cycle of your choosing.",
+      "prompt": "Which circle do you break?",
+      "choices": [
+        {
+          "text": "The circle that questions its own circumference endlessly",
+          "weights": {
+            "Ti": 2,
+            "Pe": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The circle that generates momentum with each revolution",
+          "weights": {
+            "Te": 2,
+            "Se": 2,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The circle that remembers every passage around itself",
+          "weights": {
+            "Si": 3,
+            "Pi": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The circle that harmonizes all other circles",
+          "weights": {
+            "Fe": 3,
+            "Ni": 1,
+            "conducting": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "collector-of-almost",
+      "scenario": "A collector specializes in things that almost happened. Each almost carries the weight of what could have been.",
+      "prompt": "Which almost do you preserve?",
+      "choices": [
+        {
+          "text": "The almost that would have revealed everything",
+          "weights": {
+            "Ni": 3,
+            "Ti": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The almost that would have changed the course of action",
+          "weights": {
+            "Te": 3,
+            "Ne": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The almost that multiplied into infinite variations",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The almost that everyone felt but no one spoke",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "turner-of-tides",
+      "scenario": "Where thoughts pool and flow like tides, you're offered control of the gravitational force that moves them.",
+      "prompt": "How do you pull the cognitive waters?",
+      "choices": [
+        {
+          "text": "Create whirlpools that spiral inward to singular points of clarity",
+          "weights": {
+            "Ti": 2,
+            "Ni": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "Generate waves that crash and scatter into foam of possibilities",
+          "weights": {
+            "Ne": 3,
+            "Se": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "Channel currents into rivers that carve deep, purposeful paths",
+          "weights": {
+            "Te": 3,
+            "Pi": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "Maintain the rhythm that all life has learned to depend upon",
+          "weights": {
+            "Si": 2,
+            "Fe": 2,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "mender-of-tears",
+      "scenario": "Not tears of crying, but tears in the fabric of experience. A mender offers you tools to repair or widen them.",
+      "prompt": "How do you treat the tear before you?",
+      "choices": [
+        {
+          "text": "Widen it to see what lies beneath all surfaces",
+          "weights": {
+            "Ni": 3,
+            "Ti": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Stitch it with precise, purposeful movements",
+          "weights": {
+            "Te": 2,
+            "Si": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "Let it fray into beautiful, chaotic patterns",
+          "weights": {
+            "Ne": 3,
+            "Fe": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "Patch it with layers of accumulated meaning",
+          "weights": {
+            "Si": 2,
+            "Fi": 2,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "dancer-of-shadows",
+      "scenario": "Your shadow has learned to dance independently. It offers to teach you its perspective on movement.",
+      "prompt": "What dance do you learn from your darkness?",
+      "choices": [
+        {
+          "text": "The dance that moves before thought, pure and precise",
+          "weights": {
+            "Se": 3,
+            "Ti": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The dance that tells stories only shadows know",
+          "weights": {
+            "Ni": 2,
+            "Fi": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The dance that coordinates all other dancers",
+          "weights": {
+            "Fe": 2,
+            "Te": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The dance that invents new movements with each beat",
+          "weights": {
+            "Ne": 3,
+            "Fi": 1,
+            "revision": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "chronosmith-of-moments",
+      "scenario": "You meet a smith who forges not metal, but time itself. They can temper, fold, or shatter moments. They offer to craft you a temporal artifact.",
+      "prompt": "What piece of time do you request?",
+      "choices": [
+        {
+          "text": "A shard of the future, so dense with destiny it pulls the present toward it",
+          "weights": {
+            "Ni": 3,
+            "Te": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "A Mobius strip of a perfect memory, looping forever without degradation",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "A cloud of fractured seconds, each containing a different alternate reality",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "A lens that focuses the will of a group into one actionable moment",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "sommelier-of-storms",
+      "scenario": "In a cellar, a sommelier serves not wine, but bottled storms. Each contains a different atmospheric and emotional tempest.",
+      "prompt": "Which storm do you uncork?",
+      "choices": [
+        {
+          "text": "The quiet electrical storm that reveals the hidden architecture of the sky",
+          "weights": {
+            "Ti": 3,
+            "Ni": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The supercell that spawns a dozen smaller, unpredictable whirlwinds",
+          "weights": {
+            "Ne": 3,
+            "Se": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The steady trade wind that has guided fleets to their destinations for centuries",
+          "weights": {
+            "Te": 3,
+            "Si": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The gentle rain that makes the entire forest smell of life and shared renewal",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "cartographer-of-scars",
+      "scenario": "An old cartographer maps not lands, but the scars on souls. Each line tells a story of impact and healing.",
+      "prompt": "Which map do you choose to study?",
+      "choices": [
+        {
+          "text": "The map showing how all individual scars connect into a single, universal wound",
+          "weights": {
+            "Ni": 3,
+            "Fe": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The map of a scar that healed into a perfect, impenetrable callus",
+          "weights": {
+            "Si": 3,
+            "Te": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The map where each scar, when traced, tells a thousand different potential stories",
+          "weights": {
+            "Ne": 3,
+            "Fi": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The map that is a perfect anatomical blueprint of the injury, clinically precise",
+          "weights": {
+            "Ti": 3,
+            "Se": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "locksmith-of-paradoxes",
+      "scenario": "A locksmith creates keys that do not open doors, but instead unlock paradoxes, allowing one to inhabit them for a time.",
+      "prompt": "Which paradox do you unlock?",
+      "choices": [
+        {
+          "text": "The paradox of motion, where moving everywhere is the same as standing still",
+          "weights": {
+            "Ne": 2,
+            "Se": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The paradox of identity, proving that a ship is the same after all its parts are replaced",
+          "weights": {
+            "Si": 3,
+            "Ti": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The paradox of consensus, where everyone's agreement can make a truth feel hollow",
+          "weights": {
+            "Fe": 2,
+            "Ti": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The paradox of the arrow, which must reach its target by defining the target's fate",
+          "weights": {
+            "Te": 3,
+            "Ni": 1,
+            "conducting": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "zookeeper-of-concepts",
+      "scenario": "A zookeeper tends to enclosures containing not animals, but living, breathing concepts.",
+      "prompt": "Which concept do you spend the day observing?",
+      "choices": [
+        {
+          "text": "Justice, which endlessly paces, measuring the angles of its cage",
+          "weights": {
+            "Ti": 3,
+            "Je": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "Possibility, which constantly changes its form, color, and texture",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "Legacy, which sleeps soundly, dreaming of its own past",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "Empathy, which mirrors the emotions of every creature that looks upon it",
+          "weights": {
+            "Fe": 3,
+            "Ni": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "glassblower-of-regrets",
+      "scenario": "A craftsman blows glass sculptures from the sighs of regret. Each is fragile and holds a crystallized 'what if'.",
+      "prompt": "Which sculpture do you take home?",
+      "choices": [
+        {
+          "text": "A web showing how one missed chance connects to all others",
+          "weights": {
+            "Ni": 3,
+            "Fe": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "A perfectly clear lens that shows exactly how a mistake was made, free of emotion",
+          "weights": {
+            "Ti": 3,
+            "Si": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "A seed that, when planted, grows into a garden of alternate outcomes",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "A shield, hardened and tempered, to prevent such a mistake from ever happening again",
+          "weights": {
+            "Te": 3,
+            "Se": 1,
+            "conducting": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "linguist-of-footprints",
+      "scenario": "A linguist studies not words, but the grammar of footprints left in the dust of forgotten places.",
+      "prompt": "Which phrase do you learn to read?",
+      "choices": [
+        {
+          "text": "The sentence formed by a thousand footprints walking the same path until it became a road",
+          "weights": {
+            "Si": 2,
+            "Te": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The question mark left by a single footprint that abruptly stops in the middle of nowhere",
+          "weights": {
+            "Ni": 3,
+            "Ti": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The scattered poetry of footprints from a chaotic, joyful dance",
+          "weights": {
+            "Ne": 2,
+            "Fi": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The silent, deep impression of someone who stood watch for a very long time",
+          "weights": {
+            "Fi": 3,
+            "Si": 1,
+            "density": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "oracle-of-rust",
+      "scenario": "An oracle reads the future not in stars, but in the patterns of rust forming on old machines.",
+      "prompt": "What prophecy of decay do you heed?",
+      "choices": [
+        {
+          "text": "'The most complex machine will be the first to forget its purpose.'",
+          "weights": {
+            "Ti": 3,
+            "Ni": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "'Every structure will inevitably stabilize into dust, its final, most honest form.'",
+          "weights": {
+            "Si": 2,
+            "Te": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "'From the rust of one machine, a thousand new organisms shall spring.'",
+          "weights": {
+            "Ne": 3,
+            "Se": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "'The machine that served the most will be the most lovingly remembered as it falls apart.'",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "conducting": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "distiller-of-light",
+      "scenario": "An alchemist distills light into potent elixirs, each with a different effect on perception.",
+      "prompt": "Which elixir do you drink?",
+      "choices": [
+        {
+          "text": "The Elixir of the First Ray, letting you see the singular origin point of all things",
+          "weights": {
+            "Ni": 3,
+            "Ji": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The Elixir of Prismatic Spray, letting you see every potential path an object could take",
+          "weights": {
+            "Ne": 3,
+            "Se": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The Elixir of the Focused Beam, letting you see only what is useful for your current goal",
+          "weights": {
+            "Te": 3,
+            "Je": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The Elixir of the Diffused Glow, letting you feel the ambient mood of a room as a color",
+          "weights": {
+            "Fe": 3,
+            "Si": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "taxonomist-of-memories",
+      "scenario": "A taxonomist doesn't classify species, but memories. They are sorted in a vast, silent archive.",
+      "prompt": "Which classification system do you study?",
+      "choices": [
+        {
+          "text": "Classification by emotional resonance and authenticity",
+          "weights": {
+            "Fi": 3,
+            "Pi": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "Classification by causal chain and consequence",
+          "weights": {
+            "Te": 3,
+            "Ni": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "Classification by sensory detail and lived experience",
+          "weights": {
+            "Si": 3,
+            "Se": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "Classification by the new ideas and connections they generate",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 3
+          }
+        }
+      ]
+    }
+  ]
 }

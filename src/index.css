@@ -15,11 +15,13 @@ html {
 }
 
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   background-color: var(--bg-primary) !important;
   color: var(--text-primary) !important;
   line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   min-height: 100vh;
 }
 
@@ -130,7 +132,9 @@ select {
   border: 1px solid var(--border-primary);
   border-radius: 4px;
   padding: 0.5rem;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
 }
 
 input:focus,
@@ -149,7 +153,9 @@ button {
   border-radius: 4px;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 button:hover {
@@ -168,7 +174,9 @@ button:active {
   border-radius: 8px;
   box-shadow: var(--card-shadow);
   padding: 1.5rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
   color: var(--text-primary) !important;
 }
 
@@ -218,47 +226,46 @@ pre {
     font-size: 22px;
   }
 
-  h1+h2 {
+  h1 + h2 {
     margin-top: 10px;
   }
 }
 
 /* Dark mode specific body styling */
-[data-theme="dark"] {
+[data-theme='dark'] {
   color-scheme: dark;
 }
 
-[data-theme="dark"] body {
+[data-theme='dark'] body {
   background-color: var(--bg-primary) !important;
   color: var(--text-primary) !important;
 }
 
-[data-theme="dark"] #root {
+[data-theme='dark'] #root {
   background-color: var(--bg-primary) !important;
   color: var(--text-primary) !important;
 }
 
-[data-theme="dark"] .app {
+[data-theme='dark'] .app {
   background-color: var(--bg-primary) !important;
   color: var(--text-primary) !important;
 }
 
-[data-theme="dark"] .main-content {
+[data-theme='dark'] .main-content {
   background-color: var(--bg-primary) !important;
 }
 
-[data-theme="dark"] .container {
+[data-theme='dark'] .container {
   background-color: var(--bg-primary) !important;
 }
 
 /* Light mode */
-[data-theme="light"] {
+[data-theme='light'] {
   color-scheme: light;
 }
 
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
@@ -270,16 +277,15 @@ pre {
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
-
   :root,
-  [data-theme="light"] {
+  [data-theme='light'] {
     --accent: #000000;
     --text-primary: #000000;
     --bg-primary: #ffffff;
     --border-primary: #000000;
   }
 
-  [data-theme="dark"] {
+  [data-theme='dark'] {
     --accent: #ffffff;
     --text-primary: #ffffff;
     --bg-primary: #000000;

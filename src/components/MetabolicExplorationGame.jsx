@@ -1,197 +1,204 @@
 // File: src/components/MetabolicExplorationGame.jsx
 
-import { createMemo, createSignal, For, Show } from "solid-js";
-import gameData from "../data/metabolicGameData.json";
-import styles from "./MetabolicExplorationGame.module.css";
+import { createMemo, createSignal, For, Show } from 'solid-js';
+import gameData from '../data/metabolicGameData.json';
+import styles from './MetabolicExplorationGame.module.css';
 
 const MetabolicExplorationGame = () => {
-    // Game state
-    const [currentQuestionIndex, setCurrentQuestionIndex] = createSignal(0);
-    const [answers, setAnswers] = createSignal([]);
-    const [showResults, setShowResults] = createSignal(false);
-    const [hoveredChoice, setHoveredChoice] = createSignal(null);
-    const [selectedQuestions, setSelectedQuestions] = createSignal([]);
+  // Game state
+  const [currentQuestionIndex, setCurrentQuestionIndex] = createSignal(0);
+  const [answers, setAnswers] = createSignal([]);
+  const [showResults, setShowResults] = createSignal(false);
+  const [hoveredChoice, setHoveredChoice] = createSignal(null);
+  const [selectedQuestions, setSelectedQuestions] = createSignal([]);
 
-    // Randomise all questions
-    const initializeQuestions = () => {
-        const shuffled = [...gameData.questions].sort(() => Math.random() - 0.5);
-        setSelectedQuestions(shuffled.slice(0, shuffled.length)); // Use all questions (slice is exclusive toward the end parameter)
+  // Randomise all questions
+  const initializeQuestions = () => {
+    const shuffled = [...gameData.questions].sort(() => Math.random() - 0.5);
+    setSelectedQuestions(shuffled.slice(0, shuffled.length)); // Use all questions (slice is exclusive toward the end parameter)
+  };
+
+  if (selectedQuestions().length === 0) {
+    initializeQuestions();
+  }
+
+  const questions = selectedQuestions();
+
+  // Function to calculate metabolic profile
+  const calculateProfile = () => {
+    const profile = {
+      functions: {
+        Ti: 0,
+        Te: 0,
+        Fi: 0,
+        Fe: 0,
+        Ni: 0,
+        Ne: 0,
+        Si: 0,
+        Se: 0,
+        Ji: 0,
+        Je: 0,
+        Pi: 0,
+        Pe: 0,
+      },
+      dynamics: { revision: 0, conducting: 0, density: 0, expansion: 0 },
     };
 
-    if (selectedQuestions().length === 0) {
-        initializeQuestions();
-    }
-
-    const questions = selectedQuestions();
-
-
-    // Function to calculate metabolic profile
-    const calculateProfile = () => {
-        const profile = {
-            functions: { Ti: 0, Te: 0, Fi: 0, Fe: 0, Ni: 0, Ne: 0, Si: 0, Se: 0, Ji: 0, Je: 0, Pi: 0, Pe: 0 },
-            dynamics: { revision: 0, conducting: 0, density: 0, expansion: 0 }
-        };
-
-        answers().forEach(answer => {
-            Object.entries(answer.weights).forEach(([key, value]) => {
-                if (profile.functions[key] !== undefined) {
-                    profile.functions[key] += value;
-                } else if (profile.dynamics[key] !== undefined) {
-                    profile.dynamics[key] += value;
-                }
-            });
-        });
-
-        return profile;
-    };
-
-    // Interpret the metabolic profile
-    const interpretProfile = createMemo(() => {
-        if (!showResults()) return null;
-
-        const profile = calculateProfile();
-
-        // Find dominant functions
-        const sortedFunctions = Object.entries(profile.functions)
-            .filter(([key]) => !['Ji', 'Je', 'Pi', 'Pe'].includes(key))
-            .sort((a, b) => b[1] - a[1]);
-
-        // Find dominant dynamic
-        const sortedDynamics = Object.entries(profile.dynamics)
-            .sort((a, b) => b[1] - a[1]);
-
-        const primaryFunction = sortedFunctions[0];
-        const secondaryFunction = sortedFunctions[1];
-        const primaryDynamic = sortedDynamics[0];
-
-        // Generate interpretation
-        const functionDescriptions = {
-            Ti: "logical precision and systematic understanding",
-            Te: "efficient execution and objective results",
-            Fi: "authentic values and inner harmony",
-            Fe: "collective harmony and emotional connection",
-            Ni: "symbolic vision and pattern recognition",
-            Ne: "innovative connections and possibilities",
-            Si: "embodied memory and sensory detail",
-            Se: "immediate engagement and sensory impact"
-        };
-
-        const dynamicDescriptions = {
-            revision: "constantly refining and reconsidering, cycling between essence and exploration",
-            conducting: "orchestrating steady progress through careful mapping and execution",
-            density: "deepening understanding through concentrated focus and layered meaning",
-            expansion: "rapidly generating and implementing new possibilities without hesitation"
-        };
-
-        return {
-            primary: primaryFunction,
-            secondary: secondaryFunction,
-            dynamic: primaryDynamic,
-            functionDesc: functionDescriptions,
-            dynamicDesc: dynamicDescriptions
-        };
+    answers().forEach((answer) => {
+      Object.entries(answer.weights).forEach(([key, value]) => {
+        if (profile.functions[key] !== undefined) {
+          profile.functions[key] += value;
+        } else if (profile.dynamics[key] !== undefined) {
+          profile.dynamics[key] += value;
+        }
+      });
     });
 
-    // Handle answer selection
-    const selectAnswer = (choice) => {
-        setAnswers([...answers(), choice]);
+    return profile;
+  };
 
-        if (currentQuestionIndex() < questions.length - 1) {
-            setCurrentQuestionIndex(currentQuestionIndex() + 1);
-        } else {
-            setShowResults(true);
-        }
+  // Interpret the metabolic profile
+  const interpretProfile = createMemo(() => {
+    if (!showResults()) return null;
+
+    const profile = calculateProfile();
+
+    // Find dominant functions
+    const sortedFunctions = Object.entries(profile.functions)
+      .filter(([key]) => !['Ji', 'Je', 'Pi', 'Pe'].includes(key))
+      .sort((a, b) => b[1] - a[1]);
+
+    // Find dominant dynamic
+    const sortedDynamics = Object.entries(profile.dynamics).sort((a, b) => b[1] - a[1]);
+
+    const primaryFunction = sortedFunctions[0];
+    const secondaryFunction = sortedFunctions[1];
+    const primaryDynamic = sortedDynamics[0];
+
+    // Generate interpretation
+    const functionDescriptions = {
+      Ti: 'logical precision and systematic understanding',
+      Te: 'efficient execution and objective results',
+      Fi: 'authentic values and inner harmony',
+      Fe: 'collective harmony and emotional connection',
+      Ni: 'symbolic vision and pattern recognition',
+      Ne: 'innovative connections and possibilities',
+      Si: 'embodied memory and sensory detail',
+      Se: 'immediate engagement and sensory impact',
     };
 
-    // Reset game
-    const resetGame = () => {
-        setCurrentQuestionIndex(0);
-        setAnswers([]);
-        setShowResults(false);
-        initializeQuestions(); // Get new random questions
+    const dynamicDescriptions = gameData.dynamicDescriptions;
+
+    return {
+      primary: primaryFunction,
+      secondary: secondaryFunction,
+      dynamic: primaryDynamic,
+      functionDesc: functionDescriptions,
+      dynamicDesc: dynamicDescriptions,
     };
+  });
 
-    return (
-        <div class={styles.gameContainer}>
-            <Show
-                when={!showResults()}
-                fallback={
-                    <div class={styles.results}>
-                        <h2 class={styles.resultsTitle}>Your Metabolic Landscape</h2>
+  // Handle answer selection
+  const selectAnswer = (choice) => {
+    setAnswers([...answers(), choice]);
 
-                        <div class={styles.profileCard}>
-                            <div class={styles.functionProfile}>
-                                <h3>Primary Resonance</h3>
-                                <div class={styles.primaryFunction}>
-                                    {interpretProfile().primary[0]}: {interpretProfile().functionDesc[interpretProfile().primary[0]]}
-                                </div>
-                                <div class={styles.secondaryFunction}>
-                                    Supporting: {interpretProfile().secondary[0]} - {interpretProfile().functionDesc[interpretProfile().secondary[0]]}
-                                </div>
-                            </div>
+    if (currentQuestionIndex() < questions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex() + 1);
+    } else {
+      setShowResults(true);
+    }
+  };
 
-                            <div class={styles.dynamicProfile}>
-                                <h3>Metabolic Pattern</h3>
-                                <div class={styles.primaryDynamic}>
-                                    Your cognitive metabolism tends toward <strong>{interpretProfile().dynamic[0]}</strong>:
-                                    {interpretProfile().dynamicDesc[interpretProfile().dynamic[0]]}
-                                </div>
-                            </div>
+  // Reset game
+  const resetGame = () => {
+    setCurrentQuestionIndex(0);
+    setAnswers([]);
+    setShowResults(false);
+    initializeQuestions(); // Get new random questions
+  };
 
-                            <div class={styles.interpretation}>
-                                <p>
-                                    Your responses reveal a mind that navigates reality through {interpretProfile().functionDesc[interpretProfile().primary[0]]},
-                                    while {interpretProfile().dynamicDesc[interpretProfile().dynamic[0]]}.
-                                    This creates a unique cognitive signature that shapes how you process experience and make meaning.
-                                </p>
-                            </div>
-                        </div>
+  return (
+    <div class={styles.gameContainer}>
+      <Show
+        when={!showResults()}
+        fallback={
+          <div class={styles.results}>
+            <h2 class={styles.resultsTitle}>Your Metabolic Landscape</h2>
 
-                        <button onClick={resetGame} class={styles.resetButton}>
-                            Explore Again
-                        </button>
-                    </div>
-                }
-            >
-                <div class={styles.questionContainer}>
-                    <div class={styles.progress}>
-                        <div
-                            class={styles.progressBar}
-                            style={`width: ${((currentQuestionIndex() + 1) / questions.length) * 100}%`}
-                        />
-                        <span class={styles.progressText}>
-                            Question {currentQuestionIndex() + 1} of {questions.length}
-                        </span>
-                    </div>
-
-                    <div class={styles.scenario}>
-                        {questions[currentQuestionIndex()].scenario}
-                    </div>
-
-                    <div class={styles.prompt}>
-                        {questions[currentQuestionIndex()].prompt}
-                    </div>
-
-                    <div class={styles.choices}>
-                        <For each={questions[currentQuestionIndex()].choices}>
-                            {(choice, index) => (
-                                <button
-                                    class={styles.choice}
-                                    onClick={() => selectAnswer(choice)}
-                                    onMouseEnter={() => setHoveredChoice(index())}
-                                    onMouseLeave={() => setHoveredChoice(null)}
-                                    style={hoveredChoice() === index() ? "transform: translateX(10px);" : ""}
-                                >
-                                    <span class={styles.choiceNumber}>{index() + 1}</span>
-                                    <span class={styles.choiceText}>{choice.text}</span>
-                                </button>
-                            )}
-                        </For>
-                    </div>
+            <div class={styles.profileCard}>
+              <div class={styles.functionProfile}>
+                <h3>Primary Resonance</h3>
+                <div class={styles.primaryFunction}>
+                  {interpretProfile().primary[0]}:{' '}
+                  {interpretProfile().functionDesc[interpretProfile().primary[0]]}
                 </div>
-            </Show>
+                <div class={styles.secondaryFunction}>
+                  Supporting: {interpretProfile().secondary[0]} -{' '}
+                  {interpretProfile().functionDesc[interpretProfile().secondary[0]]}
+                </div>
+              </div>
+
+              <div class={styles.dynamicProfile}>
+                <h3>Metabolic Pattern</h3>
+                <div class={styles.primaryDynamic}>
+                  Your cognitive metabolism tends toward{' '}
+                  <strong>{interpretProfile().dynamic[0]}</strong>:
+                  {interpretProfile().dynamicDesc[interpretProfile().dynamic[0]]}
+                </div>
+              </div>
+
+              <div class={styles.interpretation}>
+                <p>
+                  Your responses reveal a mind that navigates reality through{' '}
+                  {interpretProfile().functionDesc[interpretProfile().primary[0]]}, while{' '}
+                  {interpretProfile().dynamicDesc[interpretProfile().dynamic[0]]}. This creates a
+                  unique cognitive signature that shapes how you process experience and make
+                  meaning.
+                </p>
+              </div>
+            </div>
+
+            <button onClick={resetGame} class={styles.resetButton}>
+              Explore Again
+            </button>
+          </div>
+        }
+      >
+        <div class={styles.questionContainer}>
+          <div class={styles.progress}>
+            <div
+              class={styles.progressBar}
+              style={`width: ${((currentQuestionIndex() + 1) / questions.length) * 100}%`}
+            />
+            <span class={styles.progressText}>
+              Question {currentQuestionIndex() + 1} of {questions.length}
+            </span>
+          </div>
+
+          <div class={styles.scenario}>{questions[currentQuestionIndex()].scenario}</div>
+
+          <div class={styles.prompt}>{questions[currentQuestionIndex()].prompt}</div>
+
+          <div class={styles.choices}>
+            <For each={questions[currentQuestionIndex()].choices}>
+              {(choice, index) => (
+                <button
+                  class={styles.choice}
+                  onClick={() => selectAnswer(choice)}
+                  onMouseEnter={() => setHoveredChoice(index())}
+                  onMouseLeave={() => setHoveredChoice(null)}
+                  style={hoveredChoice() === index() ? 'transform: translateX(10px);' : ''}
+                >
+                  <span class={styles.choiceNumber}>{index() + 1}</span>
+                  <span class={styles.choiceText}>{choice.text}</span>
+                </button>
+              )}
+            </For>
+          </div>
         </div>
-    );
+      </Show>
+    </div>
+  );
 };
 
 export default MetabolicExplorationGame;
