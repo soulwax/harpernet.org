@@ -1,16 +1,17 @@
 {
   "name": "harpernet.org",
-  "version": "1.3.2",
+  "version": "1.4.3",
   "description": "This page is intended to give you insights into Jungian psychology and the MBTI framework. Maybe something you haven't yet considered.",
   "type": "commonjs",
   "scripts": {
     "dev": "vite --port 3890",
     "build": "vite build",
+    "rebuild": "npm run build && npm run restart",
     "preview": "vite preview --port 3890",
     "serve": "vite preview --port 3890 --host",
     "start": "pm2 start ecosystem.config.js --env production",
     "stop": "pm2 stop mbti-app",
-    "restart": "pm2 restart mbti-app",
+    "restart": "pm2 restart mbti-app --update-env",
     "delete": "pm2 delete mbti-app",
     "status": "pm2 status mbti-app",
     "logs": "pm2 logs mbti-app",
@@ -24,9 +25,20 @@
   "keywords": [
     "mbti",
     "personality",
-    "psychology"
+    "psychology",
+    "jung",
+    "metabolic principles",
+    "personality",
+    "test",
+    "personality test",
+    "unconvential",
+    "differential psychology",
+    "neurology",
+    "evidence based",
+    "faithful"
   ],
   "dependencies": {
+    "serve": "^14.2.4",
     "solid-js": "^1.9.9"
   },
   "devDependencies": {
