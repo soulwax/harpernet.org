@@ -13,8 +13,6 @@ export default defineConfig({
   server: {
     port: 3890,
     host: true,
-    // Simple fallback for SPA routing
-
     proxy: {
       '/brother-types': {
         target: 'http://localhost:3890',
@@ -36,15 +34,48 @@ export default defineConfig({
         target: 'http://localhost:3890',
         rewrite: () => '/index.html',
       },
+      '/metabolic-principles': {
+        target: 'http://localhost:3890',
+        rewrite: () => '/index.html',
+      },
+      '/sister-types': {
+        target: 'http://localhost:3890',
+        rewrite: () => '/index.html',
+      },
+      '/metabolic-game': {
+        target: 'http://localhost:3890',
+        rewrite: () => '/index.html',
+      },
     },
   },
   build: {
     target: 'esnext',
-    // Generate server-side redirects for production
     rollupOptions: {
       output: {
         manualChunks: undefined,
+        // Preserve original asset filenames instead of hashing them
+        assetFileNames: (assetInfo) => {
+          // Keep original names for specific file types
+          if (assetInfo.name) {
+            // For images, fonts, and other assets, preserve original names
+            const extType = assetInfo.name.split('.').pop();
+            if (['png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'ico', 'woff', 'woff2', 'ttf', 'eot'].includes(extType)) {
+              return `assets/${assetInfo.name}`;
+            }
+            // For CSS files, preserve names but add content hash for cache busting
+            if (extType === 'css') {
+              return `assets/[name].[hash].css`;
+            }
+          }
+          // Default hashing for other assets
+          return 'assets/[name].[hash].[ext]';
+        },
+        // Preserve original chunk names
+        chunkFileNames: 'assets/[name].[hash].js',
+        entryFileNames: 'assets/[name].[hash].js',
       },
     },
   },
+  // Ensure assets are properly handled
+  assetsInclude: ['**/*.gif', '**/*.svg', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.webp'],
 });

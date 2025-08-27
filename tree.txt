@@ -39,6 +39,7 @@ harpernet.org
 │       └───prepare-commit-msg
 ├───logs/
 │   ├───error-1.log
+│   ├───git.log
 │   └───out-1.log
 ├───public/
 │   ├───.htaccess
@@ -107,4 +108,5 @@ harpernet.org
 │   └───styles/
 │       └───theme.css
 └───tools/
-    └───make-og.cjs
+    ├───make-og.cjs
+    └───update_harpernet.sh
