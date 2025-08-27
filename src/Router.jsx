@@ -6,9 +6,10 @@ import AboutPage from "./pages/AboutPage";
 import BrotherTypesPage from "./pages/BrotherTypesPage";
 import CognitiveFunctionsDetailedPage from "./pages/CognitiveFunctionsDetailedPage";
 import CognitiveFunctionsPage from "./pages/CognitiveFunctionsPage";
+import MetabolicGamePage from "./pages/MetabolicGamePage";
+import MetabolicPrinciplesPage from "./pages/MetabolicPrinciplesPage";
 import RelationshipsPage from "./pages/RelationshipsPage";
 import SisterTypesPage from "./pages/SisterTypesPage";
-import MetabolicPrinciplesPage from "./pages/MetabolicPrinciplesPage";
 import "./Router.css";
 
 const Router = () => {
@@ -63,6 +64,8 @@ const Router = () => {
       return <RelationshipsPage key="relationships" />;
     } else if (path === "/metabolic-principles") {
       return <MetabolicPrinciplesPage key="metabolic-principles" />;
+    } else if (path === "/metabolic-game") {
+      return <MetabolicGamePage key="metabolic-game" />
     } else {
       // Default to sister types for any other path (/, /index.html, unknown routes)
       return <SisterTypesPage key="sister-types" />;

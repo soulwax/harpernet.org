@@ -20,7 +20,8 @@ const Header = () => {
     relationshipsUri: "/relationships",
     metabolicPrinciplesUri: "/metabolic-principles",
     aboutUri: "/about",
-    menuToggleAriaLabel: "Toggle navigation menu"
+    menuToggleAriaLabel: "Toggle navigation menu",
+    metabolicGameUri: "/metabolic-game"
   };
 
   const [isNavOpen, setIsNavOpen] = createSignal(false);
@@ -130,6 +131,14 @@ const Header = () => {
               class={`${styles.navButton} ${isActive(headerInfo.metabolicPrinciplesUri) ? styles.activeNav : ""}`}
             >
               Metabolic Principles
+            </button>
+          </li>
+          <li class={styles.navItem}>
+            <button
+              onClick={() => navigateTo("/metabolic-game")}
+              class={`${styles.navButton} ${isActive("/metabolic-game") ? styles.activeNav : ""}`}
+            >
+              Explore Metabolism through Game
             </button>
           </li>
           <li class={styles.navItem}>
