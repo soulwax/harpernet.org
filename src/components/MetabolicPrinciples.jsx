@@ -1,8 +1,8 @@
 // File: src/components/MetabolicPrinciples.jsx
 
 import { createSignal } from "solid-js";
-import styles from "./MetabolicPrinciples.module.css";
 import metabolicPrinciplesData from "../data/metabolicPrinciples.json";
+import styles from "./MetabolicPrinciples.module.css";
 
 const MetabolicPrinciples = () => {
     const [activeSection, setActiveSection] = createSignal("overview");

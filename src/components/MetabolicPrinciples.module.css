@@ -827,6 +827,26 @@
     line-height: 1.6;
 }
 
+
+
+[data-theme="light"] .navButton,
+[data-theme="light"] .viewButton {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .navButton:hover,
+[data-theme="light"] .viewButton:hover {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .activeNav {
+    color: var(--text-lighter) !important
+}
+
+[data-theme="light"] .activeNav:hover {
+    color: var(--text-lighter) !important
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .functionGrid {
