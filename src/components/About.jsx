@@ -20,42 +20,21 @@ const About = () => {
   };
 
   // Function to get a clean title from URL
-  const getTitleFromUrl = (url) => {
-    try {
-      const urlObj = new URL(url);
-      const pathname = urlObj.pathname;
+  // const getTitleFromUrl = (url) => {
+  //   try {
+  //     const urlObj = new URL(url);
+  //     const pathname = urlObj.pathname;
 
-      // Special handling for different domains
-      if (urlObj.hostname.includes('pmc.ncbi.nlm.nih.gov')) {
-        return 'PMC Article';
-      } else if (urlObj.hostname.includes('pubmed.ncbi.nlm.nih.gov')) {
-        return 'PubMed Study';
-      } else if (urlObj.hostname.includes('nature.com')) {
-        return 'Nature Article';
-      } else if (urlObj.hostname.includes('sciencedirect.com')) {
-        return 'ScienceDirect Study';
-      } else if (urlObj.hostname.includes('pnas.org')) {
-        return 'PNAS Article';
-      } else if (urlObj.hostname.includes('arxiv.org')) {
-        return 'ArXiv Paper';
-      } else if (urlObj.hostname.includes('frontiersin.org')) {
-        return 'Frontiers Article';
-      } else if (urlObj.hostname.includes('biorxiv.org')) {
-        return 'bioRxiv Preprint';
-      } else if (urlObj.hostname.includes('journals.plos.org')) {
-        return 'PLOS Article';
-      } else if (urlObj.hostname.includes('bbc.com')) {
-        return 'BBC Article';
-      } else if (urlObj.hostname.includes('wikipedia.org')) {
-        const title = pathname.split('/').pop().replace(/_/g, ' ');
-        return `Wikipedia: ${title}`;
-      } else {
-        return getDomainFromUrl(url);
-      }
-    } catch {
-      return 'Research Source';
-    }
-  };
+  //     // Special handling for different domains
+
+  //             const title = pathname.split('/').pop().replace(/_/g, ' ');
+
+  //       return getDomainFromUrl(url);
+  //     }
+  //   } catch {
+  //     return 'Research Source';
+  //   }
+  // };
 
   return (
     <div class={styles.aboutContainer}>
@@ -89,7 +68,7 @@ const About = () => {
             {visibleSources().map((source, index) => (
               <div class={styles.sourceItem}>
                 <div class={styles.sourceNumber}>
-                  [{index + 1}]
+
                 </div>
                 <div class={styles.sourceContent}>
                   <a
@@ -97,13 +76,13 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     class={styles.sourceLink}
-                    aria-label={`Visit source: ${getTitleFromUrl(source)}`}
+                  // aria-label={`Visit source: ${getTitleFromUrl(source)}`}
                   >
-                    <div class={styles.sourceTitle}>
+                    {/* <div class={styles.sourceTitle}>
                       {getTitleFromUrl(source)}
-                    </div>
+                    </div> */}
                     <div class={styles.sourceDomain}>
-                      {getDomainFromUrl(source)}
+                      [{index + 1}] {getDomainFromUrl(source)}
                     </div>
                   </a>
                 </div>
@@ -117,16 +96,14 @@ const About = () => {
                 class={styles.toggleButton}
                 onClick={() => setShowAllSources(!showAllSources())}
               >
-                {showAllSources() ? 'Show Fewer Sources' : `Show All ${sources.length} Sources`}
+                {showAllSources() ? 'Show Fewer Sources' : `Show all sources so far.`}
               </button>
             </div>
           )}
 
           <div class={styles.sourcesNote}>
             <p>
-              <strong>Note:</strong> This collection represents diverse research perspectives
-              from peer-reviewed journals, academic institutions, and established psychology
-              resources that contribute to understanding cognitive functions and personality types.
+              <strong>Note:</strong> This collection represents work in progress and even though I give my best, some of the items will either disappear or others will join.
             </p>
           </div>
         </div>

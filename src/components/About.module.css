@@ -220,6 +220,14 @@
   color: var(--text-secondary);
 }
 
+.sourcesNote {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: var(--bg-quaternary, var(--bg-tertiary));
+  border-left: 4px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+}
+
 .studiesNote strong {
   color: var(--text-primary);
 }
@@ -351,31 +359,31 @@
     min-width: 30px;
     font-size: 0.75rem;
     padding: 0.2rem 0.4rem;
+
+    .sourceTitle {
+      font-size: 0.9rem;
+    }
+
+    .sourceDomain {
+      font-size: 0.75rem;
+    }
   }
 
-  .sourceTitle {
-    font-size: 0.9rem;
+  /* Dark theme specific adjustments */
+  [data-theme='dark'] .sourceItem {
+    background-color: var(--bg-quaternary, rgba(255, 255, 255, 0.02));
   }
 
-  .sourceDomain {
-    font-size: 0.75rem;
+  [data-theme='dark'] .sourcesNote {
+    background-color: rgba(79, 195, 247, 0.1);
   }
-}
 
-/* Dark theme specific adjustments */
-[data-theme='dark'] .sourceItem {
-  background-color: var(--bg-quaternary, rgba(255, 255, 255, 0.02));
-}
+  /* Light theme specific adjustments */
+  [data-theme='light'] .sourceItem {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
 
-[data-theme='dark'] .sourcesNote {
-  background-color: rgba(79, 195, 247, 0.1);
-}
-
-/* Light theme specific adjustments */
-[data-theme='light'] .sourceItem {
-  background-color: rgba(0, 0, 0, 0.02);
-}
-
-[data-theme='light'] .sourcesNote {
-  background-color: rgba(79, 195, 247, 0.05);
+  [data-theme='light'] .sourcesNote {
+    background-color: rgba(79, 195, 247, 0.05);
+  }
 }
