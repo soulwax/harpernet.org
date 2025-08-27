@@ -12,6 +12,7 @@
     --bg-primary: #fafafa;
     --bg-secondary: #ffffff;
     --bg-tertiary: #f8f9fa;
+    --bg-opposite: #0a0a0a;
     --bg-even: #f0f4f7;
     --bg-hover: #e8f0f5;
 
@@ -71,6 +72,7 @@
     --bg-primary: #0a0a0a;
     --bg-secondary: #1a1a1a;
     --bg-tertiary: #2a2a2a;
+    --bg-opposite: #FDFDFD;
     --bg-even: #1f1f1f;
     --bg-hover: #2f2f2f;
 
