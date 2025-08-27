@@ -12,7 +12,7 @@
 # Note 3: Add the following line to the crontab:
 # */5 * * * * ~/bin/update_harpernet.sh
 # ! Note 4: changed shebang to use zsh right away, CHANGE THIS TO YOUR NEEDS!
-
+# Note 5: no root needed :)
 
 # Exit immediately if a command exits with a non-zero status.
 set -e
