@@ -740,6 +740,26 @@
     font-weight: 500;
 }
 
+[data-theme="light"] .navButton,
+[data-theme="light"] .viewButton {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .navButton:hover,
+[data-theme="light"] .viewButton:hover {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .activeView {
+    color: var(--text-lighter) !important;
+}
+
+[data-theme="light"] .activeView:hover {
+    color: var(--text-lighter) !important;
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .relationshipsContainer {
