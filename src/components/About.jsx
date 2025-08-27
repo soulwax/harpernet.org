@@ -1,13 +1,13 @@
 // File: src/components/About.jsx
 
-import { createSignal } from "solid-js";
-import sources from "../data/sources.json";
-import styles from "./About.module.css";
+import { createSignal } from 'solid-js';
+import sources from '../data/sources.json';
+import styles from './About.module.css';
 
 const About = () => {
   const [showAllSources, setShowAllSources] = createSignal(false);
 
-  const visibleSources = () => showAllSources() ? sources : sources.slice(0, 10);
+  const visibleSources = () => (showAllSources() ? sources : sources.slice(0, 10));
 
   // Function to extract domain from URL for display
   const getDomainFromUrl = (url) => {
@@ -51,8 +51,8 @@ const About = () => {
           <p>
             Rather than surface-level behavioral descriptions, the emphasis is on understanding how
             cognitive functions interact to create consistent patterns of perception and judgment.
-            Sister and Brother type comparisons reveal how single-function swaps fundamentally
-            alter personality expression.
+            Sister and Brother type comparisons reveal how single-function swaps fundamentally alter
+            personality expression.
           </p>
         </div>
 
@@ -67,16 +67,14 @@ const About = () => {
           <div class={styles.sourcesContainer}>
             {visibleSources().map((source, index) => (
               <div class={styles.sourceItem}>
-                <div class={styles.sourceNumber}>
-
-                </div>
+                <div class={styles.sourceNumber}></div>
                 <div class={styles.sourceContent}>
                   <a
                     href={source}
                     target="_blank"
                     rel="noopener noreferrer"
                     class={styles.sourceLink}
-                  // aria-label={`Visit source: ${getTitleFromUrl(source)}`}
+                    // aria-label={`Visit source: ${getTitleFromUrl(source)}`}
                   >
                     {/* <div class={styles.sourceTitle}>
                       {getTitleFromUrl(source)}
@@ -103,7 +101,8 @@ const About = () => {
 
           <div class={styles.sourcesNote}>
             <p>
-              <strong>Note:</strong> This collection represents work in progress and even though I give my best, some of the items will either disappear or others will join.
+              <strong>Note:</strong> This collection represents work in progress and even though I
+              give my best, some of the items will either disappear or others will join.
             </p>
           </div>
         </div>
@@ -202,8 +201,8 @@ const About = () => {
           </div>
 
           <p class={styles.contactFooter}>
-            <strong>Response Time:</strong> Usually within 24-48 hours.
-            Longer response times typically mean I'm just busy with life. Be patient pls.
+            <strong>Response Time:</strong> Usually within 24-48 hours. Longer response times
+            typically mean I'm just busy with life. Be patient pls.
           </p>
         </div>
       </div>

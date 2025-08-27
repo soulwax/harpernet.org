@@ -23,7 +23,9 @@ const MetabolicGamePage = () => {
             This should be more of a challenge to you and hopefully spark your imagination at the
             same time, revealing your innermost thought patterns.
           </p>
-          <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary, #6b7280);">For accuracy I will probably extend this much further in the future.</p>
+          <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary, #6b7280);">
+            For accuracy I will probably extend this much further in the future.
+          </p>
         </div>
         <MetabolicExplorationGame />
       </main>

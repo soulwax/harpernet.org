@@ -61,9 +61,9 @@ For maximum privacy I developed a few very simple principles:
 - Nginx access logs simply go to `> /dev/null` which means, in layman terms, the logs are written into a space that discards them immediately.
 - Nginx **Critical Errors** go to `> /etc/nginx/logs/critical.log` **whereas your personal data, such as browser fingerprint and IP are expunged**. What is a critical error?
   It happens when:
-    1. The server encounters an unrecoverable error (like disk space issues, memory exhaustion, or configuration corruption)
-    2. A malicious attack is detected and blocked
-    3. SSL/TLS certificate validation fails
+  1. The server encounters an unrecoverable error (like disk space issues, memory exhaustion, or configuration corruption)
+  2. A malicious attack is detected and blocked
+  3. SSL/TLS certificate validation fails
 
   In all three cases: No personal data is collected anyway.
 

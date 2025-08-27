@@ -47,11 +47,7 @@ const Header = () => {
     <header class={styles.header}>
       <div class={styles.logo}>
         <a href="/" class={styles.logoLink}>
-          <img
-            src={harperLogo}
-            alt={headerInfo.harperLogoAlt}
-            class={styles.harperLogo_simple}
-          />
+          <img src={harperLogo} alt={headerInfo.harperLogoAlt} class={styles.harperLogo_simple} />
           <span class={styles.logoText}>HarperNet.org</span>
         </a>
       </div>

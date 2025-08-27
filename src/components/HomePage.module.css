@@ -28,7 +28,7 @@
   display: block;
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
-  background: linear-gradient(45deg, var(--accent), #4CAF50, #2196F3);
+  background: linear-gradient(45deg, var(--accent), #4caf50, #2196f3);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -362,13 +362,13 @@
   .hero {
     padding: 3rem 1rem;
   }
-  
+
   .heroStats {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
   }
-  
+
   .featuresSection,
   .methodologySection,
   .sourcesSection,
@@ -376,23 +376,23 @@
   .quickStartSection {
     padding: 3rem 1rem;
   }
-  
+
   .sectionTitle {
     font-size: 2rem;
   }
-  
+
   .featuresGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .sourceCategories {
     grid-template-columns: 1fr;
   }
-  
+
   .quickStartSteps {
     grid-template-columns: 1fr;
   }
-  
+
   .step {
     flex-direction: column;
     text-align: center;
@@ -403,11 +403,11 @@
   .heroDescription {
     font-size: 1rem;
   }
-  
+
   .featureCard {
     padding: 1.5rem;
   }
-  
+
   .methodCard,
   .sourceCategory,
   .capabilityGroup {

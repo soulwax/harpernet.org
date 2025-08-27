@@ -59,7 +59,21 @@ export default defineConfig({
           if (assetInfo.name) {
             // For images, fonts, and other assets, preserve original names
             const extType = assetInfo.name.split('.').pop();
-            if (['png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'ico', 'woff', 'woff2', 'ttf', 'eot'].includes(extType)) {
+            if (
+              [
+                'png',
+                'jpg',
+                'jpeg',
+                'gif',
+                'svg',
+                'webp',
+                'ico',
+                'woff',
+                'woff2',
+                'ttf',
+                'eot',
+              ].includes(extType)
+            ) {
               return `assets/${assetInfo.name}`;
             }
             // For CSS files, preserve names but add content hash for cache busting
