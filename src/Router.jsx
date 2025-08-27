@@ -2,6 +2,7 @@
 
 import { createSignal, onCleanup, onMount } from 'solid-js';
 import { ThemeProvider } from './contexts/ThemeContext';
+import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import BrotherTypesPage from './pages/BrotherTypesPage';
 import CognitiveFunctionsDetailedPage from './pages/CognitiveFunctionsDetailedPage';
@@ -49,8 +50,10 @@ const Router = () => {
     const path = currentPath();
     console.log('Rendering route for path:', path);
 
-    // Completely unmount previous components and only render one
-    if (path === '/brother-types') {
+    // Route to specific pages
+    if (path === '/sister-types') {
+      return <SisterTypesPage key="sister-types" />;
+    } else if (path === '/brother-types') {
       return <BrotherTypesPage key="brother-types" />;
     } else if (path === '/about') {
       return <AboutPage key="about" />;
@@ -65,8 +68,8 @@ const Router = () => {
     } else if (path === '/metabolic-game') {
       return <MetabolicGamePage key="metabolic-game" />;
     } else {
-      // Default to sister types for any other path (/, /index.html, unknown routes)
-      return <SisterTypesPage key="sister-types" />;
+      // Default to HomePage for root path and unknown routes
+      return <HomePage key="home" />;
     }
   };
 

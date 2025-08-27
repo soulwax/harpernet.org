@@ -1,7 +1,8 @@
 // File: src/components/Header.jsx
-// Logo served from public/ folder for consistent access in dev and production
 
-import { createSignal, onMount } from 'solid-js';
+import { createSignal } from 'solid-js';
+import harperLogo from '../assets/harp.svg';
+import solidLogo from '../assets/solid.svg';
 import styles from './Header.module.css';
 import ThemeToggle from './ThemeToggle';
 
@@ -20,9 +21,9 @@ const Header = () => {
     cognitiveFunctionsDetailedUri: '/cognitive-functions-detailed',
     relationshipsUri: '/relationships',
     metabolicPrinciplesUri: '/metabolic-principles',
+    metabolicGameUri: '/metabolic-game',
     aboutUri: '/about',
     menuToggleAriaLabel: 'Toggle navigation menu',
-    metabolicGameUri: '/metabolic-game',
   };
 
   const [isNavOpen, setIsNavOpen] = createSignal(false);
@@ -31,35 +32,46 @@ const Header = () => {
     setIsNavOpen(!isNavOpen());
   };
 
+  // Direct navigation function
   const navigateTo = (path) => {
-    window.history.pushState({}, '', path);
-    window.dispatchEvent(new PopStateEvent('popstate'));
+    window.location.href = path;
     setIsNavOpen(false);
   };
 
+  // Check if current path matches
   const isActive = (path) => {
     return window.location.pathname === path;
   };
 
-  onMount(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setIsNavOpen(false);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  });
-
   return (
     <header class={styles.header}>
       <div class={styles.logo}>
-        <button onClick={() => navigateTo(headerInfo.homeUri)} class={styles.logoLink}>
-          <img src="/harp.svg" alt={headerInfo.harperLogoAlt} class={styles.harperLogo_simple} />
+        <a href="/" class={styles.logoLink}>
+          <img
+            src={harperLogo}
+            alt={headerInfo.harperLogoAlt}
+            class={styles.harperLogo_simple}
+          />
           <span class={styles.logoText}>HarperNet.org</span>
-        </button>
+        </a>
       </div>
+
+      {/* <div class={styles.solidjsLink}>
+        <a
+          href={headerInfo.solidJSHomepage}
+          target="_blank"
+          rel="noopener noreferrer"
+          class={styles.solidLink}
+          title={headerInfo.solidJSTitle}
+        >
+          <img
+            src={solidLogo}
+            alt={headerInfo.solidJSLogoAlt}
+            class={styles.solidLogo_interactive}
+          />
+          <span class={styles.solidText}>{headerInfo.solidJSTitle}</span>
+        </a>
+      </div> */}
 
       <div class={styles.headerControls}>
         <ThemeToggle />
@@ -80,7 +92,7 @@ const Header = () => {
               onClick={() => navigateTo(headerInfo.homeUri)}
               class={`${styles.navButton} ${isActive(headerInfo.homeUri) ? styles.activeNav : ''}`}
             >
-              Home
+              🏠 Home
             </button>
           </li>
           <li class={styles.navItem}>
@@ -136,7 +148,7 @@ const Header = () => {
               onClick={() => navigateTo(headerInfo.metabolicGameUri)}
               class={`${styles.navButton} ${isActive(headerInfo.metabolicGameUri) ? styles.activeNav : ''}`}
             >
-              Explore Metabolism through Game
+              Interactive Game
             </button>
           </li>
           <li class={styles.navItem}>
