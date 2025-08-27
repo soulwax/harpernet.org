@@ -1,6 +1,6 @@
 // File: tools/make-og.cjs
-
 // Node >=16, CommonJS. Install: npm i -D sharp
+
 const fs = require('fs');
 const fsp = require('fs/promises');
 const path = require('path');
