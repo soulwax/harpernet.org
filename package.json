@@ -16,7 +16,10 @@
     "logs": "pm2 logs mbti-app",
     "watch": "nodemon --watch src --exec \"npm run dev\" --ext js,jsx,css,html",
     "debug": "vite --port 3890 --debug --host",
-    "bump": "npm version patch"
+    "bump": "npm version patch",
+    "prepare": "husky",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "keywords": [
     "mbti",
@@ -27,6 +30,9 @@
     "solid-js": "^1.9.9"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2",
     "vite": "^6.3.5",
     "vite-plugin-solid": "^2.11.8"
   },
