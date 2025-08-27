@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --port 3890",
     "make:og": "node tools/make-og.cjs",
-    "build": "vite build && npm run make:og",
+    "build": "vite build",
     "rebuild": "npm run build && npm run restart",
     "preview": "vite preview --port 3890",
     "serve": "vite preview --port 3890 --host",

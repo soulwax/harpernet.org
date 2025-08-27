@@ -12,19 +12,18 @@ const MetabolicGamePage = () => {
         <div style="text-align: center; margin-bottom: 2rem;">
           <h1>Metabolic Exploration</h1>
           <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary, #6b7280);">
-            Travel within your mind's eye within metaphorical dream landscapes to explore your cognitive metabolism. Each
-            choice reveals patterns of your mind processes and how it might transform information.
+            Travel within your mind's eye within metaphorical dream landscapes to explore your
+            cognitive metabolism. Each choice reveals patterns of your mind processes and how it
+            might transform information.
           </p>
           <br />
           <p>
-            Side Note: My conviction and challenge at the same time was to create a quiz that would stump
-            people who took these tests so often they could just get a result they wanted. This should be
-            more of a challenge to you and hopefully spark your imagination at the same time, revealing
-            your innermost thought patterns.
+            Side Note: My conviction and challenge at the same time was to create a quiz that would
+            stump people who took these tests so often they could just get a result they wanted.
+            This should be more of a challenge to you and hopefully spark your imagination at the
+            same time, revealing your innermost thought patterns.
           </p>
-          <p>
-            For accuracy I will probably extend this much further in the future.
-          </p>
+          <p>For accuracy I will probably extend this much further in the future.</p>
         </div>
         <MetabolicExplorationGame />
       </main>

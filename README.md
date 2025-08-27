@@ -14,7 +14,6 @@ You should try the game too.
 Site should be accessible for the colour blind, and for different devices across the board.
 Site should be lightweight for the shittiest internet available.
 
-
 ## 🌟 Features
 
 - **Sister Types** - J/P swapped comparisons (INTP vs INTJ, etc.).
@@ -24,7 +23,7 @@ Site should be lightweight for the shittiest internet available.
 - **Type Relationships** - Comprehensive relationship dynamics and communication patterns.
 - **Research Validation** - Neuroscience studies, psychological research, and clinical applications.
 - **Metabolic Exploration Game / Test** - In order to determine your main metabolic driver. Has roughly 30 questions as of 27th Aug. '25. I will expand upon them when the time allows for it for more accuracy.
-**I do not guarantee correct results at any moment or place.**
+  **I do not guarantee correct results at any moment or place.**
 
 ---
 
@@ -46,7 +45,6 @@ npm run dev
 
 Navigate to `http://localhost:3890`
 
-
 ### Why port 3890? Wtf?
 
 The pm2 ecosystem this webpage depends on is seen within the `ecosystem.config.js` file, hence the **default port of 3890**. You can change this for your own needs.
@@ -54,33 +52,31 @@ The page does not depend on .env files.
 
 ## Uncompromising Privacy Pledge
 
-I hereby pledge: No logging where the site is hosted (at the time on a real life friend's Intel NUC) who is a security researcher at the [Fraunhofer IST](https://www.ist.fraunhofer.de/). 
+I hereby pledge: No logging where the site is hosted (at the time on a real life friend's Intel NUC) who is a security researcher at the [Fraunhofer IST](https://www.ist.fraunhofer.de/).
 For maximum privacy I developed a few very simple principles:
-
 
 - Nginx access logs simply go to `> /dev/null` which means, in layman terms, the logs are written into a space that discards them immediately.
 - Nginx **Critical Errors** go to `> /etc/nginx/logs/critical.log` **whereas your personal data, such as browser fingerprint and IP are expunged**. What is a critical error?
-It happens when: 
-    
-    The server encounters an unrecoverable error (like disk space issues, memory exhaustion, or configuration corruption)
-        2. A malicious attack is detected and blocked
-        3. SSL/TLS certificate validation fails
+  It happens when:
 
-    In all three cases: No personal data is collected anyway.
+      The server encounters an unrecoverable error (like disk space issues, memory exhaustion, or configuration corruption)
+          2. A malicious attack is detected and blocked
+          3. SSL/TLS certificate validation fails
+
+      In all three cases: No personal data is collected anyway.
 
 - **No cookies**, period.
-- One variable stored in your browser's **Local Storage** (NOT a cookie) to remember whether you prefer dark mode or not. Check by yourself: 
+- One variable stored in your browser's **Local Storage** (NOT a cookie) to remember whether you prefer dark mode or not. Check by yourself:
 
-    Verify: Press F12, go to the Web Storage Tab. 
+  Verify: Press F12, go to the Web Storage Tab.
 
-If the site should be hosted by a third party not on [https://harpernet.org](https://harpernet.org) or on vercel by yourself e.g., that might become a different story, and you should read up on [Vercel's privacy policy](https://vercel.com/legal/privacy-policy). 
+If the site should be hosted by a third party not on [https://harpernet.org](https://harpernet.org) or on vercel by yourself e.g., that might become a different story, and you should read up on [Vercel's privacy policy](https://vercel.com/legal/privacy-policy).
 
 **Be wary of sites that look similar with a different domain.**
 
 **With [https://harpernet.org](https://harpernet.org) there is no logging, period. SSL/TLS is generously provided by the R10 authority, US legal law applied.**
 
---- 
-
+---
 
 ## 📁 Project Structure
 
@@ -150,19 +146,23 @@ If the site should be hosted by a third party not on [https://harpernet.org](htt
 ## 🎯 Core Concepts
 
 **Sister Types**: Same cognitive functions, different order (J/P swap)
+
 - INTP (Ti-Ne-Si-Fe) vs INTJ (Ni-Te-Fi-Se)
 
 **Brother Types**: Same functions, different orientation (E/I swap)
+
 - INTJ (Ni-Te-Fi-Se) vs ENTJ (Te-Ni-Se-Fi)
 
 **Cognitive Functions**: Eight mental processes underlying all personality types, analyzed through:
+
 - Developmental stages across lifespan
 - Shadow manifestations and blind spots
 - Positional analysis (dominant, auxiliary, tertiary, inferior)
 
 **Metabolic Principles**: Information processing framework combining:
+
 - Jung's psychological energy concepts
-- Kępiński's information metabolism theory  
+- Kępiński's information metabolism theory
 - Modern neuroscience validation
 - Clinical applications and therapeutic approaches
 - Game with questions - highly abstract
@@ -170,18 +170,21 @@ If the site should be hosted by a third party not on [https://harpernet.org](htt
 ## 🔬 Research Foundation
 
 **Neuroscience Validation**:
+
 - fMRI studies showing distinct neural network activation patterns
 - EEG research on characteristic brainwave patterns
 - Default Mode Network research supporting psychic energy flow
 - Brain imaging validation of function-specific processing
 
 **Psychological Studies**:
+
 - Cross-cultural validation across 30+ cultures
 - Longitudinal research tracking 20-year stability patterns
 - Clinical studies using metabolic profiling for therapeutic interventions
 - Team effectiveness research on metabolic compatibility
 
 **Clinical Applications**:
+
 - Function-specific therapeutic approaches
 - Organizational intervention strategies
 - Educational program optimization

@@ -76,7 +76,7 @@ const MetabolicExplorationGame = () => {
     const primaryDynamic = sortedDynamics[0];
 
     // Generate interpretation
-    const functionDescriptions = gameData.functionDescriptions
+    const functionDescriptions = gameData.functionDescriptions;
 
     const dynamicDescriptions = gameData.dynamicDescriptions;
 
