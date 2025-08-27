@@ -1,8 +1,8 @@
 # HarperNet.org - MBTI Cognitive Function Analysis
 
-<p align="center">
-    <img style="box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); border-radius: 8px" src=".github/resources/infjlolcat.gif" alt="INFJ LOLCAT" width="500px" />
-</p>
+<!-- Image centered with styling: box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); border-radius: 8px; width: 500px -->
+
+!["INFJ LOLCAT"](.github/resources/infjlolcat.gif)
 
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![SolidJS](https://img.shields.io/badge/SolidJS-1.9.5-blue)](https://www.solidjs.com/)
@@ -58,12 +58,11 @@ For maximum privacy I developed a few very simple principles:
 - Nginx access logs simply go to `> /dev/null` which means, in layman terms, the logs are written into a space that discards them immediately.
 - Nginx **Critical Errors** go to `> /etc/nginx/logs/critical.log` **whereas your personal data, such as browser fingerprint and IP are expunged**. What is a critical error?
   It happens when:
+    1. The server encounters an unrecoverable error (like disk space issues, memory exhaustion, or configuration corruption)
+    2. A malicious attack is detected and blocked
+    3. SSL/TLS certificate validation fails
 
-      The server encounters an unrecoverable error (like disk space issues, memory exhaustion, or configuration corruption)
-          2. A malicious attack is detected and blocked
-          3. SSL/TLS certificate validation fails
-
-      In all three cases: No personal data is collected anyway.
+  In all three cases: No personal data is collected anyway.
 
 - **No cookies**, period.
 - One variable stored in your browser's **Local Storage** (NOT a cookie) to remember whether you prefer dark mode or not. Check by yourself:
