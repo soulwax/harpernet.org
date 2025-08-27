@@ -12,7 +12,7 @@ const MetabolicGamePage = () => {
         <div style="text-align: center; margin-bottom: 2rem;">
           <h1>Metabolic Exploration</h1>
           <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary, #6b7280);">
-            Travel within your mind's eye within metaphorical dream landscapes to explore your
+            Travel with your mind's eye within metaphorical dream landscapes to explore your
             cognitive metabolism. Each choice reveals patterns of your mind processes and how it
             might transform information.
           </p>

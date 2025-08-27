@@ -56,7 +56,7 @@ const HomePage = () => {
     {
       title: 'Interactive Game',
       route: '/metabolic-game',
-      description: 'Explore cognitive metabolism through an interactive gaming experience',
+      description: 'Explore cognitive metabolism through a trippy quiz kind of game',
       icon: '🎮',
       color: '#795548'
     },
@@ -76,7 +76,7 @@ const HomePage = () => {
         <div class={styles.heroContent}>
           <h1 class={styles.title}>
             <span class={styles.titleMain}>HarperNet.org</span>
-            <span class={styles.titleSub}>MBTI Cognitive Function Analysis</span>
+            <span class={styles.titleSub}>C.G.Jung's Frameworks, Impasse and solutions</span>
           </h1>
           
           <p class={styles.heroDescription}>
@@ -102,7 +102,7 @@ const HomePage = () => {
 
       {/* Features Grid */}
       <section class={styles.featuresSection}>
-        <h2 class={styles.sectionTitle}>Explore All Features</h2>
+        <h2 class={styles.sectionTitle}>Features at a glance</h2>
         
         <div class={styles.featuresGrid}>
           {features.map((feature, index) => (
