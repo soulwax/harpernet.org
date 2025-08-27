@@ -1,6 +1,6 @@
 <!-- File: public/404.html -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -17,22 +17,22 @@
       // Redirect to the correct route with a hash
       l.replace(
         l.protocol +
-          "//" +
+          '//' +
           l.hostname +
-          (l.port ? ":" + l.port : "") +
+          (l.port ? ':' + l.port : '') +
           l.pathname
-            .split("/")
+            .split('/')
             .slice(0, 1 + pathSegmentsToKeep)
-            .join("/") +
-          "/?/" +
+            .join('/') +
+          '/?/' +
           l.pathname
             .slice(1)
-            .split("/")
+            .split('/')
             .slice(pathSegmentsToKeep)
-            .join("/")
-            .replace(/&/g, "~and~") +
-          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
-          l.hash
+            .join('/')
+            .replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash,
       );
     </script>
   </head>

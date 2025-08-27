@@ -63,7 +63,7 @@ src/
 
 - INTP (Ti-Ne-Si-Fe) vs INTJ (Ni-Te-Fi-Se)
 
-**Brother Types**: Same functions, different orientation (E/I swap)  
+**Brother Types**: Same functions, different orientation (E/I swap)
 
 - INTJ (Ni-Te-Fi-Se) vs ENTJ (Te-Ni-Se-Fi)
 
@@ -71,10 +71,10 @@ src/
 
 ## 📚 Academic Foundation
 
-Built on Jung's *Psychological Types* and modern MBTI research, integrating insights from:
+Built on Jung's _Psychological Types_ and modern MBTI research, integrating insights from:
 
 - Jung's Collected Works (Vol. 6)
-- Myers & Briggs' *Gifts Differing*
+- Myers & Briggs' _Gifts Differing_
 - Contemporary analytical psychology research
 - Neuroscience validation studies
 
@@ -93,4 +93,4 @@ GPL-3.0 - See [LICENSE](LICENSE) for details.
 
 ---
 
-*Making Jung's cognitive function theory accessible without dumbing it down.*
+_Making Jung's cognitive function theory accessible without dumbing it down._

@@ -5,7 +5,8 @@
   "type": "commonjs",
   "scripts": {
     "dev": "vite --port 3890",
-    "build": "vite build",
+    "make:og": "node tools/make-og.cjs",
+    "build": "vite build && npm run make:og",
     "rebuild": "npm run build && npm run restart",
     "preview": "vite preview --port 3890",
     "serve": "vite preview --port 3890 --host",
@@ -38,6 +39,7 @@
     "faithful"
   ],
   "dependencies": {
+    "@vercel/og": "^0.8.5",
     "serve": "^14.2.4",
     "solid-js": "^1.9.9"
   },
@@ -45,6 +47,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.1.5",
     "prettier": "^3.6.2",
+    "sharp": "^0.34.3",
     "vite": "^6.3.5",
     "vite-plugin-solid": "^2.11.8"
   },
