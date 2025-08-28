@@ -5,7 +5,12 @@
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.4;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
 }
 
 /* Hero Section - Enhanced */
@@ -44,7 +49,7 @@
   display: block;
   font-size: clamp(2.2rem, 5vw, 3.5rem);
   font-weight: 800;
-  background: linear-gradient(135deg, var(--accent), #4CAF50, #2196F3, #9C27B0);
+  background: linear-gradient(135deg, var(--accent), #4caf50, #2196f3, #9c27b0);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -55,8 +60,13 @@
 }
 
 @keyframes gradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .titleSub {
@@ -98,7 +108,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent), #4CAF50);
+  background: linear-gradient(90deg, var(--accent), #4caf50);
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
@@ -416,7 +426,9 @@
 
 .sourceFilter:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1), 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 0 0 3px rgba(76, 175, 80, 0.1),
+    0 4px 12px rgba(0, 0, 0, 0.08);
   transform: translateY(-1px);
 }
 
@@ -426,7 +438,7 @@
 }
 
 .toggleButton {
-  background: linear-gradient(135deg, var(--accent), #4CAF50);
+  background: linear-gradient(135deg, var(--accent), #4caf50);
   color: white;
   border: none;
   border-radius: 50px;
@@ -505,7 +517,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--accent), #4CAF50);
+  background: linear-gradient(90deg, var(--accent), #4caf50);
 }
 
 .domainName {
@@ -518,7 +530,7 @@
 
 .domainCount {
   font-size: 0.7rem;
-  background: linear-gradient(135deg, var(--accent), #4CAF50);
+  background: linear-gradient(135deg, var(--accent), #4caf50);
   color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
@@ -551,7 +563,7 @@
 }
 
 .domainSources::-webkit-scrollbar-thumb:hover {
-  background: #4CAF50;
+  background: #4caf50;
 }
 
 .rawSourceItem {
@@ -632,7 +644,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent), #4CAF50);
+  background: linear-gradient(90deg, var(--accent), #4caf50);
 }
 
 .summaryItem:hover {
@@ -693,7 +705,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--accent), #4CAF50, #2196F3);
+  background: linear-gradient(90deg, var(--accent), #4caf50, #2196f3);
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
@@ -762,7 +774,7 @@
 }
 
 .institutionTag {
-  background: linear-gradient(135deg, var(--accent), #4CAF50);
+  background: linear-gradient(135deg, var(--accent), #4caf50);
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 25px;
@@ -906,11 +918,11 @@
   .highlightCard {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
-  
+
   .domainGroup {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   }
-  
+
   .sourcesSummary {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   }
