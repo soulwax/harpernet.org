@@ -9,11 +9,9 @@ import ThemeToggle from './ThemeToggle';
 const Header = () => {
   const headerInfo = {
     solidJSHomepage: 'https://solidjs.com',
-    githubRepository: 'https://github.com/soulwax/harpernet.org',
-    solidJSTitle: 'Built with Solid.JS for the giggles',
+    solidJSTitle: 'Built with Solid.JS',
     solidJSLogoAlt: 'Solid.JS Logo',
     harperLogoAlt: 'HarperNet.org Logo',
-    technology: 'Solid.JS',
     homeUri: '/',
     sisterTypesUri: '/sister-types',
     brotherTypesUri: '/brother-types',
@@ -46,50 +44,23 @@ const Header = () => {
 
   return (
     <header class={styles.header}>
+      {/* Logo */}
       <div class={styles.logo}>
         <a href="/" class={styles.logoLink}>
-          <img src={harperLogo} alt={headerInfo.harperLogoAlt} class={styles.harperLogo_simple} />
+          <img src={harperLogo} alt={headerInfo.harperLogoAlt} class={styles.harperLogo} />
           <span class={styles.logoText}>HarperNet.org</span>
         </a>
       </div>
 
-      {/* <div class={styles.solidjsLink}>
-        <a
-          href={headerInfo.solidJSHomepage}
-          target="_blank"
-          rel="noopener noreferrer"
-          class={styles.solidLink}
-          title={headerInfo.solidJSTitle}
-        >
-          <img
-            src={solidLogo}
-            alt={headerInfo.solidJSLogoAlt}
-            class={styles.solidLogo_interactive}
-          />
-          <span class={styles.solidText}>{headerInfo.solidJSTitle}</span>
-        </a>
-      </div> */}
-
-      <div class={styles.headerControls}>
-        <ThemeToggle />
-
-        <button
-          class={styles.menuToggle}
-          onClick={toggleNav}
-          aria-label={headerInfo.menuToggleAriaLabel}
-        >
-          {isNavOpen() ? '✕' : '☰'}
-        </button>
-      </div>
-
-      <nav class={`${styles.nav} ${isNavOpen() ? styles.navOpen : ''}`}>
+      {/* Main Navigation - Desktop */}
+      <nav class={styles.desktopNav}>
         <ul class={styles.navList}>
           <li class={styles.navItem}>
             <button
               onClick={() => navigateTo(headerInfo.homeUri)}
               class={`${styles.navButton} ${isActive(headerInfo.homeUri) ? styles.activeNav : ''}`}
             >
-              🏠 Home
+              Home
             </button>
           </li>
           <li class={styles.navItem}>
@@ -150,14 +121,6 @@ const Header = () => {
           </li>
           <li class={styles.navItem}>
             <button
-              onClick={() => navigateTo(headerInfo.researchUri)}
-              class={`${styles.navButton} ${isActive(headerInfo.researchUri) ? styles.activeNav : ''}`}
-            >
-              Research
-            </button>
-          </li>
-          <li class={styles.navItem}>
-            <button
               onClick={() => navigateTo(headerInfo.aboutUri)}
               class={`${styles.navButton} ${isActive(headerInfo.aboutUri) ? styles.activeNav : ''}`}
             >
@@ -166,6 +129,100 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
+      {/* Right Side Controls */}
+      <div class={styles.controls}>
+        <ThemeToggle />
+
+        <button
+          class={styles.menuToggle}
+          onClick={toggleNav}
+          aria-label={headerInfo.menuToggleAriaLabel}
+        >
+          ☰
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      <nav class={`${styles.mobileNav} ${isNavOpen() ? styles.mobileNavOpen : ''}`}>
+        <ul class={styles.mobileNavList}>
+          <li class={styles.mobileNavItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.homeUri)}
+              class={`${styles.mobileNavButton} ${isActive(headerInfo.homeUri) ? styles.activeMobileNav : ''}`}
+            >
+              🏠 Home
+            </button>
+          </li>
+          <li class={styles.mobileNavItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.sisterTypesUri)}
+              class={`${styles.mobileNavButton} ${isActive(headerInfo.sisterTypesUri) ? styles.activeMobileNav : ''}`}
+            >
+              👯 Sister Types
+            </button>
+          </li>
+          <li class={styles.mobileNavItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.brotherTypesUri)}
+              class={`${styles.mobileNavButton} ${isActive(headerInfo.brotherTypesUri) ? styles.activeMobileNav : ''}`}
+            >
+              👬 Brother Types
+            </button>
+          </li>
+          <li class={styles.mobileNavItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.cognitiveFunctionsUri)}
+              class={`${styles.mobileNavButton} ${isActive(headerInfo.cognitiveFunctionsUri) ? styles.activeMobileNav : ''}`}
+            >
+              🧠 Cognitive Functions
+            </button>
+          </li>
+          <li class={styles.mobileNavItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.cognitiveFunctionsDetailedUri)}
+              class={`${styles.mobileNavButton} ${isActive(headerInfo.cognitiveFunctionsDetailedUri) ? styles.activeMobileNav : ''}`}
+            >
+              🔬 Functions In-Depth
+            </button>
+          </li>
+          <li class={styles.mobileNavItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.relationshipsUri)}
+              class={`${styles.mobileNavButton} ${isActive(headerInfo.relationshipsUri) ? styles.activeMobileNav : ''}`}
+            >
+              💕 Relationships
+            </button>
+          </li>
+          <li class={styles.mobileNavItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.metabolicPrinciplesUri)}
+              class={`${styles.mobileNavButton} ${isActive(headerInfo.metabolicPrinciplesUri) ? styles.activeMobileNav : ''}`}
+            >
+              ⚡ Metabolic Principles
+            </button>
+          </li>
+          <li class={styles.mobileNavItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.metabolicGameUri)}
+              class={`${styles.mobileNavButton} ${isActive(headerInfo.metabolicGameUri) ? styles.activeMobileNav : ''}`}
+            >
+              🎮 Interactive Game
+            </button>
+          </li>
+          <li class={styles.mobileNavItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.aboutUri)}
+              class={`${styles.mobileNavButton} ${isActive(headerInfo.aboutUri) ? styles.activeMobileNav : ''}`}
+            >
+              ℹ️ About
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      {/* Mobile backdrop */}
+      {isNavOpen() && <div class={styles.backdrop} onClick={() => setIsNavOpen(false)}></div>}
     </header>
   );
 };

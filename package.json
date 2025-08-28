@@ -1,6 +1,6 @@
 {
   "name": "harpernet.org",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "This page is intended to give you some of my wisdom into Jungian psychology and the MBTI framework. Maybe something you haven't yet considered.",
   "type": "commonjs",
   "scripts": {
