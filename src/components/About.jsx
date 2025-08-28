@@ -1,7 +1,7 @@
 // File: src/components/About.jsx
 
 import { createSignal } from 'solid-js';
-import sources from '../data/sources.json';
+import sources from '../data/rawSources.json';
 import styles from './About.module.css';
 
 const About = () => {

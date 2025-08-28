@@ -22,6 +22,7 @@ const Header = () => {
     relationshipsUri: '/relationships',
     metabolicPrinciplesUri: '/metabolic-principles',
     metabolicGameUri: '/metabolic-game',
+    researchUri: '/research',
     aboutUri: '/about',
     menuToggleAriaLabel: 'Toggle navigation menu',
   };
@@ -145,6 +146,14 @@ const Header = () => {
               class={`${styles.navButton} ${isActive(headerInfo.metabolicGameUri) ? styles.activeNav : ''}`}
             >
               Interactive Game
+            </button>
+          </li>
+          <li class={styles.navItem}>
+            <button
+              onClick={() => navigateTo(headerInfo.researchUri)}
+              class={`${styles.navButton} ${isActive(headerInfo.researchUri) ? styles.activeNav : ''}`}
+            >
+              Research
             </button>
           </li>
           <li class={styles.navItem}>

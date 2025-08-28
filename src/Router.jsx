@@ -11,6 +11,7 @@ import MetabolicGamePage from './pages/MetabolicGamePage';
 import MetabolicPrinciplesPage from './pages/MetabolicPrinciplesPage';
 import RelationshipsPage from './pages/RelationshipsPage';
 import SisterTypesPage from './pages/SisterTypesPage';
+import ResearchPage from './pages/ResearchPage';
 import './Router.css';
 
 const Router = () => {
@@ -67,6 +68,8 @@ const Router = () => {
       return <MetabolicPrinciplesPage key="metabolic-principles" />;
     } else if (path === '/metabolic-game') {
       return <MetabolicGamePage key="metabolic-game" />;
+    } else if (path === '/research') {
+      return <ResearchPage key="research" />;
     } else {
       // Default to HomePage for root path and unknown routes
       return <HomePage key="home" />;
