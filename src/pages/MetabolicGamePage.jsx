@@ -7,7 +7,7 @@ import metabolicGameData from '../data/metabolicGameData';
 
 const MetabolicGamePage = () => {
   const amountOfQuestions = metabolicGameData.questions.length;
-
+  const versionDescription = metabolicGameData.version.description;
   return (
     <div class="app">
       <Header />
@@ -42,8 +42,8 @@ const MetabolicGamePage = () => {
         </p>
         <br />
         <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary, #6b7280);">
-          Beta Phase 2: Amount of questions so far: {amountOfQuestions} combinations balanced
-          towards equal weights for each function and metabolic group.
+          {versionDescription}: Amount of questions so far: {amountOfQuestions} combinations
+          balanced towards equal weights for each function and metabolic group.
         </p>
       </div>
       <Footer />
