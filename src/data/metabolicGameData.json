@@ -15,6 +15,12 @@
     "Si": "embodied memory and sensory detail",
     "Se": "immediate engagement and sensory impact"
   },
+  "results": {
+    "revision": "Your cognitive metabolism moves in spirals, never satisfied with a single pass through any territory of understanding. Where others seek closure, you find openings. Your mind treats each conclusion as a temporary rest stop, returning to examine what was missed, what assumptions went unquestioned, what depths remained unplumbed. You are the eternal editor of your own experience, constantly refining not just what you think, but how you think about thinking itself. This creates a richness of perspective that others find both illuminating and occasionally exhausting. You see patterns in the revisiting - how ideas evolve when approached from different angles, how early judgments often prove incomplete. Your strength lies in this willingness to remain perpetually open, to let understanding deepen through iteration rather than crystallize prematurely. The challenge is learning when to trust a conclusion long enough to act on it, when to let the spiral settle into forward motion. Others may perceive your reconsideration as indecision, but you know it as the mark of a mind that refuses to accept surface explanations when deeper truths are available.",
+    "conducting": "Your cognitive metabolism orchestrates complexity into coherent action. Like a conductor who hears the full symphony before the first note is played, you excel at mapping the territory between intention and manifestation. Your mind naturally sequences, prioritizes, and coordinates multiple elements toward unified outcomes. You are the architect of momentum, understanding that true progress requires both vision and systematic execution. Others rely on you to transform scattered possibilities into structured pathways, to create frameworks that turn abstract potential into concrete results. Your thinking moves with purposeful rhythm, building toward crescendos of achievement while maintaining awareness of each component's role in the greater composition. You see the connections that allow individual efforts to amplify rather than conflict, the timing that allows maximum impact with minimum waste. Your strength lies in this capacity to hold both the overview and the details, to maintain forward momentum without losing sight of the destination. The challenge comes when the orchestra refuses to follow the score, when human unpredictability disrupts your carefully constructed harmonies. Your gift to the world is the demonstration that chaos can be shaped into beauty through patient, skillful direction.",
+    "density": "Your cognitive metabolism compresses experience into concentrated meaning, like a star collapsing matter into increasingly powerful forms. Where others skim surfaces, you dive toward centers. Your mind seeks not breadth but depth, not variety but essence. You are the deep diver of understanding, willing to descend into the pressured depths where casual explorers cannot follow. Each thought is weighted, each insight is earned through sustained focus and patient excavation. You understand that true comprehension requires time to marinate, that the most important truths cannot be rushed or superficially grasped. Your thinking has gravity - ideas orbit around core insights that you have cultivated through careful attention and relentless questioning. You see layers that others miss, connections that require stillness to perceive, patterns that only emerge when given sufficient time to develop. Your strength is this ability to go deeper when others go wider, to find the concentrated essence that illuminates everything else. The challenge is learning to surface occasionally, to translate your deep insights into forms others can access. Your gift is the demonstration that profundity is possible, that in an age of infinite distraction, the examined life still yields treasures available nowhere else.",
+    "expansion": "Your cognitive metabolism explodes outward like a universe in perpetual creation, generating new possibilities faster than they can be catalogued. You are the pioneer of the impossible, the one who looks at any boundary and asks what lies beyond it. Your mind moves at the speed of inspiration, making connections across vast conceptual distances, seeing potential where others see obstacles. You live in the space of 'what if,' constantly birthing new realities through the sheer audacity of imagination. Your thinking has no natural limits - each idea spawns ten more, each solution reveals new problems worth solving, each answer generates deeper questions. You are the expansion pack of human consciousness, always upgrading the operating system, always discovering new territories to explore. Others depend on you to break them out of limiting assumptions, to show them possibilities they never considered, to demonstrate that the current situation is never the only situation. Your strength lies in this fearless creativity, this willingness to leap before looking, to trust that new ground will appear beneath your feet. The challenge is learning to choose among infinite options, to sometimes go deep rather than wide, to occasionally let an idea mature before moving to the next one. Your gift to the world is the constant reminder that reality is far more plastic than most dare to believe."
+  },
   "questions": [
     {
       "id": "breath-of-stones",
@@ -2352,6 +2358,474 @@
             "Fi": 3,
             "Se": 1,
             "density": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "scribe-of-blood",
+      "scenario": "An occult scribe writes with ink brewed from forgotten veins. Each script bleeds differently into reality.",
+      "prompt": "Which manuscript stains your hands?",
+      "choices": [
+        {
+          "text": "The verse that names a truth you cannot unknow",
+          "weights": {
+            "Ni": 3,
+            "Ti": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The chant that binds strangers into a single pulse",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The fragment that reshapes itself whenever read",
+          "weights": {
+            "Ne": 3,
+            "Fi": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The ledger that turns every breath into an exact account",
+          "weights": {
+            "Te": 3,
+            "Si": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "warden-of-ash",
+      "scenario": "At the edge of a firepit where centuries of pyres burned, a warden offers heaps of cooled ash, each retaining a memory of its blaze.",
+      "prompt": "Which ash do you breathe in?",
+      "choices": [
+        {
+          "text": "The ash that sharpens memory into a weapon",
+          "weights": {
+            "Si": 3,
+            "Ti": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The ash that cloaks you until you are seen only as reflection",
+          "weights": {
+            "Fe": 3,
+            "Ni": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The ash that swirls unpredictably, remaking its storm with each exhale",
+          "weights": {
+            "Ne": 3,
+            "Se": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The ash that refuses to scatter, heavy with unyielding purpose",
+          "weights": {
+            "Te": 3,
+            "Fi": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "engineer-of-dusk",
+      "scenario": "In the half-light, mechanisms are built from shadow gears. Each turns differently depending on who watches.",
+      "prompt": "Which gear do you set in motion?",
+      "choices": [
+        {
+          "text": "The gear that measures inevitability with silent precision",
+          "weights": {
+            "Ni": 3,
+            "Te": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The gear that pulls every other wheel into harmony",
+          "weights": {
+            "Fe": 3,
+            "Ti": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The gear that spins wild, birthing new cogs each rotation",
+          "weights": {
+            "Ne": 3,
+            "Fi": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The gear that wears grooves of repetition into permanence",
+          "weights": {
+            "Si": 3,
+            "Se": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "apothecary-of-breaths",
+      "scenario": "Vials of breath are stored in a dark apothecary. Each inhale changes the tempo of existence.",
+      "prompt": "Which vial do you unstopper?",
+      "choices": [
+        {
+          "text": "The breath that steadies chaos into predictable cadence",
+          "weights": {
+            "Te": 3,
+            "Si": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The breath that recalls a thousand quiet intimacies",
+          "weights": {
+            "Fi": 3,
+            "Si": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The breath that dances away, never the same twice",
+          "weights": {
+            "Ne": 3,
+            "Se": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The breath that questions itself before leaving your lungs",
+          "weights": {
+            "Ti": 2,
+            "Ni": 2,
+            "revision": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "mathematician-of-bones",
+      "scenario": "An ancient scholar arranges bones into equations. Each sum solves not numbers but destinies.",
+      "prompt": "Which solution do you calculate?",
+      "choices": [
+        {
+          "text": "The equation that proves the pattern of all endings",
+          "weights": {
+            "Ni": 3,
+            "Ti": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The equation that balances suffering against belonging",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The equation that multiplies endlessly, birthing new unknowns",
+          "weights": {
+            "Ne": 3,
+            "Se": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The equation that reduces complexity into a command to act",
+          "weights": {
+            "Te": 3,
+            "Si": 2,
+            "conducting": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "collector-of-fogs",
+      "scenario": "At dawn, a collector traps fog in sealed jars. Each fog preserves a different uncertainty.",
+      "prompt": "Which fog do you uncork?",
+      "choices": [
+        {
+          "text": "The fog that never clears, dense with memory’s weight",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The fog that dissolves edges into perpetual maybe",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The fog that chills skin to urgency, demanding movement",
+          "weights": {
+            "Se": 3,
+            "Te": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The fog that spreads evenly until all are veiled together",
+          "weights": {
+            "Fe": 3,
+            "Ni": 1,
+            "conducting": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "butcher-of-dreams",
+      "scenario": "In a midnight market, a butcher slices dreams into cuts, each with its own flavor of fate.",
+      "prompt": "Which cut do you taste?",
+      "choices": [
+        {
+          "text": "The marrow that carries hidden truths through the bone",
+          "weights": {
+            "Ni": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The flesh that nourishes collective celebration",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The scrap that mutates with each bite, unpredictable and wild",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The rind that preserves every season it endured",
+          "weights": {
+            "Si": 3,
+            "Te": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "astronomer-of-cinders",
+      "scenario": "Where stars have died, an astronomer charts only cinders. Each glow whispers differently of what was lost.",
+      "prompt": "Which ember do you follow?",
+      "choices": [
+        {
+          "text": "The ember that remembers the exact moment of collapse",
+          "weights": {
+            "Si": 3,
+            "Ti": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The ember that burns toward futures unseen",
+          "weights": {
+            "Ni": 3,
+            "Fe": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The ember that mirrors the warmth of all who gather around it",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The ember that flickers into unpredictable sparks",
+          "weights": {
+            "Ne": 3,
+            "Fi": 1,
+            "revision": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "engraver-of-silhouettes",
+      "scenario": "Silhouettes are etched here with obsidian knives. Each reveals the outline of something unseen.",
+      "prompt": "Which shadow-mark do you bear?",
+      "choices": [
+        {
+          "text": "The mark that defines by absence, carving clarity",
+          "weights": {
+            "Ti": 2,
+            "Ni": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The mark that insists on presence, no matter the light",
+          "weights": {
+            "Se": 3,
+            "Te": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The mark that fractures into strange geometries each night",
+          "weights": {
+            "Ne": 3,
+            "Fi": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The mark that recalls every form it once belonged to",
+          "weights": {
+            "Si": 3,
+            "Fe": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "harvester-of-silence",
+      "scenario": "A harvester cuts silence into bundles. Some silences heal, others suffocate.",
+      "prompt": "Which bundle do you carry?",
+      "choices": [
+        {
+          "text": "The silence heavy with unspoken recognition",
+          "weights": {
+            "Fe": 3,
+            "Ni": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The silence that erupts when truth cannot be ignored",
+          "weights": {
+            "Se": 3,
+            "Te": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The silence that fractures into countless whispers",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The silence that endures, pressed deep into memory",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "miner-of-doubts",
+      "scenario": "In a cavern glittering with uncertainty, doubts form like crystals. Each shines in its own way.",
+      "prompt": "Which doubt do you hold to the light?",
+      "choices": [
+        {
+          "text": "The doubt that sharpens every answer into finer questions",
+          "weights": {
+            "Ti": 3,
+            "Ni": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The doubt that mirrors the fears of those around you",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The doubt that multiplies endlessly, spawning possibilities",
+          "weights": {
+            "Ne": 3,
+            "Fi": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The doubt that compresses into unyielding conviction",
+          "weights": {
+            "Te": 3,
+            "Si": 1,
+            "density": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "gardener-of-shadows",
+      "scenario": "A hidden garden grows only shadows. Each plant thrives on different kinds of obscurity.",
+      "prompt": "Which shadow-plant do you tend?",
+      "choices": [
+        {
+          "text": "The root that deepens every memory until it anchors the soul",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The bloom that releases new questions with every dusk",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The vine that entwines groups into a single collective form",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The seed that bursts suddenly, demanding immediate action",
+          "weights": {
+            "Se": 3,
+            "Te": 1,
+            "expansion": 2
           }
         }
       ]

@@ -3,8 +3,11 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import MetabolicExplorationGame from '../components/MetabolicExplorationGame';
+import metabolicGameData from '../data/metabolicGameData';
 
 const MetabolicGamePage = () => {
+  const amountOfQuestions = metabolicGameData.questions.length;
+
   return (
     <div class="app">
       <Header />
@@ -39,8 +42,8 @@ const MetabolicGamePage = () => {
         </p>
         <br />
         <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary, #6b7280);">
-          Beta Phase 2: State - 48 questions (divisible by 16 and 8 for balance for all function
-          combinations)
+          Beta Phase 2: Amount of questions so far: {amountOfQuestions} combinations balanced
+          towards equal weights for each function and metabolic group.
         </p>
       </div>
       <Footer />

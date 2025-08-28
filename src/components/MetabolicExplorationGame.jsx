@@ -77,15 +77,14 @@ const MetabolicExplorationGame = () => {
 
     // Generate interpretation
     const functionDescriptions = gameData.functionDescriptions;
-
-    const dynamicDescriptions = gameData.dynamicDescriptions;
+    const results = gameData.results;
 
     return {
       primary: primaryFunction,
       secondary: secondaryFunction,
       dynamic: primaryDynamic,
       functionDesc: functionDescriptions,
-      dynamicDesc: dynamicDescriptions,
+      results: results,
     };
   });
 
@@ -120,38 +119,36 @@ const MetabolicExplorationGame = () => {
               <div class={styles.functionProfile}>
                 <h3>Primary Resonance</h3>
                 <div class={styles.primaryFunction}>
-                  {interpretProfile().primary[0]}:{' '}
-                  {interpretProfile().functionDesc[interpretProfile().primary[0]]}
+                  <span class={styles.functionLabel}>{interpretProfile().primary[0]}</span>
+                  <span class={styles.functionDescription}>
+                    {interpretProfile().functionDesc[interpretProfile().primary[0]]}
+                  </span>
                 </div>
                 <div class={styles.secondaryFunction}>
-                  Supporting: {interpretProfile().secondary[0]} -{' '}
-                  {interpretProfile().functionDesc[interpretProfile().secondary[0]]}
+                  <span class={styles.secondaryLabel}>Supporting:</span>
+                  <span class={styles.functionLabel}>{interpretProfile().secondary[0]}</span>
+                  <span class={styles.functionDescription}>
+                    {interpretProfile().functionDesc[interpretProfile().secondary[0]]}
+                  </span>
                 </div>
               </div>
 
               <div class={styles.dynamicProfile}>
-                <h3>Metabolic Pattern</h3>
-                <div class={styles.primaryDynamic}>
-                  Your cognitive metabolism tends toward{' '}
-                  <strong>{interpretProfile().dynamic[0]}</strong>:
-                  {interpretProfile().dynamicDesc[interpretProfile().dynamic[0]]}
+                <h3 class={styles.dynamicTitle}>
+                  Metabolic Pattern:{' '}
+                  <span class={styles.dynamicName}>{interpretProfile().dynamic[0]}</span>
+                </h3>
+                <div class={styles.dynamicResult}>
+                  {interpretProfile().results[interpretProfile().dynamic[0]]}
                 </div>
-              </div>
-
-              <div class={styles.interpretation}>
-                <p>
-                  Your responses reveal a mind that navigates reality through{' '}
-                  {interpretProfile().functionDesc[interpretProfile().primary[0]]}, while{' '}
-                  {interpretProfile().dynamicDesc[interpretProfile().dynamic[0]]}. This creates a
-                  unique cognitive signature that shapes how you process experience and make
-                  meaning.
-                </p>
               </div>
             </div>
 
-            <button onClick={resetGame} class={styles.resetButton}>
-              Explore Again
-            </button>
+            <div class={styles.actionContainer}>
+              <button onClick={resetGame} class={styles.resetButton}>
+                Explore Again
+              </button>
+            </div>
           </div>
         }
       >
