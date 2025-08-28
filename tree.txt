@@ -2,16 +2,13 @@ harpernet.org
 ├───.env.sample
 ├───.gitignore
 ├───.prettierrc
-├───BROTHER_TYPES_IMPLEMENTATION.md
 ├───CHANGELOG.md
-├───check-files.sh
 ├───ecosystem.config.js
 ├───index.html
 ├───LICENSE
 ├───package-lock.json
 ├───package.json
 ├───README.md
-├───test_brother_types.sh
 ├───tree.txt
 ├───vercel.json
 ├───vite.config.js
@@ -37,10 +34,6 @@ harpernet.org
 │       ├───pre-push
 │       ├───pre-rebase
 │       └───prepare-commit-msg
-├───logs/
-│   ├───error-1.log
-│   ├───git.log
-│   └───out-1.log
 ├───public/
 │   ├───.htaccess
 │   ├───404.html
@@ -71,6 +64,8 @@ harpernet.org
 │   │   ├───Footer.module.css
 │   │   ├───Header.jsx
 │   │   ├───Header.module.css
+│   │   ├───HomePage.jsx
+│   │   ├───HomePage.module.css
 │   │   ├───MetabolicExplorationGame.jsx
 │   │   ├───MetabolicExplorationGame.module.css
 │   │   ├───MetabolicPrinciples.jsx
@@ -78,6 +73,8 @@ harpernet.org
 │   │   ├───NavLink.jsx
 │   │   ├───Relationships.jsx
 │   │   ├───Relationships.module.css
+│   │   ├───Research.jsx
+│   │   ├───Research.module.css
 │   │   ├───SisterTypes.jsx
 │   │   ├───SisterTypes.module.css
 │   │   ├───ThemeToggle.jsx
@@ -90,9 +87,12 @@ harpernet.org
 │   │   ├───brotherTypes.json
 │   │   ├───cognitiveFunctions.json
 │   │   ├───cognitiveFunctionsDetailed.json
+│   │   ├───curatedSources.json
+│   │   ├───homeDescriptions.json
 │   │   ├───jungianFramework.json
 │   │   ├───metabolicGameData.json
 │   │   ├───metabolicPrinciples.json
+│   │   ├───rawSources.json
 │   │   ├───relationships.json
 │   │   ├───relationshipsEnhanced.json
 │   │   └───sisterTypes.json
@@ -101,9 +101,11 @@ harpernet.org
 │   │   ├───BrotherTypesPage.jsx
 │   │   ├───CognitiveFunctionsDetailedPage.jsx
 │   │   ├───CognitiveFunctionsPage.jsx
+│   │   ├───HomePage.jsx
 │   │   ├───MetabolicGamePage.jsx
 │   │   ├───MetabolicPrinciplesPage.jsx
 │   │   ├───RelationshipsPage.jsx
+│   │   ├───ResearchPage.jsx
 │   │   └───SisterTypesPage.jsx
 │   └───styles/
 │       └───theme.css
