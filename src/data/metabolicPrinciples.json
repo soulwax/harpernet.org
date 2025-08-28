@@ -129,12 +129,7 @@
     "judgment": {
       "name": "Judgment",
       "description": "A process of differentiation, whether it be true from false, right from wrong, good from bad, effective from ineffective, or any other dichotomy. The Judgment functions (Ti, Fi, Te, Fe) operate on the principle of reason, to make rational distinctions between objects or actions. Judgment splits up reality, labeling elements into these ideal categories by their properties, according to a personal criteria of judgment.",
-      "functions": [
-        "Ti",
-        "Fi",
-        "Te",
-        "Fe"
-      ],
+      "functions": ["Ti", "Fi", "Te", "Fe"],
       "principle": "Reason and differentiation",
       "source": "Jung: 'Thinking enables us to recognize its meaning... feeling tells us its value' (CW 6, ¶958)",
       "neurobiologicalBasis": "Judgment functions engage executive control regions, dorsolateral prefrontal cortex for thinking, and ventromedial regions for feeling-based evaluation. Decision-making networks show enhanced connectivity during judgment processing."
@@ -142,12 +137,7 @@
     "perception": {
       "name": "Perception",
       "description": "A spatiotemporal process which gathers and archives graphical (non-semantic) information by the manner in which the information streams into the mind and is naturally associated. Perception does not differentiate between datasets according to any rational frameworks, but instead sees the organic starts and ends of datasets based on their volumetric limits.",
-      "functions": [
-        "Se",
-        "Si",
-        "Ne",
-        "Ni"
-      ],
+      "functions": ["Se", "Si", "Ne", "Ni"],
       "principle": "Spatiotemporal information gathering",
       "source": "Jung: 'Sensation establishes what is actually present... intuition points to possibilities as to whence it came and whither it is going in a given situation' (CW 6, ¶958)",
       "neurobiologicalBasis": "Perception functions activate sensory processing networks, attention networks, and pattern recognition systems. Extraverted perception correlates with external attention networks while introverted perception engages default mode network processing."
@@ -342,10 +332,7 @@
     "dynamics": {
       "revision": {
         "name": "Revision (Ji+Pe)",
-        "functions": [
-          "Ji",
-          "Pe"
-        ],
+        "functions": ["Ji", "Pe"],
         "description": "A cycle between essence-delineation (Ji) and continual re-exploration (Pe). While Ji aims to provide conclusiveness about the essential nature of things, Pe provides an ongoing feed of alternative information, which compels Ji to recalibrate its conclusions.",
         "example": "Writing the perfect (Ji) essay, but continually finding different ways (Pe) to phrase a sentence",
         "outcomes": {
@@ -363,10 +350,7 @@
       },
       "conducting": {
         "name": "Conducting (Je+Pi)",
-        "functions": [
-          "Je",
-          "Pi"
-        ],
+        "functions": ["Je", "Pi"],
         "description": "A cycle between causal dynamics (Je) and territory-mapping (Pi). As Pi builds and archives a map of the environment, this map enables Je to have uninterrupted movement forward, avoiding obstacles.",
         "example": "Running for office (Je) from a holistic platform (Pi) that is dependable and unwavering",
         "outcomes": {
@@ -384,10 +368,7 @@
       },
       "density": {
         "name": "Density (Ji+Pi)",
-        "functions": [
-          "Ji",
-          "Pi"
-        ],
+        "functions": ["Ji", "Pi"],
         "description": "A cycle between essence-delineation (Ji) and territory-mapping (Pi), both of which further concentrate existing contents without branching outward. Information gets more internally nuanced and specific with each cycle.",
         "example": "Biblical scholarship uncovering more information from the same scriptures through comparative analysis",
         "outcomes": {
@@ -405,10 +386,7 @@
       },
       "expansion": {
         "name": "Expansion (Pe+Je)",
-        "functions": [
-          "Pe",
-          "Je"
-        ],
+        "functions": ["Pe", "Je"],
         "description": "A cycle between gathering information (Pe) and immediately executing on that data (Je), without pausing to condense the data. Information comes in and actions come right out without inhibition.",
         "mechanism": "Bypassing mental blocks for high-speed output",
         "outcomes": {
@@ -470,16 +448,8 @@
   "quadras": {
     "Alpha": {
       "name": "Alpha: Diplomatic-Ephemeralists",
-      "axes": [
-        "Ti/Fe",
-        "Ne/Si"
-      ],
-      "types": [
-        "TiNe",
-        "NeTi",
-        "FeSi",
-        "SiFe"
-      ],
+      "axes": ["Ti/Fe", "Ne/Si"],
+      "types": ["TiNe", "NeTi", "FeSi", "SiFe"],
       "dynamics": {
         "primary": {
           "diplomatic": "Fe+Si - Harmonious relationship management based on proven principles",
@@ -511,16 +481,8 @@
     },
     "Beta": {
       "name": "Beta: Sectarian-Sensationalists",
-      "axes": [
-        "Ti/Fe",
-        "Se/Ni"
-      ],
-      "types": [
-        "TiSe",
-        "SeTi",
-        "FeNi",
-        "NiFe"
-      ],
+      "axes": ["Ti/Fe", "Se/Ni"],
+      "types": ["TiSe", "SeTi", "FeNi", "NiFe"],
       "dynamics": {
         "primary": {
           "sectarian": "Fe+Ni - Group cohesion around shared vision and strategic purpose",
@@ -552,16 +514,8 @@
     },
     "Gamma": {
       "name": "Gamma: Pragmatic-Individualists",
-      "axes": [
-        "Fi/Te",
-        "Se/Ni"
-      ],
-      "types": [
-        "FiSe",
-        "SeFi",
-        "TeNi",
-        "NiTe"
-      ],
+      "axes": ["Fi/Te", "Se/Ni"],
+      "types": ["FiSe", "SeFi", "TeNi", "NiTe"],
       "dynamics": {
         "primary": {
           "pragmatic": "Te+Se - Efficient implementation through direct environmental engagement",
@@ -593,16 +547,8 @@
     },
     "Delta": {
       "name": "Delta: Synergistic-Stabilizers",
-      "axes": [
-        "Fi/Te",
-        "Ne/Si"
-      ],
-      "types": [
-        "FiNe",
-        "NeFi",
-        "TeSi",
-        "SiTe"
-      ],
+      "axes": ["Fi/Te", "Ne/Si"],
+      "types": ["FiNe", "NeFi", "TeSi", "SiTe"],
       "dynamics": {
         "primary": {
           "synergistic": "Te+Ne - Collaborative innovation and systematic possibility exploration",

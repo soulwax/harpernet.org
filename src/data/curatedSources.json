@@ -1,279 +1,278 @@
-// File: src/data/curatedSources.json
 {
-    "researchFoundation": {
-        "title": "Academic Research Foundation",
-        "subtitle": "Jungian differential psychology, impasse and solutions backed by evidence based methods",
-        "totalSources": 131,
-        "categories": [
-            {
-                "id": "jungian-foundations",
-                "title": "Jungian Foundations & Psychological Types",
-                "description": "Original works by Carl Jung and foundational texts on psychological types theory",
-                "icon": "🏛️",
-                "color": "#8B4513",
-                "sources": [
-                    {
-                        "id": 1,
-                        "title": "Psychological Types - Wikipedia",
-                        "url": "https://en.wikipedia.org/wiki/Psychological_Types",
-                        "description": "Comprehensive overview of Jung's seminal 1921 work on psychological types and cognitive functions",
-                        "type": "encyclopedia",
-                        "year": "1921/2024"
-                    },
-                    {
-                        "id": 2,
-                        "title": "Carl Jung - Simply Psychology",
-                        "url": "https://www.simplypsychology.org/carl-jung.html",
-                        "description": "Educational overview of Jung's key contributions to analytical psychology",
-                        "type": "educational",
-                        "year": "2024"
-                    },
-                    {
-                        "id": 3,
-                        "title": "Jung Psychology: Psychological Types",
-                        "url": "https://chmc-dubai.com/articles/jung-psychology-psychological-types/",
-                        "description": "Clinical perspective on Jung's psychological types in therapeutic practice",
-                        "type": "clinical",
-                        "year": "2024"
-                    },
-                    {
-                        "id": 4,
-                        "title": "Thinking, Feeling, Sensing, Intuition - Jung",
-                        "url": "https://personalityjunkie.com/04/thinking-feeling-sensing-intuition-jung/",
-                        "description": "Deep dive into Jung's four psychological functions and their dynamics",
-                        "type": "educational",
-                        "year": "2024"
-                    },
-                    {
-                        "id": 90,
-                        "title": "Psychological Types - Scribd Document",
-                        "url": "https://de.scribd.com/document/57136859/Psychological-Types",
-                        "description": "Full text access to Jung's original 1921 Psychological Types work",
-                        "type": "primary source",
-                        "year": "1921"
-                    }
-                ]
-            },
-            {
-                "id": "neuroscience-validation",
-                "title": "Neuroscience & Brain Network Research",
-                "description": "Modern brain imaging and neuroscience studies validating Jungian cognitive frameworks",
-                "icon": "🧠",
-                "color": "#FF6B6B",
-                "sources": [
-                    {
-                        "id": 10,
-                        "title": "Default Mode Network - Wikipedia",
-                        "url": "https://en.wikipedia.org/wiki/Default_mode_network",
-                        "description": "Comprehensive overview of the brain's default mode network and its role in self-referential processing",
-                        "type": "encyclopedia",
-                        "year": "2024"
-                    },
-                    {
-                        "id": 11,
-                        "title": "Nature Neuroscience: Brain Network Dynamics",
-                        "url": "https://www.nature.com/articles/s41593-024-01868-0",
-                        "description": "Cutting-edge research on brain network dynamics and cognitive processing patterns",
-                        "type": "peer-reviewed",
-                        "year": "2024"
-                    },
-                    {
-                        "id": 12,
-                        "title": "Nature Communications: Neural Networks",
-                        "url": "https://www.nature.com/articles/s42003-025-07470-9",
-                        "description": "Latest findings in neural network topology and information processing",
-                        "type": "peer-reviewed",
-                        "year": "2025"
-                    },
-                    {
-                        "id": 91,
-                        "title": "Human Brain Default Mode Network - Medical Xpress",
-                        "url": "https://medicalxpress.com/news/2025-02-human-brain-default-mode-network.html",
-                        "description": "Recent breakthrough research on the default mode network's role in personality and cognition",
-                        "type": "research news",
-                        "year": "2025"
-                    }
-                ]
-            },
-            {
-                "id": "information-metabolism",
-                "title": "Information Metabolism Theory",
-                "description": "Kępiński's information metabolism framework and its integration with Jungian psychology",
-                "icon": "⚡",
-                "color": "#4ECDC4",
-                "sources": [
-                    {
-                        "id": 15,
-                        "title": "Information Metabolism - Wikipedia",
-                        "url": "https://en.wikipedia.org/wiki/Information_metabolism",
-                        "description": "Overview of Kępiński's information metabolism theory and its psychological applications",
-                        "type": "encyclopedia",
-                        "year": "2024"
-                    },
-                    {
-                        "id": 16,
-                        "title": "Kępiński's Information Metabolism Research",
-                        "url": "https://securitydimensions.publisherspanel.com/api/files/view/1284530.pdf",
-                        "description": "Academic analysis of Kępiński's information processing model and its therapeutic implications",
-                        "type": "academic paper",
-                        "year": "2024"
-                    },
-                    {
-                        "id": 78,
-                        "title": "OpenSocionics: Information Metabolism",
-                        "url": "https://opensocionics.gitbook.io/opensocionics/information-metabolism",
-                        "description": "Comprehensive guide to information metabolism in personality typology systems",
-                        "type": "educational resource",
-                        "year": "2024"
-                    }
-                ]
-            },
-            {
-                "id": "brain-imaging",
-                "title": "Brain Imaging & Neuroimaging",
-                "description": "fMRI, EEG, and advanced neuroimaging studies revealing cognitive function patterns",
-                "icon": "🔬",
-                "color": "#9B59B6",
-                "sources": [
-                    {
-                        "id": 20,
-                        "title": "Exploring Brain Imaging Techniques",
-                        "url": "https://www.neuroelectrics.com/blog/exploring-brain-imaging-techniques-eeg-mri-nirs-and-pet",
-                        "description": "Comprehensive overview of modern brain imaging methods: EEG, MRI, NIRS, and PET",
-                        "type": "technical review",
-                        "year": "2024"
-                    },
-                    {
-                        "id": 61,
-                        "title": "Neuroimaging - Simply Psychology",
-                        "url": "https://www.simplypsychology.org/neuroimaging.html",
-                        "description": "Educational guide to neuroimaging techniques and their applications in psychology",
-                        "type": "educational",
-                        "year": "2024"
-                    },
-                    {
-                        "id": 77,
-                        "title": "Brain Scanning Techniques PDF",
-                        "url": "https://psicoterapiabilbao.es/wp-content/uploads/2015/12/Brain_scanning_techniques.pdf",
-                        "description": "Technical manual on brain scanning methodologies and interpretation",
-                        "type": "technical manual",
-                        "year": "2015"
-                    }
-                ]
-            },
-            {
-                "id": "clinical-applications",
-                "title": "Clinical & Therapeutic Applications",
-                "description": "Clinical studies and therapeutic applications of Jungian typology in mental health",
-                "icon": "🏥",
-                "color": "#E74C3C",
-                "sources": [
-                    {
-                        "id": 128,
-                        "title": "Mayo Clinic: Personality Disorders",
-                        "url": "https://www.mayoclinic.org/diseases-conditions/personality-disorders/diagnosis-treatment/drc-20354468",
-                        "description": "Clinical guide to personality disorder diagnosis and treatment approaches",
-                        "type": "clinical guide",
-                        "year": "2024"
-                    },
-                    {
-                        "id": 129,
-                        "title": "Clinical Neuropsychology",
-                        "url": "https://clinical-neuropsychology.de/english-home/",
-                        "description": "Clinical applications of neuropsychological assessment and intervention",
-                        "type": "clinical resource",
-                        "year": "2024"
-                    }
-                ]
-            },
-            {
-                "id": "empirical-validation",
-                "title": "Empirical Research & Validation",
-                "description": "Peer-reviewed studies testing and validating Jung's psychological type theory",
-                "icon": "📊",
-                "color": "#F39C12",
-                "sources": [
-                    {
-                        "id": 80,
-                        "title": "Empirical Evaluation of Jung's Psychological Types",
-                        "url": "https://advance.sagepub.com/articles/preprint/AN_EMPIRICAL_EVALUATION_OF_JUNG_S_PSYCHOLOGICAL_TYPES/12668573",
-                        "description": "Comprehensive empirical study testing Jung's psychological type predictions",
-                        "type": "empirical study",
-                        "year": "2024"
-                    },
-                    {
-                        "id": 82,
-                        "title": "British Psychological Society Research",
-                        "url": "https://explore.bps.org.uk/lookup/doi/10.53841/bpspsr.2019.1.63.32",
-                        "description": "BPS-published research on personality psychology and typological systems",
-                        "type": "peer-reviewed",
-                        "year": "2019"
-                    }
-                ]
-            }
-        ],
-        "researchHighlights": [
-            {
-                "metric": "131+",
-                "label": "Research Sources",
-                "description": "Peer-reviewed studies and academic sources"
-            },
-            {
-                "metric": "25+",
-                "label": "Nature Publications",
-                "description": "Studies from Nature, Nature Neuroscience, etc."
-            },
-            {
-                "metric": "45+",
-                "label": "PubMed Articles",
-                "description": "Medical and psychological research papers"
-            },
-            {
-                "metric": "15+",
-                "label": "Neuroimaging Studies",
-                "description": "fMRI, EEG, and brain network research"
-            }
+  "researchFoundation": {
+    "title": "Academic Research Foundation",
+    "subtitle": "Jungian differential psychology, impasse and solutions backed by evidence based methods",
+    "totalSources": 131,
+    "categories": [
+      {
+        "id": "jungian-foundations",
+        "title": "Jungian Foundations & Psychological Types",
+        "description": "Original works by Carl Jung and foundational texts on psychological types theory",
+        "icon": "🏛️",
+        "color": "#8B4513",
+        "sources": [
+          {
+            "id": 1,
+            "title": "Psychological Types - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Psychological_Types",
+            "description": "Comprehensive overview of Jung's seminal 1921 work on psychological types and cognitive functions",
+            "type": "encyclopedia",
+            "year": "1921/2024"
+          },
+          {
+            "id": 2,
+            "title": "Carl Jung - Simply Psychology",
+            "url": "https://www.simplypsychology.org/carl-jung.html",
+            "description": "Educational overview of Jung's key contributions to analytical psychology",
+            "type": "educational",
+            "year": "2024"
+          },
+          {
+            "id": 3,
+            "title": "Jung Psychology: Psychological Types",
+            "url": "https://chmc-dubai.com/articles/jung-psychology-psychological-types/",
+            "description": "Clinical perspective on Jung's psychological types in therapeutic practice",
+            "type": "clinical",
+            "year": "2024"
+          },
+          {
+            "id": 4,
+            "title": "Thinking, Feeling, Sensing, Intuition - Jung",
+            "url": "https://personalityjunkie.com/04/thinking-feeling-sensing-intuition-jung/",
+            "description": "Deep dive into Jung's four psychological functions and their dynamics",
+            "type": "educational",
+            "year": "2024"
+          },
+          {
+            "id": 90,
+            "title": "Psychological Types - Scribd Document",
+            "url": "https://de.scribd.com/document/57136859/Psychological-Types",
+            "description": "Full text access to Jung's original 1921 Psychological Types work",
+            "type": "primary source",
+            "year": "1921"
+          }
         ]
-    },
-    "methodology": {
-        "title": "Research Methodology",
-        "description": "Our multi-disciplinary approach integrates historical analysis, modern neuroscience, and clinical validation",
-        "approaches": [
-            {
-                "title": "Historical Analysis",
-                "description": "Deep examination of Jung's original 1921 work and subsequent developments in analytical psychology",
-                "icon": "📚"
-            },
-            {
-                "title": "Neuroscientific Validation",
-                "description": "Integration of modern brain imaging studies, network analysis, and cognitive neuroscience research",
-                "icon": "🧬"
-            },
-            {
-                "title": "Clinical Integration",
-                "description": "Synthesis of therapeutic applications, personality disorder research, and treatment modalities",
-                "icon": "🩺"
-            },
-            {
-                "title": "Cross-Cultural Validation",
-                "description": "Examination of typological patterns across different cultures and linguistic contexts",
-                "icon": "🌍"
-            }
+      },
+      {
+        "id": "neuroscience-validation",
+        "title": "Neuroscience & Brain Network Research",
+        "description": "Modern brain imaging and neuroscience studies validating Jungian cognitive frameworks",
+        "icon": "🧠",
+        "color": "#FF6B6B",
+        "sources": [
+          {
+            "id": 10,
+            "title": "Default Mode Network - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Default_mode_network",
+            "description": "Comprehensive overview of the brain's default mode network and its role in self-referential processing",
+            "type": "encyclopedia",
+            "year": "2024"
+          },
+          {
+            "id": 11,
+            "title": "Nature Neuroscience: Brain Network Dynamics",
+            "url": "https://www.nature.com/articles/s41593-024-01868-0",
+            "description": "Cutting-edge research on brain network dynamics and cognitive processing patterns",
+            "type": "peer-reviewed",
+            "year": "2024"
+          },
+          {
+            "id": 12,
+            "title": "Nature Communications: Neural Networks",
+            "url": "https://www.nature.com/articles/s42003-025-07470-9",
+            "description": "Latest findings in neural network topology and information processing",
+            "type": "peer-reviewed",
+            "year": "2025"
+          },
+          {
+            "id": 91,
+            "title": "Human Brain Default Mode Network - Medical Xpress",
+            "url": "https://medicalxpress.com/news/2025-02-human-brain-default-mode-network.html",
+            "description": "Recent breakthrough research on the default mode network's role in personality and cognition",
+            "type": "research news",
+            "year": "2025"
+          }
         ]
-    },
-    "credibility": {
-        "title": "Academic Credibility",
-        "statement": "This platform is grounded in peer-reviewed research from leading academic institutions, medical journals, and psychological organizations worldwide. Our sources include publications from Nature, PubMed, Frontiers in Psychology, MIT Press, and major universities.",
-        "institutionalSources": [
-            "Nature Publishing Group",
-            "PubMed/NCBI",
-            "MIT Press",
-            "Frontiers Media",
-            "Springer Nature",
-            "Oxford Academic",
-            "Cambridge University Press",
-            "Mayo Clinic",
-            "British Psychological Society"
+      },
+      {
+        "id": "information-metabolism",
+        "title": "Information Metabolism Theory",
+        "description": "Kępiński's information metabolism framework and its integration with Jungian psychology",
+        "icon": "⚡",
+        "color": "#4ECDC4",
+        "sources": [
+          {
+            "id": 15,
+            "title": "Information Metabolism - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Information_metabolism",
+            "description": "Overview of Kępiński's information metabolism theory and its psychological applications",
+            "type": "encyclopedia",
+            "year": "2024"
+          },
+          {
+            "id": 16,
+            "title": "Kępiński's Information Metabolism Research",
+            "url": "https://securitydimensions.publisherspanel.com/api/files/view/1284530.pdf",
+            "description": "Academic analysis of Kępiński's information processing model and its therapeutic implications",
+            "type": "academic paper",
+            "year": "2024"
+          },
+          {
+            "id": 78,
+            "title": "OpenSocionics: Information Metabolism",
+            "url": "https://opensocionics.gitbook.io/opensocionics/information-metabolism",
+            "description": "Comprehensive guide to information metabolism in personality typology systems",
+            "type": "educational resource",
+            "year": "2024"
+          }
         ]
-    }
+      },
+      {
+        "id": "brain-imaging",
+        "title": "Brain Imaging & Neuroimaging",
+        "description": "fMRI, EEG, and advanced neuroimaging studies revealing cognitive function patterns",
+        "icon": "🔬",
+        "color": "#9B59B6",
+        "sources": [
+          {
+            "id": 20,
+            "title": "Exploring Brain Imaging Techniques",
+            "url": "https://www.neuroelectrics.com/blog/exploring-brain-imaging-techniques-eeg-mri-nirs-and-pet",
+            "description": "Comprehensive overview of modern brain imaging methods: EEG, MRI, NIRS, and PET",
+            "type": "technical review",
+            "year": "2024"
+          },
+          {
+            "id": 61,
+            "title": "Neuroimaging - Simply Psychology",
+            "url": "https://www.simplypsychology.org/neuroimaging.html",
+            "description": "Educational guide to neuroimaging techniques and their applications in psychology",
+            "type": "educational",
+            "year": "2024"
+          },
+          {
+            "id": 77,
+            "title": "Brain Scanning Techniques PDF",
+            "url": "https://psicoterapiabilbao.es/wp-content/uploads/2015/12/Brain_scanning_techniques.pdf",
+            "description": "Technical manual on brain scanning methodologies and interpretation",
+            "type": "technical manual",
+            "year": "2015"
+          }
+        ]
+      },
+      {
+        "id": "clinical-applications",
+        "title": "Clinical & Therapeutic Applications",
+        "description": "Clinical studies and therapeutic applications of Jungian typology in mental health",
+        "icon": "🏥",
+        "color": "#E74C3C",
+        "sources": [
+          {
+            "id": 128,
+            "title": "Mayo Clinic: Personality Disorders",
+            "url": "https://www.mayoclinic.org/diseases-conditions/personality-disorders/diagnosis-treatment/drc-20354468",
+            "description": "Clinical guide to personality disorder diagnosis and treatment approaches",
+            "type": "clinical guide",
+            "year": "2024"
+          },
+          {
+            "id": 129,
+            "title": "Clinical Neuropsychology",
+            "url": "https://clinical-neuropsychology.de/english-home/",
+            "description": "Clinical applications of neuropsychological assessment and intervention",
+            "type": "clinical resource",
+            "year": "2024"
+          }
+        ]
+      },
+      {
+        "id": "empirical-validation",
+        "title": "Empirical Research & Validation",
+        "description": "Peer-reviewed studies testing and validating Jung's psychological type theory",
+        "icon": "📊",
+        "color": "#F39C12",
+        "sources": [
+          {
+            "id": 80,
+            "title": "Empirical Evaluation of Jung's Psychological Types",
+            "url": "https://advance.sagepub.com/articles/preprint/AN_EMPIRICAL_EVALUATION_OF_JUNG_S_PSYCHOLOGICAL_TYPES/12668573",
+            "description": "Comprehensive empirical study testing Jung's psychological type predictions",
+            "type": "empirical study",
+            "year": "2024"
+          },
+          {
+            "id": 82,
+            "title": "British Psychological Society Research",
+            "url": "https://explore.bps.org.uk/lookup/doi/10.53841/bpspsr.2019.1.63.32",
+            "description": "BPS-published research on personality psychology and typological systems",
+            "type": "peer-reviewed",
+            "year": "2019"
+          }
+        ]
+      }
+    ],
+    "researchHighlights": [
+      {
+        "metric": "131+",
+        "label": "Research Sources",
+        "description": "Peer-reviewed studies and academic sources"
+      },
+      {
+        "metric": "25+",
+        "label": "Nature Publications",
+        "description": "Studies from Nature, Nature Neuroscience, etc."
+      },
+      {
+        "metric": "45+",
+        "label": "PubMed Articles",
+        "description": "Medical and psychological research papers"
+      },
+      {
+        "metric": "15+",
+        "label": "Neuroimaging Studies",
+        "description": "fMRI, EEG, and brain network research"
+      }
+    ]
+  },
+  "methodology": {
+    "title": "Research Methodology",
+    "description": "Our multi-disciplinary approach integrates historical analysis, modern neuroscience, and clinical validation",
+    "approaches": [
+      {
+        "title": "Historical Analysis",
+        "description": "Deep examination of Jung's original 1921 work and subsequent developments in analytical psychology",
+        "icon": "📚"
+      },
+      {
+        "title": "Neuroscientific Validation",
+        "description": "Integration of modern brain imaging studies, network analysis, and cognitive neuroscience research",
+        "icon": "🧬"
+      },
+      {
+        "title": "Clinical Integration",
+        "description": "Synthesis of therapeutic applications, personality disorder research, and treatment modalities",
+        "icon": "🩺"
+      },
+      {
+        "title": "Cross-Cultural Validation",
+        "description": "Examination of typological patterns across different cultures and linguistic contexts",
+        "icon": "🌍"
+      }
+    ]
+  },
+  "credibility": {
+    "title": "Academic Credibility",
+    "statement": "This platform is grounded in peer-reviewed research from leading academic institutions, medical journals, and psychological organizations worldwide. Our sources include publications from Nature, PubMed, Frontiers in Psychology, MIT Press, and major universities.",
+    "institutionalSources": [
+      "Nature Publishing Group",
+      "PubMed/NCBI",
+      "MIT Press",
+      "Frontiers Media",
+      "Springer Nature",
+      "Oxford Academic",
+      "Cambridge University Press",
+      "Mayo Clinic",
+      "British Psychological Society"
+    ]
+  }
 }
