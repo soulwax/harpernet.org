@@ -743,7 +743,7 @@
           "text": "The intersection that keeps questioning whether it should exist at all",
           "weights": {
             "Ti": 2,
-            "Pe": 1,
+            "Ne": 1,
             "revision": 3
           }
         },
@@ -1884,6 +1884,474 @@
             "Ne": 3,
             "Ti": 1,
             "expansion": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "parliament-of-mirrors",
+      "scenario": "In a parliament where mirrors debate their reflections, each mirror argues for a different understanding of what reality means.",
+      "prompt": "Which mirror's argument do you find most compelling?",
+      "choices": [
+        {
+          "text": "The mirror that reflects only the internal logic of its own surface",
+          "weights": {
+            "Ti": 3,
+            "Pi": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The mirror that multiplies every reflection into infinite perspectives",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The mirror that organizes all reflections into hierarchical clarity",
+          "weights": {
+            "Te": 3,
+            "Je": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The mirror that harmonizes every reflection into collective truth",
+          "weights": {
+            "Fe": 3,
+            "Je": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "observatory-of-intervals",
+      "scenario": "Astronomers study not stars, but the intervals between moments of significance. Each gap holds different forms of anticipation.",
+      "prompt": "Which interval do you choose to observe?",
+      "choices": [
+        {
+          "text": "The interval that contains all possible outcomes in quantum superposition",
+          "weights": {
+            "Ne": 3,
+            "Ni": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The interval that preserves the exact texture of what came before",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The interval that calculates the optimal moment for action",
+          "weights": {
+            "Te": 3,
+            "Ni": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The interval that pulses with shared anticipation",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "conductor-of-contradictions",
+      "scenario": "An orchestra plays only contradictions - each instrument represents paradoxes that refuse to resolve into harmony.",
+      "prompt": "Which section do you conduct with greatest intensity?",
+      "choices": [
+        {
+          "text": "The brass section that announces truths that negate themselves",
+          "weights": {
+            "Ti": 3,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The strings that weave emotional paradoxes into unified dissonance",
+          "weights": {
+            "Fi": 3,
+            "Fe": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The percussion that drives contradictions toward inevitable resolution",
+          "weights": {
+            "Te": 3,
+            "Se": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The winds that scatter paradoxes into atmospheric confusion",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "tribunal-of-flavors",
+      "scenario": "A cosmic tribunal judges not crimes, but tastes that have never been experienced. Each judge applies different criteria for what constitutes flavor.",
+      "prompt": "Under which judge's authority do you place your case?",
+      "choices": [
+        {
+          "text": "The judge who evaluates taste by its internal consistency and logical structure",
+          "weights": {
+            "Ti": 3,
+            "Ji": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The judge who considers how the taste serves the community's needs",
+          "weights": {
+            "Fe": 3,
+            "Te": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The judge who explores every possible variation the taste might become",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The judge who measures taste against the pure standard of what it should be",
+          "weights": {
+            "Fi": 3,
+            "Ni": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "cartographers-of-confusion",
+      "scenario": "Mapmakers chart territories of bewilderment, where getting lost is the only way to arrive. Each map uses different principles of disorientation.",
+      "prompt": "Which map do you trust to lose you properly?",
+      "choices": [
+        {
+          "text": "The map that systematically categorizes different types of confusion",
+          "weights": {
+            "Ti": 2,
+            "Si": 2,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The map that transforms every wrong turn into productive action",
+          "weights": {
+            "Te": 3,
+            "Se": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The map that makes confusion feel like coming home",
+          "weights": {
+            "Fi": 3,
+            "Pe": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The map that connects all confusions into a single, beautiful maze",
+          "weights": {
+            "Ni": 3,
+            "Fe": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "archaeologist-of-unspoken-words",
+      "scenario": "In ruins of conversations that never happened, an archaeologist unearths the remains of things nobody ever said.",
+      "prompt": "Which excavation site do you fund?",
+      "choices": [
+        {
+          "text": "The site where silence preserved perfect logical arguments",
+          "weights": {
+            "Ti": 3,
+            "Ni": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The site where unspoken words formed communities of shared understanding",
+          "weights": {
+            "Fe": 3,
+            "Si": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The site where every unspoken word spawned ten possible conversations",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The site where silence held the deepest personal truths",
+          "weights": {
+            "Fi": 3,
+            "Pi": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "philosopher-of-falling",
+      "scenario": "A philosopher studies only things in the act of falling, claiming that descent reveals the true nature of existence.",
+      "prompt": "Which falling object becomes your primary text?",
+      "choices": [
+        {
+          "text": "The leaf that calculates its optimal trajectory as it falls",
+          "weights": {
+            "Te": 2,
+            "Ti": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The stone that falls with perfect acceptance of its fate",
+          "weights": {
+            "Fi": 3,
+            "Si": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The feather that discovers new ways to fall with each gust of wind",
+          "weights": {
+            "Ne": 3,
+            "Se": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The raindrop that falls in harmony with the entire storm",
+          "weights": {
+            "Fe": 3,
+            "Ni": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "university-of-mistakes",
+      "scenario": "At a university where only errors are studied, different departments specialize in particular types of wrongness. You must choose your major.",
+      "prompt": "Which department of wrongness calls to you?",
+      "choices": [
+        {
+          "text": "Department of Logical Errors - studying the internal structure of flawed reasoning",
+          "weights": {
+            "Ti": 3,
+            "Pi": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "Department of Strategic Errors - analyzing mistakes that prevented goal achievement",
+          "weights": {
+            "Te": 3,
+            "Se": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "Department of Creative Errors - celebrating mistakes that opened new possibilities",
+          "weights": {
+            "Ne": 3,
+            "Fi": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "Department of Relational Errors - understanding mistakes that harm connections",
+          "weights": {
+            "Fe": 3,
+            "Si": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "laboratory-of-missing-pieces",
+      "scenario": "Scientists study objects defined entirely by what's absent from them. Each researcher seeks a different type of incompleteness.",
+      "prompt": "Which research project do you join?",
+      "choices": [
+        {
+          "text": "Studying puzzles that become more complete when pieces are removed",
+          "weights": {
+            "Ni": 3,
+            "Ti": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "Cataloging the precise specifications of every missing element",
+          "weights": {
+            "Si": 3,
+            "Te": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "Generating infinite variations of what the missing pieces might be",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "Feeling the exact shape of absence in your own experience",
+          "weights": {
+            "Fi": 3,
+            "Se": 1,
+            "density": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "embassy-of-extinct-emotions",
+      "scenario": "Diplomats represent feelings that no longer exist in the human experience. Each ambassador speaks for different types of lost sensation.",
+      "prompt": "Which extinct emotion do you petition to have restored?",
+      "choices": [
+        {
+          "text": "The emotion felt when understanding perfectly matches reality",
+          "weights": {
+            "Ti": 3,
+            "Ni": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The emotion of contributing to something greater without losing individuality",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The emotion of experiencing infinite possibilities simultaneously",
+          "weights": {
+            "Ne": 3,
+            "Pe": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The emotion of being completely present in physical existence",
+          "weights": {
+            "Se": 3,
+            "Si": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "council-of-abandoned-questions",
+      "scenario": "Questions that were never fully asked convene to demand proper completion. Each question represents a different style of incompleteness.",
+      "prompt": "Which unfinished question do you volunteer to complete?",
+      "choices": [
+        {
+          "text": "The question that loops back on itself, questioning its own premises",
+          "weights": {
+            "Ti": 3,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The question abandoned because its answer would require immediate action",
+          "weights": {
+            "Te": 3,
+            "Se": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The question that splits into dozens of equally valid sub-questions",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The question too tender to voice, held in silent reverence",
+          "weights": {
+            "Fi": 3,
+            "Si": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "museum-of-almosts",
+      "scenario": "Curators preserve moments that almost achieved significance. Each wing displays different categories of near-completion.",
+      "prompt": "Which wing do you spend the day exploring?",
+      "choices": [
+        {
+          "text": "The wing of insights that almost crystallized into perfect understanding",
+          "weights": {
+            "Ni": 3,
+            "Ti": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The wing of projects that almost reached completion",
+          "weights": {
+            "Te": 3,
+            "Si": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The wing of connections that almost bloomed into infinite possibilities",
+          "weights": {
+            "Ne": 3,
+            "Fe": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The wing of authentic moments that almost broke through pretense",
+          "weights": {
+            "Fi": 3,
+            "Se": 1,
+            "density": 2
           }
         }
       ]
