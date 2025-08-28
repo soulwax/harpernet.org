@@ -66,16 +66,16 @@
         "color": "#607D8B"
       },
       {
-        "title": "Interactive Game",
+        "title": "Interactive & Trippy Quiz",
         "route": "/metabolic-game",
         "description": "Explore cognitive metabolism through a trippy quiz kind of game",
         "icon": "🎮",
         "color": "#795548"
       },
       {
-        "title": "About & Research",
+        "title": "Academic Research",
         "route": "/research",
-        "description": "Academic foundation, research validation, and comprehensive source citations",
+        "description": "Academic foundation, research validation, and source citations",
         "icon": "📚",
         "color": "#455A64"
       },
@@ -117,7 +117,9 @@
           "Jung, C.G. - Psychological Types (1921)",
           "Jung, C.G. - The Structure and Dynamics of the Psyche (1960)",
           "Kępiński, A. - Information Metabolism Theory",
-          "Myers, I.B. - Gifts Differing (1980)"
+          "Myers, I.B. - Gifts Differing (1980)",
+          "The Hero with a Thousand Faces - Joseph Campbell",
+          "Recorded lecutres from Dr. Joseph Campbell"
         ]
       },
       {
@@ -136,6 +138,19 @@
           "Personality disorder correlations",
           "Cognitive development patterns",
           "Cross-cultural validation studies"
+        ]
+      },
+      {
+        "title": "Additional Readings",
+        "items": [
+          "Personality typology critiques",
+          "Alternative models comparison",
+          "Historical context of Jungian psychology",
+          "Contemporary interpretations and adaptations",
+          "Archetypes of the Collective Unconscious - C.G. Jung",
+          "Psychological Types - C.G. Jung",
+          "The Structure and Dynamics of the Psyche - C.G. Jung",
+          "Memories, Dreams, Reflections - C.G. Jung"
         ]
       }
     ]
