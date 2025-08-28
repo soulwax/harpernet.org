@@ -81,6 +81,13 @@
   color: var(--footer-text) !important;
 }
 
+.bottomCitation {
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-top: -1.5rem;
+  color: var(--footer-text) !important;
+}
+
 /* Mobile responsive styles */
 @media (max-width: 768px) {
   .footerContent {

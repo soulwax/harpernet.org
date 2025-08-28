@@ -79,6 +79,8 @@ const Footer = () => {
           }{' '}
           | Licensed under {packageInfo.license}
         </p>
+        <br />
+        <p class={styles.bottomCitation}>Jung did not walk away unchanged. No one ever does.</p>
       </div>
     </footer>
   );
