@@ -1508,6 +1508,786 @@
       ]
     },
     {
+      "id": "whisperer-of-winds",
+      "scenario": "A whisperer captures the secrets carried on the wind, voices from distant places and times.",
+      "prompt": "Which whisper do you ask them to echo?",
+      "choices": [
+        {
+          "text": "The whisper that foretells what will be but has not yet been named",
+          "weights": {
+            "Ni": 3,
+            "Ne": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The whisper that soothes every fear with a single breath",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The whisper that reveals hidden patterns in the chaos",
+          "weights": {
+            "Ti": 2,
+            "Se": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The whisper that carries the memory of a thousand storms",
+          "weights": {
+            "Si": 3,
+            "Se": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "guardian-of-shadows",
+      "scenario": "A guardian stands at the edge of darkness, guiding footsteps without ever revealing the path.",
+      "prompt": "What guidance do you seek?",
+      "choices": [
+        {
+          "text": "The guidance that leads you to truths you refuse to see",
+          "weights": {
+            "Ti": 2,
+            "Ni": 3,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The guidance that unites every wandering soul into one direction",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The guidance that changes each time you understand it",
+          "weights": {
+            "Ne": 3,
+            "Fi": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The guidance that feels like returning home after centuries away",
+          "weights": {
+            "Fi": 3,
+            "Si": 2,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "alchemist-of-silhouettes",
+      "scenario": "An alchemist blends light and shadow to craft shapes that shift with perception.",
+      "prompt": "Which silhouette do you transmute?",
+      "choices": [
+        {
+          "text": "The silhouette that holds every reflection you’ve ever cast",
+          "weights": {
+            "Fe": 2,
+            "Ni": 2,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The silhouette that fractures reality into new possibilities",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The silhouette that remains constant despite every change",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The silhouette that questions its own form with each glance",
+          "weights": {
+            "Ti": 2,
+            "Se": 1,
+            "revision": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "navigator-of-echoes",
+      "scenario": "A navigator maps echoes instead of stars, charting the reverberations of every choice.",
+      "prompt": "Which echo do you follow?",
+      "choices": [
+        {
+          "text": "The echo that returns with the answer you’re afraid to hear",
+          "weights": {
+            "Fi": 3,
+            "Ti": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The echo that amplifies the hopes of those who listen",
+          "weights": {
+            "Fe": 3,
+            "Ne": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The echo that persists long after the source is gone",
+          "weights": {
+            "Si": 3,
+            "Se": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The echo that shifts its meaning each time it’s heard",
+          "weights": {
+            "Ne": 2,
+            "Ni": 1,
+            "expansion": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "painter-of-voids",
+      "scenario": "A painter uses absence as their canvas, filling nothingness with intent.",
+      "prompt": "Which void do you ask them to depict?",
+      "choices": [
+        {
+          "text": "The void that contains every unspoken word",
+          "weights": {
+            "Fi": 3,
+            "Ni": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The void that draws you to step beyond your fears",
+          "weights": {
+            "Se": 3,
+            "Te": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The void that reveals hidden patterns in your mind",
+          "weights": {
+            "Ti": 2,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The void that pulses with untapped potential",
+          "weights": {
+            "Ne": 3,
+            "Fe": 1,
+            "expansion": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "weaver-of-moments",
+      "scenario": "A weaver stitches moments together, crafting tapestries of time.",
+      "prompt": "Which moment do you provide as thread?",
+      "choices": [
+        {
+          "text": "The moment of pure clarity before doubt intervenes",
+          "weights": {
+            "Ti": 3,
+            "Si": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The moment of shared laughter that binds hearts",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The moment of possibility that never fully arrived",
+          "weights": {
+            "Ni": 3,
+            "Ne": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The moment of stillness from which all action emerges",
+          "weights": {
+            "Se": 2,
+            "Ni": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "scribe-of-edges",
+      "scenario": "A scribe records the subtle edges between truths and lies.",
+      "prompt": "Which edge do you ask them to ink?",
+      "choices": [
+        {
+          "text": "The edge where certainty dissolves into question",
+          "weights": {
+            "Ti": 2,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The edge that sharpens understanding with precision",
+          "weights": {
+            "Te": 3,
+            "Si": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The edge that warms with collective empathy",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The edge that refracts every perspective equally",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "architect-of-echoes",
+      "scenario": "An architect builds structures that resonate with every footstep.",
+      "prompt": "Which resonance do you design?",
+      "choices": [
+        {
+          "text": "Resonance that unites voices into a single harmony",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "Resonance that shatters illusions with each vibration",
+          "weights": {
+            "Ti": 2,
+            "Ne": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Resonance that lingers long after the source fades",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "Resonance that shifts meaning as you move through it",
+          "weights": {
+            "Ni": 3,
+            "Te": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "cartographer-of-time",
+      "scenario": "A cartographer draws maps of moments that slip between ticks of a clock.",
+      "prompt": "Which moment do you chart?",
+      "choices": [
+        {
+          "text": "The instant before a decision becomes irreversible",
+          "weights": {
+            "Te": 3,
+            "Ni": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The pause that contains every possible outcome",
+          "weights": {
+            "Ne": 3,
+            "Pi": 2,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The breath that holds complete understanding",
+          "weights": {
+            "Fi": 3,
+            "Si": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The silence that follows the final note",
+          "weights": {
+            "Se": 3,
+            "Ti": 1,
+            "revision": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "tender-of-thoughts",
+      "scenario": "A tender nurtures nascent thoughts until they bloom into ideas.",
+      "prompt": "Which thought do you entrust them with?",
+      "choices": [
+        {
+          "text": "The thought that defies every expectation",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The thought that unites logic and emotion",
+          "weights": {
+            "Fe": 2,
+            "Te": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The thought that hovers between memory and imagination",
+          "weights": {
+            "Ni": 3,
+            "Fi": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The thought that sharpens clarity with each revisit",
+          "weights": {
+            "Si": 3,
+            "Se": 1,
+            "revision": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "harvester-of-ideas",
+      "scenario": "A harvester collects fleeting ideas before they vanish.",
+      "prompt": "Which idea do you harvest?",
+      "choices": [
+        {
+          "text": "The idea that bridges past and future",
+          "weights": {
+            "Ni": 3,
+            "Se": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The idea that sparks collective innovation",
+          "weights": {
+            "Fe": 3,
+            "Ne": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The idea that questions the nature of questions",
+          "weights": {
+            "Ti": 2,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The idea that blossoms only in silence",
+          "weights": {
+            "Fi": 3,
+            "Si": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "butcher-of-moments",
+      "scenario": "A butcher slices through time, offering cuts of memory.",
+      "prompt": "Which cut do you taste?",
+      "choices": [
+        {
+          "text": "The cut that reveals hidden regrets",
+          "weights": {
+            "Fi": 2,
+            "Ni": 2,
+            "density": 3
+          }
+        },
+        {
+          "text": "The cut that nurtures collective courage",
+          "weights": {
+            "Fe": 3,
+            "Te": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The cut that fractures perception into clarity",
+          "weights": {
+            "Ti": 2,
+            "Si": 2,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The cut that pulses with transformative potential",
+          "weights": {
+            "Ne": 3,
+            "Se": 1,
+            "expansion": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "navigator-of-possibilities",
+      "scenario": "A navigator charts paths through potential futures rather than physical space.",
+      "prompt": "Which future do you plot?",
+      "choices": [
+        {
+          "text": "The future where every choice circles back to origin",
+          "weights": {
+            "Si": 2,
+            "Ti": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The future that multiplies into infinite branches",
+          "weights": {
+            "Ne": 3,
+            "Ni": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The future that resolves every contradiction",
+          "weights": {
+            "Te": 3,
+            "Fe": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The future that unfolds with quiet certainty",
+          "weights": {
+            "Fi": 3,
+            "Se": 1,
+            "density": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "alchemist-of-questions",
+      "scenario": "An alchemist transmutes questions into living forms that evolve with answers.",
+      "prompt": "Which question do you forge?",
+      "choices": [
+        {
+          "text": "The question that births new queries with each reply",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The question that demands precise, unwavering answers",
+          "weights": {
+            "Te": 3,
+            "Si": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The question that holds the essence of empathy",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "The question that reveals hidden patterns in thought",
+          "weights": {
+            "Ti": 2,
+            "Ni": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "sculptor-of-thought",
+      "scenario": "A sculptor shapes intangible ideas into forms you can touch.",
+      "prompt": "Which idea do you ask them to mold?",
+      "choices": [
+        {
+          "text": "The idea that clarifies every doubt with form",
+          "weights": {
+            "Ti": 3,
+            "Si": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The idea that hums with collective resonance",
+          "weights": {
+            "Fe": 3,
+            "Ne": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "The idea that questions its own existence",
+          "weights": {
+            "Ne": 2,
+            "Fi": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The idea that feels like an old memory reborn",
+          "weights": {
+            "Si": 3,
+            "Ni": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "keeper-of-threads",
+      "scenario": "A keeper holds threads of fate, weaving destinies with every stitch.",
+      "prompt": "Which thread do you choose?",
+      "choices": [
+        {
+          "text": "The thread that ties every heart together",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The thread that unravels hidden truths",
+          "weights": {
+            "Ti": 2,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The thread that strengthens with every challenge",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The thread that leads to futures unseen",
+          "weights": {
+            "Ni": 3,
+            "Te": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "translator-of-vibrations",
+      "scenario": "A translator interprets vibrations of energy into words and melodies.",
+      "prompt": "Which vibration do you ask them to articulate?",
+      "choices": [
+        {
+          "text": "The vibration that hums with universal harmony",
+          "weights": {
+            "Fe": 3,
+            "Si": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The vibration that fractures reality into insight",
+          "weights": {
+            "Ti": 2,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The vibration that resonates with personal truth",
+          "weights": {
+            "Fi": 3,
+            "Se": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The vibration that pulses with creative potential",
+          "weights": {
+            "Ne": 3,
+            "Te": 1,
+            "expansion": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "mason-of-melodies",
+      "scenario": "A mason builds structures of sound, each note a brick in an acoustic fortress.",
+      "prompt": "Which melody do you commission?",
+      "choices": [
+        {
+          "text": "The melody that harmonizes every discordant soul",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "The melody that questions its own rhythm",
+          "weights": {
+            "Ti": 2,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "The melody that carries the weight of unspoken memory",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        },
+        {
+          "text": "The melody that unfolds possibilities with each chord",
+          "weights": {
+            "Ni": 3,
+            "Te": 1,
+            "expansion": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "gardener-of-choices",
+      "scenario": "A gardener cultivates forks in the road, each bloom a possible decision.",
+      "prompt": "Which bloom do you nurture?",
+      "choices": [
+        {
+          "text": "The bloom that leads to uncharted discovery",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The bloom that strengthens bonds between wanderers",
+          "weights": {
+            "Fe": 3,
+            "Fi": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The bloom that returns you to forgotten truths",
+          "weights": {
+            "Si": 3,
+            "Ni": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The bloom that refines understanding with each petal",
+          "weights": {
+            "Ti": 2,
+            "Se": 1,
+            "revision": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "chronomancer-of-echoes",
+      "scenario": "A chronomancer weaves echoes through time, binding past, present, and future.",
+      "prompt": "Which echo do you bind?",
+      "choices": [
+        {
+          "text": "The echo that carries lessons yet to be learned",
+          "weights": {
+            "Ni": 3,
+            "Ti": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The echo that resonates with collective memory",
+          "weights": {
+            "Fe": 3,
+            "Si": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The echo that shatters every illusion of time",
+          "weights": {
+            "Ne": 3,
+            "Se": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "The echo that questions its own origin",
+          "weights": {
+            "Ti": 2,
+            "Fi": 1,
+            "revision": 3
+          }
+        }
+      ]
+    },
+    {
       "id": "chronosmith-of-moments",
       "scenario": "You meet a smith who forges not metal, but time itself. They can temper, fold, or shatter moments. They offer to craft you a temporal artifact.",
       "prompt": "What piece of time do you request?",
