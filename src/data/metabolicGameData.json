@@ -1508,40 +1508,40 @@
       ]
     },
     {
-      "id": "whisperer-of-winds",
-      "scenario": "A whisperer captures the secrets carried on the wind, voices from distant places and times.",
-      "prompt": "Which whisper do you ask them to echo?",
+      "id": "conductor-of-visions",
+      "scenario": "A conductor shapes collective imagination into a shared vision, guiding disparate ideas into harmony.",
+      "prompt": "Which vision do you orchestrate?",
       "choices": [
         {
-          "text": "The whisper that foretells what will be but has not yet been named",
+          "text": "A vision of structured innovation that yields measurable impact",
           "weights": {
-            "Ni": 3,
-            "Ne": 1,
-            "expansion": 2
-          }
-        },
-        {
-          "text": "The whisper that soothes every fear with a single breath",
-          "weights": {
-            "Fe": 3,
-            "Fi": 1,
-            "revision": 2
-          }
-        },
-        {
-          "text": "The whisper that reveals hidden patterns in the chaos",
-          "weights": {
-            "Ti": 2,
-            "Se": 2,
+            "Te": 3,
+            "Ti": 1,
             "conducting": 3
           }
         },
         {
-          "text": "The whisper that carries the memory of a thousand storms",
+          "text": "A vision that anchors community values in clear, actionable principles",
+          "weights": {
+            "Fe": 2,
+            "Si": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "A vision that deepens focus on core strengths through layered meaning",
           "weights": {
             "Si": 3,
-            "Se": 1,
+            "Fi": 1,
             "density": 3
+          }
+        },
+        {
+          "text": "A vision that refines strategy step by step, ensuring precision",
+          "weights": {
+            "Te": 2,
+            "Ti": 1,
+            "revision": 2
           }
         }
       ]
@@ -1625,40 +1625,40 @@
       ]
     },
     {
-      "id": "navigator-of-echoes",
-      "scenario": "A navigator maps echoes instead of stars, charting the reverberations of every choice.",
-      "prompt": "Which echo do you follow?",
+      "id": "strategist-of-structures",
+      "scenario": "A strategist designs frameworks that guide teams through complexity with clarity and focus.",
+      "prompt": "Which framework do you implement?",
       "choices": [
         {
-          "text": "The echo that returns with the answer you’re afraid to hear",
+          "text": "A framework that sequences tasks for maximum collective efficiency",
           "weights": {
-            "Fi": 3,
-            "Ti": 1,
-            "revision": 2
+            "Te": 3,
+            "Si": 1,
+            "conducting": 2
           }
         },
         {
-          "text": "The echo that amplifies the hopes of those who listen",
-          "weights": {
-            "Fe": 3,
-            "Ne": 1,
-            "expansion": 2
-          }
-        },
-        {
-          "text": "The echo that persists long after the source is gone",
+          "text": "A framework that deepens understanding through layered milestones",
           "weights": {
             "Si": 3,
-            "Se": 1,
+            "Ti": 1,
             "density": 3
           }
         },
         {
-          "text": "The echo that shifts its meaning each time it’s heard",
+          "text": "A framework that iterates quickly to refine outcomes",
+          "weights": {
+            "Te": 2,
+            "Fi": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "A framework that expands capacity by integrating new perspectives",
           "weights": {
             "Ne": 2,
-            "Ni": 1,
-            "expansion": 3
+            "Fe": 1,
+            "expansion": 2
           }
         }
       ]
@@ -1703,40 +1703,40 @@
       ]
     },
     {
-      "id": "weaver-of-moments",
-      "scenario": "A weaver stitches moments together, crafting tapestries of time.",
-      "prompt": "Which moment do you provide as thread?",
+      "id": "builder-of-efficiency",
+      "scenario": "A builder optimizes processes to deliver maximum output with minimal waste.",
+      "prompt": "Which process do you refine?",
       "choices": [
         {
-          "text": "The moment of pure clarity before doubt intervenes",
+          "text": "A process that streamlines resource allocation for rapid results",
           "weights": {
-            "Ti": 3,
+            "Te": 3,
             "Si": 1,
-            "conducting": 2
+            "conducting": 3
           }
         },
         {
-          "text": "The moment of shared laughter that binds hearts",
+          "text": "A process that deepens quality through focused checkpoints",
           "weights": {
-            "Fe": 3,
+            "Si": 2,
+            "Ti": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "A process that iterates swiftly to remove bottlenecks",
+          "weights": {
+            "Te": 2,
             "Fi": 1,
             "revision": 2
           }
         },
         {
-          "text": "The moment of possibility that never fully arrived",
+          "text": "A process that expands capacity by integrating modular improvements",
           "weights": {
-            "Ni": 3,
             "Ne": 1,
-            "density": 3
-          }
-        },
-        {
-          "text": "The moment of stillness from which all action emerges",
-          "weights": {
-            "Se": 2,
-            "Ni": 1,
-            "density": 3
+            "Te": 1,
+            "expansion": 1
           }
         }
       ]
@@ -1781,40 +1781,40 @@
       ]
     },
     {
-      "id": "architect-of-echoes",
-      "scenario": "An architect builds structures that resonate with every footstep.",
-      "prompt": "Which resonance do you design?",
+      "id": "engineer-of-paths",
+      "scenario": "An engineer maps optimal routes through complex terrain, ensuring efficient and reliable progress.",
+      "prompt": "Which path do you construct?",
       "choices": [
         {
-          "text": "Resonance that unites voices into a single harmony",
+          "text": "The path that maximizes productivity through systematic planning",
           "weights": {
-            "Fe": 3,
-            "Se": 1,
+            "Te": 3,
+            "Si": 1,
             "conducting": 3
           }
         },
         {
-          "text": "Resonance that shatters illusions with each vibration",
+          "text": "The path that incorporates lessons from past journeys for safety",
+          "weights": {
+            "Si": 2,
+            "Fi": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "The path that balances speed and precision for reliable outcomes",
           "weights": {
             "Ti": 2,
-            "Ne": 1,
-            "expansion": 2
-          }
-        },
-        {
-          "text": "Resonance that lingers long after the source fades",
-          "weights": {
-            "Si": 3,
-            "Fi": 1,
-            "density": 3
-          }
-        },
-        {
-          "text": "Resonance that shifts meaning as you move through it",
-          "weights": {
-            "Ni": 3,
             "Te": 1,
             "revision": 2
+          }
+        },
+        {
+          "text": "The path that adapts dynamically to emerging challenges",
+          "weights": {
+            "Se": 3,
+            "Ne": 1,
+            "expansion": 2
           }
         }
       ]
