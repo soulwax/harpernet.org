@@ -2,7 +2,6 @@
 
 import { createSignal, createEffect, onCleanup } from 'solid-js';
 import harperLogo from '../assets/harp.svg';
-import solidLogo from '../assets/solid.svg';
 import styles from './Header.module.css';
 import ThemeToggle from './ThemeToggle';
 

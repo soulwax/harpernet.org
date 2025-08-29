@@ -2,15 +2,19 @@
 
 import styles from './Footer.module.css';
 import packageJson from '../../package.json';
+import dotenv from 'dotenv';
+dotenv.config();
 const Footer = () => {
+  const siteName = process.env.VITE_SITE_NAME || 'localhost';
+  const siteUrl = process.env.VITE_SITE_URL || `http://${siteName}:3890`;
   // Package information - hard-coded from package.json to avoid file imports
   const packageInfo = {
-    name: packageJson.name,
+    name: siteName,
     version: packageJson.version,
     description: packageJson.description,
     author: packageJson.author,
     license: packageJson.license,
-    homepage: packageJson.homepage,
+    homepage: siteUrl,
     technology: packageJson.technology,
     technologyHomepage: packageJson.technologyHomepage,
     repository: packageJson.repository,
@@ -42,7 +46,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href={`https://${packageInfo.homepage}`}
+                href={`${siteUrl}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 class={styles.footerLink}

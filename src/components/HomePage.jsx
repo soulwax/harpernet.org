@@ -2,8 +2,12 @@
 
 import styles from './HomePage.module.css';
 import homeDescriptions from '../data/homeDescriptions.json';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const HomePage = () => {
+  const siteName = process.env.VITE_SITE_NAME || 'localhost';
+  const siteUrl = process.env.VITE_SITE_URL || `http://${siteName}:3890`;
   const navigateTo = (path) => {
     window.location.href = path;
   };
@@ -14,7 +18,7 @@ const HomePage = () => {
       <section class={styles.hero}>
         <div class={styles.heroContent}>
           <h1 class={styles.title}>
-            <span class={styles.titleMain}>{homeDescriptions.hero.title.main}</span>
+            <span class={styles.titleMain}>{siteName}</span>
             <span class={styles.titleSub}>{homeDescriptions.hero.title.sub}</span>
           </h1>
 
