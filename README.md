@@ -201,7 +201,7 @@ Built on Jung's _Psychological Types_ and modern MBTI research, integrating insi
 - Myers & Briggs' _Gifts Differing_ - MBTI development and applications
 - Kępiński's Information Metabolism Theory - Biological framework for cognitive processing
 - Contemporary neuroscience research - Brain imaging and neural network studies
-- Meta-analysis of 45+ studies (2015-2025) on cognitive function neuroscience
+- Meta-analysis of 130+ studies (2015-2025) on cognitive function neuroscience
 
 ## 🔧 Development
 
