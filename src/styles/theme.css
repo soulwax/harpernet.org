@@ -1,60 +1,60 @@
 /* File: src/styles/theme.css */
-/* Light theme (default) */
+/* Sepia Paper Light Theme - High contrast, warm, easy on tired eyes */
 
 :root,
 [data-theme='light'] {
-  /* Primary colors */
-  --accent: #264653;
-  --accent-light: #2a9d8f;
-  --accent-dark: #1a3a44;
+  /* Primary colors - Warm earth tones for comfort */
+  --accent: #8b4513; /* Saddle brown - rich and readable */
+  --accent-light: #a0522d; /* Sienna - warmer variant */
+  --accent-dark: #654321; /* Dark brown - deeper contrast */
 
-  /* Background colors */
-  --bg-primary: #fafafa;
-  --bg-secondary: #ffffff;
-  --bg-tertiary: #f8f9fa;
-  --bg-opposite: #0a0a0a;
-  --bg-even: #f0f4f7;
-  --bg-hover: #e8f0f5;
+  /* Background colors - Warm paper/parchment tones */
+  --bg-primary: #f4f1e8; /* Warm cream paper - main background */
+  --bg-secondary: #f8f5ec; /* Light parchment - cards and panels */
+  --bg-tertiary: #ede8db; /* Warm beige - subtle sections */
+  --bg-opposite: #1a1a1a; /* Dark contrast */
+  --bg-even: #ebe6d9; /* Alternative row color */
+  --bg-hover: #e3ddd0; /* Hover state - slightly darker */
 
-  /* Text colors */
-  --text-primary: #222222;
-  --text-secondary: #333333;
-  --text-tertiary: #555555;
-  --text-muted: #666666;
-  --text-light: #888888;
-  --text-lighter: #fafafa;
+  /* Text colors - High contrast dark browns on warm backgrounds */
+  --text-primary: #2c1810; /* Rich dark brown - maximum readability */
+  --text-secondary: #3d2817; /* Medium brown - headings */
+  --text-tertiary: #4f3a28; /* Lighter brown - secondary info */
+  --text-muted: #6b4e37; /* Coffee brown - muted text */
+  --text-light: #8b6f47; /* Tan brown - light text */
+  --text-lighter: #f4f1e8; /* Match primary background */
 
-  /* Border colors */
-  --border-primary: #e0e0e0;
-  --border-secondary: rgba(0, 0, 0, 0.1);
-  --border-light: rgba(0, 0, 0, 0.05);
+  /* Border colors - Subtle warm tones */
+  --border-primary: #d4c4a8; /* Warm tan border */
+  --border-secondary: rgba(44, 24, 16, 0.12); /* Soft brown borders */
+  --border-light: rgba(44, 24, 16, 0.06); /* Very subtle borders */
 
-  /* Shadow colors */
-  --shadow-light: rgba(0, 0, 0, 0.08);
-  --shadow-medium: rgba(0, 0, 0, 0.12);
-  --shadow-heavy: rgba(0, 0, 0, 0.16);
+  /* Shadow colors - Warm, natural shadows */
+  --shadow-light: rgba(44, 24, 16, 0.08);
+  --shadow-medium: rgba(44, 24, 16, 0.15);
+  --shadow-heavy: rgba(44, 24, 16, 0.25);
 
   /* Interactive colors */
   --link-color: var(--accent);
   --link-hover: var(--accent-dark);
 
-  /* Status colors */
-  --success: #28a745;
-  --warning: #ffc107;
-  --error: #dc3545;
-  --info: #17a2b8;
+  /* Status colors - Warm, natural tones */
+  --success: #6b8e23; /* Olive green - natural success */
+  --warning: #cd853f; /* Peru - warm warning */
+  --error: #b22222; /* Fire brick - clear but not harsh */
+  --info: #4682b4; /* Steel blue - calm info */
 
-  /* Header specific */
-  --header-bg: linear-gradient(135deg, var(--accent) 0%, #1e4a5a 100%);
-  --header-text: #ffffff;
-  --header-border: rgba(255, 255, 255, 0.1);
+  /* Header specific - Rich brown gradient */
+  --header-bg: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+  --header-text: #f4f1e8; /* Warm off-white text */
+  --header-border: rgba(244, 241, 232, 0.2);
 
   /* Footer specific */
   --footer-bg: var(--accent);
-  --footer-text: #ffffff;
-  --footer-link: #ffffff;
-  --footer-link-hover: #e8f4f8;
-  --footer-border: rgba(255, 255, 255, 0.2);
+  --footer-text: #f4f1e8;
+  --footer-link: #f4f1e8;
+  --footer-link-hover: #ffffff;
+  --footer-border: rgba(244, 241, 232, 0.3);
 
   /* Card colors */
   --card-bg: var(--bg-secondary);
@@ -62,34 +62,34 @@
   --card-shadow: var(--shadow-medium);
 }
 
-/* Dark theme */
+/* Dark theme - Enhanced for better contrast with the new light theme */
 [data-theme='dark'] {
-  /* Primary colors - brighter for better visibility */
-  --accent: #4fc3f7;
-  --accent-light: #81d4fa;
-  --accent-dark: #29b6f6;
+  /* Primary colors - Cool blues for dark mode balance */
+  --accent: #64b5f6; /* Light blue - good contrast */
+  --accent-light: #90caf9; /* Lighter blue */
+  --accent-dark: #42a5f5; /* Deeper blue */
 
-  /* Background colors - true dark theme */
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #1a1a1a;
-  --bg-tertiary: #2a2a2a;
-  --bg-opposite: #fdfdfd;
-  --bg-even: #1f1f1f;
-  --bg-hover: #2f2f2f;
+  /* Background colors - True dark with slight warm undertone */
+  --bg-primary: #0d1117; /* GitHub dark - slightly warm */
+  --bg-secondary: #161b22; /* Darker cards */
+  --bg-tertiary: #21262d; /* Subtle sections */
+  --bg-opposite: #f4f1e8; /* Match light theme primary */
+  --bg-even: #1c2128; /* Alternative rows */
+  --bg-hover: #262c36; /* Hover state */
 
-  /* Text colors - high contrast for readability */
-  --text-primary: #ffffff;
-  --text-secondary: #e0e0e0;
-  --text-tertiary: #c0c0c0;
-  --text-muted: #a0a0a0;
-  --text-light: #808080;
+  /* Text colors - High contrast whites and light grays */
+  --text-primary: #f0f6fc; /* Almost white - maximum readability */
+  --text-secondary: #e6edf3; /* Light gray - headings */
+  --text-tertiary: #b3bac1; /* Medium gray - secondary info */
+  --text-muted: #848d97; /* Muted gray */
+  --text-light: #656d76; /* Darker gray */
 
-  /* Border colors - visible but subtle */
-  --border-primary: #404040;
-  --border-secondary: rgba(255, 255, 255, 0.15);
-  --border-light: rgba(255, 255, 255, 0.08);
+  /* Border colors - Subtle but visible */
+  --border-primary: #30363d; /* Visible borders */
+  --border-secondary: rgba(240, 246, 252, 0.12);
+  --border-light: rgba(240, 246, 252, 0.06);
 
-  /* Shadow colors - deeper for dark theme */
+  /* Shadow colors - Deep shadows for depth */
   --shadow-light: rgba(0, 0, 0, 0.4);
   --shadow-medium: rgba(0, 0, 0, 0.6);
   --shadow-heavy: rgba(0, 0, 0, 0.8);
@@ -98,23 +98,23 @@
   --link-color: var(--accent);
   --link-hover: var(--accent-light);
 
-  /* Status colors - adjusted for dark mode visibility */
-  --success: #4caf50;
-  --warning: #ff9800;
-  --error: #f44336;
-  --info: #2196f3;
+  /* Status colors - Vibrant but comfortable */
+  --success: #3fb950; /* GitHub green */
+  --warning: #d29922; /* Warm amber */
+  --error: #f85149; /* GitHub red */
+  --info: #58a6ff; /* GitHub blue */
 
-  /* Header specific - darker gradient */
-  --header-bg: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
-  --header-text: #ffffff;
-  --header-border: rgba(255, 255, 255, 0.1);
+  /* Header specific */
+  --header-bg: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+  --header-text: #f0f6fc;
+  --header-border: rgba(240, 246, 252, 0.12);
 
-  /* Footer specific - better contrast for dark theme */
-  --footer-bg: #1a1a1a;
-  --footer-text: #ffffff;
+  /* Footer specific */
+  --footer-bg: #161b22;
+  --footer-text: #f0f6fc;
   --footer-link: var(--accent);
   --footer-link-hover: var(--accent-light);
-  --footer-border: rgba(255, 255, 255, 0.15);
+  --footer-border: rgba(240, 246, 252, 0.15);
 
   /* Card colors */
   --card-bg: var(--bg-secondary);
@@ -189,7 +189,7 @@ h6 {
   color: var(--text-primary) !important;
 }
 
-/* Scrollbar theming */
+/* Scrollbar theming - Match the warm paper aesthetic */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -235,4 +235,13 @@ a {
 
 a:hover {
   color: var(--link-hover) !important;
+}
+
+/* Special nighttime-friendly adjustments */
+@media (prefers-color-scheme: dark) and (data-theme: 'light') {
+  /* If system is dark but user chose light theme, make it extra gentle */
+  :root {
+    --bg-primary: #f0eee6; /* Slightly darker for night use */
+    --text-primary: #1f1611; /* Slightly softer contrast */
+  }
 }
