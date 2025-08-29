@@ -3,10 +3,10 @@
 
 :root,
 [data-theme='light'] {
-  /* Primary colors - Warm earth tones for comfort */
-  --accent: #8b4513; /* Saddle brown - rich and readable */
-  --accent-light: #a0522d; /* Sienna - warmer variant */
-  --accent-dark: #654321; /* Dark brown - deeper contrast */
+  /* Primary colors - Rich forest green for elegance */
+  --accent: #2d5016; /* Deep forest green - rich and readable */
+  --accent-light: #3d6b1f; /* Medium forest - warmer variant */
+  --accent-dark: #1e3a0f; /* Dark forest - deeper contrast */
 
   /* Background colors - Warm paper/parchment tones */
   --bg-primary: #f4f1e8; /* Warm cream paper - main background */
@@ -38,10 +38,10 @@
   --link-color: var(--accent);
   --link-hover: var(--accent-dark);
 
-  /* Status colors - Warm, natural tones */
-  --success: #6b8e23; /* Olive green - natural success */
-  --warning: #cd853f; /* Peru - warm warning */
-  --error: #b22222; /* Fire brick - clear but not harsh */
+  /* Status colors - Natural, non-orange tones */
+  --success: #4a7c59; /* Sage green - natural success */
+  --warning: #b8860b; /* Dark goldenrod - warm but not orange */
+  --error: #a0522d; /* Sienna - clear but earthy */
   --info: #4682b4; /* Steel blue - calm info */
 
   /* Header specific - Rich brown gradient */
