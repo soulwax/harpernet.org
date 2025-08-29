@@ -35,12 +35,77 @@
   transform: scale(1.02);
 }
 
-.harperLogo_simple {
+/* Logo Container - Maximum Control Setup */
+.logoContainer {
+  position: relative;
   height: 2.5rem;
-  width: auto;
+  width: 2.5rem;
   margin-right: 1rem;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Logo Image - Hidden but provides structure */
+.harperLogo_base {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Gradient Overlay - Maximum Control with Glow */
+.harperLogo_gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    #4facfe 0%,
+    /* Gradient from top to bottom */ /* Topmost */ #efff44 20%,
+    /* Top-Mid */ #c3b818 40%,
+    /* Mid Section */ #74b124 60%,
+    /* Mid-Bottom */ #18bf12 80%,
+    /* Bottom End of the Gradient*/ #00a123 100%
+  );
+  mask: url('../assets/harp.svg') no-repeat center/contain;
+  -webkit-mask: url('../assets/harp.svg') no-repeat center/contain;
+
+  /* Multi-layered glow effects */
+  filter: brightness(1.3) saturate(1.1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2))
+    drop-shadow(0 0 15px rgba(79, 172, 254, 0.25)) drop-shadow(0 0 25px rgba(255, 107, 149, 0.15))
+    drop-shadow(0 0 35px rgba(100, 181, 246, 0.1));
+
+  opacity: 0.9;
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced hover effects */
+.logoContainer:hover .harperLogo_gradient {
+  opacity: 1;
+  transform: scale(1.05);
+  filter: brightness(1.5) saturate(1.4) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3))
+    drop-shadow(0 0 20px rgba(79, 172, 254, 0.4)) drop-shadow(0 0 30px rgba(255, 107, 149, 0.3))
+    drop-shadow(0 0 40px rgba(100, 181, 246, 0.2)) drop-shadow(0 0 50px rgba(233, 30, 99, 0.1));
+}
+
+/* Subtle animation for the gradient */
+@keyframes gradientPulse {
+  0%,
+  100% {
+    filter: brightness(1.3) saturate(1.1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2))
+      drop-shadow(0 0 15px rgba(79, 172, 254, 0.25)) drop-shadow(0 0 25px rgba(255, 107, 149, 0.15));
+  }
+  50% {
+    filter: brightness(1.4) saturate(1.2) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2))
+      drop-shadow(0 0 18px rgba(79, 172, 254, 0.3)) drop-shadow(0 0 28px rgba(255, 107, 149, 0.2));
+  }
+}
+
+.harperLogo_gradient {
+  animation: gradientPulse 4s ease-in-out infinite;
 }
 
 .logoText {
@@ -216,16 +281,17 @@
     padding: 1rem;
   }
 
+  .logoContainer {
+    height: 2rem;
+    width: 2rem;
+  }
+
   .logoText {
     font-size: 1.5rem;
   }
 
   .solidjsLink {
     display: none;
-  }
-
-  .harperLogo_simple {
-    height: 2rem;
   }
 
   .nav {
@@ -245,17 +311,28 @@
     padding: 0.75rem;
   }
 
-  .logoText {
-    font-size: 1.25rem;
+  .logoContainer {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 0.5rem;
   }
 
-  .harperLogo_simple {
-    height: 1.75rem;
-    margin-right: 0.5rem;
+  .logoText {
+    font-size: 1.25rem;
   }
 
   .menuToggle {
     padding: 0.5rem;
     font-size: 1.25rem;
+  }
+
+  /* Reduce animation intensity on mobile for performance */
+  .harperLogo_gradient {
+    animation: none;
+  }
+
+  .logoContainer:hover .harperLogo_gradient {
+    filter: brightness(1.4) saturate(1.3) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2))
+      drop-shadow(0 0 15px rgba(79, 172, 254, 0.3));
   }
 }

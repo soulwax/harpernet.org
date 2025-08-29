@@ -47,7 +47,10 @@ const Header = () => {
     <header class={styles.header}>
       <div class={styles.logo}>
         <a href="/" class={styles.logoLink}>
-          <img src={harperLogo} alt={headerInfo.harperLogoAlt} class={styles.harperLogo_simple} />
+          <div class={styles.logoContainer}>
+            <img src={harperLogo} alt={headerInfo.harperLogoAlt} class={styles.harperLogo_base} />
+            <div class={styles.harperLogo_gradient}></div>
+          </div>
           <span class={styles.logoText}>HarperNet.org</span>
         </a>
       </div>
