@@ -52,23 +52,6 @@ const Header = () => {
         </a>
       </div>
 
-      {/* <div class={styles.solidjsLink}>
-        <a
-          href={headerInfo.solidJSHomepage}
-          target="_blank"
-          rel="noopener noreferrer"
-          class={styles.solidLink}
-          title={headerInfo.solidJSTitle}
-        >
-          <img
-            src={solidLogo}
-            alt={headerInfo.solidJSLogoAlt}
-            class={styles.solidLogo_interactive}
-          />
-          <span class={styles.solidText}>{headerInfo.solidJSTitle}</span>
-        </a>
-      </div> */}
-
       <div class={styles.headerControls}>
         <ThemeToggle />
 

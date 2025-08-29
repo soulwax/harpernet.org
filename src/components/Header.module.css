@@ -1,189 +1,196 @@
 /* File: src/components/Header.module.css */
 
+/* CSS variables assumed to be defined elsewhere */
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1.5rem;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
   background: var(--header-bg);
-  color: var(--header-text);
-  box-shadow:
-    0 4px 20px var(--shadow-light),
-    0 1px 3px var(--shadow-medium);
-  position: relative;
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
   border-bottom: 1px solid var(--header-border);
+  box-shadow: 0 4px 20px var(--shadow-medium);
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  position: relative;
+  flex: 1;
 }
 
 .logoLink {
-  text-decoration: none;
-  color: var(--header-text) !important;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: inherit;
   transition: transform 0.3s ease;
-  padding: 0.5rem;
-  border-radius: 8px;
 }
 
 .logoLink:hover {
-  transform: translateY(-1px);
-  background-color: rgba(255, 255, 255, 0.05);
-  color: var(--header-text) !important;
+  transform: scale(1.02);
 }
 
 .harperLogo_simple {
-  width: 60px;
-  height: 60px;
-  margin-right: 12px;
+  height: 2.5rem;
+  width: auto;
+  margin-right: 1rem;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
   transition: all 0.3s ease;
-  filter: brightness(0) invert(0.95);
-
-  /* filter: drop-shadow(0 2px 4px var(--shadow-light)); */
-}
-
-.logoLink:hover .harperLogo_simple {
-  transform: scale(1.05);
-  filter: brightness(1) invert(0.7) sepia(1) hue-rotate(210deg) saturate(4);
-}
-
-.logoLink:hover .harperLogo_simple {
-  transform: scale(1.05);
-  filter: brightness(0) invert(0.5) sepia(1) hue-rotate(200deg) saturate(2);
 }
 
 .logoText {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-left: 0.5rem;
-  letter-spacing: -0.02em;
-  color: var(--header-text) !important;
-  background: linear-gradient(135deg, #ffffff 0%, #e8f4f8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--header-text);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.5px;
 }
 
-/* Solid.js logo section */
 .solidjsLink {
   position: absolute;
-  left: 16%;
-  display: flex;
-  align-items: center;
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
 .solidLink {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--header-text) !important;
-  opacity: 0.85;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--header-text);
+  font-size: 0.9rem;
+  font-weight: 600;
   padding: 0.75rem 1rem;
-  border-radius: 12px;
-  border: 1px solid var(--header-border);
   background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--header-border);
+  border-radius: 12px;
+  transition: all 0.3s ease;
   backdrop-filter: blur(10px);
 }
 
 .solidLink:hover {
-  opacity: 1;
-  transform: translateY(-2px) scale(1.02);
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow:
-    0 8px 25px var(--shadow-light),
-    0 4px 10px var(--shadow-medium);
-  color: var(--header-text) !important;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .solidLogo_interactive {
-  width: 28px;
-  height: 28px;
-  margin-right: 12px;
-  margin-left: 0px;
+  height: 1.5rem;
+  width: auto;
+  margin-right: 0.5rem;
   transition: all 0.3s ease;
-  filter: drop-shadow(0 2px 4px var(--shadow-light));
-}
-
-.solidLink:hover .solidLogo_interactive {
-  filter: brightness(1.2) saturate(1.3) drop-shadow(0 4px 8px var(--shadow-medium));
-  transform: rotate(5deg);
 }
 
 .solidText {
-  font-size: 0.95rem;
-  font-weight: 600;
   white-space: nowrap;
-  letter-spacing: 0.01em;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  color: var(--header-text) !important;
+  font-size: 0.85rem;
 }
 
-/* Header controls container */
 .headerControls {
   display: flex;
   align-items: center;
   gap: 1rem;
-  position: relative;
-  z-index: 10;
+  flex-shrink: 0;
 }
 
-/* Enhanced navigation */
-.nav {
-  display: flex;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 0.5rem;
+/* Always show hamburger menu */
+.menuToggle {
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid var(--header-border);
+  color: var(--header-text) !important;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.75rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+}
+
+.menuToggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  color: var(--header-text) !important;
+}
+
+/* Always use dropdown navigation */
+.nav {
+  position: absolute;
+  top: 100%;
+  left: 1rem;
+  right: 1rem;
+  background: var(--bg-secondary);
+  backdrop-filter: blur(20px);
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow:
+    0 20px 40px var(--shadow-heavy),
+    0 8px 16px var(--shadow-medium);
+  transform: translateY(-150%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  order: 4;
+  border: 1px solid var(--border-primary);
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.navOpen {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 .navList {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 0.25rem;
+  width: 100%;
 }
 
 .navItem {
-  position: relative;
+  width: 100%;
 }
 
 .navButton {
-  color: var(--header-text) !important;
-  background: transparent;
-  border: none;
-  padding: 0.75rem 1.25rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-secondary);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
   border-radius: 12px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
   cursor: pointer;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  letter-spacing: 0.01em;
+  text-align: center;
+  display: block;
 }
 
 .navButton:hover {
   background: rgba(255, 255, 255, 0.15);
-  transform: translateY(-1px);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  color: var(--header-text) !important;
-}
-
-.navButton:active {
-  transform: translateY(0);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--accent-primary);
 }
 
 .activeNav {
-  background: rgba(255, 255, 255, 0.2) !important;
-  font-weight: 600;
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
   box-shadow:
     inset 0 1px 3px rgba(0, 0, 0, 0.1),
     0 1px 2px rgba(255, 255, 255, 0.1);
@@ -203,161 +210,22 @@
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
-.menuToggle {
-  display: none;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid var(--header-border);
-  color: var(--header-text) !important;
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0.75rem;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-}
-
-.menuToggle:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
-  color: var(--header-text) !important;
-}
-
-.headerControls {
-  margin-left: 20%;
-  margin-right: auto;
-  flex-shrink: 0;
-}
-
-/* Enhanced mobile responsive styles - MUCH EARLIER BREAKPOINTS */
-@media (max-width: 1600px) {
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .header {
-    padding: 1.25rem 1.5rem;
-  }
-
-  .solidjsLink {
-    left: 13%;
+    padding: 1rem;
   }
 
   .logoText {
     font-size: 1.5rem;
   }
-}
 
-@media (max-width: 1500px) {
   .solidjsLink {
-    left: 11%;
-  }
-}
-
-/* HAMBURGER MENU ACTIVATION - VERY EARLY AT 1440px */
-@media (max-width: 1440px) {
-  .header {
-    flex-wrap: wrap;
-    padding: 1rem;
-    background: var(--header-bg);
-    position: relative;
-  }
-
-  .logo {
-    flex: 1;
-  }
-
-  .headerControls {
-    order: 3;
-    gap: 0.5rem;
-    margin-left: auto;
-    margin-right: 0;
-  }
-
-  .menuToggle {
-    display: block;
-  }
-
-  .nav {
-    position: absolute;
-    top: 100%;
-    left: 1rem;
-    right: 1rem;
-    background: var(--bg-secondary);
-    backdrop-filter: blur(20px);
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem;
-    box-shadow:
-      0 20px 40px var(--shadow-heavy),
-      0 8px 16px var(--shadow-medium);
-    transform: translateY(-150%);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 1000;
-    order: 4;
-    border: 1px solid var(--border-primary);
-    border-radius: 16px;
-    margin-top: 1rem;
-  }
-
-  .navOpen {
-    transform: translateY(0);
-  }
-
-  .navList {
-    flex-direction: column;
-    width: 100%;
-    gap: 0.5rem;
-  }
-
-  .navItem {
-    width: 100%;
-    text-align: center;
-  }
-
-  .navButton {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    border-radius: 12px;
-    color: var(--text-primary) !important;
-    background: var(--bg-tertiary);
-  }
-
-  .navButton:hover {
-    background: var(--bg-hover);
-    color: var(--text-primary) !important;
-  }
-
-  .activeNav {
-    background: var(--accent) !important;
-    color: white !important;
-  }
-
-  .activeNav::before {
     display: none;
   }
-}
 
-/* Tablet adjustments */
-@media (max-width: 1440px) {
-  .header {
-    padding: 0.875rem;
-  }
-
-  .logoText {
-    font-size: 1.4rem;
-  }
-}
-
-/* Small mobile */
-@media (max-width: 480px) {
-  .header {
-    padding: 0.75rem;
-  }
-
-  .logoText {
-    font-size: 1.3rem;
-  }
-
-  .headerControls {
-    gap: 0.25rem;
+  .harperLogo_simple {
+    height: 2rem;
   }
 
   .nav {
@@ -367,43 +235,27 @@
   }
 
   .navButton {
-    padding: 0.875rem;
+    padding: 0.75rem 1rem;
     font-size: 0.95rem;
   }
 }
 
-/* Dark theme specific adjustments */
-[data-theme='dark'] .header {
-  background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
-  border-bottom-color: rgba(255, 255, 255, 0.1);
-}
+@media (max-width: 480px) {
+  .header {
+    padding: 0.75rem;
+  }
 
-[data-theme='dark'] .nav {
-  background: var(--bg-secondary);
-  border-color: var(--border-primary);
-}
+  .logoText {
+    font-size: 1.25rem;
+  }
 
-[data-theme='dark'] .navButton {
-  color: var(--text-primary) !important;
-}
+  .harperLogo_simple {
+    height: 1.75rem;
+    margin-right: 0.5rem;
+  }
 
-[data-theme='dark'] .navButton:hover {
-  background: var(--bg-hover);
-  color: var(--text-primary) !important;
-}
-
-/* Light theme specific adjustments */
-[data-theme='light'] .header {
-  background: linear-gradient(135deg, #264653 0%, #1e4a5a 100%);
-}
-
-/* Accessibility improvements */
-@media (prefers-reduced-motion: reduce) {
-  .header *,
-  .header *::before,
-  .header *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  .menuToggle {
+    padding: 0.5rem;
+    font-size: 1.25rem;
   }
 }
