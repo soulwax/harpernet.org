@@ -229,12 +229,14 @@
   color: var(--header-text) !important;
 }
 
-/* Always use dropdown navigation */
 .nav {
   position: absolute;
   top: 100%;
-  left: 1rem;
-  right: 1rem;
+  /* Desktop: narrow menu centered */
+  left: 50%;
+  transform: translateX(-50%) translateY(-150%);
+  width: 320px;
+  max-width: calc(100vw - 2rem);
   background: var(--bg-secondary);
   backdrop-filter: blur(20px);
   flex-direction: column;
@@ -243,7 +245,6 @@
   box-shadow:
     0 20px 40px var(--shadow-heavy),
     0 8px 16px var(--shadow-medium);
-  transform: translateY(-150%);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
   order: 4;
@@ -254,7 +255,7 @@
 }
 
 .navOpen {
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
   opacity: 1;
   visibility: visible;
 }
@@ -320,7 +321,6 @@
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .header {
     padding: 1rem;
@@ -340,8 +340,8 @@
   }
 
   .nav {
-    left: 0.5rem;
-    right: 0.5rem;
+    width: 400px;
+    max-width: calc(100vw - 1rem);
     padding: 1rem;
   }
 
@@ -351,6 +351,7 @@
   }
 }
 
+/* Mobile - full width for better touch targets */
 @media (max-width: 480px) {
   .header {
     padding: 0.75rem;
@@ -369,6 +370,19 @@
   .menuToggle {
     padding: 0.5rem;
     font-size: 1.25rem;
+  }
+
+  .nav {
+    /* Mobile: use full width approach */
+    left: 0.5rem;
+    right: 0.5rem;
+    width: auto;
+    transform: translateY(-150%);
+    max-width: none;
+  }
+
+  .navOpen {
+    transform: translateY(0);
   }
 
   /* Reduce animation intensity on mobile for performance */

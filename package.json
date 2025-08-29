@@ -39,8 +39,6 @@
     "faithful"
   ],
   "dependencies": {
-    "@vercel/og": "^0.8.5",
-    "serve": "^14.2.4",
     "solid-js": "^1.9.9"
   },
   "devDependencies": {
