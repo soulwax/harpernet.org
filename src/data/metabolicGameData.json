@@ -3612,6 +3612,240 @@
           }
         }
       ]
+    },
+    {
+      "id": "wifi-password-crisis",
+      "scenario": "Your WiFi is down during an important video call. Your phone has 3% battery. Your presentation is due in 20 minutes and you haven't saved it to the cloud.",
+      "prompt": "What's your immediate response?",
+      "choices": [
+        {
+          "text": "Methodically check each possible solution: restart router, check cables, call ISP, find ethernet cord",
+          "weights": {
+            "Te": 3,
+            "Si": 1,
+            "conducting": 3
+          }
+        },
+        {
+          "text": "Frantically text everyone you know asking if you can use their WiFi/hotspot/laptop",
+          "weights": {
+            "Fe": 3,
+            "Se": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Accept the situation and spend the time reconsidering whether this presentation actually matters",
+          "weights": {
+            "Ti": 2,
+            "Fi": 2,
+            "revision": 3
+          }
+        },
+        {
+          "text": "Feel a strange sense of relief that the universe is forcing you to slow down",
+          "weights": {
+            "Ni": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "meta-question-about-questions",
+      "scenario": "You realize this question is trying to psychologically profile you based on your answer to a hypothetical situation that may not reflect your actual behavior.",
+      "prompt": "How do you respond to this realization?",
+      "choices": [
+        {
+          "text": "Try to reverse-engineer what each answer is supposed to measure and game the system",
+          "weights": {
+            "Ti": 3,
+            "Te": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "Answer authentically anyway because that's more interesting than trying to manipulate the outcome",
+          "weights": {
+            "Fi": 3,
+            "Ne": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "Appreciate the cleverness of the question design and wonder what other tricks they're using",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "Get slightly annoyed but continue because you want to know your results",
+          "weights": {
+            "Te": 2,
+            "Fe": 2,
+            "conducting": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "rubber-duck-debugging",
+      "scenario": "A programmer keeps a rubber duck on their desk and explains their code problems to it out loud. This actually helps them solve bugs.",
+      "prompt": "What's your take on this phenomenon?",
+      "choices": [
+        {
+          "text": "Obviously it works because verbalizing forces you to slow down and examine your assumptions systematically",
+          "weights": {
+            "Ti": 3,
+            "Si": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "It's about having a 'listener' - even an imaginary one changes how we process information socially",
+          "weights": {
+            "Fe": 3,
+            "Ni": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "The duck is irrelevant - what matters is stepping away from the screen and engaging different cognitive modes",
+          "weights": {
+            "Se": 3,
+            "Ne": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "There's something profound about treating an inanimate object as conscious - it reveals our need for connection",
+          "weights": {
+            "Fi": 3,
+            "Ni": 1,
+            "revision": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "notification-philosophy",
+      "scenario": "Your phone buzzes with a notification while you're reading this question.",
+      "prompt": "What happens next in your mind?",
+      "choices": [
+        {
+          "text": "I immediately know it's probably not important but feel compelled to check anyway",
+          "weights": {
+            "Si": 2,
+            "Te": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "I wonder who it might be and start mentally cycling through possibilities",
+          "weights": {
+            "Ne": 3,
+            "Fe": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "I feel annoyed that my attention was hijacked and consider turning off notifications entirely",
+          "weights": {
+            "Fi": 3,
+            "Te": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "I notice the interruption but my focus automatically returns to the question without much distraction",
+          "weights": {
+            "Ni": 3,
+            "Ti": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "autocorrect-betrayal",
+      "scenario": "You text your boss 'I'll be there soon' but autocorrect changes it to 'I'll be there spoon.' Your boss replies 'What?' You panic and type 'I MEANT SOON' but autocorrect changes it to 'I MEANT SPOON' again.",
+      "prompt": "How do you handle this technological mutiny?",
+      "choices": [
+        {
+          "text": "Immediately call instead and explain the autocorrect situation in detail",
+          "weights": {
+            "Te": 3,
+            "Fe": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "Type out each letter individually: 'S-O-O-N' and add 'STUPID PHONE'",
+          "weights": {
+            "Se": 3,
+            "Fi": 1,
+            "revision": 2
+          }
+        },
+        {
+          "text": "Lean into it and text 'Yes, I am indeed a spoon. A very punctual spoon.'",
+          "weights": {
+            "Ne": 3,
+            "Ti": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "Put the phone down and stare into the void, questioning your relationship with technology",
+          "weights": {
+            "Ni": 3,
+            "Fi": 1,
+            "density": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "existential-captcha",
+      "scenario": "A CAPTCHA asks you to 'Select all images with traffic lights' but one image is clearly a stop sign that someone has badly photoshopped to look like a traffic light. It's obvious, but technically it IS trying to be a traffic light.",
+      "prompt": "This moment of digital philosophy requires your decision:",
+      "choices": [
+        {
+          "text": "Click it - the intention matters more than the execution, and I respect the effort",
+          "weights": {
+            "Fe": 3,
+            "Si": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "Don't click it - a stop sign is a stop sign, regardless of photoshop crimes against humanity",
+          "weights": {
+            "Ti": 3,
+            "Te": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "Click it while wondering if this is how artificial intelligence views our own human attempts at authenticity",
+          "weights": {
+            "Ni": 3,
+            "Ne": 1,
+            "revision": 3
+          }
+        },
+        {
+          "text": "Refresh the page hoping for a less philosophically challenging CAPTCHA",
+          "weights": {
+            "Se": 2,
+            "Fi": 2,
+            "expansion": 2
+          }
+        }
+      ]
     }
   ]
 }
