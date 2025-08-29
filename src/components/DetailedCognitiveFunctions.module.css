@@ -114,7 +114,8 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  color: #fff;
+  /* Fixed: Use white text which works on colored backgrounds */
+  color: #fff !important;
   font-weight: 600;
   transition:
     opacity 0.15s ease,
@@ -127,12 +128,14 @@
 .functionButton:hover {
   opacity: 0.93;
   transform: translateX(2px);
+  color: #fff !important;
 }
 
 .functionButton:focus-visible {
   box-shadow:
     0 0 0 3px rgba(255, 255, 255, 0.9),
     0 0 0 6px rgba(0, 0, 0, 0.25);
+  color: #fff !important;
 }
 
 .selectedFunction {
@@ -140,6 +143,7 @@
     0 0 0 3px rgba(255, 255, 255, 0.3),
     0 0 0 5px rgba(0, 0, 0, 0.15);
   transform: translateX(4px) !important;
+  color: #fff !important;
 }
 
 .functionSymbol {
@@ -209,12 +213,14 @@
     background-color 0.15s ease,
     border-color 0.15s ease,
     color 0.15s ease;
-  color: var(--text-tertiary);
+  /* Fixed: Use theme text color */
+  color: var(--text-primary) !important;
 }
 
 .sectionButton:hover {
   background-color: var(--bg-hover);
   border-color: var(--accent);
+  color: var(--text-primary) !important;
 }
 
 .sectionButton:focus-visible {
@@ -222,12 +228,46 @@
   box-shadow:
     0 0 0 3px rgba(0, 0, 0, 0.15),
     0 0 0 6px rgba(0, 123, 255, 0.35);
+  color: var(--text-primary) !important;
 }
 
 .activeSection {
   background-color: var(--accent) !important;
   color: #fff !important;
   border-color: var(--accent) !important;
+}
+
+.activeSection:hover {
+  color: #fff !important;
+}
+
+.activeSection:focus-visible {
+  color: #fff !important;
+}
+
+/* Dark theme overrides */
+[data-theme='dark'] .sectionButton {
+  color: var(--text-primary) !important;
+}
+
+[data-theme='dark'] .sectionButton:hover {
+  color: var(--text-primary) !important;
+}
+
+[data-theme='dark'] .sectionButton:focus-visible {
+  color: var(--text-primary) !important;
+}
+
+[data-theme='dark'] .activeSection {
+  color: #fff !important;
+}
+
+[data-theme='dark'] .activeSection:hover {
+  color: #fff !important;
+}
+
+[data-theme='dark'] .activeSection:focus-visible {
+  color: #fff !important;
 }
 
 .sectionIcon {
