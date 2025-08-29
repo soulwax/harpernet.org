@@ -2301,7 +2301,7 @@
           }
         },
         {
-          "text": "A Mobius strip of a perfect memory, looping forever without degradation",
+          "text": "A Möbius strip of a perfect memory, looping forever without degradation",
           "weights": {
             "Si": 3,
             "Fi": 1,
@@ -2515,7 +2515,7 @@
           "text": "A shield, hardened and tempered, to prevent such a mistake from ever happening again",
           "weights": {
             "Te": 3,
-            "Se": 1,
+            "Se": 2,
             "conducting": 3
           }
         }
@@ -3364,7 +3364,7 @@
         {
           "text": "The fog that chills skin to urgency, demanding movement",
           "weights": {
-            "Se": 3,
+            "Se": 4,
             "Te": 1,
             "expansion": 2
           }
@@ -3473,7 +3473,7 @@
         {
           "text": "The mark that insists on presence, no matter the light",
           "weights": {
-            "Se": 3,
+            "Se": 4,
             "Te": 1,
             "conducting": 2
           }
@@ -3552,7 +3552,7 @@
           "text": "The doubt that mirrors the fears of those around you",
           "weights": {
             "Fe": 3,
-            "Se": 1,
+            "Se": 2,
             "conducting": 2
           }
         },
