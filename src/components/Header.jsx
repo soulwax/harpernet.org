@@ -22,6 +22,7 @@ const Header = () => {
     relationshipsUri: '/relationships',
     metabolicPrinciplesUri: '/metabolic-principles',
     metabolicGameUri: '/metabolic-game',
+    researchUri: '/research',
     aboutUri: '/about',
     menuToggleAriaLabel: 'Toggle navigation menu',
   };
@@ -129,6 +130,7 @@ const Header = () => {
     { path: headerInfo.relationshipsUri, label: 'Relationships', emoji: '💕' },
     { path: headerInfo.metabolicPrinciplesUri, label: 'Metabolic Principles', emoji: '⚡' },
     { path: headerInfo.metabolicGameUri, label: 'Interactive Game', emoji: '🎮' },
+    { path: headerInfo.researchUri, label: 'Research', emoji: '🔍' },
     { path: headerInfo.aboutUri, label: 'About', emoji: 'ℹ️' },
   ];
 
