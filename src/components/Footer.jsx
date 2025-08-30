@@ -3,8 +3,8 @@
 import styles from './Footer.module.css';
 import packageJson from '../../package.json';
 import dotenv from 'dotenv';
-dotenv.config();
 const Footer = () => {
+  dotenv.config();
   const siteName = process.env.VITE_SITE_NAME || 'localhost';
   const siteUrl = process.env.VITE_SITE_URL || `http://${siteName}:3890`;
   // Package information - hard-coded from package.json to avoid file imports
