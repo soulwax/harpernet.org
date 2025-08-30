@@ -22,7 +22,7 @@ export default defineConfig({
   server: {
     port: 3890,
     host: true,
-    allowedHosts: "harpernet.org",
+    allowedHosts: 'harpernet.org',
     proxy: {
       '/brother-types': {
         target: 'http://localhost:3890',
@@ -102,5 +102,4 @@ export default defineConfig({
   },
   // Ensure assets are properly handled
   assetsInclude: ['**/*.gif', '**/*.svg', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.webp'],
-  
 });

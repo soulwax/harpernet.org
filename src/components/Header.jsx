@@ -120,7 +120,7 @@ const Header = () => {
     document.body.style.overflow = '';
   });
 
-  // Navigation items with enhanced accessibility
+  // Navigation items with enhanced accessibility - COMPLETE LIST
   const navigationItems = [
     { path: headerInfo.homeUri, label: '🏠 Home', emoji: '🏠' },
     { path: headerInfo.sisterTypesUri, label: 'Sister Types', emoji: '👭' },
