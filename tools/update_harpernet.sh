@@ -1,4 +1,5 @@
 #!/bin/zsh
+# File: tools/update_harpernet.sh
 
 # Purpose: Auto-deploy harpernet.org changes from git repository
 # Improved version with better error handling and environment setup
