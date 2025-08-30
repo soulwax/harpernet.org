@@ -7,15 +7,15 @@ import { resolve } from 'path';
 export default defineConfig(({ command, mode }) => {
   // Load env file based on mode
   const env = loadEnv(mode, process.cwd(), '');
-  
+
   const isProduction = mode === 'production';
   const isDevelopment = mode === 'development';
   const isStaging = mode === 'staging';
-  
+
   // Get site name from environment or fallback
   const siteName = env.VITE_SITE_NAME || 'harpernet.org';
   const siteUrl = env.VITE_SITE_URL || 'https://harpernet.org';
-  
+
   console.log(`🔧 Building for ${mode} mode...`);
   if (isDevelopment) {
     console.log(`📡 Site: ${siteName}`);
@@ -27,11 +27,11 @@ export default defineConfig(({ command, mode }) => {
       solid({
         // SolidJS optimizations
         babel: {
-          plugins: isProduction ? [] : []
-        }
-      })
+          plugins: isProduction ? [] : [],
+        },
+      }),
     ],
-    
+
     // Path aliases for cleaner imports
     resolve: {
       alias: {
@@ -43,10 +43,10 @@ export default defineConfig(({ command, mode }) => {
         '@data': resolve(__dirname, 'src/data'),
         '@utils': resolve(__dirname, 'src/utils'),
         '@config': resolve(__dirname, 'src/config'),
-        '@contexts': resolve(__dirname, 'src/contexts')
-      }
+        '@contexts': resolve(__dirname, 'src/contexts'),
+      },
     },
-    
+
     // Global build constants
     define: {
       __BUILD_DATE__: JSON.stringify(new Date().toISOString()),
@@ -55,7 +55,7 @@ export default defineConfig(({ command, mode }) => {
       __COMMIT_HASH__: JSON.stringify(process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) || 'local'),
       __IS_PRODUCTION__: JSON.stringify(isProduction),
       __IS_DEVELOPMENT__: JSON.stringify(isDevelopment),
-      __IS_STAGING__: JSON.stringify(isStaging)
+      __IS_STAGING__: JSON.stringify(isStaging),
     },
 
     // Development server (keeping your preferences)
@@ -63,7 +63,7 @@ export default defineConfig(({ command, mode }) => {
       port: parseInt(env.VITE_DEV_PORT) || 3890,
       host: true,
       open: env.VITE_AUTO_OPEN !== 'false',
-      
+
       // Improved allowed hosts using environment variables
       allowedHosts: [
         'localhost',
@@ -72,24 +72,26 @@ export default defineConfig(({ command, mode }) => {
         `www.${siteName}`,
         'harpernet.vercel.app',
         'harpernet.pages.dev',
-        ...(env.VITE_ADDITIONAL_HOSTS ? env.VITE_ADDITIONAL_HOSTS.split(',') : [])
+        ...(env.VITE_ADDITIONAL_HOSTS ? env.VITE_ADDITIONAL_HOSTS.split(',') : []),
       ],
-      
+
       // Simplified proxy - SPA fallback handles all routes
       proxy: {
         // API proxy if you have a backend
-        ...(env.VITE_API_PROXY ? {
-          '/api': {
-            target: env.VITE_API_PROXY,
-            changeOrigin: true,
-            rewrite: (path) => path.replace(/^\/api/, '')
-          }
-        } : {})
+        ...(env.VITE_API_PROXY
+          ? {
+              '/api': {
+                target: env.VITE_API_PROXY,
+                changeOrigin: true,
+                rewrite: (path) => path.replace(/^\/api/, ''),
+              },
+            }
+          : {}),
         // Note: SPA routing is better handled by historyApiFallback in build
       },
-      
+
       // Enable HTTPS if needed
-      https: env.VITE_HTTPS === 'true' ? {} : false
+      https: env.VITE_HTTPS === 'true' ? {} : false,
     },
 
     // Preview server (keeping your port preference)
@@ -97,16 +99,16 @@ export default defineConfig(({ command, mode }) => {
       port: parseInt(env.VITE_PREVIEW_PORT) || 3890,
       host: true,
       open: env.VITE_AUTO_OPEN !== 'false',
-      
+
       allowedHosts: [
         'localhost',
         'localhost:3890',
         siteName,
         `www.${siteName}`,
-        'harpernet.vercel.app', 
+        'harpernet.vercel.app',
         'harpernet.pages.dev',
-        ...(env.VITE_ADDITIONAL_HOSTS ? env.VITE_ADDITIONAL_HOSTS.split(',') : [])
-      ]
+        ...(env.VITE_ADDITIONAL_HOSTS ? env.VITE_ADDITIONAL_HOSTS.split(',') : []),
+      ],
     },
 
     // Build configuration (improved version of yours)
@@ -114,81 +116,89 @@ export default defineConfig(({ command, mode }) => {
       target: 'esnext', // Keeping your preference
       sourcemap: !isProduction || isStaging,
       minify: isProduction ? 'esbuild' : false,
-      
+
       rollupOptions: {
         output: {
           // Your manual chunks preference (keeping as undefined)
-          manualChunks: isProduction ? {
-            // Optional: enable chunking for production optimization
-            'solid-core': ['solid-js'],
-            'app-data': [
-              './src/data/sisterTypes.json',
-              './src/data/brotherTypes.json', 
-              './src/data/cognitiveFunctions.json',
-              './src/data/cognitiveFunctionsDetailed.json',
-              './src/data/relationships.json',
-              './src/data/metabolicPrinciples.json'
-            ]
-          } : undefined,
-          
+          manualChunks: isProduction
+            ? {
+                // Optional: enable chunking for production optimization
+                'solid-core': ['solid-js'],
+                'app-data': [
+                  './src/data/sisterTypes.json',
+                  './src/data/brotherTypes.json',
+                  './src/data/cognitiveFunctions.json',
+                  './src/data/cognitiveFunctionsDetailed.json',
+                  './src/data/relationships.json',
+                  './src/data/metabolicPrinciples.json',
+                ],
+              }
+            : undefined,
+
           // Your asset naming preferences (keeping original names for assets)
           assetFileNames: (assetInfo) => {
             if (assetInfo.name) {
               const extType = assetInfo.name.split('.').pop();
-              
+
               // Preserve original names for images, fonts, etc.
-              if ([
-                'png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'ico', 
-                'woff', 'woff2', 'ttf', 'eot'
-              ].includes(extType)) {
+              if (
+                [
+                  'png',
+                  'jpg',
+                  'jpeg',
+                  'gif',
+                  'svg',
+                  'webp',
+                  'ico',
+                  'woff',
+                  'woff2',
+                  'ttf',
+                  'eot',
+                ].includes(extType)
+              ) {
                 return `assets/${assetInfo.name}`;
               }
-              
+
               // CSS files with cache busting
               if (extType === 'css') {
-                return isProduction 
-                  ? `assets/[name].[hash].css`
-                  : `assets/[name].css`;
+                return isProduction ? `assets/[name].[hash].css` : `assets/[name].css`;
               }
             }
-            
+
             // Default with conditional hashing
-            return isProduction 
-              ? 'assets/[name].[hash].[ext]'
-              : 'assets/[name].[ext]';
+            return isProduction ? 'assets/[name].[hash].[ext]' : 'assets/[name].[ext]';
           },
-          
+
           // Entry and chunk files (your preference with conditional hashing)
-          chunkFileNames: isProduction 
-            ? 'assets/[name].[hash].js'
-            : 'assets/[name].js',
-          entryFileNames: isProduction 
-            ? 'assets/[name].[hash].js' 
-            : 'assets/[name].js'
-        }
+          chunkFileNames: isProduction ? 'assets/[name].[hash].js' : 'assets/[name].js',
+          entryFileNames: isProduction ? 'assets/[name].[hash].js' : 'assets/[name].js',
+        },
       },
-      
+
       // Report compressed size in production
       reportCompressedSize: isProduction,
-      
+
       // Chunk size warning limit
-      chunkSizeWarningLimit: 1000
+      chunkSizeWarningLimit: 1000,
     },
 
     // Your assets include (keeping your preferences)
     assetsInclude: [
-      '**/*.gif', '**/*.svg', '**/*.png', '**/*.jpg', 
-      '**/*.jpeg', '**/*.webp', '**/*.md'
+      '**/*.gif',
+      '**/*.svg',
+      '**/*.png',
+      '**/*.jpg',
+      '**/*.jpeg',
+      '**/*.webp',
+      '**/*.md',
     ],
 
     // CSS configuration
     css: {
       modules: {
         localsConvention: 'camelCase',
-        generateScopedName: isProduction 
-          ? '[hash:base64:5]'
-          : '[name]__[local]___[hash:base64:5]'
-      }
+        generateScopedName: isProduction ? '[hash:base64:5]' : '[name]__[local]___[hash:base64:5]',
+      },
     },
 
     // Environment prefix
@@ -199,20 +209,17 @@ export default defineConfig(({ command, mode }) => {
 
     // Optimization
     optimizeDeps: {
-      include: [
-        'solid-js',
-        'solid-js/web'
-      ]
+      include: ['solid-js', 'solid-js/web'],
     },
 
-    // Esbuild configuration  
+    // Esbuild configuration
     esbuild: {
       drop: isProduction ? ['console', 'debugger'] : [],
-      target: 'esnext'
+      target: 'esnext',
     },
 
     // Log level
     logLevel: isDevelopment ? 'info' : 'warn',
-    clearScreen: isDevelopment
+    clearScreen: isDevelopment,
   };
 });

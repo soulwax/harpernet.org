@@ -13,22 +13,22 @@ const BuildInfo = () => {
       <dl>
         <dt>Environment:</dt>
         <dd>{config.environment}</dd>
-        
+
         <dt>Version:</dt>
         <dd>{config.version}</dd>
-        
+
         <dt>Build Date:</dt>
         <dd>{new Date(config.buildDate).toLocaleString()}</dd>
-        
+
         <dt>Commit:</dt>
         <dd>{config.commitHash}</dd>
-        
+
         <dt>Site Name:</dt>
         <dd>{config.fullSiteName}</dd>
-        
+
         <dt>Site URL:</dt>
         <dd>{config.siteUrl}</dd>
-        
+
         {config.isVercel && (
           <>
             <dt>Deployment:</dt>

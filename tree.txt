@@ -1,6 +1,7 @@
 harpernet.org
-├───.env.local
+├───.env.production
 ├───.env.sample
+├───.env.staging
 ├───.gitignore
 ├───.prettierrc
 ├───CHANGELOG.md
@@ -35,6 +36,11 @@ harpernet.org
 │       ├───pre-push
 │       ├───pre-rebase
 │       └───prepare-commit-msg
+├───logs/
+│   ├───deployment.log
+│   ├───error-1.log
+│   ├───git.log
+│   └───out-1.log
 ├───public/
 │   ├───.htaccess
 │   ├───404.html
@@ -57,6 +63,7 @@ harpernet.org
 │   │   ├───About.module.css
 │   │   ├───BrotherTypes.jsx
 │   │   ├───BrotherTypes.module.css
+│   │   ├───BuildInfo.jsx
 │   │   ├───CognitiveFunctions.jsx
 │   │   ├───CognitiveFunctions.module.css
 │   │   ├───DetailedCognitiveFunctions.jsx
@@ -82,6 +89,8 @@ harpernet.org
 │   │   ├───ThemeToggle.module.css
 │   │   ├───TypeTable.jsx
 │   │   └───TypeTable.module.css
+│   ├───config/
+│   │   └───env.js
 │   ├───contexts/
 │   │   └───ThemeContext.jsx
 │   ├───data/
@@ -108,8 +117,11 @@ harpernet.org
 │   │   ├───RelationshipsPage.jsx
 │   │   ├───ResearchPage.jsx
 │   │   └───SisterTypesPage.jsx
-│   └───styles/
-│       └───theme.css
+│   ├───styles/
+│   │   └───theme.css
+│   └───utils/
+│       ├───api.js
+│       └───seo.js
 └───tools/
     ├───make-og.cjs
     ├───test-quiz-weights.js

@@ -1,86 +1,29 @@
-// File: src/components/Footer.jsx
+import { config } from '@config/env.js';
+import githubIcon from '@assets/icons/github.svg';
+import solidIcon from '@assets/solid.svg';
+import styles from './Footer.module.css'; // Same folder = relative OK
 
-import styles from './Footer.module.css';
-import packageJson from '../../package.json';
 const Footer = () => {
-  // Package information - hard-coded from package.json to avoid file imports
-  const packageInfo = {
-    name: packageJson.name,
-    version: packageJson.version,
-    description: packageJson.description,
-    author: packageJson.author,
-    license: packageJson.license,
-    homepage: packageJson.homepage,
-    technology: packageJson.technology,
-    technologyHomepage: packageJson.technologyHomepage,
-    repository: packageJson.repository,
-  };
-
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer class={styles.footer}>
       <div class={styles.footerContent}>
         <div class={styles.footerSection}>
-          <h3 class={styles.footerTitle}>{packageInfo.name}</h3>
-          <p class={styles.footerDescription}>{packageInfo.description}</p>
-          <p class={styles.footerVersion}>Version: {packageInfo.version}</p>
+          <h4>{config.siteName}</h4>
+          <p>Built with SolidJS</p>
+          {config.enableDebug && <p>Environment: {config.environment}</p>}
         </div>
 
         <div class={styles.footerSection}>
-          <h3 class={styles.footerTitle}>Links</h3>
-          <ul class={styles.footerLinks}>
-            <li>
-              <a
-                href={packageInfo.repository.url.replace('.git', '')}
-                target="_blank"
-                rel="noopener noreferrer"
-                class={styles.footerLink}
-              >
-                GitHub Repository
-              </a>
-            </li>
-            <li>
-              <a
-                href={`https://${packageInfo.homepage}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                class={styles.footerLink}
-              >
-                Homepage
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.gnu.org/licenses/gpl-3.0.en.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                class={styles.footerLink}
-              >
-                GPL-3.0 License
-              </a>
-            </li>
-          </ul>
+          <h4>Links</h4>
+          <a href={config.githubRepo} target="_blank" rel="noopener noreferrer">
+            <img src={githubIcon} alt="GitHub" />
+            GitHub Repository
+          </a>
+          <a href="https://solidjs.com" target="_blank" rel="noopener noreferrer">
+            <img src={solidIcon} alt="SolidJS" />
+            Built with Solid.JS
+          </a>
         </div>
-      </div>
-
-      <div class={styles.footerBottom}>
-        <p class={styles.copyright}>
-          © {currentYear}{' '}
-          {
-            <a
-              href={packageInfo.repository.url.replace('.git', '')}
-              target="_blank"
-              rel="noopener noreferrer"
-              class={styles.footerLink}
-            >
-              {packageInfo.author}
-            </a>
-          }{' '}
-          | Licensed under {packageInfo.license}
-        </p>
-        <br />
-        <p class={styles.bottomCitation}>Jung did not walk away unchanged. No one ever does.</p>
       </div>
     </footer>
   );

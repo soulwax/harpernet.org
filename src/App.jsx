@@ -31,7 +31,10 @@ const App = () => {
             <Route path="/sister-types" component={SisterTypesPage} />
             <Route path="/brother-types" component={BrotherTypesPage} />
             <Route path="/cognitive-functions" component={CognitiveFunctionsPage} />
-            <Route path="/cognitive-functions-detailed" component={CognitiveFunctionsDetailedPage} />
+            <Route
+              path="/cognitive-functions-detailed"
+              component={CognitiveFunctionsDetailedPage}
+            />
             <Route path="/relationships" component={RelationshipsPage} />
             <Route path="/metabolic-principles" component={MetabolicPrinciplesPage} />
             <Route path="/metabolic-game" component={MetabolicGamePage} />
