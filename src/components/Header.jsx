@@ -1,18 +1,21 @@
 // File: src/components/Header.jsx
 
 import { createSignal, createEffect, onCleanup } from 'solid-js';
-import harperLogo from '../assets/harp.svg';
-import solidLogo from '../assets/solid.svg';
+import harperLogo from '@assets/harp.svg';
+import solidLogo from '@assets/solid.svg';
 import styles from './Header.module.css';
-import ThemeToggle from './ThemeToggle';
+import ThemeToggle from '@components/ThemeToggle';
+import { config } from '@config/env.js';
 
 const Header = () => {
   const headerInfo = {
+    homePageName: config.siteName,
+    homePageUrl: config.siteUrl,
     solidJSHomepage: 'https://solidjs.com',
-    githubRepository: 'https://github.com/soulwax/harpernet.org',
-    solidJSTitle: 'Built with Solid.JS for the giggles',
+    githubRepository: config.githubRepo,
+    solidJSTitle: `Built with Solid.JS${config.isDevelopment ? ' for the giggles' : ''}`,
     solidJSLogoAlt: 'Solid.JS Logo',
-    harperLogoAlt: 'HarperNet.org Logo',
+    harperLogoAlt: `${config.siteName} Logo`,
     technology: 'Solid.JS',
     homeUri: '/',
     sisterTypesUri: '/sister-types',
@@ -34,12 +37,9 @@ const Header = () => {
   let headerRef;
 
   const toggleNav = () => {
-    if (isAnimating()) return; // Prevent rapid toggling during animation
-
+    if (isAnimating()) return;
     setIsAnimating(true);
     setIsNavOpen(!isNavOpen());
-
-    // Reset animation lock after transition completes
     setTimeout(() => setIsAnimating(false), 300);
   };
 
@@ -51,17 +51,12 @@ const Header = () => {
     }
   };
 
-  // Enhanced navigation with smooth transitions
   const navigateTo = (path) => {
     if (isActive(path)) {
       closeNav();
       return;
     }
-
-    // Add visual feedback before navigation
     setIsAnimating(true);
-
-    // Small delay for visual feedback
     setTimeout(() => {
       window.location.href = path;
       setIsNavOpen(false);
@@ -69,38 +64,31 @@ const Header = () => {
     }, 150);
   };
 
-  // Check if current path matches
   const isActive = (path) => {
     return window.location.pathname === path;
   };
 
-  // Close menu when clicking outside
   const handleClickOutside = (event) => {
     if (isNavOpen() && headerRef && !headerRef.contains(event.target)) {
       closeNav();
     }
   };
 
-  // Close menu on escape key
   const handleKeyDown = (event) => {
     if (event.key === 'Escape' && isNavOpen()) {
       closeNav();
     }
   };
 
-  // Close menu on route change (for SPA navigation)
   const handlePopState = () => {
     closeNav();
   };
 
-  // Set up event listeners
   createEffect(() => {
     if (isNavOpen()) {
       document.addEventListener('click', handleClickOutside);
       document.addEventListener('keydown', handleKeyDown);
       window.addEventListener('popstate', handlePopState);
-
-      // Prevent body scroll when menu is open on mobile
       if (window.innerWidth <= 480) {
         document.body.style.overflow = 'hidden';
       }
@@ -112,7 +100,6 @@ const Header = () => {
     }
   });
 
-  // Cleanup on component unmount
   onCleanup(() => {
     document.removeEventListener('click', handleClickOutside);
     document.removeEventListener('keydown', handleKeyDown);
@@ -120,7 +107,6 @@ const Header = () => {
     document.body.style.overflow = '';
   });
 
-  // Navigation items with enhanced accessibility
   const navigationItems = [
     { path: headerInfo.homeUri, label: '🏠 Home', emoji: '🏠' },
     { path: headerInfo.sisterTypesUri, label: 'Sister Types', emoji: '👭' },
@@ -142,13 +128,17 @@ const Header = () => {
             <img src={harperLogo} alt={headerInfo.harperLogoAlt} class={styles.harperLogo_base} />
             <div class={styles.harperLogo_gradient}></div>
           </div>
-          <span class={styles.logoText}>HarperNet.org</span>
+          <span class={styles.logoText}>{config.fullSiteName}</span>
+          {config.enableDebug && (
+            <small class={styles.buildInfo}>
+              v{config.version} ({config.commitHash})
+            </small>
+          )}
         </a>
       </div>
 
       <div class={styles.headerControls}>
         <ThemeToggle />
-
         <button
           class={styles.menuToggle}
           onClick={toggleNav}
@@ -186,7 +176,6 @@ const Header = () => {
                 aria-current={isActive(item.path) ? 'page' : undefined}
                 disabled={isAnimating()}
                 style={{
-                  // Stagger animation delays for elegant reveal
                   'transition-delay': isNavOpen() ? `${index * 30}ms` : '0ms',
                 }}
               >
@@ -205,7 +194,6 @@ const Header = () => {
         </ul>
       </nav>
 
-      {/* Backdrop overlay for mobile */}
       {isNavOpen() && (
         <div
           class={styles.menuOverlay}
