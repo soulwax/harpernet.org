@@ -1,8 +1,21 @@
 {
-  "rewrites": [
+  "name": "harpernet-org",
+  "version": 2,
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|webp|ico))",
+      "headers": {
+        "cache-control": "max-age=31536000"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
-  ]
+  ],
+  "env": {
+    "VITE_SITE_NAME": "HarperNet.org",
+    "VITE_SITE_URL": "https://harpernet.vercel.app",
+    "VITE_ENVIRONMENT": "production"
+  }
 }

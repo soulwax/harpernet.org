@@ -1,34 +1,15 @@
 // File: src/components/Header.jsx
 
 import { createSignal, createEffect, onCleanup } from 'solid-js';
+import { useLocation, useNavigate } from '@solidjs/router';
 import harperLogo from '@assets/harp.svg';
-import solidLogo from '@assets/solid.svg';
 import styles from './Header.module.css';
 import ThemeToggle from '@components/ThemeToggle';
 import { config } from '@config/env.js';
 
 const Header = () => {
-  const headerInfo = {
-    homePageName: config.siteName,
-    homePageUrl: config.siteUrl,
-    solidJSHomepage: 'https://solidjs.com',
-    githubRepository: config.githubRepo,
-    solidJSTitle: `Built with Solid.JS${config.isDevelopment ? ' for the giggles' : ''}`,
-    solidJSLogoAlt: 'Solid.JS Logo',
-    harperLogoAlt: `${config.siteName} Logo`,
-    technology: 'Solid.JS',
-    homeUri: '/',
-    sisterTypesUri: '/sister-types',
-    brotherTypesUri: '/brother-types',
-    cognitiveFunctionsUri: '/cognitive-functions',
-    cognitiveFunctionsDetailedUri: '/cognitive-functions-detailed',
-    relationshipsUri: '/relationships',
-    metabolicPrinciplesUri: '/metabolic-principles',
-    metabolicGameUri: '/metabolic-game',
-    researchUri: '/research',
-    aboutUri: '/about',
-    menuToggleAriaLabel: 'Toggle navigation menu',
-  };
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const [isNavOpen, setIsNavOpen] = createSignal(false);
   const [isAnimating, setIsAnimating] = createSignal(false);
@@ -51,6 +32,7 @@ const Header = () => {
     }
   };
 
+  // Use SolidJS Router instead of window.location
   const navigateTo = (path) => {
     if (isActive(path)) {
       closeNav();
@@ -58,14 +40,14 @@ const Header = () => {
     }
     setIsAnimating(true);
     setTimeout(() => {
-      window.location.href = path;
+      navigate(path);
       setIsNavOpen(false);
       setIsAnimating(false);
     }, 150);
   };
 
   const isActive = (path) => {
-    return window.location.pathname === path;
+    return location.pathname === path;
   };
 
   const handleClickOutside = (event) => {
@@ -80,44 +62,43 @@ const Header = () => {
     }
   };
 
-  const handlePopState = () => {
-    closeNav();
-  };
-
   createEffect(() => {
     if (isNavOpen()) {
       document.addEventListener('click', handleClickOutside);
       document.addEventListener('keydown', handleKeyDown);
-      window.addEventListener('popstate', handlePopState);
       if (window.innerWidth <= 480) {
         document.body.style.overflow = 'hidden';
       }
     } else {
       document.removeEventListener('click', handleClickOutside);
       document.removeEventListener('keydown', handleKeyDown);
-      window.removeEventListener('popstate', handlePopState);
       document.body.style.overflow = '';
     }
+  });
+
+  // Close menu on route change (automatic with SolidJS Router)
+  createEffect(() => {
+    location.pathname; // Track pathname changes
+    closeNav(); // Close menu on route change
   });
 
   onCleanup(() => {
     document.removeEventListener('click', handleClickOutside);
     document.removeEventListener('keydown', handleKeyDown);
-    window.removeEventListener('popstate', handlePopState);
     document.body.style.overflow = '';
   });
 
   const navigationItems = [
-    { path: headerInfo.homeUri, label: '🏠 Home', emoji: '🏠' },
-    { path: headerInfo.sisterTypesUri, label: 'Sister Types', emoji: '👭' },
-    { path: headerInfo.brotherTypesUri, label: 'Brother Types', emoji: '👬' },
-    { path: headerInfo.cognitiveFunctionsUri, label: 'Cognitive Functions', emoji: '🧠' },
-    { path: headerInfo.cognitiveFunctionsDetailedUri, label: 'Functions In-Depth', emoji: '🔬' },
-    { path: headerInfo.relationshipsUri, label: 'Relationships', emoji: '💕' },
-    { path: headerInfo.metabolicPrinciplesUri, label: 'Metabolic Principles', emoji: '⚡' },
-    { path: headerInfo.metabolicGameUri, label: 'Interactive Game', emoji: '🎮' },
-    { path: headerInfo.researchUri, label: 'Research', emoji: '🔍' },
-    { path: headerInfo.aboutUri, label: 'About', emoji: 'ℹ️' },
+    { path: '/', label: '🏠 Home', emoji: '🏠' },
+    { path: '/sister-types', label: 'Sister Types', emoji: '👭' },
+    { path: '/brother-types', label: 'Brother Types', emoji: '👬' },
+    { path: '/cognitive-functions', label: 'Cognitive Functions', emoji: '🧠' },
+    { path: '/cognitive-functions-detailed', label: 'Functions In-Depth', emoji: '🔬' },
+    { path: '/relationships', label: 'Relationships', emoji: '💕' },
+    { path: '/metabolic-principles', label: 'Metabolic Principles', emoji: '⚡' },
+    { path: '/metabolic-game', label: 'Interactive Game', emoji: '🎮' },
+    { path: '/research', label: 'Research', emoji: '🔍' },
+    { path: '/about', label: 'About', emoji: 'ℹ️' },
   ];
 
   return (
@@ -125,7 +106,7 @@ const Header = () => {
       <div class={styles.logo}>
         <a href="/" class={styles.logoLink}>
           <div class={styles.logoContainer}>
-            <img src={harperLogo} alt={headerInfo.harperLogoAlt} class={styles.harperLogo_base} />
+            <img src={harperLogo} alt={`${config.siteName} Logo`} class={styles.harperLogo_base} />
             <div class={styles.harperLogo_gradient}></div>
           </div>
           <span class={styles.logoText}>{config.fullSiteName}</span>
@@ -142,7 +123,7 @@ const Header = () => {
         <button
           class={styles.menuToggle}
           onClick={toggleNav}
-          aria-label={headerInfo.menuToggleAriaLabel}
+          aria-label="Toggle navigation menu"
           aria-expanded={isNavOpen()}
           aria-controls="main-navigation"
           disabled={isAnimating()}
@@ -187,7 +168,7 @@ const Header = () => {
                 >
                   {item.emoji}
                 </span>
-                {item.path === headerInfo.homeUri ? 'Home' : item.label}
+                {item.path === '/' ? 'Home' : item.label}
               </button>
             </li>
           ))}
