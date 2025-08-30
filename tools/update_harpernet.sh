@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/zsh
+# File: tools/update_harpernet.sh
+
 # Purpose: Auto-deploy harpernet.org changes from git repository
 # Exit immediately if a command exits with a non-zero status
 set -e

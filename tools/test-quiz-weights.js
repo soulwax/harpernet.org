@@ -1,3 +1,5 @@
+// File: tools/test-quiz-weights.js
+
 const fs = require('fs');
 
 /**

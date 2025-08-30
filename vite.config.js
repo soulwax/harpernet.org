@@ -2,12 +2,21 @@
 
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
-
+import dotenv from 'dotenv';
 export default defineConfig({
   preview: {
     port: 3890,
     host: true,
-    allowedHosts: ['localhost', 'localhost:3890', 'harpernet.org'],
+    allowedHosts: [
+      'localhost',
+      'localhost:3890',
+      'harpernet.org',
+      'www.harpernet.org',
+      'harpernet.vercel.app',
+      'harpernet.pages.dev',
+      dotenv.config().parsed?.VITE_SITE_NAME || 'localhost',
+      `${dotenv.config().parsed?.VITE_SITE_NAME || 'localhost'}:3890`,
+    ],
   },
   plugins: [solidPlugin()],
   server: {
