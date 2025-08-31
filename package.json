@@ -22,7 +22,8 @@
     "prepare": "husky",
     "format": "prettier --write .",
     "weights": "node tools/examine-weights.js > weights.txt",
-    "weights:out": "node tools/examine-weights.js > weights.txt && tr '\n' ' ' < weights.txt"
+    "weights:out": "node tools/examine-weights.js > weights.txt && tr '\n' ' ' < weights.txt",
+    "weights:out:win": "node tools/examine-weights.js > weights.txt && Get-Content weights.txt"
   },
   "keywords": [
     "mbti",
