@@ -845,78 +845,78 @@
       ]
     },
     {
-      "id": "ocean-of-glass",
-      "scenario": "An ocean of liquid glass reflects not images but intentions. Waves freeze mid-crash, holding moments of pure will.",
-      "prompt": "What formation do you sculpt from the frozen waves?",
+      "id": "parking-spot-ethics",
+      "scenario": "You've been circling the mall parking lot for 15 minutes. Finally, you see someone walking to their car. You follow them slowly with your blinker on. Another car swoops in from the opposite direction as the person leaves.",
+      "prompt": "This parking lot injustice demands response:",
       "choices": [
         {
-          "text": "A spiral that tightens inward, each coil more precise than the last",
+          "text": "Roll down window and have a detailed discussion about parking lot etiquette and fairness",
           "weights": {
-            "Ti": 2,
-            "Pi": 2,
-            "density": 3
+            "Te": 3,
+            "Fe": 1,
+            "conducting": 2
           }
         },
         {
-          "text": "A cascade that propels itself forward, shattering and reforming",
+          "text": "Immediately get out and gesticulately explain that you were clearly there first",
           "weights": {
-            "Se": 2,
-            "Te": 2,
+            "Se": 3,
+            "Fi": 2,
             "expansion": 2
           }
         },
         {
-          "text": "A lattice that channels every drop toward a singular purpose",
+          "text": "Remember exactly how this situation played out for future parking lot strategy",
           "weights": {
-            "Je": 3,
-            "Ni": 1,
-            "conducting": 3
+            "Si": 3,
+            "Te": 1,
+            "density": 2
           }
         },
         {
-          "text": "A mist that questions its own existence with each particle",
+          "text": "Drive away muttering about the breakdown of social contracts",
           "weights": {
-            "Ne": 2,
             "Ti": 2,
-            "revision": 3
+            "Fi": 2,
+            "revision": 2
           }
         }
       ]
     },
     {
-      "id": "symphony-of-decay",
-      "scenario": "In a concert hall where music causes physical objects to age and renew cyclically, you must conduct the final movement.",
-      "prompt": "How do you orchestrate entropy itself?",
+      "id": "group-project-procrastination",
+      "scenario": "It's 11 PM the night before your group project is due. You've done your part. Two group members haven't responded to messages in 3 days. One person just texted 'omg forgot about this lol can someone send me what we have so far???'",
+      "prompt": "Academic teamwork has failed you:",
       "choices": [
         {
-          "text": "Accelerate everything toward heat death, then reverse at the last moment",
-          "weights": {
-            "Ne": 2,
-            "Se": 2,
-            "expansion": 3
-          }
-        },
-        {
-          "text": "Layer decay patterns until they form an eternal recursive loop",
-          "weights": {
-            "Ti": 2,
-            "Si": 2,
-            "density": 3
-          }
-        },
-        {
-          "text": "Direct each instrument toward its perfect dissolution",
+          "text": "Stay up all night doing everyone's work because you refuse to get a bad grade",
           "weights": {
             "Te": 3,
-            "Pi": 1,
+            "Si": 2,
             "conducting": 3
           }
         },
         {
-          "text": "Let each note find its own death and rebirth rhythm",
+          "text": "Send increasingly frantic messages to the group chat with caps lock engaged",
           "weights": {
+            "Se": 3,
+            "Fe": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Document everything for the inevitable professor conversation about unfair grading",
+          "weights": {
+            "Si": 3,
+            "Ti": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "Accept chaos and see what masterpiece of dysfunction gets submitted",
+          "weights": {
+            "Ne": 2,
             "Fi": 2,
-            "Pe": 2,
             "revision": 2
           }
         }
@@ -2444,40 +2444,40 @@
       ]
     },
     {
-      "id": "zookeeper-of-concepts",
-      "scenario": "A zookeeper tends to enclosures containing not animals, but living, breathing concepts.",
-      "prompt": "Which concept do you spend the day observing?",
+      "id": "self-checkout-rebellion",
+      "scenario": "The self-checkout machine keeps saying 'unexpected item in bagging area' but you followed the instructions perfectly. The attendant is helping someone else. There's a line forming behind you. The machine just froze completely.",
+      "prompt": "Technology has betrayed you in public:",
       "choices": [
         {
-          "text": "Justice, which endlessly paces, measuring the angles of its cage",
+          "text": "Systematically try every possible solution: rescan items, remove bags, restart transaction",
           "weights": {
-            "Ti": 3,
-            "Je": 2,
-            "conducting": 2
+            "Te": 3,
+            "Si": 2,
+            "conducting": 3
           }
         },
         {
-          "text": "Possibility, which constantly changes its form, color, and texture",
+          "text": "Stand there and make increasingly dramatic gestures at the machine",
           "weights": {
-            "Ne": 3,
-            "Pe": 2,
-            "expansion": 3
+            "Se": 3,
+            "Fe": 1,
+            "expansion": 2
           }
         },
         {
-          "text": "Legacy, which sleeps soundly, dreaming of its own past",
+          "text": "This is exactly why you prefer human cashiers - gather evidence for future arguments",
           "weights": {
             "Si": 3,
-            "Fi": 1,
-            "density": 3
+            "Ti": 1,
+            "density": 2
           }
         },
         {
-          "text": "Empathy, which mirrors the emotions of every creature that looks upon it",
+          "text": "Smile apologetically at everyone behind you and crack jokes about robot uprising",
           "weights": {
             "Fe": 3,
-            "Ni": 1,
-            "revision": 2
+            "Ne": 1,
+            "conducting": 2
           }
         }
       ]
@@ -2600,39 +2600,39 @@
       ]
     },
     {
-      "id": "distiller-of-light",
-      "scenario": "An alchemist distills light into potent elixirs, each with a different effect on perception.",
-      "prompt": "Which elixir do you drink?",
+      "id": "microwave-mystery",
+      "scenario": "Someone microwaved fish in the office microwave. The smell has achieved sentience and is now holding the break room hostage. You need to heat up your lunch but fear for your olfactory system's survival.",
+      "prompt": "This aromatic assault requires tactical response:",
       "choices": [
         {
-          "text": "The Elixir of the First Ray, letting you see the singular origin point of all things",
-          "weights": {
-            "Ni": 3,
-            "Ji": 2,
-            "density": 3
-          }
-        },
-        {
-          "text": "The Elixir of Prismatic Spray, letting you see every potential path an object could take",
-          "weights": {
-            "Ne": 3,
-            "Se": 1,
-            "expansion": 3
-          }
-        },
-        {
-          "text": "The Elixir of the Focused Beam, letting you see only what is useful for your current goal",
+          "text": "Implement a comprehensive microwave cleaning protocol with multiple stages",
           "weights": {
             "Te": 3,
-            "Je": 2,
+            "Si": 2,
             "conducting": 3
           }
         },
         {
-          "text": "The Elixir of the Diffused Glow, letting you feel the ambient mood of a room as a color",
+          "text": "Hold your breath, heat lunch quickly, evacuate immediately",
           "weights": {
-            "Fe": 3,
-            "Si": 1,
+            "Se": 3,
+            "Te": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Remember this exact smell for future microwave risk assessment",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "Draft a passive-aggressive office email about 'microwave etiquette'",
+          "weights": {
+            "Fe": 2,
+            "Ti": 2,
             "revision": 2
           }
         }
@@ -2678,39 +2678,39 @@
       ]
     },
     {
-      "id": "parliament-of-mirrors",
-      "scenario": "In a parliament where mirrors debate their reflections, each mirror argues for a different understanding of what reality means.",
-      "prompt": "Which mirror's argument do you find most compelling?",
+      "id": "assembly-furniture-philosophy",
+      "scenario": "You're assembling a desk. The instructions show a happy cartoon person completing it in '30 minutes!' It's been 2 hours. You have 3 extra screws, no idea where they go, and the desk wobbles ominously.",
+      "prompt": "This furniture existential crisis requires wisdom:",
       "choices": [
         {
-          "text": "The mirror that reflects only the internal logic of its own surface",
+          "text": "Take apart the entire thing and start over with methodical attention to every detail",
           "weights": {
-            "Ti": 3,
-            "Pi": 1,
+            "Si": 3,
+            "Te": 2,
             "density": 3
           }
         },
         {
-          "text": "The mirror that multiplies every reflection into infinite perspectives",
+          "text": "The wobble gives it character - declare victory and move on",
           "weights": {
-            "Ne": 3,
-            "Pe": 2,
-            "expansion": 3
+            "Se": 3,
+            "Fi": 1,
+            "expansion": 2
           }
         },
         {
-          "text": "The mirror that organizes all reflections into hierarchical clarity",
+          "text": "Research the manufacturer online to find common assembly mistakes",
           "weights": {
             "Te": 3,
-            "Je": 2,
-            "conducting": 3
+            "Ti": 1,
+            "conducting": 2
           }
         },
         {
-          "text": "The mirror that harmonizes every reflection into collective truth",
+          "text": "This desk is a metaphor for something deeper about modern life",
           "weights": {
-            "Fe": 3,
-            "Je": 1,
+            "Ni": 2,
+            "Fi": 2,
             "revision": 2
           }
         }
