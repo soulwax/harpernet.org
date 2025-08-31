@@ -19,14 +19,17 @@ Site should be lightweight for the shittiest internet available.
 
 ## 🌟 Features
 
-- **Sister Types** - J/P swapped comparisons (INTP vs INTJ, etc.).
-- **Brother Types** - E/I swapped comparisons (INTJ vs ENTJ, etc.).
-- **Detailed Cognitive Functions** - In-depth function analysis with developmental stages and shadow exploration.
-- **Metabolic Principles** - Comprehensive framework integrating Jung's psychological types with neuroscience research.
-- **Type Relationships** - Comprehensive relationship dynamics and communication patterns.
-- **Research Validation** - Neuroscience studies, psychological research, and clinical applications.
-- **Metabolic Exploration Game / Test** - In order to determine your main metabolic driver. Has roughly 30 questions as of 27th Aug. '25. I will expand upon them when the time allows for it for more accuracy.
-  **I do not guarantee correct results at any moment or place.**
+- **Sister Types** - J/P swapped comparisons (INTP vs INTJ, etc.) with detailed behavioral analysis
+- **Brother Types** - E/I swapped comparisons (INTJ vs ENTJ, etc.) across five key dimensions
+- **Cognitive Functions Overview** - Essential function summaries and interactions
+- **Detailed Cognitive Functions** - In-depth function analysis with developmental stages, shadow exploration, and interactive navigation
+- **Metabolic Principles** - Comprehensive framework integrating Jung's psychological types with neuroscience research
+- **Type Relationships** - Comprehensive relationship dynamics and communication patterns between all type combinations
+- **Research Validation** - Neuroscience studies, psychological research, and clinical applications with curated sources
+- **Metabolic Exploration Game/Test** - Immersive personality assessment determining your main metabolic driver through metaphorical landscapes. Currently ~30 questions (Aug '25), designed to challenge experienced test-takers and reveal authentic cognitive patterns. **I do not guarantee correct results at any moment or place.**
+- **Dark/Light Theme Toggle** - Accessible theme switching with system preference detection
+- **Responsive Design** - Optimized for mobile, tablet, and desktop experiences
+- **Client-Side Routing** - Smooth SPA navigation with proper URL handling
 
 ---
 
@@ -36,6 +39,7 @@ Site should be lightweight for the shittiest internet available.
 - **Vite** - Build tool and dev server
 - **CSS Modules** - Component-scoped styling
 - **PM2** - Production process management
+- **SPA Router** - Client-side navigation
 
 ## 🚀 Quick Start
 
@@ -83,6 +87,31 @@ If the site should be hosted by a third party not on [https://harpernet.org](htt
 ## 📁 Project Structure
 
 ```sh
+harpernet.org
+├───.env.local
+├───.env.sample
+├───.gitignore
+├───.prettierrc
+├───CHANGELOG.md
+├───ecosystem.config.js
+├───index.html
+├───LICENSE
+├───package-lock.json
+├───package.json
+├───README.md
+├───tree.txt
+├───vercel.json
+├───vite.config.js
+├───.github/
+│   └───resources/
+│       └───infjlolcat.gif
+├───public/
+│   ├───.htaccess
+│   ├───404.html
+│   ├───_redirects
+│   ├───harp.svg
+│   ├───harperhue.png
+│   └───vite.svg
 ├───src/
 │   ├───App.css
 │   ├───App.jsx
@@ -106,6 +135,8 @@ If the site should be hosted by a third party not on [https://harpernet.org](htt
 │   │   ├───Footer.module.css
 │   │   ├───Header.jsx
 │   │   ├───Header.module.css
+│   │   ├───HomePage.jsx
+│   │   ├───HomePage.module.css
 │   │   ├───MetabolicExplorationGame.jsx
 │   │   ├───MetabolicExplorationGame.module.css
 │   │   ├───MetabolicPrinciples.jsx
@@ -113,6 +144,8 @@ If the site should be hosted by a third party not on [https://harpernet.org](htt
 │   │   ├───NavLink.jsx
 │   │   ├───Relationships.jsx
 │   │   ├───Relationships.module.css
+│   │   ├───Research.jsx
+│   │   ├───Research.module.css
 │   │   ├───SisterTypes.jsx
 │   │   ├───SisterTypes.module.css
 │   │   ├───ThemeToggle.jsx
@@ -125,9 +158,12 @@ If the site should be hosted by a third party not on [https://harpernet.org](htt
 │   │   ├───brotherTypes.json
 │   │   ├───cognitiveFunctions.json
 │   │   ├───cognitiveFunctionsDetailed.json
+│   │   ├───curatedSources.json
+│   │   ├───homeDescriptions.json
 │   │   ├───jungianFramework.json
 │   │   ├───metabolicGameData.json
 │   │   ├───metabolicPrinciples.json
+│   │   ├───rawSources.json
 │   │   ├───relationships.json
 │   │   ├───relationshipsEnhanced.json
 │   │   └───sisterTypes.json
@@ -136,72 +172,38 @@ If the site should be hosted by a third party not on [https://harpernet.org](htt
 │   │   ├───BrotherTypesPage.jsx
 │   │   ├───CognitiveFunctionsDetailedPage.jsx
 │   │   ├───CognitiveFunctionsPage.jsx
+│   │   ├───HomePage.jsx
 │   │   ├───MetabolicGamePage.jsx
 │   │   ├───MetabolicPrinciplesPage.jsx
 │   │   ├───RelationshipsPage.jsx
+│   │   ├───ResearchPage.jsx
 │   │   └───SisterTypesPage.jsx
 │   └───styles/
 │       └───theme.css
-└── Router.jsx         # Client-side routing
+└───tools/
+    ├───make-og.cjs
+    ├───test-quiz-weights.js
+    └───update_harpernet.sh
 ```
 
-## 🎯 Core Concepts
+---
 
-**Sister Types**: Same cognitive functions, different order (J/P swap)
+## 📖 Theoretical Foundation
 
-- INTP (Ti-Ne-Si-Fe) vs INTJ (Ni-Te-Fi-Se)
+### Core Sources
 
-**Brother Types**: Same functions, different orientation (E/I swap)
-
-- INTJ (Ni-Te-Fi-Se) vs ENTJ (Te-Ni-Se-Fi)
-
-**Cognitive Functions**: Eight mental processes underlying all personality types, analyzed through:
-
-- Developmental stages across lifespan
-- Shadow manifestations and blind spots
-- Positional analysis (dominant, auxiliary, tertiary, inferior)
-
-**Metabolic Principles**: Information processing framework combining:
-
-- Jung's psychological energy concepts
-- Kępiński's information metabolism theory
-- Modern neuroscience validation
-- Clinical applications and therapeutic approaches
-- Game with questions - highly abstract
-
-## 🔬 Research Foundation
-
-**Neuroscience Validation**:
-
-- fMRI studies showing distinct neural network activation patterns
-- EEG research on characteristic brainwave patterns
-- Default Mode Network research supporting psychic energy flow
-- Brain imaging validation of function-specific processing
-
-**Psychological Studies**:
-
-- Cross-cultural validation across 30+ cultures
-- Longitudinal research tracking 20-year stability patterns
-- Clinical studies using metabolic profiling for therapeutic interventions
-- Team effectiveness research on metabolic compatibility
-
-**Clinical Applications**:
-
-- Function-specific therapeutic approaches
-- Organizational intervention strategies
-- Educational program optimization
-- Healthcare team performance enhancement
-
-## 📚 Academic Foundation
-
-Built on Jung's _Psychological Types_ and modern MBTI research, integrating insights from:
-
-- Jung's Collected Works (Vol. 6) - _Psychological Types_
+- Jung's _Collected Works Volume 6_ (CW 6) - _Psychological Types_
 - Jung's _On Psychic Energy_ (CW 8) - Energic conception of functions
 - Myers & Briggs' _Gifts Differing_ - MBTI development and applications
 - Kępiński's Information Metabolism Theory - Biological framework for cognitive processing
 - Contemporary neuroscience research - Brain imaging and neural network studies
 - Meta-analysis of 130+ studies (2015-2025) on cognitive function neuroscience
+
+### Research Integration
+
+The framework synthesizes Jung's foundational work on psychological types with modern neuroscience applications, providing practical comparisons grounded in cognitive function theory rather than surface-level behavioral descriptions.
+
+---
 
 ## 🔧 Development
 
