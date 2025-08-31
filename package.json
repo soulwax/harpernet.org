@@ -1,15 +1,15 @@
 {
   "name": "harpernet.org",
-  "version": "1.9.4",
+  "version": "1.9.7",
   "description": "This page is intended to give you some of my wisdom into Jungian psychology and the MBTI framework. Maybe something you haven't yet considered.",
   "type": "commonjs",
   "scripts": {
-    "dev": "vite --port 3890",
+    "dev": "vite",
     "make:og": "node tools/make-og.cjs",
     "build": "vite build",
     "rebuild": "npm run build && npm run restart",
-    "preview": "vite preview --port 3890",
-    "serve": "vite preview --port 3890 --host",
+    "preview": "vite preview",
+    "serve": "vite preview --host",
     "start": "pm2 start ecosystem.config.js --env production",
     "stop": "pm2 stop mbti-app",
     "restart": "pm2 restart mbti-app --update-env",
@@ -17,11 +17,11 @@
     "status": "pm2 status mbti-app",
     "logs": "pm2 logs mbti-app",
     "watch": "nodemon --watch src --exec \"npm run dev\" --ext js,jsx,css,html",
-    "debug": "vite --port 3890 --debug --host",
+    "debug": "vite --debug --host",
     "bump": "npm version patch",
     "prepare": "husky",
     "format": "prettier --write .",
-    "check-format": "prettier --check ."
+    "weights": "node tools/examine-weights.js"
   },
   "keywords": [
     "mbti",
