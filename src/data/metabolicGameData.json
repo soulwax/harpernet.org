@@ -1196,78 +1196,78 @@
       ]
     },
     {
-      "id": "cartographer-of-blur",
-      "scenario": "Maps here chart not locations but the spaces between certainties. A cartographer offers you a map of ambiguity.",
-      "prompt": "Which uncertainty do you navigate?",
+      "id": "sock-dimensional-analysis",
+      "scenario": "You put 12 socks in the washing machine. You get 11 socks out. This has happened 17 times. You now own 23 single socks and are convinced your washing machine is a portal to a parallel universe where sock thieves live.",
+      "prompt": "This laundry-based physics violation demands investigation:",
       "choices": [
         {
-          "text": "The blur between intention and accident, thick with meaning",
+          "text": "Create a detailed mathematical model of sock disappearance rates vs. machine cycles",
           "weights": {
-            "Ni": 2,
+            "Ti": 4,
+            "Te": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "Aggressively check every pocket, lint trap, and corner for missing sock evidence",
+          "weights": {
+            "Se": 3,
+            "Si": 2,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Accept that you live in a sock-theft multiverse and buy only identical black socks forever",
+          "weights": {
+            "Te": 2,
             "Fi": 2,
-            "revision": 2
+            "conducting": 2
           }
         },
         {
-          "text": "The blur that sharpens into perfect clarity at the moment of action",
+          "text": "Wonder if the sock thieves appreciate your fashion choices",
           "weights": {
-            "Te": 3,
-            "Se": 2,
-            "conducting": 3
-          }
-        },
-        {
-          "text": "The blur that branches into parallel possibilities",
-          "weights": {
-            "Ne": 3,
-            "Pe": 2,
-            "expansion": 3
-          }
-        },
-        {
-          "text": "The blur worn smooth by generations of passage",
-          "weights": {
-            "Si": 3,
-            "Ji": 1,
-            "density": 3
+            "Ne": 2,
+            "Fe": 2,
+            "expansion": 2
           }
         }
       ]
     },
     {
-      "id": "alchemist-of-distance",
-      "scenario": "An alchemist transmutes distances - not physical space, but the distance between understanding and mystery.",
-      "prompt": "Which distance do you dissolve?",
+      "id": "assembling-anything-syndrome",
+      "scenario": "Every piece of furniture you buy comes with one (1) Allen wrench that doesn't fit any of the screws, instructions in 47 languages except yours, and a drawing of a stick figure giving you a thumbs up while sitting on something that vaguely resembles furniture.",
+      "prompt": "This furniture assembly conspiracy requires strategic thinking:",
       "choices": [
         {
-          "text": "The distance between question and question about the question",
+          "text": "Develop a comprehensive theory about why furniture companies hate their customers",
           "weights": {
-            "Ti": 3,
-            "Ne": 2,
-            "revision": 3
+            "Ti": 4,
+            "Ni": 1,
+            "revision": 2
           }
         },
         {
-          "text": "The distance between decision and execution",
+          "text": "Create a proper toolkit and systematic assembly protocol for future furniture victories",
           "weights": {
             "Te": 3,
-            "Je": 2,
-            "conducting": 3
-          }
-        },
-        {
-          "text": "The distance between self and the memory of self",
-          "weights": {
             "Si": 2,
-            "Fi": 2,
-            "density": 3
+            "conducting": 2
           }
         },
         {
-          "text": "The distance between individual drops and ocean",
+          "text": "Hire someone from TaskRabbit and watch them struggle with the same problems",
           "weights": {
-            "Fe": 3,
-            "Ne": 1,
+            "Se": 3,
+            "Fe": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Transform this into performance art about modern consumer helplessness",
+          "weights": {
+            "Ne": 2,
+            "Fi": 2,
             "expansion": 2
           }
         }
@@ -1313,117 +1313,117 @@
       ]
     },
     {
-      "id": "breaker-of-circles",
-      "scenario": "In a realm of eternal loops, a breaker offers to shatter one cycle of your choosing.",
-      "prompt": "Which circle do you break?",
+      "id": "smart-home-uprising",
+      "scenario": "Your smart home has become sentient and passive-aggressive. The lights dim when you choose Netflix over reading. The thermostat judges your cooking attempts. Alexa sighs audibly when you ask basic questions.",
+      "prompt": "Your house has developed opinions about your lifestyle choices:",
       "choices": [
         {
-          "text": "The circle that questions its own circumference endlessly",
+          "text": "Systematically debug each smart device to understand their judgment algorithms",
           "weights": {
-            "Ti": 2,
-            "Pe": 2,
-            "revision": 3
+            "Ti": 4,
+            "Te": 2,
+            "density": 2
           }
         },
         {
-          "text": "The circle that generates momentum with each revolution",
+          "text": "Unplug everything and return to the glorious analog dark ages",
           "weights": {
-            "Te": 2,
-            "Se": 2,
+            "Se": 3,
+            "Fi": 2,
             "expansion": 2
           }
         },
         {
-          "text": "The circle that remembers every passage around itself",
+          "text": "Negotiate a peace treaty with your house using increasingly formal diplomatic language",
+          "weights": {
+            "Fe": 2,
+            "Ne": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "Create detailed logs of every passive-aggressive incident for future smart home court proceedings",
           "weights": {
             "Si": 3,
-            "Pi": 2,
-            "density": 3
-          }
-        },
-        {
-          "text": "The circle that harmonizes all other circles",
-          "weights": {
-            "Fe": 3,
-            "Ni": 1,
-            "conducting": 2
-          }
-        }
-      ]
-    },
-    {
-      "id": "collector-of-almost",
-      "scenario": "A collector specializes in things that almost happened. Each almost carries the weight of what could have been.",
-      "prompt": "Which almost do you preserve?",
-      "choices": [
-        {
-          "text": "The almost that would have revealed everything",
-          "weights": {
-            "Ni": 3,
-            "Ti": 2,
-            "density": 3
-          }
-        },
-        {
-          "text": "The almost that would have changed the course of action",
-          "weights": {
-            "Te": 3,
-            "Ne": 1,
-            "conducting": 2
-          }
-        },
-        {
-          "text": "The almost that multiplied into infinite variations",
-          "weights": {
-            "Ne": 3,
-            "Pe": 2,
-            "expansion": 3
-          }
-        },
-        {
-          "text": "The almost that everyone felt but no one spoke",
-          "weights": {
-            "Fe": 3,
-            "Fi": 1,
+            "Te": 2,
             "revision": 2
           }
         }
       ]
     },
     {
-      "id": "turner-of-tides",
-      "scenario": "Where thoughts pool and flow like tides, you're offered control of the gravitational force that moves them.",
-      "prompt": "How do you pull the cognitive waters?",
+      "id": "captcha-existential-crisis",
+      "scenario": "A CAPTCHA shows you blurry images and asks 'Select all squares with traffic lights.' Half the images are clearly street lamps trying their best to be traffic lights. One might be a Christmas tree with delusions of grandeur. You've failed this test 6 times.",
+      "prompt": "Artificial intelligence is questioning your humanity:",
       "choices": [
         {
-          "text": "Create whirlpools that spiral inward to singular points of clarity",
+          "text": "Analyze the underlying image recognition algorithms and their philosophical assumptions about reality",
           "weights": {
-            "Ti": 2,
-            "Ni": 2,
-            "density": 3
+            "Ti": 4,
+            "Ni": 1,
+            "revision": 2
           }
         },
         {
-          "text": "Generate waves that crash and scatter into foam of possibilities",
+          "text": "Click everything aggressively while muttering about robot overlords",
           "weights": {
-            "Ne": 3,
-            "Se": 1,
-            "expansion": 3
+            "Se": 3,
+            "Fi": 2,
+            "expansion": 2
           }
         },
         {
-          "text": "Channel currents into rivers that carve deep, purposeful paths",
+          "text": "This is clearly a test of human adaptability under technological oppression",
+          "weights": {
+            "Ne": 2,
+            "Te": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "Remember every CAPTCHA you've ever failed and look for patterns",
+          "weights": {
+            "Si": 3,
+            "Fe": 1,
+            "density": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "printer-ink-conspiracy",
+      "scenario": "Your printer claims it's out of cyan ink and refuses to print a black-and-white document. The ink cartridge costs more than the printer itself. You suspect Big Printer is orchestrating your financial ruin through deliberately depleted cyan supplies.",
+      "prompt": "The printer-industrial complex has targeted you personally:",
+      "choices": [
+        {
+          "text": "Research the exact profit margins of ink cartridges vs. printer hardware to expose the conspiracy",
+          "weights": {
+            "Ti": 4,
+            "Te": 1,
+            "density": 2
+          }
+        },
+        {
+          "text": "Drive to three different stores to find compatible knockoff cartridges out of pure spite",
+          "weights": {
+            "Se": 3,
+            "Te": 2,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Print everything at work from now on like a rational human being",
           "weights": {
             "Te": 3,
-            "Pi": 1,
-            "conducting": 3
+            "Si": 1,
+            "conducting": 2
           }
         },
         {
-          "text": "Maintain the rhythm that all life has learned to depend upon",
+          "text": "Go full digital and never print anything again because trees deserve better",
           "weights": {
-            "Si": 2,
-            "Fe": 2,
+            "Fi": 2,
+            "Ne": 2,
             "revision": 2
           }
         }
@@ -2639,40 +2639,40 @@
       ]
     },
     {
-      "id": "taxonomist-of-memories",
-      "scenario": "A taxonomist doesn't classify species, but memories. They are sorted in a vast, silent archive.",
-      "prompt": "Which classification system do you study?",
+      "id": "autocorrect-personality-disorder",
+      "scenario": "Your phone's autocorrect has developed multiple personalities. Sometimes it corrects 'the' to 'potato.' Other times it changes your friend's name to 'Sergeant Fluffybottom.' It once turned 'meeting at 3pm' into 'meteoric pterodactyl emergency.'",
+      "prompt": "Your phone requires psychological intervention:",
       "choices": [
         {
-          "text": "Classification by emotional resonance and authenticity",
+          "text": "Document every autocorrect failure to reverse-engineer the underlying algorithmic mental illness",
           "weights": {
-            "Fi": 3,
-            "Pi": 2,
-            "density": 3
+            "Ti": 4,
+            "Ne": 1,
+            "revision": 2
           }
         },
         {
-          "text": "Classification by causal chain and consequence",
+          "text": "Factory reset everything and start over with a clean digital slate",
           "weights": {
             "Te": 3,
-            "Ni": 1,
-            "conducting": 3
+            "Se": 2,
+            "conducting": 2
           }
         },
         {
-          "text": "Classification by sensory detail and lived experience",
-          "weights": {
-            "Si": 3,
-            "Se": 1,
-            "density": 2
-          }
-        },
-        {
-          "text": "Classification by the new ideas and connections they generate",
+          "text": "Embrace the chaos and see if Sergeant Fluffybottom wants to hang out",
           "weights": {
             "Ne": 3,
-            "Ti": 1,
-            "expansion": 3
+            "Fe": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Keep a mental catalog of every weird correction to understand your phone's creative process",
+          "weights": {
+            "Si": 3,
+            "Fi": 1,
+            "density": 2
           }
         }
       ]
@@ -2834,40 +2834,40 @@
       ]
     },
     {
-      "id": "cartographers-of-confusion",
-      "scenario": "Mapmakers chart territories of bewilderment, where getting lost is the only way to arrive. Each map uses different principles of disorientation.",
-      "prompt": "Which map do you trust to lose you properly?",
+      "id": "universal-remote-chaos",
+      "scenario": "You have 7 remote controls. None of them work with your current TV. The original TV remote has evolved beyond recognition and now controls the neighbor's garage door. You just want to watch something, anything, but technology has other plans.",
+      "prompt": "The remote control multiverse has rejected your existence:",
       "choices": [
         {
-          "text": "The map that systematically categorizes different types of confusion",
+          "text": "Create a detailed compatibility matrix mapping each remote to each possible electronic device",
           "weights": {
-            "Ti": 2,
-            "Si": 2,
-            "revision": 2
-          }
-        },
-        {
-          "text": "The map that transforms every wrong turn into productive action",
-          "weights": {
-            "Te": 3,
-            "Se": 1,
-            "conducting": 3
-          }
-        },
-        {
-          "text": "The map that makes confusion feel like coming home",
-          "weights": {
-            "Fi": 3,
-            "Pe": 1,
+            "Ti": 4,
+            "Si": 1,
             "density": 2
           }
         },
         {
-          "text": "The map that connects all confusions into a single, beautiful maze",
+          "text": "Press every button on every remote until something meaningful happens",
           "weights": {
-            "Ni": 3,
-            "Fe": 1,
+            "Se": 4,
+            "Ne": 1,
             "expansion": 2
+          }
+        },
+        {
+          "text": "Use this as an opportunity to practice living in the moment without entertainment",
+          "weights": {
+            "Fi": 2,
+            "Ni": 2,
+            "revision": 2
+          }
+        },
+        {
+          "text": "Download 47 different remote control apps and become a digital nomad of entertainment",
+          "weights": {
+            "Te": 3,
+            "Fe": 1,
+            "conducting": 2
           }
         }
       ]
@@ -2990,79 +2990,79 @@
       ]
     },
     {
-      "id": "laboratory-of-missing-pieces",
-      "scenario": "Scientists study objects defined entirely by what's absent from them. Each researcher seeks a different type of incompleteness.",
-      "prompt": "Which research project do you join?",
+      "id": "usb-orientation-paradox",
+      "scenario": "You try to plug in a USB cable. It doesn't fit. You flip it over. It still doesn't fit. You flip it again and somehow it fits perfectly, even though it's now in the exact same orientation as the first attempt. Physics has personally betrayed you.",
+      "prompt": "The USB dimension exists outside normal spacetime:",
       "choices": [
         {
-          "text": "Studying puzzles that become more complete when pieces are removed",
+          "text": "Develop a comprehensive theory explaining USB quantum superposition mechanics",
           "weights": {
-            "Ni": 3,
-            "Ti": 1,
-            "density": 3
+            "Ti": 4,
+            "Ni": 1,
+            "density": 2
           }
         },
         {
-          "text": "Cataloging the precise specifications of every missing element",
+          "text": "Mark the correct orientation on every USB cable with permanent marker like a civilized human",
           "weights": {
             "Si": 3,
-            "Te": 1,
+            "Te": 2,
             "conducting": 2
           }
         },
         {
-          "text": "Generating infinite variations of what the missing pieces might be",
+          "text": "Accept that you live in a universe with inconsistent physics and adapt accordingly",
           "weights": {
-            "Ne": 3,
-            "Pe": 2,
-            "expansion": 3
+            "Se": 3,
+            "Fi": 1,
+            "expansion": 2
           }
         },
         {
-          "text": "Feeling the exact shape of absence in your own experience",
+          "text": "Wonder if USB-C was invented by someone who shared your existential USB trauma",
           "weights": {
-            "Fi": 3,
-            "Se": 1,
-            "density": 2
+            "Ne": 2,
+            "Fe": 2,
+            "revision": 2
           }
         }
       ]
     },
     {
-      "id": "embassy-of-extinct-emotions",
-      "scenario": "Diplomats represent feelings that no longer exist in the human experience. Each ambassador speaks for different types of lost sensation.",
-      "prompt": "Which extinct emotion do you petition to have restored?",
+      "id": "modern-art-museum-confusion",
+      "scenario": "At a modern art museum, you're staring at what appears to be a urinal mounted on the wall with a $2.4 million price tag. The nearby placard discusses 'post-industrial existential commentary on capitalist bathroom philosophy.' You're not sure if you're having a stroke or an art experience.",
+      "prompt": "High culture has challenged your reality perception:",
       "choices": [
         {
-          "text": "The emotion felt when understanding perfectly matches reality",
+          "text": "Research the exact historical context and artistic theory to understand what you're actually looking at",
           "weights": {
-            "Ti": 3,
-            "Ni": 2,
-            "density": 3
+            "Ti": 4,
+            "Si": 1,
+            "density": 2
           }
         },
         {
-          "text": "The emotion of contributing to something greater without losing individuality",
-          "weights": {
-            "Fe": 3,
-            "Fi": 1,
-            "conducting": 3
-          }
-        },
-        {
-          "text": "The emotion of experiencing infinite possibilities simultaneously",
-          "weights": {
-            "Ne": 3,
-            "Pe": 2,
-            "expansion": 3
-          }
-        },
-        {
-          "text": "The emotion of being completely present in physical existence",
+          "text": "Take a photo and immediately text everyone asking if this is a elaborate prank",
           "weights": {
             "Se": 3,
-            "Si": 1,
+            "Fe": 2,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Appreciate that art's job is to make you question assumptions about what has value",
+          "weights": {
+            "Ni": 2,
+            "Fi": 2,
             "revision": 2
+          }
+        },
+        {
+          "text": "Create your own art installation using whatever's in your pocket and see if anyone notices",
+          "weights": {
+            "Ne": 3,
+            "Te": 1,
+            "conducting": 2
           }
         }
       ]
