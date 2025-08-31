@@ -3146,12 +3146,12 @@
       ]
     },
     {
-      "id": "scribe-of-blood",
-      "scenario": "An occult scribe writes with ink brewed from forgotten veins. Each script bleeds differently into reality.",
-      "prompt": "Which manuscript stains your hands?",
+      "id": "group-chat-disaster",
+      "scenario": "You accidentally send a message complaining about your friend Sarah to a group chat that includes Sarah. Everyone has seen it. The typing indicators show three people are currently composing responses.",
+      "prompt": "What's your damage control strategy?",
       "choices": [
         {
-          "text": "The verse that names a truth you cannot unknow",
+          "text": "Immediately understand exactly what this reveals about your relationship patterns and apologize with complete honesty",
           "weights": {
             "Ni": 3,
             "Ti": 2,
@@ -3159,7 +3159,7 @@
           }
         },
         {
-          "text": "The chant that binds strangers into a single pulse",
+          "text": "Quickly type something to make everyone laugh and diffuse the tension",
           "weights": {
             "Fe": 3,
             "Se": 1,
@@ -3167,7 +3167,7 @@
           }
         },
         {
-          "text": "The fragment that reshapes itself whenever read",
+          "text": "Send seventeen increasingly frantic follow-up messages trying to explain the context",
           "weights": {
             "Ne": 3,
             "Fi": 1,
@@ -3175,7 +3175,7 @@
           }
         },
         {
-          "text": "The ledger that turns every breath into an exact account",
+          "text": "Screenshot everything for evidence and prepare a systematic defense",
           "weights": {
             "Te": 3,
             "Si": 1,
@@ -3185,12 +3185,12 @@
       ]
     },
     {
-      "id": "warden-of-ash",
-      "scenario": "At the edge of a firepit where centuries of pyres burned, a warden offers heaps of cooled ash, each retaining a memory of its blaze.",
-      "prompt": "Which ash do you breathe in?",
+      "id": "phone-battery-anxiety",
+      "scenario": "Your phone is at 23% battery. You're meeting friends in an hour but don't know exactly where. Your charger is at home. The nearest store that sells chargers is a 15-minute walk in the wrong direction.",
+      "prompt": "This energy crisis demands immediate action:",
       "choices": [
         {
-          "text": "The ash that sharpens memory into a weapon",
+          "text": "Turn on every possible power-saving mode and guard each percentage like a precious resource",
           "weights": {
             "Si": 3,
             "Ti": 1,
@@ -3198,7 +3198,7 @@
           }
         },
         {
-          "text": "The ash that cloaks you until you are seen only as reflection",
+          "text": "Text everyone involved right now with detailed backup plans",
           "weights": {
             "Fe": 3,
             "Ni": 1,
@@ -3206,7 +3206,7 @@
           }
         },
         {
-          "text": "The ash that swirls unpredictably, remaking its storm with each exhale",
+          "text": "This is actually liberating - embrace the digital detox and wing it",
           "weights": {
             "Ne": 3,
             "Se": 1,
@@ -3214,7 +3214,7 @@
           }
         },
         {
-          "text": "The ash that refuses to scatter, heavy with unyielding purpose",
+          "text": "Calculate the exact trade-offs: time cost vs. risk vs. battery drain of each option",
           "weights": {
             "Te": 3,
             "Fi": 1,
@@ -3302,12 +3302,12 @@
       ]
     },
     {
-      "id": "mathematician-of-bones",
-      "scenario": "An ancient scholar arranges bones into equations. Each sum solves not numbers but destinies.",
-      "prompt": "Which solution do you calculate?",
+      "id": "ikea-furniture-assembly",
+      "scenario": "You're assembling IKEA furniture. The instructions show 6 steps, but you have 23 screws, 4 mysterious wooden dowels, and what appears to be a small plastic whale. Your bookshelf currently looks like abstract art.",
+      "prompt": "How do you proceed?",
       "choices": [
         {
-          "text": "The equation that proves the pattern of all endings",
+          "text": "There's obviously a hidden pattern here - this is a puzzle to be solved through pure logic",
           "weights": {
             "Ni": 3,
             "Ti": 2,
@@ -3315,7 +3315,7 @@
           }
         },
         {
-          "text": "The equation that balances suffering against belonging",
+          "text": "Call everyone you know who might have assembled this exact model before",
           "weights": {
             "Fe": 3,
             "Fi": 1,
@@ -3323,7 +3323,7 @@
           }
         },
         {
-          "text": "The equation that multiplies endlessly, birthing new unknowns",
+          "text": "Start over completely and document every step this time with photos",
           "weights": {
             "Ne": 3,
             "Se": 1,
@@ -3331,7 +3331,7 @@
           }
         },
         {
-          "text": "The equation that reduces complexity into a command to act",
+          "text": "YouTube tutorial time - someone has definitely solved this problem already",
           "weights": {
             "Te": 3,
             "Si": 2,
@@ -3380,12 +3380,12 @@
       ]
     },
     {
-      "id": "butcher-of-dreams",
-      "scenario": "In a midnight market, a butcher slices dreams into cuts, each with its own flavor of fate.",
-      "prompt": "Which cut do you taste?",
+      "id": "netflix-paralysis",
+      "scenario": "You have exactly 47 minutes before you need to sleep. Netflix shows you 847 options. You've scrolled for 12 minutes already. Now you have 35 minutes left and still no decision.",
+      "prompt": "What breaks the deadlock?",
       "choices": [
         {
-          "text": "The marrow that carries hidden truths through the bone",
+          "text": "This moment perfectly captures the absurdity of choice anxiety in modern life",
           "weights": {
             "Ni": 3,
             "Fi": 1,
@@ -3393,7 +3393,7 @@
           }
         },
         {
-          "text": "The flesh that nourishes collective celebration",
+          "text": "Ask your roommate/partner what they're in the mood for and watch that",
           "weights": {
             "Fe": 3,
             "Se": 1,
@@ -3401,7 +3401,7 @@
           }
         },
         {
-          "text": "The scrap that mutates with each bite, unpredictable and wild",
+          "text": "Close Netflix and go down a completely different rabbit hole for 45 minutes",
           "weights": {
             "Ne": 3,
             "Ti": 1,
@@ -3409,7 +3409,7 @@
           }
         },
         {
-          "text": "The rind that preserves every season it endured",
+          "text": "Sort by 'trending now' and pick the first thing that's exactly 47 minutes or less",
           "weights": {
             "Si": 3,
             "Te": 1,
@@ -3419,12 +3419,12 @@
       ]
     },
     {
-      "id": "astronomer-of-cinders",
-      "scenario": "Where stars have died, an astronomer charts only cinders. Each glow whispers differently of what was lost.",
-      "prompt": "Which ember do you follow?",
+      "id": "pizza-topping-negotiations",
+      "scenario": "You're ordering pizza for a group of 8 people. So far you have: 2 vegetarians, 1 person allergic to tomatoes, 1 person who 'doesn't do cheese,' someone who insists pineapple belongs on pizza, and someone who threatens to leave if pineapple touches the order.",
+      "prompt": "How do you navigate this culinary diplomacy crisis?",
       "choices": [
         {
-          "text": "The ember that remembers the exact moment of collapse",
+          "text": "Remember every food preference conversation from the past six months and cross-reference",
           "weights": {
             "Si": 3,
             "Ti": 1,
@@ -3432,7 +3432,7 @@
           }
         },
         {
-          "text": "The ember that burns toward futures unseen",
+          "text": "This situation reveals something profound about human compromise and community",
           "weights": {
             "Ni": 3,
             "Fe": 1,
@@ -3440,7 +3440,7 @@
           }
         },
         {
-          "text": "The ember that mirrors the warmth of all who gather around it",
+          "text": "Create a shared document where everyone can vote and negotiate in real-time",
           "weights": {
             "Fe": 3,
             "Se": 1,
@@ -3448,7 +3448,7 @@
           }
         },
         {
-          "text": "The ember that flickers into unpredictable sparks",
+          "text": "Order 5 different pizzas and see what happens - chaos can be beautiful",
           "weights": {
             "Ne": 3,
             "Fi": 1,
@@ -3458,12 +3458,12 @@
       ]
     },
     {
-      "id": "engraver-of-silhouettes",
-      "scenario": "Silhouettes are etched here with obsidian knives. Each reveals the outline of something unseen.",
-      "prompt": "Which shadow-mark do you bear?",
+      "id": "autocomplete-embarrassment",
+      "scenario": "You're typing an email to your boss when autocomplete suggests finishing 'Thank you for your consideration' with 'you beautiful tropical fish.' You have no idea why your phone thinks this is what you meant to say.",
+      "prompt": "This technological mystery requires investigation:",
       "choices": [
         {
-          "text": "The mark that defines by absence, carving clarity",
+          "text": "This is a perfect example of how predictive algorithms reveal hidden patterns in our communication",
           "weights": {
             "Ti": 2,
             "Ni": 2,
@@ -3471,7 +3471,7 @@
           }
         },
         {
-          "text": "The mark that insists on presence, no matter the light",
+          "text": "Immediately delete everything and start over with the most professional language possible",
           "weights": {
             "Se": 4,
             "Te": 1,
@@ -3479,7 +3479,7 @@
           }
         },
         {
-          "text": "The mark that fractures into strange geometries each night",
+          "text": "Screenshot this and start a collection of bizarre autocomplete fails",
           "weights": {
             "Ne": 3,
             "Fi": 1,
@@ -3487,7 +3487,7 @@
           }
         },
         {
-          "text": "The mark that recalls every form it once belonged to",
+          "text": "Go through your text history to find the chain of conversations that led to this suggestion",
           "weights": {
             "Si": 3,
             "Fe": 1,
@@ -3497,12 +3497,12 @@
       ]
     },
     {
-      "id": "harvester-of-silence",
-      "scenario": "A harvester cuts silence into bundles. Some silences heal, others suffocate.",
-      "prompt": "Which bundle do you carry?",
+      "id": "elevator-small-talk",
+      "scenario": "You're in an elevator with your neighbor who you've nodded at for 3 years but never actually spoken to. It's a 47-second ride to the top floor. They just commented on the weather.",
+      "prompt": "This moment of forced social interaction unfolds how?",
       "choices": [
         {
-          "text": "The silence heavy with unspoken recognition",
+          "text": "Recognize this as a perfect opportunity to finally establish actual human connection",
           "weights": {
             "Fe": 3,
             "Ni": 1,
@@ -3510,7 +3510,7 @@
           }
         },
         {
-          "text": "The silence that erupts when truth cannot be ignored",
+          "text": "Respond with enthusiasm and see how much conversation you can pack into 47 seconds",
           "weights": {
             "Se": 3,
             "Te": 1,
@@ -3518,7 +3518,7 @@
           }
         },
         {
-          "text": "The silence that fractures into countless whispers",
+          "text": "Wonder about all the parallel elevator conversations happening right now across the world",
           "weights": {
             "Ne": 3,
             "Ti": 1,
@@ -3526,7 +3526,7 @@
           }
         },
         {
-          "text": "The silence that endures, pressed deep into memory",
+          "text": "Provide detailed weather analysis based on your morning observations",
           "weights": {
             "Si": 3,
             "Fi": 1,
@@ -3536,12 +3536,12 @@
       ]
     },
     {
-      "id": "miner-of-doubts",
-      "scenario": "In a cavern glittering with uncertainty, doubts form like crystals. Each shines in its own way.",
-      "prompt": "Which doubt do you hold to the light?",
+      "id": "wikipedia-rabbit-hole",
+      "scenario": "You went to Wikipedia to look up when pennies were invented. It's now 3 AM and you're reading about the mating habits of deep-sea anglerfish. You have work in 5 hours.",
+      "prompt": "How did you get here, and more importantly, what happens next?",
       "choices": [
         {
-          "text": "The doubt that sharpens every answer into finer questions",
+          "text": "Try to retrace the exact sequence of links that led to this moment",
           "weights": {
             "Ti": 3,
             "Ni": 1,
@@ -3549,7 +3549,7 @@
           }
         },
         {
-          "text": "The doubt that mirrors the fears of those around you",
+          "text": "Accept that this is who you are and bookmark seventeen more articles for tomorrow",
           "weights": {
             "Fe": 3,
             "Se": 2,
@@ -3557,7 +3557,7 @@
           }
         },
         {
-          "text": "The doubt that multiplies endlessly, spawning possibilities",
+          "text": "This is actually fascinating - the anglerfish thing connects to economics somehow",
           "weights": {
             "Ne": 3,
             "Fi": 1,
@@ -3565,7 +3565,7 @@
           }
         },
         {
-          "text": "The doubt that compresses into unyielding conviction",
+          "text": "Set an alarm for 4:30 AM and power through on coffee and spite",
           "weights": {
             "Te": 3,
             "Si": 1,
