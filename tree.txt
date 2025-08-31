@@ -1,6 +1,8 @@
 harpernet.org
 ├───.env.local
+├───.env.production
 ├───.env.sample
+├───.env.staging
 ├───.gitignore
 ├───.prettierrc
 ├───CHANGELOG.md
@@ -13,6 +15,7 @@ harpernet.org
 ├───tree.txt
 ├───vercel.json
 ├───vite.config.js
+├───weights.txt
 ├───.github/
 │   └───resources/
 │       └───infjlolcat.gif
@@ -111,6 +114,6 @@ harpernet.org
 │   └───styles/
 │       └───theme.css
 └───tools/
+    ├───examine-weights.js
     ├───make-og.cjs
-    ├───test-quiz-weights.js
     └───update_harpernet.sh

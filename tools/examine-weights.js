@@ -1,4 +1,4 @@
-// File: tools/test-quiz-weights.js
+// File: tools/examine-weights.js
 
 const fs = require('fs');
 
