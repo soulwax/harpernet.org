@@ -985,15 +985,15 @@
         {
           "text": "Download the TV remote app and marvel at living in the future",
           "weights": {
-            "Ne": 2,
-            "Ti": 1,
+            "Ne": 3,
+            "Ti": 2,
             "expansion": 2
           }
         },
         {
           "text": "Accept this as the universe telling you to read a book instead",
           "weights": {
-            "Ni": 2,
+            "Ni": 3,
             "Fi": 2,
             "density": 2
           }
@@ -1009,7 +1009,7 @@
           "text": "Follow your own sense of direction and arrive fashionably late but dry",
           "weights": {
             "Se": 3,
-            "Si": 2,
+            "Si": 1,
             "expansion": 2
           }
         },
@@ -1017,14 +1017,14 @@
           "text": "Calculate alternate routes while documenting this GPS failure for future reference",
           "weights": {
             "Te": 3,
-            "Si": 2,
+            "Si": 1,
             "conducting": 2
           }
         },
         {
           "text": "Wonder if the GPS knows something about reality that you don't",
           "weights": {
-            "Ni": 2,
+            "Ni": 3,
             "Ti": 2,
             "revision": 2
           }
@@ -1055,8 +1055,8 @@
         {
           "text": "The edge that multiplies into fractal boundaries",
           "weights": {
-            "Ne": 3,
-            "Ni": 1,
+            "Ne": 4,
+            "Ni": 2,
             "expansion": 3
           }
         },
@@ -1086,7 +1086,7 @@
         {
           "text": "The weight of words unspoken but understood completely",
           "weights": {
-            "Fi": 2,
+            "Fi": 3,
             "Ni": 2,
             "density": 3
           }
@@ -1110,7 +1110,7 @@
         {
           "text": "The weight of rituals performed by forgotten ancestors",
           "weights": {
-            "Si": 3,
+            "Si": 2,
             "Fe": 1,
             "density": 2
           }
@@ -1118,40 +1118,40 @@
       ]
     },
     {
-      "id": "printer-paper-jam",
-      "scenario": "The office printer has jammed in a way that defies physics. The paper is somehow folded in six dimensions. Your deadline is in 10 minutes and this is the only printer in the building.",
-      "prompt": "Technology has personally offended you:",
+      "id": "mourner-of-final-words",
+      "scenario": "In a crypt where final words crystallize into amber, a mourner tends to the last utterances of souls before they cross into silence. Each preserved phrase still pulses with the weight of ultimate truth.",
+      "prompt": "Which final words do you ask them to preserve?",
       "choices": [
         {
-          "text": "Follow the troubleshooting diagram step by step, even if it takes 20 minutes",
+          "text": "The words that contain everything left unsaid, compressed into perfect honesty",
           "weights": {
-            "Si": 3,
-            "Te": 3,
+            "Fi": 4,
+            "Ni": 2,
+            "density": 4
+          }
+        },
+        {
+          "text": "The words that question whether speaking was ever necessary at all",
+          "weights": {
+            "Ti": 2,
+            "Ni": 3,
+            "revision": 4
+          }
+        },
+        {
+          "text": "The words that reach across death to comfort those who remain",
+          "weights": {
+            "Fe": 3,
+            "Si": 1,
             "conducting": 2
           }
         },
         {
-          "text": "Gently percussive maintenance - sometimes machines just need encouragement",
-          "weights": {
-            "Se": 3,
-            "Ti": 1,
-            "expansion": 2
-          }
-        },
-        {
-          "text": "This is clearly a sign that digital-only submissions are the future anyway",
+          "text": "The words that shatter into fragments, each piece becoming a new beginning",
           "weights": {
             "Ne": 2,
-            "Fi": 2,
-            "revision": 2
-          }
-        },
-        {
-          "text": "Email the document and explain the printer situation with full documentation",
-          "weights": {
-            "Te": 2,
-            "Fe": 2,
-            "conducting": 2
+            "Ni": 4,
+            "expansion": 2
           }
         }
       ]
@@ -1186,11 +1186,11 @@
           }
         },
         {
-          "text": "The absence that holds space for collective memory",
+          "text": "The absence that holds space for a harmonious whole",
           "weights": {
-            "Fe": 2,
-            "Si": 2,
-            "revision": 2
+            "Fe": 4,
+            "Ni": 4,
+            "expansion": 4
           }
         }
       ]

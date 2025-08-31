@@ -205,7 +205,7 @@ The framework synthesizes Jung's foundational work on psychological types with m
 
 ---
 
-## ⚖️ Balancing State as of version 1.9.10
+## ⚖️ Balancing State as of version 1.9.11
 
 Some work as you can see has been put into balancing the weights of the quiz but it is still a work in progress.
 The current weights are as follows (run `npm run weights` to generate a weights.txt file, or `node tools/examine-weights.js` to output the table into the console):
@@ -214,18 +214,18 @@ The current weights are as follows (run `npm run weights` to generate a weights.
 ┌─────────┬──────────────┬──────────────┬────────────────┐
 │ (index) │ Function     │ Total Weight │ Percentage (%) │
 ├─────────┼──────────────┼──────────────┼────────────────┤
-│ 0       │ 'density'    │ 258          │ '10.05'        │
-│ 1       │ 'revision'   │ 240          │ '9.35'         │
-│ 2       │ 'expansion'  │ 224          │ '8.72'         │
-│ 3       │ 'conducting' │ 221          │ '8.61'         │
-│ 4       │ 'Si'         │ 215          │ '8.37'         │
-│ 5       │ 'Ti'         │ 208          │ '8.10'         │
-│ 6       │ 'Te'         │ 207          │ '8.06'         │
-│ 7       │ 'Fe'         │ 206          │ '8.02'         │
-│ 8       │ 'Se'         │ 206          │ '8.02'         │
-│ 9       │ 'Ne'         │ 202          │ '7.87'         │
-│ 10      │ 'Fi'         │ 198          │ '7.71'         │
-│ 11      │ 'Ni'         │ 183          │ '7.13'         │
+│ 0       │ 'density'    │ 262          │ '10.14'        │
+│ 1       │ 'revision'   │ 240          │ '9.28'         │
+│ 2       │ 'expansion'  │ 228          │ '8.82'         │
+│ 3       │ 'conducting' │ 219          │ '8.47'         │
+│ 4       │ 'Ti'         │ 210          │ '8.12'         │
+│ 5       │ 'Fe'         │ 209          │ '8.09'         │
+│ 6       │ 'Si'         │ 208          │ '8.05'         │
+│ 7       │ 'Ne'         │ 204          │ '7.89'         │
+│ 8       │ 'Se'         │ 203          │ '7.85'         │
+│ 9       │ 'Te'         │ 202          │ '7.81'         │
+│ 10      │ 'Fi'         │ 201          │ '7.78'         │
+│ 11      │ 'Ni'         │ 199          │ '7.70'         │
 └─────────┴──────────────┴──────────────┴────────────────┘
 ```
 
