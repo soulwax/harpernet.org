@@ -806,40 +806,40 @@
       ]
     },
     {
-      "id": "merchant-of-doors",
-      "scenario": "A merchant sells doors that open only once. Each door leads to a different kind of nowhere.",
-      "prompt": "Which nowhere calls to your essence?",
+      "id": "coffee-shop-wifi",
+      "scenario": "The coffee shop WiFi password is 'password123' but it's not working. You've tried 'Password123', 'PASSWORD123', and 'password123!'. The barista shrugs and says 'it works for everyone else.' Your laptop battery is at 8%.",
+      "prompt": "This connectivity crisis threatens your productivity:",
       "choices": [
         {
-          "text": "The nowhere that exists between heartbeats, heavy with unspoken names",
+          "text": "Methodically try every possible capitalization and special character combination",
           "weights": {
-            "Fi": 3,
+            "Si": 3,
+            "Te": 2,
+            "density": 2
+          }
+        },
+        {
+          "text": "Pack up immediately and find a coffee shop that respects customer needs",
+          "weights": {
+            "Se": 3,
+            "Te": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "Use this as an opportunity to practice working offline and being present",
+          "weights": {
+            "Fi": 2,
             "Ni": 2,
             "density": 2
           }
         },
         {
-          "text": "The nowhere that branches endlessly, each path birthing ten more",
+          "text": "Ask every other customer what password worked for them",
           "weights": {
-            "Ne": 3,
-            "Pe": 2,
-            "expansion": 3
-          }
-        },
-        {
-          "text": "The nowhere that moves with clockwork precision toward its own completion",
-          "weights": {
-            "Te": 3,
-            "Je": 2,
-            "conducting": 3
-          }
-        },
-        {
-          "text": "The nowhere that remembers every footstep that never touched its ground",
-          "weights": {
-            "Si": 3,
-            "Ti": 1,
-            "density": 3
+            "Fe": 2,
+            "Ne": 1,
+            "expansion": 2
           }
         }
       ]
@@ -962,79 +962,79 @@
       ]
     },
     {
-      "id": "weaver-of-silence",
-      "scenario": "Silence here has texture, weight, and color. A weaver offers you threads of different quiets to craft your own hush.",
-      "prompt": "What silence do you weave?",
+      "id": "remote-control-mystery",
+      "scenario": "Your TV remote has vanished into the same dimension where single socks go to die. You've checked all three couch cushions twice. Your show starts in 2 minutes and you're too invested to switch to something else.",
+      "prompt": "This domestic crisis demands immediate action:",
       "choices": [
         {
-          "text": "The dense silence that exists before the first word was thought",
-          "weights": {
-            "Ni": 3,
-            "Ji": 2,
-            "density": 3
-          }
-        },
-        {
-          "text": "The explosive silence between lightning and thunder",
+          "text": "Use the TV's physical buttons like some kind of medieval peasant",
           "weights": {
             "Se": 3,
-            "Je": 1,
+            "Te": 2,
             "expansion": 2
           }
         },
         {
-          "text": "The methodical silence of spaces between clock ticks",
+          "text": "Systematically search every possible location using grid methodology",
           "weights": {
-            "Si": 2,
-            "Te": 2,
+            "Te": 3,
+            "Si": 3,
             "conducting": 2
           }
         },
         {
-          "text": "The pregnant silence full of unborn possibilities",
+          "text": "Download the TV remote app and marvel at living in the future",
           "weights": {
-            "Ne": 3,
-            "Fi": 1,
-            "revision": 3
+            "Ne": 2,
+            "Ti": 1,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Accept this as the universe telling you to read a book instead",
+          "weights": {
+            "Ni": 2,
+            "Fi": 2,
+            "density": 2
           }
         }
       ]
     },
     {
-      "id": "architect-of-falling",
-      "scenario": "In a place where falling upward is possible, an architect designs buildings based on gravity's mood.",
-      "prompt": "What structure do you commission?",
+      "id": "gps-confidence-crisis",
+      "scenario": "Your GPS is confidently directing you to drive straight into a lake. It insists this is the fastest route. You can see the lake. The GPS cannot be reasoned with.",
+      "prompt": "Navigation technology has betrayed basic geography:",
       "choices": [
         {
-          "text": "A tower that falls in all directions simultaneously, never landing",
+          "text": "Follow your own sense of direction and arrive fashionably late but dry",
           "weights": {
-            "Ne": 3,
-            "Pe": 2,
-            "expansion": 3
+            "Se": 3,
+            "Si": 2,
+            "expansion": 2
           }
         },
         {
-          "text": "A foundation that remembers every impact and grows stronger",
-          "weights": {
-            "Si": 3,
-            "Ji": 2,
-            "density": 3
-          }
-        },
-        {
-          "text": "A bridge that calculates the optimal angle of descent",
+          "text": "Calculate alternate routes while documenting this GPS failure for future reference",
           "weights": {
             "Te": 3,
-            "Ti": 1,
-            "conducting": 3
+            "Si": 2,
+            "conducting": 2
           }
         },
         {
-          "text": "A shelter that falls gently with those who need comfort",
+          "text": "Wonder if the GPS knows something about reality that you don't",
           "weights": {
-            "Fe": 3,
-            "Fi": 1,
+            "Ni": 2,
+            "Ti": 2,
             "revision": 2
+          }
+        },
+        {
+          "text": "Take a photo of the GPS screen for proof of technological malice",
+          "weights": {
+            "Ne": 2,
+            "Fe": 1,
+            "expansion": 2
           }
         }
       ]
@@ -1118,39 +1118,39 @@
       ]
     },
     {
-      "id": "gardener-of-echoes",
-      "scenario": "In a garden where echoes take root and grow into new sounds, you must tend to the acoustic ecosystem.",
-      "prompt": "Which echo do you cultivate?",
+      "id": "printer-paper-jam",
+      "scenario": "The office printer has jammed in a way that defies physics. The paper is somehow folded in six dimensions. Your deadline is in 10 minutes and this is the only printer in the building.",
+      "prompt": "Technology has personally offended you:",
       "choices": [
         {
-          "text": "The echo that questions its own source recursively",
+          "text": "Follow the troubleshooting diagram step by step, even if it takes 20 minutes",
           "weights": {
-            "Ti": 3,
-            "Ne": 1,
-            "revision": 3
+            "Si": 3,
+            "Te": 3,
+            "conducting": 2
           }
         },
         {
-          "text": "The echo that amplifies itself into a symphony of action",
+          "text": "Gently percussive maintenance - sometimes machines just need encouragement",
           "weights": {
-            "Te": 2,
-            "Fe": 2,
+            "Se": 3,
+            "Ti": 1,
             "expansion": 2
           }
         },
         {
-          "text": "The echo that preserves the original perfectly across time",
+          "text": "This is clearly a sign that digital-only submissions are the future anyway",
           "weights": {
-            "Si": 3,
-            "Pi": 2,
-            "density": 3
+            "Ne": 2,
+            "Fi": 2,
+            "revision": 2
           }
         },
         {
-          "text": "The echo that transforms into what the listener needs to hear",
+          "text": "Email the document and explain the printer situation with full documentation",
           "weights": {
-            "Fe": 3,
-            "Ne": 1,
+            "Te": 2,
+            "Fe": 2,
             "conducting": 2
           }
         }
@@ -1274,40 +1274,40 @@
       ]
     },
     {
-      "id": "keeper-of-seams",
-      "scenario": "Where realities stitch together, someone must tend the seams. The keeper shows you threads of different compositions.",
-      "prompt": "Which thread do you pull?",
+      "id": "autocorrect-vendetta",
+      "scenario": "Your phone's autocorrect has developed a personal grudge against you. It changes 'definitely' to 'defiantly' every single time, and now it's started changing your name to 'Broccoli' in all your texts.",
+      "prompt": "This technological persecution demands response:",
       "choices": [
         {
-          "text": "The thread that unravels to reveal the pattern beneath patterns",
+          "text": "Spend an hour training the dictionary by typing every word you use correctly 50 times",
           "weights": {
-            "Ti": 2,
-            "Ni": 3,
-            "density": 3
-          }
-        },
-        {
-          "text": "The thread that pulls everything tighter together",
-          "weights": {
-            "Fe": 2,
-            "Si": 2,
+            "Si": 3,
+            "Te": 3,
             "conducting": 2
           }
         },
         {
-          "text": "The thread that splits into countless fibers of possibility",
+          "text": "Type everything in all caps to assert dominance over the algorithm",
           "weights": {
-            "Ne": 3,
-            "Se": 1,
-            "expansion": 3
+            "Se": 3,
+            "Fi": 1,
+            "expansion": 2
           }
         },
         {
-          "text": "The thread that knows exactly where it leads",
+          "text": "Embrace your new identity as Broccoli and see where this leads",
           "weights": {
-            "Te": 3,
-            "Pi": 1,
-            "conducting": 3
+            "Ne": 2,
+            "Fe": 2,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Research why autocorrect algorithms are designed this way and file mental complaints",
+          "weights": {
+            "Ti": 2,
+            "Ni": 2,
+            "revision": 2
           }
         }
       ]
@@ -1820,40 +1820,40 @@
       ]
     },
     {
-      "id": "cartographer-of-time",
-      "scenario": "A cartographer draws maps of moments that slip between ticks of a clock.",
-      "prompt": "Which moment do you chart?",
+      "id": "social-media-stalking",
+      "scenario": "You meant to quickly check if your high school acquaintance got married. It's now 2 AM and you're looking at their cousin's roommate's graduation photos from 2019, somehow invested in whether Jennifer passed organic chemistry.",
+      "prompt": "This social media archaeology expedition has consumed your evening:",
       "choices": [
         {
-          "text": "The instant before a decision becomes irreversible",
+          "text": "Try to reverse-engineer how you got from wedding photos to Jennifer's academic struggles",
+          "weights": {
+            "Ti": 3,
+            "Si": 2,
+            "revision": 2
+          }
+        },
+        {
+          "text": "Set a timer for 5 minutes and sprint to find the original information you needed",
           "weights": {
             "Te": 3,
-            "Ni": 1,
-            "conducting": 3
+            "Se": 2,
+            "conducting": 2
           }
         },
         {
-          "text": "The pause that contains every possible outcome",
+          "text": "This is fascinating anthropological research - continue documenting the social web",
           "weights": {
-            "Ne": 3,
-            "Pi": 2,
-            "expansion": 3
+            "Ne": 2,
+            "Fe": 2,
+            "expansion": 2
           }
         },
         {
-          "text": "The breath that holds complete understanding",
+          "text": "Close everything and stare at the ceiling wondering about the nature of curiosity",
           "weights": {
-            "Fi": 3,
-            "Si": 1,
+            "Ni": 2,
+            "Fi": 2,
             "density": 2
-          }
-        },
-        {
-          "text": "The silence that follows the final note",
-          "weights": {
-            "Se": 3,
-            "Ti": 1,
-            "revision": 2
           }
         }
       ]
@@ -2288,40 +2288,40 @@
       ]
     },
     {
-      "id": "chronosmith-of-moments",
-      "scenario": "You meet a smith who forges not metal, but time itself. They can temper, fold, or shatter moments. They offer to craft you a temporal artifact.",
-      "prompt": "What piece of time do you request?",
+      "id": "bluetooth-pairing-hell",
+      "scenario": "Your wireless headphones refuse to pair. They show up in your device list as 'Broccoli's AirPods' (not your name). When you try to connect, they play someone else's music at maximum volume before disconnecting.",
+      "prompt": "This bluetooth betrayal requires immediate intervention:",
       "choices": [
         {
-          "text": "A shard of the future, so dense with destiny it pulls the present toward it",
+          "text": "Systematically delete all bluetooth devices and start the pairing process from scratch",
           "weights": {
-            "Ni": 3,
-            "Te": 1,
-            "density": 3
-          }
-        },
-        {
-          "text": "A Möbius strip of a perfect memory, looping forever without degradation",
-          "weights": {
+            "Te": 3,
             "Si": 3,
-            "Fi": 1,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "Physically tap the headphones while making increasingly aggressive pairing gestures",
+          "weights": {
+            "Se": 4,
+            "Fi": 2,
+            "expansion": 2
+          }
+        },
+        {
+          "text": "Accept your new identity as Broccoli and embrace the mystery music",
+          "weights": {
+            "Ne": 2,
+            "Fe": 2,
+            "revision": 2
+          }
+        },
+        {
+          "text": "Analyze why bluetooth technology consistently fails at its one job",
+          "weights": {
+            "Ti": 3,
+            "Ni": 2,
             "density": 2
-          }
-        },
-        {
-          "text": "A cloud of fractured seconds, each containing a different alternate reality",
-          "weights": {
-            "Ne": 3,
-            "Pe": 2,
-            "expansion": 3
-          }
-        },
-        {
-          "text": "A lens that focuses the will of a group into one actionable moment",
-          "weights": {
-            "Fe": 3,
-            "Se": 1,
-            "conducting": 3
           }
         }
       ]
@@ -2483,40 +2483,40 @@
       ]
     },
     {
-      "id": "glassblower-of-regrets",
-      "scenario": "A craftsman blows glass sculptures from the sighs of regret. Each is fragile and holds a crystallized 'what if'.",
-      "prompt": "Which sculpture do you take home?",
+      "id": "zoom-camera-panic",
+      "scenario": "You join a work meeting and your camera turns on automatically. Your hair looks like you stuck your finger in an electrical socket, you're wearing a shirt that says 'I HATE MONDAYS' and it's Tuesday, and there's a cat actively destroying something behind you.",
+      "prompt": "This video conference disaster unfolds in real-time:",
       "choices": [
         {
-          "text": "A web showing how one missed chance connects to all others",
+          "text": "Quickly mute, turn off camera, and type 'technical difficulties' in chat",
           "weights": {
-            "Ni": 3,
+            "Te": 3,
+            "Si": 2,
+            "conducting": 2
+          }
+        },
+        {
+          "text": "Own it completely - wave enthusiastically and introduce the cat to everyone",
+          "weights": {
+            "Se": 4,
             "Fe": 1,
-            "density": 3
-          }
-        },
-        {
-          "text": "A perfectly clear lens that shows exactly how a mistake was made, free of emotion",
-          "weights": {
-            "Ti": 3,
-            "Si": 1,
-            "revision": 2
-          }
-        },
-        {
-          "text": "A seed that, when planted, grows into a garden of alternate outcomes",
-          "weights": {
-            "Ne": 3,
-            "Pe": 2,
             "expansion": 3
           }
         },
         {
-          "text": "A shield, hardened and tempered, to prevent such a mistake from ever happening again",
+          "text": "Frantically try to fix hair while pretending to take notes",
           "weights": {
-            "Te": 3,
-            "Se": 2,
-            "conducting": 3
+            "Si": 2,
+            "Fi": 2,
+            "revision": 2
+          }
+        },
+        {
+          "text": "Use this as evidence that video calls reveal more authenticity than we're comfortable with",
+          "weights": {
+            "Ti": 3,
+            "Ni": 1,
+            "density": 2
           }
         }
       ]
@@ -2756,59 +2756,67 @@
       ]
     },
     {
-      "id": "conductor-of-contradictions",
-      "scenario": "An orchestra plays only contradictions - each instrument represents paradoxes that refuse to resolve into harmony.",
-      "prompt": "Which section do you conduct with greatest intensity?",
+      "id": "autocorrect-conspiracy",
+      "scenario": "Your phone changes 'duck' to 'fuck' in a text to your grandmother, but changes 'fuck' to 'duck' when you're angry-texting your ex. The algorithm clearly has opinions about your relationships.",
+      "prompt": "This targeted linguistic sabotage requires analysis:",
       "choices": [
         {
-          "text": "The brass section that announces truths that negate themselves",
+          "text": "Map out exactly when autocorrect helps vs. hurts to identify the pattern",
           "weights": {
             "Ti": 3,
-            "Ne": 1,
-            "revision": 3
+            "Si": 2,
+            "density": 2
           }
         },
         {
-          "text": "The strings that weave emotional paradoxes into unified dissonance",
+          "text": "Turn off autocorrect entirely and trust your own spelling like a barbarian",
           "weights": {
-            "Fi": 3,
-            "Fe": 1,
-            "density": 3
+            "Se": 3,
+            "Fi": 2,
+            "expansion": 2
           }
         },
         {
-          "text": "The percussion that drives contradictions toward inevitable resolution",
+          "text": "This proves phones are becoming too emotionally intelligent for our own good",
+          "weights": {
+            "Ne": 2,
+            "Ni": 2,
+            "revision": 2
+          }
+        },
+        {
+          "text": "Create a systematic backup plan using voice-to-text for important messages",
           "weights": {
             "Te": 3,
-            "Se": 1,
-            "conducting": 3
-          }
-        },
-        {
-          "text": "The winds that scatter paradoxes into atmospheric confusion",
-          "weights": {
-            "Ne": 3,
-            "Pe": 2,
-            "expansion": 3
+            "Si": 1,
+            "conducting": 2
           }
         }
       ]
     },
     {
-      "id": "tribunal-of-flavors",
-      "scenario": "A cosmic tribunal judges not crimes, but tastes that have never been experienced. Each judge applies different criteria for what constitutes flavor.",
-      "prompt": "Under which judge's authority do you place your case?",
+      "id": "restaurant-menu-paralysis",
+      "scenario": "The menu has 47 items. You've narrowed it down to 3 choices. The server has checked on you twice. Your friends ordered 10 minutes ago and are now discussing whether pineapple belongs on pizza while you're still deciding between the salmon and the risotto.",
+      "prompt": "This culinary decision matrix threatens social cohesion:",
       "choices": [
         {
-          "text": "The judge who evaluates taste by its internal consistency and logical structure",
+          "text": "Systematically analyze nutritional content, preparation time, and flavor profiles",
           "weights": {
             "Ti": 3,
-            "Ji": 2,
-            "density": 3
+            "Si": 2,
+            "density": 2
           }
         },
         {
-          "text": "The judge who considers how the taste serves the community's needs",
+          "text": "Point randomly at the menu and declare 'whatever happens, happens'",
+          "weights": {
+            "Se": 4,
+            "Ne": 1,
+            "expansion": 3
+          }
+        },
+        {
+          "text": "Order what looks most appealing to the group's collective energy",
           "weights": {
             "Fe": 3,
             "Te": 1,
@@ -2816,19 +2824,11 @@
           }
         },
         {
-          "text": "The judge who explores every possible variation the taste might become",
+          "text": "Remember every previous restaurant experience to inform this decision",
           "weights": {
-            "Ne": 3,
-            "Ti": 1,
-            "expansion": 3
-          }
-        },
-        {
-          "text": "The judge who measures taste against the pure standard of what it should be",
-          "weights": {
-            "Fi": 3,
-            "Ni": 1,
-            "density": 3
+            "Si": 3,
+            "Fi": 1,
+            "density": 2
           }
         }
       ]
@@ -2873,40 +2873,40 @@
       ]
     },
     {
-      "id": "archaeologist-of-unspoken-words",
-      "scenario": "In ruins of conversations that never happened, an archaeologist unearths the remains of things nobody ever said.",
-      "prompt": "Which excavation site do you fund?",
+      "id": "elevator-awkwardness",
+      "scenario": "You're alone in an elevator when it stops and your ex-colleague who got fired last month steps in. You have 23 floors to go. They press the button for floor 24. The tension is measurable with scientific instruments.",
+      "prompt": "This vertical prison of social discomfort requires navigation:",
       "choices": [
         {
-          "text": "The site where silence preserved perfect logical arguments",
+          "text": "Immediately address the elephant: 'So... how are you adjusting to the career change?'",
           "weights": {
-            "Ti": 3,
-            "Ni": 1,
-            "density": 3
+            "Se": 3,
+            "Fe": 2,
+            "expansion": 2
           }
         },
         {
-          "text": "The site where unspoken words formed communities of shared understanding",
+          "text": "Calculate exactly how long this ride will take and plan conversation topics for each floor",
           "weights": {
-            "Fe": 3,
-            "Si": 1,
+            "Te": 3,
+            "Si": 2,
             "conducting": 2
           }
         },
         {
-          "text": "The site where every unspoken word spawned ten possible conversations",
+          "text": "Study your shoes with the intensity of a medieval scholar",
           "weights": {
-            "Ne": 3,
-            "Pe": 2,
-            "expansion": 3
+            "Fi": 2,
+            "Si": 2,
+            "density": 2
           }
         },
         {
-          "text": "The site where silence held the deepest personal truths",
+          "text": "Wonder if they're having the exact same internal experience right now",
           "weights": {
-            "Fi": 3,
-            "Pi": 1,
-            "density": 3
+            "Ti": 2,
+            "Fe": 2,
+            "revision": 2
           }
         }
       ]
@@ -2951,40 +2951,40 @@
       ]
     },
     {
-      "id": "university-of-mistakes",
-      "scenario": "At a university where only errors are studied, different departments specialize in particular types of wrongness. You must choose your major.",
-      "prompt": "Which department of wrongness calls to you?",
+      "id": "password-security-theater",
+      "scenario": "You need to create a new password. It must be 12 characters with uppercase, lowercase, numbers, symbols, but not contain any dictionary words, your birthday, or anything you've used before. You're on attempt #47.",
+      "prompt": "Digital security demands impossible perfection:",
       "choices": [
         {
-          "text": "Department of Logical Errors - studying the internal structure of flawed reasoning",
-          "weights": {
-            "Ti": 3,
-            "Pi": 2,
-            "revision": 3
-          }
-        },
-        {
-          "text": "Department of Strategic Errors - analyzing mistakes that prevented goal achievement",
+          "text": "Create a systematic password generation methodology with backup documentation",
           "weights": {
             "Te": 3,
-            "Se": 1,
+            "Si": 3,
             "conducting": 2
           }
         },
         {
-          "text": "Department of Creative Errors - celebrating mistakes that opened new possibilities",
+          "text": "Smash random keys until something works and pray you remember it",
           "weights": {
-            "Ne": 3,
+            "Se": 3,
             "Fi": 1,
-            "expansion": 3
+            "expansion": 2
           }
         },
         {
-          "text": "Department of Relational Errors - understanding mistakes that harm connections",
+          "text": "This password system reveals everything wrong with modern security philosophy",
           "weights": {
-            "Fe": 3,
-            "Si": 1,
+            "Ti": 3,
+            "Ni": 1,
             "revision": 2
+          }
+        },
+        {
+          "text": "Use a meaningful phrase encoded in a way only you would remember",
+          "weights": {
+            "Fi": 2,
+            "Si": 2,
+            "density": 2
           }
         }
       ]
