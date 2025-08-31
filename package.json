@@ -1,6 +1,6 @@
 {
   "name": "harpernet.org",
-  "version": "1.9.7",
+  "version": "1.9.9",
   "description": "This page is intended to give you some of my wisdom into Jungian psychology and the MBTI framework. Maybe something you haven't yet considered.",
   "type": "commonjs",
   "scripts": {
@@ -21,7 +21,8 @@
     "bump": "npm version patch",
     "prepare": "husky",
     "format": "prettier --write .",
-    "weights": "node tools/examine-weights.js"
+    "weights": "node tools/examine-weights.js > weights.txt",
+    "weights:out": "node tools/examine-weights.js > weights.txt && tr '\n' ' ' < weights.txt"
   },
   "keywords": [
     "mbti",
