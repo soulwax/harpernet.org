@@ -244,22 +244,6 @@ const MetabolicExplorationGame = () => {
             <div class={styles.progress}>
               <div class={styles.progressBar} style={`width: ${progressPercentage()}%`} />
             </div>
-
-            {/* Breadcrumb Navigation */}
-            <div class={styles.breadcrumbs}>
-              <For each={getBreadcrumbs()}>
-                {(crumb) => (
-                  <button
-                    class={`${styles.breadcrumb} ${crumb.completed ? styles.completed : ''} ${crumb.current ? styles.active : ''}`}
-                    onClick={() => goToQuestion(crumb.index)}
-                    disabled={crumb.index > answers().length}
-                    title={`Go to question ${crumb.index + 1}`}
-                  >
-                    {crumb.completed ? '✓' : crumb.index + 1}
-                  </button>
-                )}
-              </For>
-            </div>
           </div>
 
           {/* Navigation Controls */}
@@ -280,11 +264,7 @@ const MetabolicExplorationGame = () => {
 
           {/* Question Content */}
           <div class={styles.questionContent}>
-            <div class={styles.scenario}>
-              <span class={styles.scenarioIcon}>🌟</span>
-              {questions[currentQuestionIndex()].scenario}
-            </div>
-
+            <div class={styles.scenario}>{questions[currentQuestionIndex()].scenario}</div>
             <div class={styles.prompt}>{questions[currentQuestionIndex()].prompt}</div>
           </div>
 

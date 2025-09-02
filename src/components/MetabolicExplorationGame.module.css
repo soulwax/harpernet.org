@@ -271,11 +271,12 @@
 }
 
 .scenario {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-style: bold;
   line-height: 1.6;
+  font-weight: 600;
   color: var(--text-primary, #1f2937);
   margin-bottom: 1rem;
-  font-style: italic;
   padding: 1rem;
   background: linear-gradient(135deg, var(--scenario-bg, #f8fafc), var(--scenario-bg-alt, #f1f5f9));
   border-radius: 10px;
