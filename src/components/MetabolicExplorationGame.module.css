@@ -1,20 +1,20 @@
 /* File: src/components/MetabolicExplorationGame.module.css */
 
 .gameContainer {
-  max-width: 900px;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1rem 0.5rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  min-height: 70vh;
+  min-height: 50vh;
   position: relative;
 }
 
 /* Enhanced Question Container with Animations */
 .questionContainer {
   background: var(--card-bg, #ffffff);
-  border-radius: 16px;
-  padding: 2.5rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--border-color, #e5e7eb);
   position: relative;
   overflow: hidden;
@@ -92,37 +92,37 @@
 
 /* Enhanced Progress Section */
 .progressSection {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .progressHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .progressText {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   color: var(--text-secondary, #6b7280);
   font-weight: 500;
 }
 
 .progressPercentage {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   color: var(--primary-color, #3b82f6);
   font-weight: 600;
   background: var(--primary-color-light, #eff6ff);
-  padding: 0.25rem 0.75rem;
-  border-radius: 12px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
 }
 
 .progress {
   position: relative;
   width: 100%;
-  height: 8px;
+  height: 6px;
   background-color: var(--progress-bg, #e5e7eb);
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -150,20 +150,20 @@
 /* Breadcrumb Navigation */
 .breadcrumbs {
   display: flex;
-  gap: 0.5rem;
-  margin-top: 1rem;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .breadcrumb {
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 2px solid var(--border-color, #e5e7eb);
   background: var(--card-bg, #ffffff);
   color: var(--text-secondary, #6b7280);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -202,21 +202,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
-  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 0;
   border-bottom: 1px solid var(--border-color, #e5e7eb);
 }
 
 .navButton {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
   background: var(--secondary-bg, #f8fafc);
   border: 1px solid var(--border-color, #e5e7eb);
-  border-radius: 12px;
+  border-radius: 10px;
   color: var(--text-primary, #1f2937);
   font-weight: 500;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -243,8 +244,8 @@
 }
 
 .questionNumber {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: linear-gradient(
     135deg,
@@ -255,37 +256,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 3px 12px rgba(139, 92, 246, 0.4);
 }
 
 .navSpacer {
-  width: 120px; /* Same width as nav button to center question number */
+  width: 100px; /* Same width as nav button to center question number */
 }
 
 /* Enhanced Question Content */
 .questionContent {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .scenario {
-  font-size: 1.125rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.6;
   color: var(--text-primary, #1f2937);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-style: italic;
-  padding: 1.5rem;
+  padding: 1rem;
   background: linear-gradient(135deg, var(--scenario-bg, #f8fafc), var(--scenario-bg-alt, #f1f5f9));
-  border-radius: 12px;
-  border-left: 4px solid var(--accent-color, #8b5cf6);
+  border-radius: 10px;
+  border-left: 3px solid var(--accent-color, #8b5cf6);
   position: relative;
-  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.1);
+  box-shadow: 0 2px 6px rgba(139, 92, 246, 0.08);
 }
 
 .scenarioIcon {
-  font-size: 1.5rem;
-  margin-right: 0.75rem;
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
   display: inline-block;
   animation: pulse 2s infinite;
 }
@@ -301,14 +302,14 @@
 }
 
 .prompt {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-primary, #1f2937);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
-  padding: 1rem;
+  padding: 0.75rem;
   background: var(--prompt-bg, #ffffff);
-  border-radius: 12px;
+  border-radius: 10px;
   border: 2px solid var(--border-color, #e5e7eb);
 }
 
@@ -316,16 +317,16 @@
 .choices {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .choice {
   display: flex;
   align-items: flex-start;
-  padding: 1.5rem;
+  padding: 1rem;
   background: var(--choice-bg, #ffffff);
   border: 2px solid var(--choice-border, #e5e7eb);
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -368,22 +369,22 @@
 .choiceHeader {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-right: 1rem;
-  min-width: 60px;
+  gap: 0.4rem;
+  margin-right: 0.75rem;
+  min-width: 50px;
 }
 
 .choiceNumber {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
   background: var(--primary-color, #3b82f6);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   transition: all 0.3s ease;
 }
 
@@ -431,7 +432,7 @@
 }
 
 .resultsTitle {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(
     135deg,
@@ -441,20 +442,21 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   text-align: center;
 }
 
 .completionBadge {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   background: var(--success-color, #10b981);
   color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 24px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
   font-weight: 600;
-  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+  font-size: 0.9rem;
+  box-shadow: 0 3px 12px rgba(16, 185, 129, 0.4);
   animation: bounceIn 0.6s ease-out;
 }
 
@@ -482,11 +484,11 @@
 /* Profile Card */
 .profileCard {
   background: var(--card-bg, #ffffff);
-  border-radius: 16px;
-  padding: 2.5rem;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
   border: 1px solid var(--border-color, #e5e7eb);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -514,19 +516,19 @@
 
 .profileHeader {
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .primaryFunction,
 .secondaryFunction {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  border-radius: 12px;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 10px;
   background: var(--function-bg, #f8fafc);
-  border-left: 4px solid var(--primary-color, #3b82f6);
+  border-left: 3px solid var(--primary-color, #3b82f6);
 }
 
 .secondaryFunction {
@@ -534,24 +536,24 @@
 }
 
 .functionLabel {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--primary-color, #3b82f6);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
 }
 
 .secondaryLabel {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--secondary-color, #8b5cf6);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
 }
 
 .functionDescription {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
   color: var(--text-secondary, #4b5563);
 }
 
@@ -561,14 +563,14 @@
 }
 
 .dynamicTitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--text-primary, #1f2937);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   justify-content: center;
 }
 
@@ -589,23 +591,23 @@
 .dynamicScore {
   background: var(--accent-color, #8b5cf6);
   color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 12px;
-  font-size: 0.875rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
 .dynamicResult {
-  font-size: 1.125rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.7;
   color: var(--text-primary, #1f2937);
   text-align: justify;
-  padding: 2rem;
+  padding: 1.5rem;
   background: linear-gradient(135deg, var(--result-bg, #f8fafc), var(--result-bg-alt, #f1f5f9));
-  border-radius: 16px;
-  border-left: 4px solid var(--accent-color, #8b5cf6);
+  border-radius: 12px;
+  border-left: 3px solid var(--accent-color, #8b5cf6);
   position: relative;
-  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.1);
+  box-shadow: 0 3px 12px rgba(139, 92, 246, 0.08);
 }
 
 .dynamicResult::before {
@@ -628,7 +630,7 @@
 .resetButton {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.6rem;
   background: linear-gradient(
     135deg,
     var(--primary-color, #3b82f6),
@@ -636,13 +638,13 @@
   );
   color: white;
   border: none;
-  padding: 1.25rem 2.5rem;
-  border-radius: 16px;
-  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.35);
   position: relative;
   overflow: hidden;
 }
@@ -674,18 +676,19 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .gameContainer {
-    padding: 1rem 0.5rem;
+    padding: 0.75rem 0.25rem;
   }
 
   .questionContainer,
   .profileCard {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .navigationControls {
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.75rem;
     justify-content: center;
+    padding: 0.5rem 0;
   }
 
   .navSpacer {
@@ -694,60 +697,76 @@
 
   .questionNumber {
     order: -1;
-    width: 50px;
-    height: 50px;
-    font-size: 1.25rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
 
   .resultsTitle {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .choice {
-    padding: 1rem;
+    padding: 0.75rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
   .choiceHeader {
     margin-right: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
   }
 
   .scenario {
-    font-size: 1rem;
-    padding: 1rem;
+    font-size: 0.9rem;
+    padding: 0.75rem;
   }
 
   .prompt {
-    font-size: 1.125rem;
+    font-size: 1rem;
+    padding: 0.6rem;
   }
 
   .dynamicResult {
-    font-size: 1rem;
-    padding: 1.5rem;
+    font-size: 0.9rem;
+    padding: 1rem;
     text-align: left;
   }
 
   .functionLabel {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .dynamicTitle {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     flex-direction: column;
     align-items: flex-start;
   }
 
   .breadcrumbs {
-    gap: 0.375rem;
+    gap: 0.3rem;
   }
 
   .breadcrumb {
-    width: 32px;
-    height: 32px;
-    font-size: 0.75rem;
+    width: 24px;
+    height: 24px;
+    font-size: 0.7rem;
+  }
+
+  .resetButton {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.95rem;
+  }
+
+  .completionBadge {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .navButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
   }
 }
 
