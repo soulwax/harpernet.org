@@ -4,7 +4,6 @@ import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
 import dotenv from 'dotenv';
 export default defineConfig({
-  base: '/harpernet.org/',
   preview: {
     port: 3890,
     host: true,

@@ -4,8 +4,6 @@
   "description": "This page is intended to give you some wisdom and a good, hopefully insightful overview into Jungian psychology and the MBTI framework. Maybe something you haven't yet considered.",
   "type": "commonjs",
   "scripts": {
-    "predeploy": "npm run build && npm run make:og",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "make:og": "node tools/make-og.cjs",
     "build": "vite build",
