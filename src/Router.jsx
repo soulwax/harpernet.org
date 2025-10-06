@@ -1,6 +1,6 @@
 // File: src/Router.jsx
 
-import { createSignal, onCleanup, onMount } from 'solid-js';
+import { createSignal, onCleanup, onMount, createEffect } from 'solid-js';
 import { ThemeProvider } from './contexts/ThemeContext';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -19,7 +19,17 @@ const Router = () => {
   const initialPath = window.location.pathname;
   const [currentPath, setCurrentPath] = createSignal(initialPath);
 
-  // Handle popstate (browser back/forward)
+  createEffect(() => {
+    const path = currentPath();
+
+    // Track page view in Matomo
+    if (window._paq) {
+      window._paq.push(['setCustomUrl', window.location.href]);
+      window._paq.push(['setDocumentTitle', document.title]);
+      window._paq.push(['trackPageView']);
+    }
+  });
+
   const handlePopState = () => {
     setCurrentPath(window.location.pathname);
   };
