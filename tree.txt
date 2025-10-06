@@ -4,6 +4,7 @@ harpernet.org
 ├───.env.sample
 ├───.env.staging
 ├───.gitignore
+├───.gitmodules
 ├───.prettierrc
 ├───CHANGELOG.md
 ├───ecosystem.config.js
@@ -38,6 +39,26 @@ harpernet.org
 │       ├───pre-push
 │       ├───pre-rebase
 │       └───prepare-commit-msg
+├───api/
+│   ├───.env.sample
+│   ├───.gitignore
+│   ├───LICENSE
+│   ├───package.json
+│   ├───README.md
+│   └───src/
+│       ├───app.js
+│       ├───config/
+│       │   └───database.js
+│       ├───middleware/
+│       │   ├───rateLimiter.js
+│       │   └───validation.js
+│       ├───models/
+│       │   ├───index.js
+│       │   └───QuizResult.js
+│       ├───routes/
+│       │   └───quizResults.js
+│       └───utils/
+│           └───logger.js
 ├───public/
 │   ├───.htaccess
 │   ├───404.html

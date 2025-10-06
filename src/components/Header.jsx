@@ -51,17 +51,17 @@ const Header = () => {
     }
   };
 
-  // Enhanced navigation with smooth transitions
   const navigateTo = (path) => {
+    // window.history.pushState({}, '', path); // ! Unnecessary for full page reload
+    // setCurrentPath(path); // ! Unnecessary for full page reload
+
     if (isActive(path)) {
       closeNav();
       return;
     }
 
-    // Add visual feedback before navigation
     setIsAnimating(true);
 
-    // Small delay for visual feedback
     setTimeout(() => {
       window.location.href = path;
       setIsNavOpen(false);
