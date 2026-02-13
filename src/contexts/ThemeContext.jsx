@@ -13,17 +13,16 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider = (props) => {
-  // Get initial theme from localStorage or system preference
+  // Default to dark unless user has explicitly chosen a theme.
   const getInitialTheme = () => {
-    if (typeof window === 'undefined') return 'light';
+    if (typeof window === 'undefined') return 'dark';
 
     const stored = localStorage.getItem('theme');
     if (stored && (stored === 'light' || stored === 'dark')) {
       return stored;
     }
 
-    // Check system preference
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return 'dark';
   };
 
   const [theme, setTheme] = createSignal(getInitialTheme());
@@ -75,16 +74,17 @@ export const ThemeProvider = (props) => {
   };
 
   let mediaQuery;
+  let handleChange;
 
   // Apply theme on mount and when theme changes
   onMount(() => {
     // Apply initial theme immediately
     applyTheme(theme());
 
-    // Listen for system theme changes
+    // Keep system listeners only for users who have not set an explicit preference.
     if (window.matchMedia) {
       mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-      const handleChange = (e) => {
+      handleChange = (e) => {
         if (!localStorage.getItem('theme')) {
           const systemTheme = e.matches ? 'dark' : 'light';
           setTheme(systemTheme);
@@ -102,7 +102,7 @@ export const ThemeProvider = (props) => {
   });
 
   onCleanup(() => {
-    if (mediaQuery) {
+    if (mediaQuery && handleChange) {
       mediaQuery.removeEventListener('change', handleChange);
     }
   });
