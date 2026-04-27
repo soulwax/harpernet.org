@@ -1,6 +1,7 @@
 // File: src/Router.jsx
 
 import { createSignal, onCleanup, onMount, createEffect } from 'solid-js';
+import { inject } from '@vercel/analytics';
 import { ThemeProvider } from './contexts/ThemeContext';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -35,6 +36,7 @@ const Router = () => {
   };
 
   onMount(() => {
+    inject();
     // Listen for browser back/forward
     window.addEventListener('popstate', handlePopState);
     console.log('Router mounted, path:', initialPath);
