@@ -38,13 +38,18 @@ npm run serve            # Serve preview (used by PM2)
 ```
 
 ### PM2 Process Management
+The PM2 process is named `harpernet-org`. All PM2 ops live under the `pm2:` script namespace.
 ```bash
-npm start                # Start PM2 process "mbti-app"
-npm run restart          # Restart PM2 with env updates
-npm run stop             # Stop PM2 process
-npm run delete           # Delete PM2 process
-npm run status           # Check PM2 status
-npm run logs             # View PM2 logs
+npm start                # Alias for pm2:start (idiomatic npm entry)
+npm run pm2:start        # Start ecosystem in production mode
+npm run pm2:stop         # Stop the process
+npm run pm2:restart      # Hard restart with --update-env
+npm run pm2:reload       # Graceful reload (zero-downtime when in cluster mode)
+npm run pm2:delete       # Delete from PM2 process list
+npm run pm2:status       # Show status for harpernet-org
+npm run pm2:logs         # Tail logs
+npm run pm2:flush        # Clear log files
+npm run pm2:save         # Persist current PM2 process list (for resurrect on boot)
 ```
 
 ### Code Quality
@@ -53,8 +58,9 @@ npm run format           # Format code with Prettier
 npm run bump             # Bump patch version
 ```
 
-### Quiz Balancing Tools
+### Asset & Quiz Tools
 ```bash
+npm run make:og          # Generate OG/social preview images (tools/make-og.cjs, uses sharp)
 npm run weights          # Generate weight distribution analysis in weights.txt
 npm run weights:out      # Generate and display weights (Unix)
 npm run weights:out:win  # Generate and display weights (Windows)
@@ -77,6 +83,8 @@ The app uses a **custom client-side router** in `src/Router.jsx` - NOT a library
 1. Add route to `Router.jsx` `renderRoute()` function
 2. Add proxy rewrite in `vite.config.js` under `server.proxy`
 3. Create corresponding page component in `src/pages/`
+
+**Known drift to watch:** `/research` is registered in `Router.jsx` but missing from the `vite.config.js` proxy list — direct loads of `/research` in dev may not be rewritten to `/index.html`. Production (Vercel/`vercel.json`) handles this via a catch-all rewrite, so the issue is dev-only. When adding routes, keep both files in sync.
 
 ### Page Structure
 
@@ -109,6 +117,7 @@ All content lives in JSON files under `src/data/`:
 - `metabolicPrinciples.json` - Metabolic framework content
 - `metabolicGameData.json` - Quiz questions with weighted choices
 - `jungianFramework.json` - Theoretical foundation content
+- `homeDescriptions.json` - Home page section copy
 - `curatedSources.json` / `rawSources.json` - Research references
 
 **When modifying content:** Edit the JSON files directly. Components import and render this data.
@@ -119,13 +128,24 @@ All content lives in JSON files under `src/data/`:
 - Component styles: CSS Modules (`*.module.css`) imported into components
 - Theme variables defined in `src/styles/theme.css` with dark/light variants
 
-### PM2 Ecosystem
+### Deployment Targets
 
-Production deployment managed by `ecosystem.config.js`:
-- App name: `mbti-app`
-- Runs `npm run serve` (Vite preview server)
-- Port: 3890 (hardcoded across ecosystem, vite.config, package.json)
-- Single instance, auto-restart, 1G memory limit
+The site can be deployed two ways and both are live:
+
+**Self-hosted via PM2** (`ecosystem.config.js`):
+- App name: `harpernet-org`
+- Runs `npm run serve` (Vite preview server) in fork mode
+- Port: 3890 (hardcoded across `vite.config.js`, README; PM2 itself doesn't pin the port)
+- Single instance, autorestart, 1G memory cap
+- Crash-loop guard: `min_uptime: 10s`, `max_restarts: 10`
+- 5s `kill_timeout` for graceful shutdown
+- Timestamped logs via `time: true` (PM2's modern flag, replaces `log_date_format`)
+
+**Vercel** (`vercel.json`):
+- Output directory: `dist` (Vite build output)
+- Catch-all rewrite sends every path to `/index.html` for SPA routing
+- `@vercel/analytics` is wired up in `Router.jsx` (`inject()` runs on mount), so page views are reported when deployed on Vercel. There is no opt-out flag — if you want to remove tracking, edit `Router.jsx` directly.
+- Allowed preview hosts (`harpernet.vercel.app`, `harpernet.pages.dev`) are listed in `vite.config.js` `preview.allowedHosts`.
 
 ## SolidJS Patterns (NOT React)
 
@@ -148,8 +168,9 @@ Prettier configuration (`.prettierrc`):
 
 ## Important Notes
 
-- **No .env dependencies**: The app does NOT require environment variables to run. The only env var actually used is `VITE_SITE_NAME` in `vite.config.js` for preview server allowed hosts (defaults to 'localhost' if not set).
-- **Port 3890**: Hardcoded throughout the codebase - changing requires updates in multiple files
-- **Privacy commitment**: No logging, no cookies, no analytics by default (Matomo tracking exists in Router.jsx but requires external setup)
-- **No test suite**: Project currently has no test framework configured
-- **Husky configured**: Git hooks via husky + lint-staged (though .husky directory not present in project structure)
+- **No .env dependencies for app code**: The runtime app does NOT require environment variables. The only env var read at config time is `VITE_SITE_NAME` in `vite.config.js` for preview server allowed hosts (defaults to 'localhost' if not set). `dotenv` is loaded synchronously from `vite.config.js`, so a `.env` is optional.
+- **Port 3890**: Hardcoded throughout the codebase (`vite.config.js`, `ecosystem.config.js`, README) — changing requires updates in multiple files.
+- **Privacy posture**: No cookies; only `theme` in localStorage. The README's privacy pledge applies to self-hosted `harpernet.org`. The codebase contains both Matomo hooks (`window._paq` in `Router.jsx`, requires external snippet to do anything) and live `@vercel/analytics` (active when deployed on Vercel). Adjust expectations accordingly when working with deployment-related changes.
+- **No test suite**: Project has no test framework configured. Don't claim a change is verified via tests — verify by running `npm run dev` and exercising the affected page in a browser.
+- **Husky + lint-staged**: Configured via `.husky/` (present) and `prepare` script. Git hooks run on commit.
+- **`api/` directory**: An `api/` directory exists at the repo root but the submodule was removed in commit `6d93a51`. Leave it alone unless the user asks — it is not part of the SolidJS app build.
